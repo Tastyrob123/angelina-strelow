@@ -81,6 +81,45 @@
     });
   }
 
+  // Werkzeug-Knöpfe: lokal das laufende Werkzeug, online (dort fehlt der Server) ein Rundgang durch seine Aufnahmen
+  var lokal = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) && !/[?&]online/.test(location.search);
+  var rg = document.getElementById('rundgang');
+  $$('.wzb-kn').forEach(function (a) {
+    if (lokal) { a.href = a.dataset.lokal; return; }
+    a.querySelector('.kw').textContent = 'Rundgang ansehen';
+    a.addEventListener('click', function (e) { e.preventDefault(); offen(+a.dataset.w); });
+  });
+  var rw = 0, rj = 0, vorher = null;
+  function rbilder() { return $$('.rg-b[data-w="' + rw + '"]', rg); }
+  function rzeig(n) {
+    var b = rbilder(); rj = (n + b.length) % b.length;
+    $$('.rg-b', rg).forEach(function (i) { i.classList.toggle('an', +i.dataset.w === rw && +i.dataset.j === rj); });
+    var i = b[rj];
+    rg.querySelector('.rg__ansicht').textContent = i.dataset.ansicht + ' · ' + (rj + 1) + ' von ' + b.length;
+    rg.querySelector('.rg__satz').textContent = i.dataset.satz;
+  }
+  function offen(w) {
+    if (!rg) return;
+    rw = w; vorher = document.activeElement;
+    var n = rg.querySelector('.rg__namen span[data-w="' + w + '"]');
+    rg.querySelector('.rg__n').textContent = n.textContent; rg.querySelector('.rg__w').textContent = n.dataset.wann;
+    var b = rbilder();
+    b.forEach(function (i) { if (!i.getAttribute('src')) i.src = i.dataset.src; });
+    var erst = b[0];
+    var weiter = function () { d.classList.add('rg-offen'); rg.hidden = false; rzeig(0); requestAnimationFrame(function () { requestAnimationFrame(function () { rg.classList.add('auf'); rg.querySelector('.rg__zu').focus(); }); }); };
+    if (erst.complete && erst.naturalWidth) weiter();
+    else { var fertig = false, los2 = function () { if (!fertig) { fertig = true; weiter(); } }; erst.addEventListener('load', los2); erst.addEventListener('error', los2); setTimeout(los2, 1500); }
+  }
+  function zu() { if (!rg || rg.hidden) return; rg.classList.remove('auf'); setTimeout(function () { rg.hidden = true; d.classList.remove('rg-offen'); if (vorher) vorher.focus(); }, 420); }
+  if (rg) {
+    rg.querySelector('.rg__zu').addEventListener('click', zu);
+    $$('.rg__p', rg).forEach(function (b) { b.addEventListener('click', function () { rzeig(rj + +b.dataset.d); }); });
+    addEventListener('keydown', function (e) { if (rg.hidden) return; if (e.key === 'Escape') zu(); else if (e.key === 'ArrowRight') rzeig(rj + 1); else if (e.key === 'ArrowLeft') rzeig(rj - 1); });
+    var x0 = null;
+    rg.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
+    rg.addEventListener('pointerup', function (e) { if (x0 === null) return; var dx = e.clientX - x0; x0 = null; if (Math.abs(dx) > 50) rzeig(rj + (dx < 0 ? 1 : -1)); });
+  }
+
   // Nach dem Laden: verborgene Ansichten und Seiten still vorab holen, damit beim Umschalten nichts nachlädt
   addEventListener('load', function () {
     setTimeout(function () { $$('.wz-sc').forEach(function (i) { i.loading = 'eager'; }); }, 1800);

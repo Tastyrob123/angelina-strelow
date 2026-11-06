@@ -196,6 +196,26 @@ html.auf .at__k,html.auf .at__h,html.auf .at__r{transform:none;opacity:1}
 [data-a].da{transform:none;opacity:1}
 .dr__raster .bg:nth-child(4n+2){transition-delay:.07s}.dr__raster .bg:nth-child(4n+3){transition-delay:.14s}.dr__raster .bg:nth-child(4n+4){transition-delay:.21s}
 
+/* Rundgang durch ein Werkzeug (online, wo die Werkzeuge nicht laufen) */
+.rg{position:fixed;inset:0;z-index:50;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:clamp(12px,2vh,22px);padding:clamp(22px,3.4vh,40px) clamp(18px,3vw,48px);background:var(--night) url(zeichen/tapete-dunkel-a.svg) 50% 0/224px auto;color:var(--salt);isolation:isolate;opacity:0;transition:opacity .45s ease}
+.rg[hidden]{display:none}
+.rg.auf{opacity:1}
+.rg::before{content:'';position:absolute;inset:0;z-index:-1;background:rgba(12,10,11,.62)}
+.rg::after{content:'';position:absolute;inset:clamp(8px,1vw,14px);border:1px solid rgba(225,207,197,.3);pointer-events:none}
+.rg__kopf{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:0 clamp(4px,1vw,14px)}
+.rg__w{color:var(--sand)}
+.rg__n{margin-top:6px;font:400 clamp(30px,3vw,46px)/1.05 var(--serif)}
+.rg__zu{flex:none;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;background:linear-gradient(180deg,#FFFFFF,var(--sand));color:var(--night);box-shadow:0 10px 20px -10px rgba(0,0,0,.8)}
+.rg__zu svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6}
+.rg__buehne{position:relative;min-height:0;display:grid;grid-template:minmax(0,1fr)/minmax(0,1fr);place-items:center;container-type:size}
+.rg-b{grid-area:1/1;max-width:100cqw;max-height:100cqh;width:auto;height:auto;object-fit:contain;border-radius:6px;background-size:cover;box-shadow:0 0 0 1px rgba(225,207,197,.35),0 40px 60px -30px rgba(0,0,0,.9);visibility:hidden;opacity:0;transform:translateY(14px);transition:opacity .45s ease,transform .8s var(--e1),visibility 0s .45s}
+.rg-b.an{visibility:visible;opacity:1;transform:none;transition:opacity .5s ease,transform .9s var(--e1)}
+.rg__fuss{display:flex;align-items:center;justify-content:center;gap:clamp(14px,2.4vw,36px)}
+.rg__text{max-width:44em;text-align:center}
+.rg__ansicht{color:var(--sand)}
+.rg__satz{margin-top:6px;font:400 clamp(18px,1.6vw,24px)/1.35 var(--serif);color:var(--salt)}
+html.rg-offen{overflow:hidden}
+
 @media (max-width:1100px){
   .at__in{grid-template-columns:1fr}
   .at__r{grid-column:1;padding:clamp(20px,3vh,30px) 0 0}
@@ -234,6 +254,15 @@ html.auf .at__k,html.auf .at__h,html.auf .at__r{transform:none;opacity:1}
   .bg__b::after{inset:8px}
   .bg__s{font-size:.82rem}
   .bg__kommt{left:14px;bottom:14px;font-size:.5rem;letter-spacing:.14em}
+}
+@media (max-width:760px){
+  .rg{padding:22px 14px 18px;grid-template-rows:auto;align-content:center;gap:26px}
+  .rg__kopf{position:absolute;top:24px;left:16px;right:16px}
+  .rg__n{font-size:30px}
+  .rg__buehne{container-type:inline-size}
+  .rg-b{max-height:none}
+  .rg__fuss{gap:10px}
+  .rg__satz{font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

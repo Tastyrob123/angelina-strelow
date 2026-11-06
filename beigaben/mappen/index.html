@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="de" class="lade"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mappen · Angelina Strelow · Exklusive Gastgeberin</title>
+<link rel="preload" href="../../_werkzeuge/_haus/schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../_werkzeuge/_haus/schrift/Montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Della;src:url(../../_werkzeuge/_haus/schrift/DellaRespira.woff2) format('woff2');font-display:block}
+@font-face{font-family:Mont;src:url(../../_werkzeuge/_haus/schrift/Montserrat-300.woff2) format('woff2');font-weight:300;font-display:block}
+@font-face{font-family:Mont;src:url(../../_werkzeuge/_haus/schrift/Montserrat-400.woff2) format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Mont;src:url(../../_werkzeuge/_haus/schrift/Montserrat-500.woff2) format('woff2');font-weight:500;font-display:block}
+:root{--night:#0C0A0B;--salt:#F5F5F5;--sand:#E1CFC5;--berry:#49202D;--olive:#8C8F71;--creme:#EDE7E3;--grau:#6E6467;--linie:#CFC4BE}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--salt)}
+body{font-family:Mont,sans-serif;font-weight:400;color:var(--night);background:var(--salt) url(../../marke/zeichen/tapete-hell-a.svg) 50% 0/224px auto;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html.lade body{opacity:0}
+body{transition:opacity .01s}
+@keyframes notfall{to{opacity:1}}
+html.lade body{animation:notfall 0s 2.5s forwards}
+a{color:inherit}
+.et{font-weight:500;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--berry)}
+.dunkel .et{color:var(--sand)}
+h1,h2{font-family:Della;font-weight:400;line-height:1;letter-spacing:-.01em}
+h1 em,h2 em{font-style:normal;display:block;color:var(--berry)}
+.dunkel h2{color:var(--salt)}.dunkel h2 em{color:var(--sand)}
+/* Kopf */
+.kopf{display:flex;justify-content:space-between;align-items:center;padding:22px clamp(16px,4vw,56px)}
+.kopf img{height:60px}
+.kopf a.zur{font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+/* Auftakt */
+.auftakt{text-align:center;padding:clamp(40px,7vw,96px) 16px clamp(48px,7vw,92px)}
+.auftakt .siegel{width:44px;margin:0 auto 22px;display:block}
+.auftakt h1{font-size:clamp(52px,8.4vw,124px);margin-top:20px}
+.auftakt p{max-width:740px;margin:28px auto 0;font-size:clamp(17px,1.5vw,21px);line-height:1.6;font-weight:300}
+.sprung{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+/* Knöpfe mit Tiefe und rundem Pfeil-Knauf */
+.kn{display:inline-flex;align-items:center;gap:14px;padding:8px 8px 8px 24px;border-radius:999px;background:var(--berry);color:var(--salt);text-decoration:none;font-weight:500;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;border:0;cursor:pointer;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 10px 22px -12px rgba(73,32,45,.75),0 2px 4px rgba(12,10,11,.14);transition:transform .2s}
+.kn:hover{transform:translateY(-1px)}
+.kn:active{transform:translateY(1px)}
+.kn .knauf{width:34px;height:34px;border-radius:50%;background:var(--salt);color:var(--berry);display:grid;place-items:center;box-shadow:inset 0 -2px 3px rgba(12,10,11,.12)}
+.kn .knauf svg{width:14px;height:14px}
+.kn.hell{background:var(--salt);color:var(--night);box-shadow:0 1px 0 #fff inset,0 10px 22px -14px rgba(12,10,11,.5),0 0 0 1px var(--linie)}
+.kn.hell .knauf{background:var(--berry);color:var(--salt)}
+.dunkel .kn{background:var(--sand);color:var(--night)}
+.dunkel .kn .knauf{background:var(--night);color:var(--sand)}
+/* Mappe */
+.mappe{padding:clamp(56px,7vw,110px) clamp(16px,4vw,56px)}
+.mappe.dunkel{background:var(--night) url(../../marke/zeichen/tapete-dunkel-a.svg) 50% 0/224px auto;color:var(--salt)}
+.innen{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(36px,6vw,96px);align-items:start}
+.text{position:sticky;top:40px;padding-top:12px}
+.text h2{font-size:clamp(44px,5.6vw,82px);margin-top:18px}
+.text p{margin-top:24px;font-size:clamp(16px,1.35vw,19px);line-height:1.65;font-weight:300;max-width:500px}
+.text .fakten{margin-top:26px;border-top:1px solid var(--linie);max-width:500px}
+.dunkel .text .fakten{border-color:rgba(225,207,197,.3)}
+.text .fakten div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--linie);font-size:14px}
+.dunkel .text .fakten div{border-color:rgba(225,207,197,.3)}
+.text .fakten span:first-child{font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--grau);padding-top:2px}
+.dunkel .text .fakten span:first-child{color:rgba(225,207,197,.75)}
+.text .kn{margin-top:32px}
+/* Blätterer */
+.blatt{position:relative;aspect-ratio:210/297;background:#ddd;box-shadow:0 30px 60px -30px rgba(12,10,11,.55),0 2px 6px rgba(12,10,11,.12);overflow:hidden;cursor:pointer;user-select:none;-webkit-user-select:none}
+.dunkel .blatt{box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
+.blatt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .25s}
+.blatt img.an{opacity:1}
+.steuer{display:flex;align-items:center;justify-content:space-between;margin-top:20px}
+.zahl{font-weight:500;font-size:12px;letter-spacing:.2em;color:var(--grau)}
+.dunkel .zahl{color:rgba(225,207,197,.8)}
+.pf{display:flex;gap:10px}
+.pf button{width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:var(--salt);color:var(--berry);display:grid;place-items:center;box-shadow:0 1px 0 #fff inset,0 8px 18px -10px rgba(12,10,11,.55),0 0 0 1px var(--linie);transition:transform .2s}
+.pf button:active{transform:translateY(1px)}
+.pf button:disabled{opacity:.35;cursor:default}
+.dunkel .pf button{background:var(--sand);color:var(--night);box-shadow:0 8px 18px -10px rgba(0,0,0,.9)}
+.pf svg{width:16px;height:16px}
+.leiste{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:6px;margin-top:18px}
+.leiste button{border:0;padding:0;background:none;cursor:pointer;aspect-ratio:210/297;overflow:hidden;outline:1px solid transparent;outline-offset:2px;opacity:.55;transition:opacity .2s}
+.leiste button img{width:100%;height:100%;object-fit:cover;display:block}
+.leiste button.an{opacity:1;outline-color:var(--berry)}
+.dunkel .leiste button.an{outline-color:var(--sand)}
+/* Fuss */
+.fuss{text-align:center;padding:72px 16px 56px}
+.fuss img{width:200px}
+.fuss p{margin-top:22px;font-size:13px;color:var(--grau)}
+@media (max-width:860px){
+ .innen{grid-template-columns:minmax(0,1fr);gap:34px}
+ .text h2{font-size:40px}
+ .fakten div{flex-direction:column;gap:4px}
+ .text{position:static;padding-top:0}
+ .blatt{max-width:520px;margin:0 auto;width:100%}
+ .steuer,.leiste{max-width:520px;margin-left:auto;margin-right:auto}
+ .leiste{display:flex;overflow-x:auto;gap:8px;padding-bottom:6px;scrollbar-width:none}
+ .leiste::-webkit-scrollbar{display:none}
+ .leiste button{flex:0 0 52px}
+ .kopf img{height:38px}
+}
+</style>
+<script>
+// Erster Blick komplett: Seite erst zeigen, wenn die Bilder im ersten Bild geladen sind
+(function(){var fertig=false;function zeigen(){if(fertig)return;fertig=true;document.documentElement.classList.remove('lade')}
+ window.__zeigen=zeigen;setTimeout(zeigen,2400);
+ document.addEventListener('DOMContentLoaded',function(){var ims=[].slice.call(document.querySelectorAll('img[data-erst]')).filter(function(i){var r=i.getBoundingClientRect();return r.top<innerHeight*1.05});
+  var offen=ims.length;if(!offen)return zeigen();ims.forEach(function(i){if(i.complete)fertig1();else{i.addEventListener('load',fertig1);i.addEventListener('error',fertig1)}});
+  function fertig1(){if(--offen<=0)(document.fonts?document.fonts.ready:Promise.resolve()).then(zeigen)}});
+})();
+</script>
+</head>
+<body>
+
+<header class="kopf">
+ <img src="../../marke/zeichen/ganz-night.svg" alt="Angelina Strelow, Exklusive Gastgeberin" data-erst decoding="sync">
+ <a class="zur" href="../../website/index.html">Zur Website</a>
+</header>
+
+<section class="auftakt">
+ <img class="siegel" src="../../marke/zeichen/siegel-berry.svg" alt="" data-erst decoding="sync">
+ <div class="et">Beigaben · Mappen als PDF</div>
+ <h1>Zum Mitnehmen.<em>Zum Weitergeben.</em></h1>
+ <p>Zwei Mappen für die Hand: eine für Gastgeber nach dem Erstgespräch, eine für Köche, Caterer, Weinhändler, Floristen und Locations in Köln, die Angelina weiterempfehlen.</p>
+ <div class="sprung">
+  <a class="kn" href="#leistung">Leistungsmappe<span class="knauf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></span></a>
+  <a class="kn hell" href="#partner">Partner-Mappe<span class="knauf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></span></a>
+ </div>
+</section>
+
+<section class="mappe" id="leistung">
+ <div class="innen">
+  <div class="text">
+   <div class="et">Für Gastgeber · 11 Seiten · A4</div>
+   <h2>Die Leistungs­mappe<em>nach dem Erstgespräch.</em></h2>
+   <p>Das Blatt zum Mitnehmen, wenn das Gespräch vorbei ist: wer Angelina ist, was sie an einem Abend übernimmt, die fünf Schritte bis zum Ausklang, ein echter Abend in Bensberg, ihre Abschlüsse und fünf Stimmen im Wortlaut. Statt eines Preises steht dort, dass sie das Angebot persönlich macht.</p>
+   <div class="fakten">
+    <div><span>Format</span><span>A4 hoch, zum Ausdrucken und Mailen</span></div>
+    <div><span>Kontakt</span><span>drei Codes: Mail, Kennenlernen, Instagram</span></div>
+   </div>
+   <a class="kn" href="leistungsmappe.pdf" target="_blank" rel="noopener">PDF öffnen<span class="knauf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></span></a>
+  </div>
+  <div class="blaetter" data-name="leistung" data-n="11"></div>
+ </div>
+</section>
+
+<section class="mappe dunkel" id="partner">
+ <div class="innen">
+  <div class="text">
+   <div class="et">Für Partner in Köln · 7 Seiten · A4</div>
+   <h2>Die Partner-Mappe<em>für alle, die sie empfehlen.</em></h2>
+   <p>Für Köche und Caterer, Weinhändler, Floristen und Locations: was Angelina für deren Kunden übernimmt, wie ein Abend mit jedem Handwerk zusammen aussieht, wie man sie weiterempfiehlt. Genannt wird nur, wer schon an ihrer Seite steht.</p>
+   <div class="fakten">
+    <div><span>Format</span><span>A4 hoch, zum Ausdrucken und Mailen</span></div>
+    <div><span>Kontakt</span><span>drei Codes: Mail, Kennenlernen, Instagram</span></div>
+   </div>
+   <a class="kn" href="partner-mappe.pdf" target="_blank" rel="noopener">PDF öffnen<span class="knauf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></span></a>
+  </div>
+  <div class="blaetter" data-name="partner" data-n="7"></div>
+ </div>
+</section>
+
+<footer class="fuss">
+ <img src="../../marke/zeichen/ganz-night.svg" alt="Angelina Strelow, Exklusive Gastgeberin" loading="lazy">
+ <p>Mappen für Angelina Strelow, Exklusive Gastgeberin in Köln.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.blaetter').forEach(function(box){
+ var name=box.dataset.name,n=+box.dataset.n,i=0;
+ function datei(k,klein){var z=(name==='leistung'&&n>9)?String(k+1).padStart(2,'0'):String(k+1);return 'seiten/'+(klein?'k-':'')+name+'-'+z+'.jpg'}
+ var blatt=document.createElement('div');blatt.className='blatt';blatt.setAttribute('role','img');
+ var bilder=[];
+ for(var k=0;k<n;k++){var im=document.createElement('img');im.alt='Seite '+(k+1)+' von '+n;im.decoding=k===0?'sync':'async';
+  if(k===0){im.src=datei(0);im.className='an';im.setAttribute('data-erst','')}else{im.dataset.src=datei(k)}
+  blatt.appendChild(im);bilder.push(im)}
+ var steuer=document.createElement('div');steuer.className='steuer';
+ steuer.innerHTML='<span class="zahl"></span><span class="pf"><button type="button" aria-label="Vorige Seite"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M10 3 5 8l5 5"/></svg></button><button type="button" aria-label="Nächste Seite"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m6 3 5 5-5 5"/></svg></button></span>';
+ var leiste=document.createElement('div');leiste.className='leiste';leiste.style.setProperty('--n',n);
+ var daumen=[];
+ for(var k=0;k<n;k++){(function(k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Seite '+(k+1));
+  var t=document.createElement('img');t.src=datei(k,true);t.alt='';t.loading=k<6?'eager':'lazy';b.appendChild(t);b.onclick=function(){geh(k)};leiste.appendChild(b);daumen.push(b)})(k)}
+ box.appendChild(blatt);box.appendChild(steuer);box.appendChild(leiste);
+ var zahl=steuer.querySelector('.zahl'),zur=steuer.querySelectorAll('button')[0],vor=steuer.querySelectorAll('button')[1];
+ function laden(k){var im=bilder[k];if(im&&im.dataset.src){im.src=im.dataset.src;delete im.dataset.src}}
+ function geh(k){k=Math.max(0,Math.min(n-1,k));laden(k);var im=bilder[k];
+  function zeige(){bilder.forEach(function(b,j){b.classList.toggle('an',j===k)});i=k;
+   zahl.textContent=String(k+1).padStart(2,'0')+' / '+String(n).padStart(2,'0');zur.disabled=k===0;vor.disabled=k===n-1;
+   daumen.forEach(function(d,j){d.classList.toggle('an',j===k)});var d=daumen[k];if(leiste.scrollWidth>leiste.clientWidth)leiste.scrollTo({left:d.offsetLeft-leiste.clientWidth/2+d.clientWidth/2,behavior:'smooth'});
+   laden(k+1);laden(k-1)}
+  if(im.complete&&im.naturalWidth)zeige();else{im.addEventListener('load',zeige,{once:true})}}
+ zur.onclick=function(){geh(i-1)};vor.onclick=function(){geh(i+1)};
+ blatt.addEventListener('click',function(e){var r=blatt.getBoundingClientRect();geh(e.clientX-r.left<r.width/3?i-1:i+1)});
+ var x0=null;blatt.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+ blatt.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>40){geh(dx<0?i+1:i-1)}});
+ box.tabIndex=0;box.addEventListener('keydown',function(e){if(e.key==='ArrowRight')geh(i+1);if(e.key==='ArrowLeft')geh(i-1)});
+ geh(0);
+});
+</script>
+</body></html>

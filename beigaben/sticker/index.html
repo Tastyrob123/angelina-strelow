@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="de" class="wartet">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sticker · Angelina Strelow</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../../marke/zeichen/icon.svg">
+<link rel="preload" href="schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="schrift/Montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url('schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url('schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url('schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500;font-display:block;src:url('schrift/Montserrat-500.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:block;src:url('schrift/DMMono-normal-400.woff2') format('woff2')}
+:root{
+  --night:#0C0A0B;--berry:#49202D;--berry-h:#6A3444;--sand:#E1CFC5;--sand-h:#EFE5DF;--salt:#F5F5F5;--olive:#8C8F71;
+  --papier:#F4EFEC;--weiss:#FFFFFF;--tinte:#1A1215;--karton:#D8C7BD;--karton-d:#CDBBB0;
+  --serif:'Della Respira',Georgia,serif;--sans:'Montserrat',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,monospace;
+  --e1:cubic-bezier(.16,1,.3,1);--rand:clamp(16px,4.4vw,84px);--max:1440px;--mm:3.05px;
+  --linie-h:rgba(26,18,21,.14);--linie-d:rgba(225,207,197,.24);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--papier);overflow-x:clip;scroll-behavior:smooth}
+body{margin:0;background:var(--papier);color:var(--tinte);font:400 17px/1.72 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip;font-synthesis:none}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,p,figure{margin:0}em{font-style:normal}
+html.wartet body{visibility:hidden;animation:zeig 0s 2.6s forwards}
+@keyframes zeig{to{visibility:visible}}
+.kw{text-transform:uppercase;letter-spacing:.3em;font-weight:500;font-size:.66rem}
+.in{max-width:var(--max);margin:0 auto;padding:0 var(--rand)}
+.tapete{background-color:var(--night);background-image:linear-gradient(rgba(12,10,11,.5),rgba(12,10,11,.5)),url(../../marke/zeichen/tapete-dunkel-a.svg);background-size:auto,224px auto}
+.tap-h{background-color:var(--papier);background-image:url(../../marke/zeichen/tapete-hell-a.svg);background-size:224px auto}
+.dunkel{color:var(--salt)}
+.kap{color:var(--berry)}.dunkel .kap{color:var(--sand)}
+
+/* Leiste */
+.lt{position:absolute;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:24px;padding:18px var(--rand);color:var(--salt)}
+.lt__m{display:flex;align-items:center;gap:16px}
+.lt__m img{height:40px;width:auto}
+.lt__w{width:150px;height:auto}
+.lt__k{margin-left:auto;display:flex;gap:28px;align-items:center}
+.lt__k a{opacity:.8;transition:opacity .3s}.lt__k a:hover{opacity:1}
+
+/* Knöpfe mit Tiefe und rundem Pfeil-Knauf (wie die Website) */
+.kn{position:relative;display:inline-flex;align-items:center;gap:22px;height:52px;padding:0 7px 0 22px;border-radius:999px;color:var(--weiss);white-space:nowrap;isolation:isolate;overflow:hidden;
+  background:linear-gradient(180deg,var(--berry-h),var(--berry) 60%,#3A1823);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(0,0,0,.35),0 1px 1px rgba(0,0,0,.25),0 14px 24px -14px rgba(73,32,45,.8);transition:transform .5s var(--e1)}
+.kn:hover{transform:translateY(-2px)}.kn:active{transform:translateY(1px) scale(.985)}
+.kn i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#FFFFFF,var(--sand));color:var(--berry);box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(0,0,0,.3);transition:transform .5s var(--e1)}
+.kn:hover i{transform:translateX(2px)}
+.kn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.4}
+.kn .kw{font-size:.62rem;letter-spacing:.2em;margin-right:-.2em}
+.kn--hell{color:var(--night);background:linear-gradient(180deg,#fff,var(--sand-h) 55%,var(--sand));box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(73,32,45,.25),0 14px 24px -14px rgba(0,0,0,.7)}
+.kn--hell i{background:linear-gradient(180deg,#2A2226,var(--night));color:var(--sand)}
+.knr{display:flex;flex-wrap:wrap;gap:14px}
+
+/* Auftakt */
+.au{position:relative;min-height:max(100svh,760px);display:flex;align-items:center;padding:130px 0 90px}
+.au .in{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,72px);align-items:center}
+.au__k{margin-bottom:26px}
+.au__t{font:400 clamp(52px,7.6vw,118px)/.98 var(--serif);letter-spacing:-.01em;color:var(--salt);margin-bottom:30px}
+.au__t em{display:block;color:var(--sand)}
+.au__s{position:absolute;height:auto;max-width:none;transform:rotate(var(--r));pointer-events:none}
+.au__p{font-size:clamp(17px,1.4vw,20px);line-height:1.65;max-width:34em;color:rgba(245,245,245,.86);margin-bottom:38px}
+.au__feld{position:relative;width:100%;aspect-ratio:200/150}
+.au__fakt{position:absolute;left:0;right:0;bottom:0;border-top:1px solid var(--linie-d)}
+.au__fakt .in{display:flex;flex-wrap:wrap;gap:8px 40px;justify-content:space-between;padding-top:16px;padding-bottom:18px;font:400 .72rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(225,207,197,.75)}
+
+/* Abschnitte */
+.ab{padding:clamp(80px,9vw,140px) 0}
+.ab__kopf{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,72px)}
+.ab__kopf .kap{margin-bottom:18px}
+.t2{font:400 clamp(46px,6vw,92px)/1 var(--serif);color:var(--night)}
+.t2 em{color:var(--berry)}
+.dunkel .t2{color:var(--salt)}.dunkel .t2 em{color:var(--sand)}
+.ab__text{font-size:17px;max-width:36em;color:rgba(26,18,21,.78)}
+.dunkel .ab__text{color:rgba(245,245,245,.78)}
+
+/* Raster und Karton */
+.raster{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2vw,30px)}
+.st{min-width:0;display:flex;flex-direction:column}
+.st--breit{grid-column:span 2}
+.st__karton{position:relative;display:grid;place-items:center;aspect-ratio:1/1;border-radius:16px;
+  background:radial-gradient(120% 90% at 30% 20%,#E2D3CA,var(--karton) 55%,var(--karton-d));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(73,32,45,.12),0 18px 30px -24px rgba(18,10,14,.55)}
+.raster--3{grid-template-columns:repeat(3,minmax(0,1fr));--mm:4.3px}
+.raster--n,.raster--4{--mm:3.35px}
+.st__b{width:calc(var(--w) * var(--mm));height:auto;max-width:calc(88% * var(--k));max-height:calc(88% * var(--k));pointer-events:none;transition:transform .6s var(--e1)}
+.st__karton:hover .st__b{transform:translateY(-6px) rotate(-1.5deg)}
+figcaption{padding:16px 2px 0;font-size:13.5px;line-height:1.5}
+.st__kopf{display:flex;gap:12px;align-items:baseline;margin-bottom:4px}
+.st__nr{font:400 12px/1 var(--mono);letter-spacing:.08em;color:var(--berry)}
+.dunkel .st__nr{color:var(--sand)}
+.st__n{font-weight:500}
+.st__m{font:400 11px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.62}
+.st__v,.st__q{opacity:.78}
+.st__q{font-size:12.5px;opacity:.6}
+.st__pdf{display:inline-block;margin-top:8px;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:2px;opacity:.82}
+.st__pdf:hover{opacity:1}
+.st__lang{font-style:normal}
+.st--breit .st__karton{aspect-ratio:2/1}
+
+/* Druck */
+.dr .in{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.dr__text p{margin-bottom:18px;color:rgba(26,18,21,.8)}
+.dr__text .knr{margin-top:30px}
+.dr__tafel{position:relative;background:var(--weiss);border-radius:20px;padding:clamp(28px,4vw,56px);box-shadow:0 40px 60px -36px rgba(18,10,14,.5),0 10px 22px -12px rgba(18,10,14,.22)}
+.dr__bild{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(18px,3vw,40px);align-items:center}
+.dr__svg{display:block;width:clamp(170px,22vw,300px);height:auto}
+.dr__l{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.dr__l li{border-top:1px solid var(--linie-h);padding-top:12px}
+.dr__l b{display:block;font:500 .66rem/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase}
+.dr__l span{font-size:14px;color:rgba(26,18,21,.7)}
+.dr__l .ma b{color:#EC008C}
+.dr__boegen{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:clamp(24px,3vw,40px)}
+.dr__boegen a{display:block;border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--linie-h),0 14px 24px -18px rgba(18,10,14,.5);transition:transform .5s var(--e1)}
+.dr__boegen a:hover{transform:translateY(-3px)}
+
+/* Fuss */
+.fu{padding:56px 0 64px;color:rgba(245,245,245,.8)}
+.fu .in{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px 64px}
+.fu h3{font:400 30px/1.15 var(--serif);color:var(--salt);margin:0 0 14px}
+.fu p{font-size:14px;max-width:38em}
+.fu__w{display:flex;flex-wrap:wrap;gap:14px 28px;align-content:start;justify-content:flex-end;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.fu__w a{border-bottom:1px solid var(--linie-d);padding-bottom:3px}
+.fu__w a span{color:var(--sand)}
+
+@media (max-width:1180px){
+  .raster--3{--mm:3.6px}.raster--n,.raster--4{--mm:2.8px}
+}
+@media (max-width:900px){
+  .au{min-height:0;padding:120px 0 110px}
+  .au .in{grid-template-columns:1fr}
+  .ab__kopf{grid-template-columns:1fr}
+  .raster,.raster--3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dr .in{grid-template-columns:1fr}
+  .fu .in{grid-template-columns:1fr}.fu__w{justify-content:flex-start}
+  .raster--3,.raster--n,.raster--4{--mm:3px}
+}
+@media (max-width:600px){
+  .raster--3,.raster--n,.raster--4{--mm:2.3px}
+  .raster,.raster--3{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}
+  .st--breit .st__karton{aspect-ratio:2/1}
+  .st__karton{border-radius:12px}
+  figcaption{font-size:12.5px;padding-top:10px}
+  .st__kopf{gap:8px}
+  .st__m{font-size:9.5px;letter-spacing:.06em}
+  .st__lang{display:none}
+  .lt__k a.lt__l{display:none}
+  .lt__w{width:120px}
+  .kn{height:48px}
+  .dr__bild{grid-template-columns:1fr;justify-items:center}
+  .dr__l{width:100%}
+  .au__fakt .in{justify-content:flex-start;gap:6px 22px}
+}
+@media (prefers-reduced-motion:reduce){.st__b,.kn,.kn i{transition:none}}
+</style>
+</head>
+<body>
+<header class="lt">
+  <a class="lt__m" href="../../website/index.html" aria-label="Angelina Strelow, Website">
+    <img src="../../marke/zeichen/siegel-sand.svg" alt="" width="29" height="40" decoding="sync">
+    <img class="lt__w" src="../../marke/zeichen/wortmarke-salt.svg" alt="Angelina Strelow" width="150" height="33" decoding="sync">
+  </a>
+  <nav class="lt__k">
+    <a class="lt__l kw" href="#serie-1">Serien</a>
+    <a class="lt__l kw" href="#druck">Druck</a>
+  </nav>
+</header>
+
+<main>
+<section class="au dunkel tapete">
+  <div class="in">
+    <div>
+      <p class="kap kw au__k">Idee · Sticker für Angelina Strelow</p>
+      <h1 class="au__t">Deine Handschrift <em>zum Aufkleben.</em></h1>
+      <p class="au__p">Dreissig Sticker aus deinem Siegel, deiner Fliege und deinen eigenen Sätzen. Für das Geschenk an deine Gastgeber, den Hals der Flasche, den Umschlag mit dem Dank und deinen Laptop.</p>
+      <div class="knr">
+        <a class="kn kn--hell" href="pdf/angelina-strelow-sticker-druckbogen-a3.pdf" target="_blank" rel="noopener"><span class="kw">Druckbogen als PDF</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a>
+        <a class="kn " href="#serie-1"><span class="kw">Alle ansehen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></i></a>
+      </div>
+    </div>
+    <div class="au__feld" aria-hidden="true"><img class="au__s" src="img/schatten/13-d.webp" width="1220" height="836" alt="" decoding="sync" style="left:-4.00%;top:-3.00%;width:50.80%;--r:-4deg;--i:0"><img class="au__s" src="img/schatten/01-d.webp" width="788" height="980" alt="" decoding="sync" style="left:35.00%;top:-8.00%;width:32.80%;--r:6deg;--i:1"><img class="au__s" src="img/schatten/14-d.webp" width="932" height="933" alt="" decoding="sync" style="left:60.00%;top:-1.00%;width:38.80%;--r:-3deg;--i:2"><img class="au__s" src="img/schatten/07-d.webp" width="643" height="904" alt="" decoding="sync" style="left:-3.00%;top:32.00%;width:26.77%;--r:7deg;--i:3"><img class="au__s" src="img/schatten/30-d.webp" width="836" height="1029" alt="" decoding="sync" style="left:21.00%;top:25.00%;width:34.80%;--r:-5deg;--i:4"><img class="au__s" src="img/schatten/29-d.webp" width="884" height="884" alt="" decoding="sync" style="left:45.00%;top:29.00%;width:36.80%;--r:4deg;--i:5"><img class="au__s" src="img/schatten/04-d.webp" width="599" height="962" alt="" decoding="sync" style="left:78.00%;top:26.00%;width:24.93%;--r:11deg;--i:6"><img class="au__s" src="img/schatten/15-d.webp" width="1100" height="812" alt="" decoding="sync" style="left:57.00%;top:61.00%;width:45.80%;--r:3deg;--i:7"><img class="au__s" src="img/schatten/21-d.webp" width="1748" height="572" alt="" decoding="sync" style="left:-3.00%;top:75.00%;width:72.80%;--r:-2deg;--i:8"></div>
+  </div>
+  <div class="au__fakt"><div class="in"><span>30 Sticker</span><span>5 Serien</span><span>Originalgrösse, 2 mm Beschnitt</span><span>Stand 06.11.2026</span></div></div>
+</section>
+
+<section class="ab hell tap-h" id="serie-1"><div class="in"><div class="ab__kopf"><div><p class="kap kw">Serie 1 von 5 · 6 Sticker</p><h2 class="t2">Dein <em>Zeichen.</em></h2></div><p class="ab__text">Dein Siegel, die Fliege und deine Wortmarke, so wie sie in deinem Markenbuch stehen. Für den Umschlag mit dem Angebot und das Band am Geschenk.</p></div><div class="raster raster--3"><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-01-siegel.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 01 öffnen"><img class="st__b" src="img/schatten/01.webp" width="788" height="980" style="--w:65.60;--k:1.5769;" alt="Sticker 01: Siegel" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">01</b><span class="st__n">Siegel</span></div><p class="st__m">40 × 56 mm · Oval</p><p class="st__v">Für Umschlag mit Angebot oder Dank</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-01-siegel.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-02-siegel-in-berry.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 02 öffnen"><img class="st__b" src="img/schatten/02.webp" width="788" height="980" style="--w:65.60;--k:1.5769;" alt="Sticker 02: Siegel in Berry" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">02</b><span class="st__n">Siegel in Berry</span></div><p class="st__m">40 × 56 mm · Oval</p><p class="st__v">Für Geschenkpapier, Band</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-02-siegel-in-berry.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-03-wortmarke.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 03 öffnen"><img class="st__b" src="img/schatten/03.webp" width="1316" height="668" style="--w:109.60;--k:1.2804;" alt="Sticker 03: Wortmarke" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">03</b><span class="st__n">Wortmarke</span></div><p class="st__m">84 × 30 mm · Rechteck</p><p class="st__v">Für Mappe, Laptop</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-03-wortmarke.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-04-fliege.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 04 öffnen"><img class="st__b" src="img/schatten/04.webp" width="599" height="962" style="--w:49.85;--k:1.9284;" alt="Sticker 04: Fliege" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">04</b><span class="st__n">Fliege</span></div><p class="st__m">24,2 × 54,5 mm · Konturschnitt</p><p class="st__v">Für Handyhülle, Laptop</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-04-fliege.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-05-wortmarke-mit-siegel-rund.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 05 öffnen"><img class="st__b" src="img/schatten/05.webp" width="1028" height="1028" style="--w:85.60;--k:1.3896;" alt="Sticker 05: Wortmarke mit Siegel, rund" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">05</b><span class="st__n">Wortmarke mit Siegel, rund</span></div><p class="st__m">60 × 60 mm · Rund</p><p class="st__v">Für Gastgeschenk, Tüte</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-05-wortmarke-mit-siegel-rund.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-06-fliege-in-der-raute.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 06 öffnen"><img class="st__b" src="img/schatten/06.webp" width="980" height="981" style="--w:81.60;--k:1.4167;" alt="Sticker 06: Fliege in der Raute" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">06</b><span class="st__n">Fliege in der Raute</span></div><p class="st__m">56 × 56 mm · Raute</p><p class="st__v">Für Geschenk, Schachtel</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-06-fliege-in-der-raute.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure></div></div></section><section class="ab dunkel tapete" id="serie-2"><div class="in"><div class="ab__kopf"><div><p class="kap kw">Serie 2 von 5 · 6 Sticker</p><h2 class="t2">Der <em>Smoking.</em></h2></div><p class="ab__text">Was die Gäste an dir zuerst sehen: weisse Handschuhe, die Fliege in Berry, die feinen Linien deiner Kacheln und das Rautengitter aus der Fliege. Dazu ein Foto aus deinen eigenen Aufnahmen: das Einschenken mit Handschuh.</p></div><div class="raster raster--3"><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-07-der-weisse-handschuh.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 07 öffnen"><img class="st__b" src="img/schatten/07.webp" width="643" height="904" style="--w:53.55;--k:1.8122;" alt="Sticker 07: Der weisse Handschuh" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">07</b><span class="st__n">Der weisse Handschuh</span></div><p class="st__m">27,9 × 49,7 mm · Konturschnitt</p><p class="st__v">Für Laptop, Notizbuch</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-07-der-weisse-handschuh.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-08-du-darfst-loslassen.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 08 öffnen"><img class="st__b" src="img/schatten/08.webp" width="836" height="1052" style="--w:69.60;--k:1.5263;" alt="Sticker 08: Du darfst loslassen." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">08</b><span class="st__n">Du darfst loslassen.</span></div><p class="st__m">44 × 62 mm · Oval</p><p class="st__v">Für Dankeskarte, Umschlag</p><p class="st__q">Satz: Instagram 01.02.2026</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-08-du-darfst-loslassen.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-09-rautengitter-rund.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 09 öffnen"><img class="st__b" src="img/schatten/09.webp" width="908" height="909" style="--w:75.60;--k:1.4651;" alt="Sticker 09: Rautengitter, rund" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">09</b><span class="st__n">Rautengitter, rund</span></div><p class="st__m">50 × 50 mm · Rund</p><p class="st__v">Für Laptop, Handyhülle</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-09-rautengitter-rund.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-10-exklusiv-privat-massgeschneidert.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 10 öffnen"><img class="st__b" src="img/schatten/10.webp" width="1220" height="836" style="--w:101.60;--k:1.3093;" alt="Sticker 10: Exklusiv. Privat. Massgeschneidert." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">10</b><span class="st__n">Exklusiv. Privat. Massgeschneidert.</span></div><p class="st__m">76 × 44 mm · Rechteck</p><p class="st__v">Für Geschenkschachtel, Mappe</p><p class="st__q">Satz: Instagram 19.08.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-10-exklusiv-privat-massgeschneidert.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-11-praesent-souveraen-entspannt.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 11 öffnen"><img class="st__b" src="img/schatten/11.webp" width="1388" height="620" style="--w:115.60;--k:1.2620;" alt="Sticker 11: Präsent | Souverän | Entspannt" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">11</b><span class="st__n">Präsent | Souverän | Entspannt</span></div><p class="st__m">90 × 26 mm · Rechteck</p><p class="st__v">Für Laptop, Notizbuch</p><p class="st__q">Satz: Instagram-Profil, Leitsatz</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-11-praesent-souveraen-entspannt.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-12-foto-das-einschenken.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 12 öffnen"><img class="st__b" src="img/schatten/12.webp" width="836" height="1028" style="--w:69.60;--k:1.5263;" alt="Sticker 12: Foto: das Einschenken" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">12</b><span class="st__n">Foto: das Einschenken</span></div><p class="st__m">44 × 60 mm · Oval</p><p class="st__v">Für Laptop, Dankeskarte</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-12-foto-das-einschenken.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure></div></div></section><section class="ab hell tap-h" id="serie-3"><div class="in"><div class="ab__kopf"><div><p class="kap kw">Serie 3 von 5 · 8 Sticker</p><h2 class="t2">Deine <em>Sätze.</em></h2></div><p class="ab__text">Acht Sätze, wörtlich aus deinem Profil und deinen Beiträgen, die Fundstelle steht bei jedem. Nichts davon ist umgeschrieben, nur in deine Schrift gesetzt.</p></div><div class="raster raster--n"><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-13-du-laedst-ein-ich-fuehre-den-abend.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 13 öffnen"><img class="st__b" src="img/schatten/13.webp" width="1220" height="836" style="--w:101.60;--k:1.3093;" alt="Sticker 13: Du lädst ein. Ich führe den Abend." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">13</b><span class="st__n">Du lädst ein. Ich führe den Abend.</span></div><p class="st__m">76 × 44 mm · Rechteck</p><p class="st__v">Für Umschlag, Mappe, Laptop</p><p class="st__q">Satz: Instagram-Profil</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-13-du-laedst-ein-ich-fuehre-den-abend.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-14-dein-abend-mein-service.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 14 öffnen"><img class="st__b" src="img/schatten/14.webp" width="932" height="933" style="--w:77.60;--k:1.4478;" alt="Sticker 14: Dein Abend. Mein Service." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">14</b><span class="st__n">Dein Abend. Mein Service.</span></div><p class="st__m">52 × 52 mm · Rund</p><p class="st__v">Für Geschenk, Flasche, Laptop</p><p class="st__q">Satz: Instagram 16.07.2025, 25.01.2026, 13.08.2026</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-14-dein-abend-mein-service.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-15-du-darfst-selbst-gast-sein.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 15 öffnen"><img class="st__b" src="img/schatten/15.webp" width="1100" height="812" style="--w:91.60;--k:1.3550;" alt="Sticker 15: Du darfst selbst Gast sein." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">15</b><span class="st__n">Du darfst selbst Gast sein.</span></div><p class="st__m">66 × 42 mm · Oval</p><p class="st__v">Für Einladung, Umschlag</p><p class="st__q">Satz: Instagram 20.11.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-15-du-darfst-selbst-gast-sein.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-16-ich-uebernehme-den-ablauf-du-den-moment.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 16 öffnen"><img class="st__b" src="img/schatten/16.webp" width="1268" height="740" style="--w:105.60;--k:1.2941;" alt="Sticker 16: Ich übernehme den Ablauf. Du den Moment." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">16</b><span class="st__n">Ich übernehme den Ablauf. Du den Moment.</span></div><p class="st__m">80 × 36 mm · Rechteck</p><p class="st__v">Für Mappe, Notizbuch</p><p class="st__q">Satz: Instagram 14.01.2026</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-16-ich-uebernehme-den-ablauf-du-den-moment.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-17-der-gastgeber-der-sitzen-bleibt.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 17 öffnen"><img class="st__b" src="img/schatten/17.webp" width="1172" height="788" style="--w:97.60;--k:1.3261;" alt="Sticker 17: Der Gastgeber, der sitzen bleibt." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">17</b><span class="st__n">Der Gastgeber, der sitzen bleibt.</span></div><p class="st__m">72 × 40 mm · Rechteck</p><p class="st__v">Für Laptop, Geschenk</p><p class="st__q">Satz: Instagram 20.05.2026</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-17-der-gastgeber-der-sitzen-bleibt.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-18-stil-ist-kein-zufall-haltung-auch-nicht.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 18 öffnen"><img class="st__b" src="img/schatten/18.webp" width="1076" height="836" style="--w:89.60;--k:1.3659;" alt="Sticker 18: Stil ist kein Zufall. Haltung auch nicht." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">18</b><span class="st__n">Stil ist kein Zufall. Haltung auch nicht.</span></div><p class="st__m">64 × 44 mm · Facette</p><p class="st__v">Für Laptop, Notizbuch</p><p class="st__q">Satz: Instagram 16.04.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-18-stil-ist-kein-zufall-haltung-auch-nicht.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-19-exzellenz-liegt-im-detail.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 19 öffnen"><img class="st__b" src="img/schatten/19.webp" width="788" height="788" style="--w:65.60;--k:1.5769;" alt="Sticker 19: Exzellenz liegt im Detail." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">19</b><span class="st__n">Exzellenz liegt im Detail.</span></div><p class="st__m">40 × 40 mm · Rund</p><p class="st__v">Für Umschlag, kleine Schachtel</p><p class="st__q">Satz: Instagram 16.04.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-19-exzellenz-liegt-im-detail.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-20-kein-abend-wie-der-andere-kein-mensch-wie-du.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 20 öffnen"><img class="st__b" src="img/schatten/20.webp" width="884" height="1125" style="--w:73.60;--k:1.4839;" alt="Sticker 20: Kein Abend wie der andere. Kein Mensch wie du." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">20</b><span class="st__n">Kein Abend wie der andere. Kein Mensch wie du.</span></div><p class="st__m">48 × 68 mm · Rechteck</p><p class="st__v">Für Dankeskarte, Notizbuch</p><p class="st__q">Satz: Instagram 16.05.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-20-kein-abend-wie-der-andere-kein-mensch-wie-du.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure></div></div></section><section class="ab dunkel tapete" id="serie-4"><div class="in"><div class="ab__kopf"><div><p class="kap kw">Serie 4 von 5 · 6 Sticker</p><h2 class="t2">Für den <em>Abend.</em></h2></div><p class="ab__text">Banderolen für den Flaschenhals und Siegel für Geschenk und Umschlag. Klein genug, dass sie neben deinen Tischkarten ruhig bleiben.</p></div><div class="raster raster--4"><figure class="st st--breit"><a class="st__karton" href="pdf/angelina-strelow-sticker-21-flaschenhals-der-wein-wird-nachgeschenkt.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 21 öffnen"><img class="st__b" src="img/schatten/21.webp" width="1748" height="572" style="--w:145.60;--k:1.1974;" alt="Sticker 21: Flaschenhals: Der Wein wird nachgeschenkt." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">21</b><span class="st__n">Flaschenhals: Der Wein wird nachgeschenkt.</span></div><p class="st__m">120 × 22 mm · Banderole</p><p class="st__v">Für Banderole um den Flaschenhals</p><p class="st__q">Satz: Instagram 27.04.2026</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-21-flaschenhals-der-wein-wird-nachgeschenkt.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st st--breit"><a class="st__karton" href="pdf/angelina-strelow-sticker-22-flaschenhals-vom-ersten-begruessungslaecheln.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 22 öffnen"><img class="st__b" src="img/schatten/22.webp" width="1988" height="572" style="--w:165.60;--k:1.1695;" alt="Sticker 22: Flaschenhals: Vom ersten Begrüssungslächeln …" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">22</b><span class="st__n">Flaschenhals: Vom ersten Begrüssungslächeln …</span></div><p class="st__m">140 × 22 mm · Banderole</p><p class="st__v">Für Banderole um die Flasche als Gastgeschenk</p><p class="st__q">Satz: Instagram 21.10.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-22-flaschenhals-vom-ersten-begruessungslaecheln.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-23-geschenksiegel-zeit-miteinander.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 23 öffnen"><img class="st__b" src="img/schatten/23.webp" width="956" height="956" style="--w:79.60;--k:1.4317;" alt="Sticker 23: Geschenksiegel: Zeit miteinander …" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">23</b><span class="st__n">Geschenksiegel: Zeit miteinander …</span></div><p class="st__m">54 × 54 mm · Rund</p><p class="st__v">Für Geschenk, Geschenkband</p><p class="st__q">Satz: Instagram 04.05.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-23-geschenksiegel-zeit-miteinander.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-24-umschlagsiegel-mit-liebe-zum-detail.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 24 öffnen"><img class="st__b" src="img/schatten/24.webp" width="692" height="692" style="--w:57.60;--k:1.7143;" alt="Sticker 24: Umschlagsiegel: Mit Liebe zum Detail." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">24</b><span class="st__n">Umschlagsiegel: Mit Liebe zum Detail.</span></div><p class="st__m">32 × 32 mm · Rund</p><p class="st__v">Für Umschlagklappe</p><p class="st__q">Satz: Instagram 12.05.2025 und 19.05.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-24-umschlagsiegel-mit-liebe-zum-detail.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-25-gastgeschenk-fuer-momente-die-bleiben.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 25 öffnen"><img class="st__b" src="img/schatten/25.webp" width="1148" height="621" style="--w:95.60;--k:1.3352;" alt="Sticker 25: Gastgeschenk: Für Momente, die bleiben." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">25</b><span class="st__n">Gastgeschenk: Für Momente, die bleiben.</span></div><p class="st__m">70 × 26 mm · Rechteck</p><p class="st__v">Für Gastgeschenk, Tüte, Schachtel</p><p class="st__q">Satz: Instagram 11.06.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-25-gastgeschenk-fuer-momente-die-bleiben.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-26-umschlagband-ein-tisch-ein-moment-ein-miteinander.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 26 öffnen"><img class="st__b" src="img/schatten/26.webp" width="1508" height="500" style="--w:125.60;--k:1.2362;" alt="Sticker 26: Umschlagband: Ein Tisch. Ein Moment. Ein Miteinander." decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">26</b><span class="st__n">Umschlagband: Ein Tisch. Ein Moment. Ein Miteinander.</span></div><p class="st__m">100 × 16 mm · Band</p><p class="st__v">Für quer über die Umschlagklappe</p><p class="st__q">Satz: Instagram 12.05.2025</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-26-umschlagband-ein-tisch-ein-moment-ein-miteinander.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure></div></div></section><section class="ab hell tap-h" id="serie-5"><div class="in"><div class="ab__kopf"><div><p class="kap kw">Serie 5 von 5 · 4 Sticker</p><h2 class="t2">Für <em>unterwegs.</em></h2></div><p class="ab__text">Für Laptop, Handyhülle und Notizbuch. Zwei Codes führen zu deinem Profil und zum Kennenlernen bei einem virtuellen Kaffee, beide zurückgelesen.</p></div><div class="raster raster--n"><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-27-code-instagram.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 27 öffnen"><img class="st__b" src="img/schatten/27.webp" width="860" height="1052" style="--w:71.60;--k:1.5042;" alt="Sticker 27: Code: Instagram" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">27</b><span class="st__n">Code: Instagram</span></div><p class="st__m">46 × 62 mm · Rechteck</p><p class="st__v">Für Laptop, Handyhülle, Mappe</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-27-code-instagram.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-28-code-kennenlernen.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 28 öffnen"><img class="st__b" src="img/schatten/28.webp" width="860" height="1052" style="--w:71.60;--k:1.5042;" alt="Sticker 28: Code: Kennenlernen" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">28</b><span class="st__n">Code: Kennenlernen</span></div><p class="st__m">46 × 62 mm · Rechteck</p><p class="st__v">Für Laptop, Mappe, Visitenmappe</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-28-code-kennenlernen.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-29-koeln-rund.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 29 öffnen"><img class="st__b" src="img/schatten/29.webp" width="884" height="884" style="--w:73.60;--k:1.4839;" alt="Sticker 29: Köln, rund" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">29</b><span class="st__n">Köln, rund</span></div><p class="st__m">48 × 48 mm · Rund</p><p class="st__v">Für Laptop, Koffer</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-29-koeln-rund.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure><figure class="st"><a class="st__karton" href="pdf/angelina-strelow-sticker-30-foto-das-glas-im-kerzenlicht.pdf" target="_blank" rel="noopener" aria-label="PDF von Sticker 30 öffnen"><img class="st__b" src="img/schatten/30.webp" width="836" height="1029" style="--w:69.60;--k:1.5263;" alt="Sticker 30: Foto: das Glas im Kerzenlicht" decoding="async"></a><figcaption><div class="st__kopf"><b class="st__nr">30</b><span class="st__n">Foto: das Glas im Kerzenlicht</span></div><p class="st__m">44 × 60 mm · Rechteck</p><p class="st__v">Für Laptop, Notizbuch</p><a class="st__pdf" href="pdf/angelina-strelow-sticker-30-foto-das-glas-im-kerzenlicht.pdf" target="_blank" rel="noopener">PDF<em class="st__lang"> in Originalgrösse</em> <span>↗</span></a></figcaption></figure></div></div></section>
+
+<section class="ab hell dr" id="druck">
+  <div class="in">
+    <div class="dr__text">
+      <p class="kap kw" style="margin-bottom:18px">Für die Druckerei</p>
+      <h2 class="t2" style="margin-bottom:30px">Fertig zum <em>Drucken.</em></h2>
+      <p>Jeder Sticker liegt als PDF in Originalgrösse bereit, mit 2 mm Beschnitt rundum und der Schnittlinie in Magenta. Die Druckerei braucht nur diese Dateien.</p>
+      <p>Dazu zwei Bögen in A3, auf denen alle dreissig nebeneinander liegen. Ausdrucken, ausschneiden und an Geschenk, Umschlag und Flasche halten, bevor du bestellst.</p>
+      <div class="knr">
+        <a class="kn " href="pdf/angelina-strelow-sticker-druckbogen-a3.pdf" target="_blank" rel="noopener"><span class="kw">Druckbogen als PDF</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a>
+        <a class="kn kn--hell" href="pdf/angelina-strelow-sticker-alle-einzeln.pdf" target="_blank" rel="noopener"><span class="kw">Alle einzeln als PDF</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="dr__tafel">
+        <div class="dr__bild">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.400 -2.400 56.800 56.800" class="dr__svg" role="img" aria-label="Sticker 14 mit Beschnitt und Schnittlinie"><defs></defs><path d="M-2.400,26.000 A28.400,28.400 0 1 1 54.400,26.000 A28.400,28.400 0 1 1 -2.400,26.000Z" fill="#49202D"/><ellipse cx="26.000" cy="26.000" rx="23.600" ry="23.600" fill="none" stroke="#E1CFC5" stroke-width="0.3" stroke-opacity="1"/><ellipse cx="26.000" cy="26.000" rx="22.600" ry="22.600" fill="none" stroke="#E1CFC5" stroke-width="0.12" stroke-opacity="1"/><svg x="24.699" y="9.300" width="2.602" height="6.600" viewBox="5 48 427 1083" fill="#E1CFC5" fill-opacity="1" overflow="visible"><g transform="translate(0.000000,1162.000000) scale(0.100000,-0.100000)"><path d="M2125 11066 c-40 -18 -139 -108 -264 -240 -56 -59 -436 -441 -844
+-850 -701 -702 -856 -861 -884 -910 -37 -63 -4 -255 63 -372 44 -76 55 -110
+88 -257 9 -38 32 -104 51 -147 19 -43 49 -131 66 -197 20 -78 46 -146 75 -201
+26 -49 55 -124 70 -179 28 -110 25 -102 75 -168 45 -60 54 -81 78 -195 12 -51
+35 -118 56 -158 25 -47 47 -111 65 -194 19 -83 43 -155 73 -218 25 -52 57
+-142 71 -200 22 -88 34 -117 76 -177 84 -120 84 -124 85 -668 0 -555 -3 -579
+-84 -689 -41 -55 -52 -81 -75 -171 -15 -59 -42 -137 -60 -173 -39 -80 -68
+-165 -96 -287 -12 -49 -36 -121 -55 -160 -19 -38 -45 -113 -58 -165 -25 -102
+-36 -127 -89 -205 -20 -30 -43 -86 -57 -135 -12 -47 -42 -121 -66 -166 -30
+-54 -59 -132 -89 -241 -25 -88 -59 -189 -76 -224 -17 -37 -35 -102 -44 -154
+-18 -112 -19 -116 -72 -195 -50 -74 -84 -188 -87 -285 -3 -95 24 -137 198
+-312 82 -84 159 -163 170 -175 11 -11 110 -109 220 -217 110 -108 239 -236
+286 -286 46 -49 268 -272 492 -495 225 -223 438 -438 474 -477 159 -177 285
+-195 390 -56 15 20 136 142 268 272 132 130 263 260 290 289 28 29 128 131
+224 225 95 95 183 183 195 197 11 14 42 45 69 70 73 68 244 238 418 416 86 87
+207 209 270 270 117 114 179 205 179 261 0 51 -79 300 -122 387 -16 32 -38 99
+-49 150 -27 126 -46 180 -90 261 -21 39 -51 117 -68 173 -16 57 -42 122 -58
+144 -58 83 -72 115 -88 208 -11 64 -30 125 -59 190 -24 52 -55 145 -70 205
+-15 61 -47 153 -71 205 -24 52 -55 134 -69 182 -27 95 -55 157 -81 178 -27 23
+-45 67 -66 163 -15 68 -30 108 -59 152 -68 105 -64 74 -68 617 -4 551 -1 580
+54 672 34 57 49 100 90 245 10 35 30 80 45 101 41 56 58 93 84 186 14 46 44
+121 66 166 26 52 54 132 76 218 19 78 50 169 74 217 25 53 47 117 60 185 11
+57 28 115 37 129 10 14 31 47 49 74 20 30 38 76 49 124 10 45 37 114 66 171
+47 90 81 188 113 326 8 35 32 105 54 156 43 100 91 280 91 338 -1 98 -2 99
+-1094 1192 -958 958 -927 931 -1031 884z m129 -291 c58 -35 92 -66 291 -266
+323 -325 414 -414 452 -440 23 -16 52 -44 65 -62 12 -17 51 -63 85 -100 35
+-38 63 -72 63 -76 0 -4 48 -49 106 -101 58 -52 138 -125 177 -162 39 -38 74
+-68 78 -68 5 0 23 -21 40 -47 33 -49 152 -170 319 -326 127 -117 127 -180 1
+-285 -31 -26 -110 -99 -176 -163 -219 -212 -139 -255 -855 462 -706 707 -688
+693 -820 590 -110 -85 -249 -214 -282 -261 -39 -55 -283 -297 -355 -352 -29
+-22 -53 -44 -53 -48 0 -16 -325 -344 -367 -371 -18 -11 -49 -43 -69 -71 -80
+-109 -186 -116 -264 -18 -18 22 -51 54 -74 70 -70 50 -222 203 -245 247 -46
+92 -41 103 137 270 86 81 180 172 207 201 81 86 231 237 385 387 79 77 161
+162 182 189 22 27 78 85 126 129 176 162 280 264 339 332 81 94 280 289 327
+322 95 64 103 64 180 18z m-11 -1271 c18 -9 190 -175 382 -369 193 -193 395
+-394 450 -447 149 -142 263 -273 276 -318 22 -72 -28 -140 -103 -140 -82 0
+-107 19 -356 275 -277 283 -603 598 -641 617 -107 55 -130 37 -628 -467 -465
+-471 -442 -452 -542 -425 -80 21 -115 91 -78 156 15 27 290 308 497 509 86 83
+252 248 370 369 267 272 286 284 373 240z m17 -665 c72 -46 343 -303 395 -375
+39 -55 274 -274 348 -325 111 -77 102 -125 -51 -271 -135 -130 -281 -276 -353
+-353 -72 -78 -336 -326 -363 -342 -71 -41 -170 32 -458 338 -129 138 -131 139
+-292 292 -205 194 -225 236 -145 306 196 171 331 300 429 411 132 149 331 330
+390 353 22 8 49 -1 100 -34z m1618 -351 c24 -24 14 -84 -23 -130 -51 -64 -60
+-84 -89 -193 -15 -55 -47 -143 -72 -196 -29 -63 -54 -140 -73 -220 -20 -88
+-39 -146 -68 -200 -26 -48 -49 -112 -63 -172 -17 -79 -30 -109 -70 -169 -40
+-58 -54 -93 -74 -170 -23 -96 -36 -126 -90 -220 -15 -25 -42 -108 -61 -184
+-38 -149 -90 -262 -138 -298 -33 -24 -1628 -40 -1708 -17 -49 15 -73 44 -103
+129 -14 41 -37 93 -50 115 -24 41 -33 66 -75 213 -12 42 -35 89 -56 117 -48
+63 -61 97 -85 218 -13 71 -30 119 -54 163 -23 41 -45 105 -65 189 -22 90 -44
+153 -76 215 -24 48 -52 116 -60 152 -33 136 -39 154 -83 213 -54 74 -64 96
+-96 224 -38 148 -39 144 35 127 81 -19 77 -16 185 -134 53 -57 112 -116 132
+-132 20 -17 49 -49 64 -73 15 -24 44 -56 65 -72 20 -15 80 -73 133 -128 52
+-55 113 -116 134 -135 22 -19 51 -48 65 -63 33 -36 240 -242 283 -283 71 -66
+296 -301 313 -327 10 -16 45 -47 77 -70 33 -23 73 -52 90 -64 57 -42 160 -1
+233 91 17 21 53 60 80 87 28 26 64 62 80 80 17 17 47 48 68 68 21 20 117 116
+215 213 97 98 186 187 197 198 11 11 65 64 120 118 55 54 136 138 180 186 95
+103 110 118 285 285 74 70 145 133 157 140 13 6 32 31 44 54 35 69 65 87 97
+55z m-860 -2421 c47 -45 52 -81 51 -353 0 -403 102 -358 -822 -362 -1007 -3
+-919 -35 -929 335 -8 309 4 354 107 399 70 31 1559 13 1593 -19z m29 -933 c39
+-28 114 -182 137 -279 28 -120 54 -194 90 -255 39 -65 48 -89 76 -197 15 -55
+37 -107 70 -158 36 -57 53 -99 70 -168 12 -51 40 -127 61 -170 24 -48 50 -125
+68 -202 19 -77 49 -164 80 -233 27 -60 59 -146 71 -192 28 -108 41 -139 77
+-181 52 -58 51 -119 0 -119 -28 0 -38 7 -66 48 -13 18 -40 43 -60 56 -41 26
+-171 157 -209 211 -14 19 -47 49 -73 65 -26 16 -61 48 -77 72 -16 24 -79 91
+-138 150 -60 58 -128 126 -150 150 -23 24 -61 61 -84 83 -23 22 -90 90 -149
+150 -59 61 -152 154 -206 208 -55 54 -119 117 -142 140 -314 312 -318 312
+-563 60 -58 -59 -188 -189 -290 -289 -102 -100 -193 -190 -203 -200 -15 -16
+-338 -341 -413 -414 -32 -32 -178 -192 -268 -293 -77 -87 -94 -98 -181 -121
+-72 -19 -67 -30 -39 89 40 167 52 200 103 268 38 53 53 85 75 164 15 54 46
+139 70 188 27 55 58 143 79 226 20 75 49 164 67 198 17 34 42 112 55 172 27
+120 30 129 87 209 29 42 44 79 64 160 17 72 38 126 64 170 21 36 50 96 63 133
+29 79 48 104 91 116 74 22 1662 8 1693 -15z m-828 -838 c15 -8 67 -56 116
+-107 48 -51 111 -111 140 -134 28 -22 108 -101 177 -175 178 -192 203 -216
+301 -299 163 -137 160 -159 -35 -341 -131 -122 -224 -213 -355 -350 -318 -331
+-367 -359 -473 -267 -115 98 -234 210 -271 256 -44 54 -148 160 -348 355 -205
+200 -205 198 -92 312 126 128 250 244 260 244 5 0 27 24 48 53 48 66 411 424
+464 458 20 12 36 11 68 -5z m-1031 -1077 c17 -6 47 -31 68 -56 42 -51 206
+-213 229 -226 9 -5 28 -26 43 -46 16 -21 113 -121 217 -222 105 -101 205 -203
+223 -226 46 -60 171 -143 215 -143 47 0 148 73 192 137 19 28 49 61 67 74 35
+24 116 101 268 255 52 53 144 144 204 203 61 58 139 136 175 172 79 79 141
+102 204 75 99 -41 84 -153 -37 -271 -34 -33 -103 -103 -154 -155 -50 -52 -132
+-133 -182 -180 -50 -47 -103 -98 -118 -114 -139 -153 -205 -220 -249 -255 -28
+-22 -55 -47 -60 -55 -4 -7 -33 -34 -63 -59 -31 -24 -68 -63 -84 -85 -37 -55
+-119 -107 -166 -107 -53 0 -109 45 -310 249 -96 98 -191 192 -210 209 -19 18
+-51 50 -70 72 -19 22 -78 80 -130 130 -52 49 -158 153 -235 230 -78 77 -158
+155 -178 172 -127 113 -22 279 141 222z m2546 -421 c72 -73 155 -153 185 -177
+171 -141 161 -171 -158 -456 -49 -44 -103 -98 -119 -120 -17 -22 -73 -81 -124
+-132 -114 -112 -406 -406 -469 -470 -25 -27 -80 -79 -122 -118 -135 -122 -237
+-225 -263 -263 -13 -20 -68 -77 -122 -127 -53 -49 -124 -118 -158 -151 -72
+-73 -179 -154 -203 -154 -31 0 -152 103 -313 265 -193 195 -345 347 -480 481
+-57 56 -151 151 -210 210 -59 60 -131 132 -160 159 -73 69 -245 250 -288 302
+-19 23 -58 59 -86 80 -28 21 -66 54 -85 73 -19 19 -50 49 -69 65 -71 62 -150
+165 -150 195 0 36 62 112 188 230 121 114 172 163 204 200 29 33 93 41 133 17
+26 -16 278 -260 378 -367 44 -47 168 -171 276 -276 108 -105 207 -203 221
+-218 333 -359 418 -417 526 -358 30 16 558 535 1014 997 300 303 271 296 454
+113z"/></g></svg><text class="t" x="26.000" y="26.400" font-family="'Della Respira'" font-size="5.600" font-weight="400" fill="#F5F5F5" text-anchor="middle" letter-spacing="0.000">Dein Abend.</text><text class="t" x="26.000" y="33.600" font-family="'Della Respira'" font-size="5.600" font-weight="400" fill="#E1CFC5" text-anchor="middle" letter-spacing="0.000">Mein Service.</text><path id="schnitt" d="M0.000,26.000 A26.000,26.000 0 1 1 52.000,26.000 A26.000,26.000 0 1 1 0.000,26.000Z" fill="none" stroke="#EC008C" stroke-width="0.12"/></svg>
+          <ul class="dr__l">
+            <li class="ma"><b>Schnittlinie</b><span>Magenta, folgt der Form</span></li>
+            <li><b>2 mm Beschnitt</b><span>Farbe läuft über die Kante hinaus</span></li>
+            <li><b>52 × 52 mm</b><span>Sticker 14, Dein Abend. Mein Service.</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dr__boegen">
+        <a href="pdf/angelina-strelow-sticker-druckbogen-a3.pdf" target="_blank" rel="noopener" aria-label="Druckbogen 1 öffnen"><img src="img/bogen-1.webp" width="842" height="1191" alt="Druckbogen 1 in A3" decoding="async"></a>
+        <a href="pdf/angelina-strelow-sticker-druckbogen-a3.pdf" target="_blank" rel="noopener" aria-label="Druckbogen 2 öffnen"><img src="img/bogen-2.webp" width="842" height="1191" alt="Druckbogen 2 in A3" decoding="async"></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="fu tapete">
+  <div class="in">
+    <div>
+      <h3>Sticker zum Entwurf</h3>
+      <p>Ideen von Robert Reff, Tasty Studios. Die Sätze stammen wörtlich aus Angelinas Instagram-Profil und ihren Beiträgen, die Fundstelle steht bei jedem Sticker. Siegel, Fliege und Wortmarke kommen aus ihrem Markenbuch, die beiden Fotos aus ihren eigenen Aufnahmen vom Abend.</p>
+    </div>
+    <nav class="fu__w"><a href="../../werkbank/index.html">Werkbank <span>↗</span></a><a href="../drucksachen/index.html">Drucksachen <span>↗</span></a><a href="../mappen/index.html">Mappen <span>↗</span></a><a href="../mails/index.html">Mails <span>↗</span></a><a href="../feed/index.html">Feed <span>↗</span></a><a href="../online/index.html">Online <span>↗</span></a><a href="../../website/index.html">Website <span>↗</span></a></nav>
+  </div>
+</footer>
+<script>
+(function(){
+  var d=document.documentElement, imgs=[].slice.call(document.querySelectorAll('.au img, .lt img'));
+  function zeigen(){d.classList.remove('wartet')}
+  var offen=imgs.length; if(!offen) return zeigen();
+  function fertig(){if(--offen<=0) zeigen()}
+  imgs.forEach(function(i){ if(i.complete) fertig(); else {i.addEventListener('load',fertig);i.addEventListener('error',fertig)} });
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){});
+})();
+</script>
+</body>
+</html>

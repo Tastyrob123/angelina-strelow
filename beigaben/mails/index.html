@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="de" class="wartet">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mails · Angelina Strelow · Exklusive Gastgeberin</title>
+<link rel="preload" href="schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="schrift/Montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url(schrift/DellaRespira.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url(schrift/Montserrat-300.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url(schrift/Montserrat-400.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500;font-display:block;src:url(schrift/Montserrat-500.woff2) format('woff2')}
+:root{--night:#0C0A0B;--berry:#49202D;--berry-h:#6A3444;--sand:#E1CFC5;--sand-h:#EFE5DF;--salt:#F5F5F5;--olive:#8C8F71;--papier:#F4EFEC;--creme:#FBF8F6;--tinte:#1A1215;
+  --serif:'Della Respira',Georgia,serif;--sans:'Montserrat',system-ui,-apple-system,sans-serif;--rand:clamp(16px,4.4vw,84px);--e1:cubic-bezier(.16,1,.3,1);
+  --kb:min(600px,calc(100vw - 2*var(--rand)))}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--papier);-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--papier);color:var(--tinte);font:300 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+html.wartet body{visibility:hidden;animation:zeig 0s 3s forwards}
+@keyframes zeig{to{visibility:visible}}
+h1,h2,p,dl,dd{margin:0}
+a{color:inherit}
+em{font-style:normal}
+.kw{text-transform:uppercase;letter-spacing:.3em;font-weight:500;font-size:.64rem}
+
+/* Auftakt: Night mit ihrer Rautengitter-Tapete und Rahmenlinie */
+.at{position:relative;background:var(--night) url(../../marke/zeichen/tapete-dunkel-a.svg) 50% 0/224px auto;color:var(--salt);padding:clamp(56px,6vw,92px) var(--rand) clamp(60px,6.4vw,96px);overflow:hidden}
+.at::before{content:'';position:absolute;inset:0;background:rgba(12,10,11,.62)}
+.at::after{content:'';position:absolute;inset:clamp(10px,1.4vw,20px);border:1px solid rgba(225,207,197,.26);box-shadow:0 0 0 5px var(--night),0 0 0 6px rgba(225,207,197,.14);pointer-events:none}
+.at>*{position:relative}
+.at__sg{width:clamp(40px,3.4vw,52px);height:auto;margin:0 auto 22px;display:block}
+.at__k{text-align:center;color:var(--sand)}
+.at h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,9.4vw,8.4rem);line-height:.98;text-align:center;margin-top:18px}
+.at h1 em{color:var(--sand);display:block}
+.at__s{max-width:46ch;margin:28px auto 0;text-align:center;font-size:clamp(1.05rem,1.4vw,1.3rem);line-height:1.65;color:rgba(245,245,245,.84)}
+.at__s2{max-width:60ch;margin:16px auto 0;text-align:center;font-size:clamp(.92rem,1vw,1rem);color:rgba(245,245,245,.6)}
+
+/* Band */
+.bd{padding:clamp(48px,6vw,84px) 0 clamp(40px,5vw,70px)}
+.bd__k{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:0 var(--rand);margin-bottom:clamp(22px,2.6vw,36px)}
+.bd__k h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.6vw,3.4rem);line-height:1.05}
+.bd__k h2 em{color:var(--berry)}
+.bd__p{display:flex;gap:10px;flex:none}
+.pf{width:52px;height:52px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;color:var(--berry);
+  background:linear-gradient(180deg,#fff,var(--sand-h) 55%,var(--sand));box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(73,32,45,.22),0 12px 20px -12px rgba(26,18,21,.6);transition:transform .5s var(--e1),opacity .3s}
+.pf:hover{transform:translateY(-2px)}.pf:disabled{opacity:.35;cursor:default;transform:none}
+.pf svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.4}.pf--l svg{transform:scaleX(-1)}
+.bd__s{display:flex;gap:clamp(18px,2.4vw,40px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:var(--rand);padding:6px var(--rand) 30px;align-items:flex-start;scrollbar-width:thin;scrollbar-color:rgba(73,32,45,.35) transparent;overscroll-behavior-x:contain}
+.ka{flex:none;width:var(--kb);scroll-snap-align:start}
+.ka__k{display:flex;gap:18px;align-items:flex-start;padding-bottom:14px;border-bottom:1px solid rgba(73,32,45,.22)}
+.ka__nr{font-family:var(--serif);font-size:clamp(2.6rem,3.4vw,3.4rem);line-height:.9;color:var(--berry)}
+.ka__t{font-family:var(--serif);font-weight:400;font-size:clamp(1.45rem,1.9vw,1.8rem);line-height:1.15}
+.ka__b{margin-top:6px;font-size:.88rem;line-height:1.5;color:#5F5257}
+.ka__b .kw{font-size:.56rem;color:var(--olive);margin-right:6px}
+.ka__i{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;padding:14px 0 20px;font-size:.92rem;line-height:1.6;color:#3B3035;min-height:11.5em}
+.ka__i dt{font-size:.56rem;color:var(--olive);padding-top:.4em}
+.ka__m{position:relative;border-radius:18px;overflow:hidden;background:var(--papier);box-shadow:0 34px 50px -34px rgba(18,10,14,.55),0 8px 20px -12px rgba(18,10,14,.22),0 0 0 1px rgba(73,32,45,.12);transition:height .7s var(--e1)}
+.ka__m iframe{display:block;width:100%;border:0;height:1400px;background:var(--papier)}
+.ka__m[data-zu]::after{content:'';position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(rgba(244,239,236,0),var(--papier));pointer-events:none}
+.ka__f{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 18px;margin-top:20px}
+.ka__l{font-size:.86rem;display:flex;gap:10px}.ka__l a{color:var(--berry);text-underline-offset:3px}.ka__l span{opacity:.4}
+
+/* Knopf mit Tiefe und rundem Pfeil-Knauf */
+.kn{position:relative;display:inline-flex;align-items:center;gap:18px;height:46px;padding:0 5px 0 20px;border-radius:999px;color:#fff;border:0;cursor:pointer;font:inherit;white-space:nowrap;
+  background:linear-gradient(180deg,var(--berry-h),var(--berry) 60%,#3A1823);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(0,0,0,.35),0 14px 24px -14px rgba(73,32,45,.8);transition:transform .5s var(--e1)}
+.kn:hover{transform:translateY(-2px)}.kn:active{transform:translateY(1px) scale(.985)}
+.kn .kw{font-size:.6rem;letter-spacing:.2em;margin-right:-.2em}
+.kn i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#fff,var(--sand));color:var(--berry);transition:transform .5s var(--e1)}
+.kn svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.4;transform:rotate(90deg);transition:transform .5s var(--e1)}
+.kn[aria-expanded="true"] svg{transform:rotate(-90deg)}
+
+/* Platzhalter */
+.ph{padding:0 var(--rand) clamp(70px,8vw,120px)}
+.ph__in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,70px)}
+.ph h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.4vw,3.2rem);line-height:1.05}
+.ph h2 em{color:var(--berry)}
+.ph p{margin-top:16px;color:#3B3035;max-width:42ch}
+.ph table{width:100%;border-collapse:collapse;font-size:.9rem}
+.ph td{padding:9px 0;border-bottom:1px solid rgba(73,32,45,.16);vertical-align:top}
+.ph td:first-child{width:42%;padding-right:14px}
+.ph code{font:400 .82rem/1.4 ui-monospace,Menlo,monospace;color:var(--berry);word-break:break-all}
+.fu{background:var(--night);color:rgba(245,245,245,.7);text-align:center;padding:44px var(--rand) 50px;font-size:.86rem}
+.fu img{width:160px;height:auto;margin:0 auto 12px;display:block}
+@media (max-width:800px){:root{--kb:calc(100vw - 2*var(--rand) - 28px)}.ph__in{grid-template-columns:1fr}.bd__p{display:none}.ka__i{min-height:0}}
+@media (prefers-reduced-motion:reduce){.ka__m,.kn,.pf{transition:none}}
+</style>
+</head>
+<body>
+<header class="at">
+  <img class="at__sg" src="../../marke/zeichen/siegel-sand.svg" alt="">
+  <p class="at__k kw">Beigaben · Mails</p>
+  <h1>Zehn Mails <em>in deinem Ton</em></h1>
+  <p class="at__s">Für die Momente rund um deinen Abend, die bisher keiner schreibt: vom ersten Kaffee bis zum Gast, der nach dir fragt.</p>
+  <p class="at__s2">Antwort auf die Anfrage, Angebot, Dank, Fragebogen und Wiedersehen schreiben deine Werkzeuge. Diese zehn knüpfen daran an und sagen nichts davon zweimal.</p>
+</header>
+<main>
+<section class="bd" aria-label="Die zehn Mails">
+  <div class="bd__k"><h2>Wisch dich <em>durch.</em></h2>
+    <div class="bd__p"><button class="pf pf--l" type="button" data-weg="-1" aria-label="Zurück"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button><button class="pf" type="button" data-weg="1" aria-label="Weiter"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></button></div></div>
+  <div class="bd__s" id="band">
+<article class="ka" data-nr="01">
+  <header class="ka__k">
+    <p class="ka__nr">01</p>
+    <div><h2 class="ka__t">Kennenlernen steht</h2><p class="ka__b"><span class="kw">Betreff</span> Unser Kaffee am Dienstag, 17. November, 10.00 Uhr</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Gleich nachdem jemand im Calendly einen Termin für den virtuellen Kaffee gebucht hat.</dd><dt class="kw">Warum</dt><dd>Das Werkzeug lädt zum Kaffee ein, aber nach der Buchung kommt bisher nur die nüchterne Bestätigung von Calendly; diese Mail ist der erste persönliche Gruss davor.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="01-kennenlernen/index.html" title="Kennenlernen steht" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="01-kennenlernen/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="01-kennenlernen/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="02">
+  <header class="ka__k">
+    <p class="ka__nr">02</p>
+    <div><h2 class="ka__t">Eine Woche vorher</h2><p class="ka__b"><span class="kw">Betreff</span> Noch eine Woche bis zu deinem Abend</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Sieben Tage vor dem Abend, mit dem Ablaufblatt aus dem Abendplan als Anhang.</dd><dt class="kw">Warum</dt><dd>Der Abendplan druckt das Ablaufblatt, Tischkarten und Begrüssung brauchen die Namen der Gäste; diese Mail bringt beides zum Gastgeber, ohne das Blatt noch einmal zu erzählen.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="02-eine-woche-vorher/index.html" title="Eine Woche vorher" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="02-eine-woche-vorher/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="02-eine-woche-vorher/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="03">
+  <header class="ka__k">
+    <p class="ka__nr">03</p>
+    <div><h2 class="ka__t">Am Tag davor</h2><p class="ka__b"><span class="kw">Betreff</span> Morgen Abend bin ich bei dir</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Am Vortag, am späten Nachmittag.</dd><dt class="kw">Warum</dt><dd>Zwischen Ablaufblatt und Abend fehlt der kurze Satz, der dem Gastgeber die letzte Nacht davor ruhig macht.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="03-am-tag-davor/index.html" title="Am Tag davor" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="03-am-tag-davor/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="03-am-tag-davor/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="04">
+  <header class="ka__k">
+    <p class="ka__nr">04</p>
+    <div><h2 class="ka__t">Gutschein bereit</h2><p class="ka__b"><span class="kw">Betreff</span> Dein Gutschein für Klara</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Wenn jemand einen Gutschein bestellt hat, mit dem «Gutschein zum Mailen» aus den Drucksachen als Anhang.</dd><dt class="kw">Warum</dt><dd>Für den Gutschein aus den Drucksachen gibt es in keinem Werkzeug eine Nachricht; diese geht an den, der schenkt.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="04-gutschein-bereit/index.html" title="Gutschein bereit" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="04-gutschein-bereit/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="04-gutschein-bereit/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="05">
+  <header class="ka__k">
+    <p class="ka__nr">05</p>
+    <div><h2 class="ka__t">Gutschein erhalten</h2><p class="ka__b"><span class="kw">Betreff</span> Jonas schenkt dir einen Abend</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Wenn Angelina den Gutschein im Auftrag des Schenkenden direkt an die beschenkte Person schickt.</dd><dt class="kw">Warum</dt><dd>Der Beschenkte kennt Angelina meist noch nicht; die Mail stellt sie vor und führt gleich zum Kaffee.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="05-gutschein-erhalten/index.html" title="Gutschein erhalten" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="05-gutschein-erhalten/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="05-gutschein-erhalten/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="06">
+  <header class="ka__k">
+    <p class="ka__nr">06</p>
+    <div><h2 class="ka__t">Ein Gast fragt nach dir</h2><p class="ka__b"><span class="kw">Betreff</span> Schön, dass du nach mir gefragt hast</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Wenn ein Gast eines Abends nach Angelina gefragt hat und der Gastgeber den Kontakt weitergegeben hat (Empfehlungen in «Nach dem Abend»).</dd><dt class="kw">Warum</dt><dd>Das Werkzeug «Nach dem Abend» hält Empfehlungen fest, schreibt aber den Gast selbst nicht an; ihre neuen Kunden kommen genau von diesen Tischen.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="06-empfehlung/index.html" title="Ein Gast fragt nach dir" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="06-empfehlung/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="06-empfehlung/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="07">
+  <header class="ka__k">
+    <p class="ka__nr">07</p>
+    <div><h2 class="ka__t">Bitte um eine Google-Bewertung</h2><p class="ka__b"><span class="kw">Betreff</span> Eine kleine Bitte zu deinem Abend</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Nachdem der Gastgeber den Fragebogen beantwortet hat, sobald ihr Google-Profil steht.</dd><dt class="kw">Warum</dt><dd>Der Fragebogen holt die Stimme für die Website; Google hat bis heute keinen Eintrag zu ihr, und genau dort sucht ein neuer Gastgeber zuerst.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="07-google-bewertung/index.html" title="Bitte um eine Google-Bewertung" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="07-google-bewertung/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="07-google-bewertung/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="08">
+  <header class="ka__k">
+    <p class="ka__nr">08</p>
+    <div><h2 class="ka__t">Rundbrief Advent</h2><p class="ka__b"><span class="kw">Betreff</span> Die Abende im Dezember</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Mitte Oktober an frühere Gastgeber und an alle, die nach ihr gefragt haben (mit Abmelde-Zeile).</dd><dt class="kw">Warum</dt><dd>Ihr einziger fotografierter Abend war ein Dezember-Abend; der Rundbrief zeigt ihn allen früheren Gastgebern auf einmal, statt der einzelnen Advents-Nachricht aus «Nach dem Abend».</dd></dl>
+  <div class="ka__m" data-zu><iframe src="08-advent/index.html" title="Rundbrief Advent" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="08-advent/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="08-advent/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="09">
+  <header class="ka__k">
+    <p class="ka__nr">09</p>
+    <div><h2 class="ka__t">Rundbrief Sommer</h2><p class="ka__b"><span class="kw">Betreff</span> Ein Sommerabend bei dir</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Im Mai an frühere Gastgeber und an alle, die nach ihr gefragt haben (mit Abmelde-Zeile).</dd><dt class="kw">Warum</dt><dd>Der Advent ist nur eine Jahreszeit; im Sommer feiern Gastgeber Geburtstage und Jubiläen, und die Mail hält Angelina auch dann im Gedächtnis.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="09-sommer/index.html" title="Rundbrief Sommer" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="09-sommer/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="09-sommer/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+<article class="ka" data-nr="10">
+  <header class="ka__k">
+    <p class="ka__nr">10</p>
+    <div><h2 class="ka__t">Vorstellung bei einem Partner</h2><p class="ka__b"><span class="kw">Betreff</span> Angelina Strelow, Exklusive Gastgeberin · eine Vorstellung</p></div>
+  </header>
+  <dl class="ka__i"><dt class="kw">Wann</dt><dd>Als erste Nachricht an einen möglichen Partner (Caterer, Koch, Weinhandel), mit der Partner-Mappe als Anhang.</dd><dt class="kw">Warum</dt><dd>Die Partner-Mappe braucht einen Weg zum Empfänger; die Mail stellt Angelina mit ihren belegten Abschlüssen vor und lässt die Mappe den Rest erzählen.</dd></dl>
+  <div class="ka__m" data-zu><iframe src="10-partner/index.html" title="Vorstellung bei einem Partner" scrolling="no" loading="eager"></iframe></div>
+  <div class="ka__f">
+    <button class="kn" type="button" data-auf><span class="kw">Ganze Mail</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></i></button>
+    <p class="ka__l"><a href="10-partner/index.html" target="_blank">Einzeln öffnen</a><span>·</span><a href="10-partner/template.html" target="_blank">Vorlage</a></p>
+  </div>
+</article>
+  </div>
+</section>
+<section class="ph" aria-label="Platzhalter">
+  <div class="ph__in">
+    <div><h2>Was du <em>einsetzt</em></h2>
+      <p>Jede Mail liegt zweimal im Ordner: «Einzeln öffnen» zeigt sie mit Beispielen, «Vorlage» mit Platzhaltern in doppelten geschweiften Klammern. Die Bilder liegen im Ordner «img» und reisen mit, sobald der Ordner online liegt.</p>
+      <p>Telefon und Anschrift stehen in keiner Mail, solange sie nicht bestätigt sind.</p></div>
+    <table><tr><td><code>{{asset_base}}</code></td><td>Adresse, unter der der Ordner «mails» liegt, ohne «/» am Ende.</td></tr><tr><td><code>{{website}}</code></td><td>Adresse ihrer Website, ohne «/» am Ende.</td></tr><tr><td><code>{{vorname}}</code></td><td>Vorname des Empfängers.</td></tr><tr><td><code>{{termin}}</code></td><td>Tag und Uhrzeit des Kaffees, ausgeschrieben.</td></tr><tr><td><code>{{wochentag}}</code></td><td>Wochentag des Kaffees.</td></tr><tr><td><code>{{datum}}</code></td><td>Tag des Abends, ausgeschrieben.</td></tr><tr><td><code>{{beginn}}</code></td><td>Uhrzeit, zu der die ersten Gäste kommen.</td></tr><tr><td><code>{{ankunft}}</code></td><td>Uhrzeit, zu der Angelina beim Gastgeber ist.</td></tr><tr><td><code>{{ort}}</code></td><td>Ort des Abends.</td></tr><tr><td><code>{{adresse}}</code></td><td>Adresse des Gastgebers.</td></tr><tr><td><code>{{frist}}</code></td><td>Bis wann die Gästeliste kommen soll (Wochentag).</td></tr><tr><td><code>{{beschenkt}}</code></td><td>Vorname der beschenkten Person.</td></tr><tr><td><code>{{von}}</code></td><td>Vorname der schenkenden Person.</td></tr><tr><td><code>{{nachricht}}</code></td><td>Zeilen der schenkenden Person.</td></tr><tr><td><code>{{gastgeber}}</code></td><td>Vorname des Gastgebers, bei dem der Gast war.</td></tr><tr><td><code>{{abend_datum}}</code></td><td>Tag dieses Abends.</td></tr><tr><td><code>{{bewertung_link}}</code></td><td>Adresse zum Schreiben einer Google-Bewertung (sobald das Profil steht).</td></tr><tr><td><code>{{abmelden}}</code></td><td>Adresse zum Abmelden (Rundbriefe).</td></tr></table>
+  </div>
+</section>
+</main>
+<footer class="fu"><img src="img/wortmarke-sand.png" alt="Angelina Strelow">Dein Abend. Mein Service.</footer>
+<script>
+(() => {
+  const band = document.getElementById('band'), karten = [...band.querySelectorAll('.ka')];
+  const hoehe = f => { try { return f.contentDocument.documentElement.scrollHeight; } catch (_) { return 1400; } };
+  const setzen = k => {
+    const f = k.querySelector('iframe'), m = k.querySelector('.ka__m'), auf = !m.hasAttribute('data-zu');
+    f.style.height = '0px'; const h = hoehe(f); f.style.height = h + 'px';
+    m.style.height = (auf ? h : Math.round(h / 2)) + 'px';
+  };
+  let fertig = 0;
+  const zeigen = () => document.documentElement.classList.remove('wartet');
+  karten.forEach((k, i) => {
+    const f = k.querySelector('iframe');
+    const bereit = () => { setzen(k); if (++fertig >= Math.min(3, karten.length)) zeigen(); };
+    if (f.contentDocument && f.contentDocument.readyState === 'complete' && f.contentDocument.body && f.contentDocument.body.childElementCount) bereit();
+    else f.addEventListener('load', bereit, { once: true });
+    k.querySelector('[data-auf]').addEventListener('click', ev => {
+      const m = k.querySelector('.ka__m'), b = ev.currentTarget, war = m.hasAttribute('data-zu');
+      m.toggleAttribute('data-zu', !war); b.setAttribute('aria-expanded', war); b.querySelector('.kw').textContent = war ? 'Zuklappen' : 'Ganze Mail';
+      setzen(k);
+      if (!war) k.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+    k.querySelector('[data-auf]').setAttribute('aria-expanded', 'false');
+  });
+  setTimeout(zeigen, 2500);
+  let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => karten.forEach(setzen), 150); });
+  const pf = [...document.querySelectorAll('[data-weg]')];
+  const pfeile = () => { pf[0].disabled = band.scrollLeft < 8; pf[1].disabled = band.scrollLeft > band.scrollWidth - band.clientWidth - 8; };
+  pf.forEach(b => b.addEventListener('click', () => { const w = karten[0].getBoundingClientRect().width + parseFloat(getComputedStyle(band).columnGap || 30); band.scrollBy({ left: +b.dataset.weg * w, behavior: 'smooth' }); }));
+  band.addEventListener('scroll', pfeile, { passive: true }); pfeile();
+})();
+</script>
+</body>
+</html>

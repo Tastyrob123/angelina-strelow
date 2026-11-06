@@ -1,0 +1,21 @@
+/* Der Abendplan · Fehlermelder (05.11.2026, Kopie aus der Pairing-Karte des Culinarium; dort 16.10.2026, R03, nach dem Fehlermelder von Le Bureau des Grand Beau-Rivage, studio/index.html dort).
+   Läuft als erstes Skript jeder Seite des Abendplans: Skriptfehler und unbehandelte Versprechen gehen in den Browser (localStorage «ap-fehler»,
+   die letzten 30) und an den Server (/angelina-strelow/werkzeuge/api/fehler → fehler.log im Datenordner, «Prüfung» zeigt beide). Netzfehler werden nie gemeldet, höchstens
+   20 je Seite, und scheitert die Meldung selbst, wird das nicht noch einmal gemeldet (Safari, 15.10.2026: eine Meldung meldete sich 9'969 Mal). */
+(function () {
+  var zahl = 0, still = false;
+  var api = '/angelina-strelow/werkzeuge/api/fehler';
+  function merk(t) {
+    t = String(t || 'Fehler');
+    if (still || ++zahl > 20 || /Load failed|access control|abort|NetworkError|Failed to fetch|Keine Verbindung/i.test(t)) return;
+    var e = { werkzeug: 'abendplan', zeit: new Date().toISOString(), text: t.slice(0, 500), seite: location.pathname.split('/').pop() || 'index.html' };
+    try { var a = JSON.parse(localStorage.getItem('ap-fehler') || '[]'); a.push(e); localStorage.setItem('ap-fehler', JSON.stringify(a.slice(-30))); } catch (x) { /* ohne Speicher */ }
+    try {
+      fetch(api, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(e), keepalive: true })
+        .then(function (r) { if (!r.ok) still = true; }, function () { still = true; });
+    } catch (x) { still = true; }
+  }
+  window.addEventListener('error', function (e) { if (e && e.message) merk(e.message + ' · ' + String(e.filename || '').split('/').pop() + ':' + (e.lineno || '')); });
+  window.addEventListener('unhandledrejection', function (e) { merk('Versprechen: ' + ((e.reason && e.reason.message) || e.reason)); });
+  window.apMerk = merk;
+})();

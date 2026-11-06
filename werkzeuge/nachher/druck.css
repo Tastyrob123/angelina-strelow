@@ -1,0 +1,238 @@
+/* Nach dem Abend · Papier der Unterlagen (Mappe A4, Karte A6 quer, Brief A4). Gestaltung 06.11.2026 nach ihren Mappen und Drucksachen
+   (beigaben/mappen/_bau/mappe.css, beigaben/drucksachen): Night mit ihrer Tapete für Deckblatt, Schluss und Kartenvorderseite, Salt für Inhalt;
+   Fotos gross und ungeschnitten mit ihrer feinen Rahmenlinie innen, Siegel und Logo im Original, Della Respira gross (eine Stärke), Lauf Montserrat 300/400/500.
+   Nie fett, nie kursiv. Sperrung höchstens .08em (pdftotext liest sonst Buchstabe für Buchstabe, Fehlerbuch 10a). --k (1 bis .72) setzt eine Seite enger, wenn sie sonst übersteht (DRUCK.einpassen).
+   Gilt für druck.html (Druck, PDF) und die Vorschau im Werkzeug. Schriften: im Werkzeug aus dem Kleid, auf der Druckseite aus druck-seite.css (nie zweimal anmelden, Prüfung 2, N4). */
+html{font-synthesis:none}em,i,cite,dfn,address,var{font-style:normal}
+.dr-seite{--dr-night:#0C0A0B;--dr-salt:#F5F5F5;--dr-sand:#E1CFC5;--dr-berry:#49202D;--dr-olive:#8C8F71;--dr-grau:#6E6467;--dr-linie:#A1948D;--dr-tinte:#1A1215;--k:1;
+  position:relative;overflow:hidden;background:var(--dr-salt);color:var(--dr-night);font-family:'Montserrat',system-ui,sans-serif;font-weight:400;font-style:normal;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;box-sizing:border-box;font-kerning:normal;
+  font-size:16px;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;text-align:left;text-rendering:auto;-webkit-font-smoothing:auto}   /* nichts vom Werkzeug erben: Vorschau = PDF (Prüfung 6, N10) */
+.dr-seite *{box-sizing:border-box}
+.dr-seite p,.dr-seite h1,.dr-seite h2,.dr-seite dd,.dr-seite figcaption{overflow-wrap:anywhere}
+.dr-a4{width:210mm;height:297mm}
+.dr-a6{width:148mm;height:105mm}
+.dr-hell{background:var(--dr-salt) url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg') 0 0/30mm auto}
+.dr-dunkel{background:var(--dr-night) url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-dunkel-a.svg') 0 0/30mm auto;color:var(--dr-salt)}
+/* Ihre Rahmenlinie: fein, innen um die Fläche */
+.dr-rahmen{position:absolute;inset:8mm;border:.25mm solid rgba(73,32,45,.5);pointer-events:none;z-index:3}
+.dr-dunkel .dr-rahmen{border-color:rgba(225,207,197,.42)}
+.dr-a6 .dr-rahmen{inset:4.5mm}
+.dr-koerper{position:absolute;left:22mm;right:22mm;top:22mm;bottom:24mm;display:flex;flex-direction:column}
+.dr-fuss{position:absolute;left:22mm;right:22mm;bottom:12.5mm;display:flex;justify-content:space-between;gap:6mm;font-weight:500;font-size:5.8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--dr-grau)}
+.dr-dunkel .dr-fuss{color:rgba(225,207,197,.7)}
+.dr-nr{white-space:nowrap}
+.dr-siegel{display:block;width:11mm;height:auto;margin:0 auto;flex:none}
+.dr-logo{display:block;width:44mm;height:auto;margin:0 auto;flex:none}
+h1,h2,.dr-gang__g,.dr-karte-satz,.dr-unterschrift,.dr-bildzeile,.dr-schluss__satz,.dr-satz,.dr-mono,.dr-koch{font-family:'Della Respira','Montserrat',serif;font-weight:400;font-style:normal;letter-spacing:0}
+.dr-seite h1,.dr-seite h2{margin:0;line-height:1.06;letter-spacing:-.005em;text-wrap:balance}
+.dr-etikett{margin:0;font-weight:500;font-size:6.6pt;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--dr-berry)}
+.dr-dunkel .dr-etikett{color:var(--dr-sand)}
+.dr-punkt{color:var(--dr-linie)}
+/* Fotos: ganz, nie beschnitten, nie breiter als ihre Auflösung trägt; innen die feine Linie wie auf ihren Kacheln */
+.dr-foto{position:relative;display:inline-block;margin:0;line-height:0;flex:none;max-width:100%}
+.dr-foto img{display:block;width:auto;height:auto;max-width:100%}
+.dr-foto::after{content:'';position:absolute;inset:2.8mm;border:.25mm solid rgba(245,245,245,.8);pointer-events:none}
+
+/* 1 Deckblatt */
+.dr-deck{display:flex;flex-direction:column;align-items:center;text-align:center;height:100%}
+.dr-foto--deck img{max-width:124mm;max-height:calc(150mm * var(--k))}
+.dr-deck__text{display:flex;flex-direction:column;align-items:center;margin:calc(9mm * var(--k)) 0 0;max-width:150mm}
+.dr-mono{margin:0 0 3mm;font-size:13pt;letter-spacing:.04em;color:var(--dr-sand)}
+.dr-deck h1{margin-top:3.4mm;font-size:calc(34pt * var(--k));color:var(--dr-salt)}
+.dr-wann{margin:3.6mm 0 0;font-weight:300;font-size:10pt;line-height:1.5;color:rgba(245,245,245,.82)}
+.dr-kurz{margin:2mm 0 0;font-weight:300;font-size:9pt;line-height:1.5;color:rgba(225,207,197,.86)}
+.dr-satz{margin:calc(6mm * var(--k)) 0 0;max-width:118mm;font-size:13.5pt;line-height:1.42;color:var(--dr-sand);text-wrap:balance}
+.dr-deck .dr-logo{margin-top:auto;width:40mm}
+.dr-deck--ohne{justify-content:center}
+.dr-deck--ohne .dr-siegel{width:15mm;margin:0 auto auto}
+.dr-deck--ohne h1{font-size:calc(44pt * var(--k))}
+.dr-deck--ohne .dr-deck__text{margin:0}
+.dr-deck--ohne .dr-logo{margin-top:auto}
+
+/* 2 Menü und Weine: gesetzte Folge, mittig, ihre Raute zwischen den Gängen */
+.dr-menue{display:flex;flex-direction:column;align-items:center;text-align:center;height:100%}
+.dr-menue .dr-siegel{width:10mm;margin-bottom:calc(6mm * var(--k))}
+.dr-menue h2{margin-top:3mm;font-size:calc(34pt * var(--k));color:var(--dr-night)}
+.dr-menue h2::after{content:'';display:block;width:14mm;height:.35mm;margin:calc(6mm * var(--k)) auto 0;background:var(--dr-berry)}
+.dr-gaenge{flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:138mm;padding:calc(8mm * var(--k)) 0 calc(4mm * var(--k))}
+.dr-gang{width:100%;break-inside:avoid}
+.dr-gang+.dr-gang::before{content:'';display:block;width:2.1mm;height:2.1mm;margin:calc(5.4mm * var(--k)) auto;background:var(--dr-berry);transform:rotate(45deg)}
+.dr-gang__n{margin:0 0 calc(1.8mm * var(--k));font-weight:500;font-size:6.4pt;letter-spacing:.08em;text-transform:uppercase;color:var(--dr-olive)}
+.dr-gang__g{margin:0;font-size:calc(18.5pt * var(--k));line-height:1.18;color:var(--dr-night);text-wrap:balance}
+.dr-gang__b{margin:calc(1.6mm * var(--k)) auto 0;max-width:112mm;font-weight:300;font-size:calc(9.4pt * var(--k));line-height:1.5;color:var(--dr-grau);text-wrap:balance}
+.dr-wein{margin:calc(2.2mm * var(--k)) 0 0;font-size:calc(8.8pt * var(--k));line-height:1.45;color:var(--dr-berry)}
+.dr-wein span{color:var(--dr-grau);font-weight:300}
+.dr-gang--empfang .dr-wein,.dr-gang--aus .dr-wein{font-family:'Della Respira','Montserrat',serif;font-size:calc(14pt * var(--k));color:var(--dr-night)}
+.dr-gang--empfang .dr-wein span,.dr-gang--aus .dr-wein span{font-family:'Montserrat',system-ui,sans-serif;font-size:calc(8.6pt * var(--k))}
+.dr-gaeste{width:100%;margin-top:calc(10mm * var(--k));padding-top:calc(6mm * var(--k));border-top:.25mm solid var(--dr-linie);break-inside:avoid}
+.dr-gaeste__namen{margin:0 auto;max-width:132mm;font-weight:300;font-size:calc(9pt * var(--k));line-height:1.75;color:var(--dr-night);text-wrap:balance}
+.dr-koch{margin:0;padding-top:calc(7mm * var(--k));font-size:calc(14pt * var(--k));color:var(--dr-berry)}
+
+/* 3 Bilder des Abends: eine oder zwei Fotos je Seite, gross, gegeneinander versetzt */
+.dr-galerie{display:flex;flex-direction:column;height:100%}
+.dr-galerie__kopf h2{margin-top:3mm;font-size:30pt;color:var(--dr-night)}
+.dr-galerie__kopf h2::after{content:'';display:block;width:14mm;height:.35mm;margin-top:5mm;background:var(--dr-berry)}
+.dr-galerie__mitte{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6mm;text-align:center}
+.dr-foto--eins img{max-width:150mm;max-height:190mm}
+.dr-galerie--eins .dr-bildzeile{max-width:120mm}
+.dr-bildzeile{margin:0;font-size:13pt;line-height:1.3;color:var(--dr-night);text-wrap:balance}
+.dr-reihe{flex:1 1 0;min-height:0;display:flex;gap:10mm}
+.dr-reihe--oben{align-items:flex-start}
+.dr-reihe--unten{align-items:flex-end;margin-top:8mm}
+.dr-foto--zwei img{max-width:98mm;max-height:118mm}
+.dr-reihe__text{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:7mm}
+.dr-reihe--oben .dr-reihe__text{padding-top:1mm}
+.dr-reihe--unten .dr-reihe__text{text-align:right;padding-bottom:1mm}
+.dr-reihe .dr-bildzeile::before{content:'';display:block;width:8mm;height:.25mm;margin-bottom:3.4mm;background:var(--dr-linie)}
+.dr-reihe--unten .dr-bildzeile::before{margin-left:auto}
+
+/* 4 Schluss */
+.dr-schluss{display:flex;flex-direction:column;align-items:center;text-align:center;height:100%}
+.dr-schluss .dr-siegel{width:15mm}
+.dr-schluss__mitte{margin:auto 0;display:flex;flex-direction:column;align-items:center}
+.dr-schluss__satz{margin:0;max-width:140mm;font-size:34pt;line-height:1.12;color:var(--dr-salt);text-wrap:balance}
+.dr-unterschrift{margin:7mm 0 0;font-size:22pt;line-height:1.1;color:var(--dr-sand)}
+.dr-schluss .dr-logo{width:44mm}
+.dr-schluss--nur .dr-unterschrift{margin:0;font-size:40pt;color:var(--dr-salt)}
+
+/* Dankeskarte A6 quer (06.11.2026, aus einem Guss): vorn das Foto über die ganze Karte, ihre Linie rundum, darin ihr Schild in Night; hinten Porträt und mittiger Text */
+.dr-karte-vorn{display:flex;align-items:center;justify-content:center}
+.dr-karte-bild{position:absolute;inset:0;margin:0;overflow:hidden}
+.dr-karte-bild img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.dr-karte-vorn .dr-rahmen{inset:4.5mm;border-color:rgba(245,245,245,.85);z-index:1}
+.dr-karte-schild{position:relative;z-index:2;break-inside:avoid;width:66mm;padding:6.5mm 6mm 6mm;display:flex;flex-direction:column;align-items:center;text-align:center;
+  background:var(--dr-night) url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-dunkel-a.svg') 0 0/30mm auto;box-shadow:0 0 0 .25mm rgba(225,207,197,.55) inset,0 0 0 1.6mm var(--dr-night) inset,0 0 0 1.85mm rgba(225,207,197,.35) inset}
+.dr-karte-schild .dr-siegel{width:7mm;margin-bottom:3.6mm}
+.dr-karte-satz{margin:0;font-size:15pt;line-height:1.18;color:var(--dr-salt);text-wrap:balance}
+.dr-karte-vorn .dr-wann{margin:2.8mm 0 0;font-weight:500;font-size:5.6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--dr-sand)}
+.dr-karte-schild .dr-wortmarke{width:22mm;margin-top:4mm}
+.dr-karte-vorn--ohne .dr-karte-schild{width:auto;max-width:118mm;background:none;box-shadow:none}
+.dr-karte-vorn--ohne .dr-karte-satz{font-size:21pt}
+.dr-karte-vorn--ohne .dr-rahmen{border-color:rgba(225,207,197,.42)}
+.dr-karte-hinten{background:var(--dr-salt)}
+.dr-karte-hinten .dr-rahmen{border-color:rgba(73,32,45,.45)}
+.dr-karte-hinten .dr-koerper{left:10mm;right:10mm;top:10mm;bottom:10mm;flex-direction:row;align-items:stretch;gap:7mm}
+.dr-karte-portraet{flex:none;height:100%;line-height:0}
+.dr-karte-portraet img{height:100%;width:auto;max-width:none;aspect-ratio:4/5;object-fit:cover}
+.dr-karte-portraet::after{inset:2mm}
+.dr-karte-rechts{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:2mm 0 1mm}
+.dr-karte-rechts .dr-wortmarke{width:28mm}
+.dr-karte-zeilen{width:100%}
+.dr-karte-zeilen p{margin:0;font-family:'Della Respira','Montserrat',serif;font-size:calc(11.5pt * var(--k));line-height:1.38;color:var(--dr-night);text-align:center;text-wrap:balance}
+.dr-karte-hinten .dr-sig{align-self:center;font-size:calc(22pt * var(--k))}
+.dr-karte-hinten img.dr-sig{height:calc(10mm * var(--k));object-position:center}
+.dr-karte-rechts .dr-siegel{width:5.5mm}
+
+/* Brief A4 */
+.dr-brief-seite{background:var(--dr-salt)}
+.dr-brief-seite .dr-koerper{overflow:hidden;top:20mm}
+.dr-brief .dr-logo{width:46mm;margin:0 auto 12mm}
+.dr-an{display:grid;grid-template-columns:1fr 1fr;gap:2mm 10mm;margin:0 0 11mm;padding:5mm 0;border-top:.25mm solid var(--dr-linie);border-bottom:.25mm solid var(--dr-linie)}
+.dr-an dt{font-weight:500;font-size:6.4pt;letter-spacing:.08em;text-transform:uppercase;color:var(--dr-berry)}
+.dr-an dd{margin:1.4mm 0 0;font-family:'Della Respira','Montserrat',serif;font-size:13pt;line-height:1.3}
+.dr-an dd small{display:block;margin-top:.8mm;font-family:'Montserrat',system-ui,sans-serif;font-weight:300;font-size:8.4pt;color:var(--dr-grau)}
+.dr-brief__text p{margin:0 0 4.6mm;font-weight:300;font-size:10.8pt;line-height:1.7;color:var(--dr-night)}
+.dr-folge .dr-koerper{top:22mm}
+
+/* Unterschrift: ihre echte als Bild (hinterlegt im Werkzeug), sonst Pinyon Script aus ihrer Marke (marke/marke.json) */
+.dr-sig{margin:0;font-family:'Pinyon Script','Della Respira',serif;font-weight:400;font-size:30pt;line-height:1.05;letter-spacing:0;color:var(--dr-berry)}
+.dr-sig--bild{display:block;width:auto;height:16mm;max-width:70mm;object-fit:contain;object-position:left center;mix-blend-mode:multiply}   /* weisses Papier des Scans verschwindet */
+.dr-sig--hell{margin-top:6mm;font-size:40pt;color:var(--dr-sand)}
+img.dr-sig--hell{height:20mm;margin-left:auto;margin-right:auto;object-position:center;filter:invert(1) sepia(.35) brightness(.92);mix-blend-mode:screen}
+.dr-schluss--nur .dr-sig--hell{margin:0;font-size:64pt}
+.dr-schluss--nur img.dr-sig--hell{height:30mm}
+.dr-karte-hinten .dr-sig{align-self:center;font-size:calc(24pt * var(--k))}
+.dr-karte-hinten img.dr-sig{height:calc(11mm * var(--k))}
+
+/* Menü: eigene Seite «Am Tisch», zwei Spalten für lange Menüs, Folgeseiten mit eigenem Kopf */
+.dr-menue>.dr-koch{margin:0}
+.dr-zwei .dr-gaenge{display:block;flex:none;max-width:none;columns:2;column-gap:12mm;padding-top:calc(9mm * var(--k))}
+.dr-zwei .dr-gang{display:block;break-inside:avoid;padding-bottom:calc(4mm * var(--k))}
+.dr-zwei .dr-gang+.dr-gang::before{margin:0 auto calc(4mm * var(--k))}
+.dr-tisch{display:flex;flex-direction:column;align-items:center;text-align:center;height:100%}
+.dr-tisch .dr-siegel{width:10mm;margin-bottom:calc(6mm * var(--k))}
+.dr-tisch h2{margin-top:3mm;font-size:calc(34pt * var(--k));color:var(--dr-night)}
+.dr-tisch h2::after{content:'';display:block;width:14mm;height:.35mm;margin:calc(6mm * var(--k)) auto 0;background:var(--dr-berry)}
+.dr-tisch .dr-gaeste{margin:auto 0;padding:0;border:0}
+.dr-tisch .dr-gaeste>.dr-gang__n{display:none}
+.dr-tisch .dr-gaeste__namen{max-width:150mm;font-family:'Della Respira','Montserrat',serif;font-weight:400;font-size:calc(17pt * var(--k));line-height:1.7}
+
+/* Brief: Kopf, Text, gestalteter Schluss (Gruss, Unterschrift, Name, Siegel, Porträt mit ihrer Linie); --ph = Höhe des Porträts */
+.dr-brief{display:flex;flex-direction:column;height:100%}
+.dr-brief__kopf{flex:none}
+.dr-brief__text p{font-size:calc(11.6pt * var(--k));line-height:1.66}
+.dr-brief__schluss{flex:none;margin-top:auto;padding-top:calc(7mm * var(--k));border-top:.25mm solid var(--dr-linie);display:flex;justify-content:space-between;align-items:flex-end;gap:10mm}
+.dr-brief__gruss{display:flex;flex-direction:column;align-items:flex-start;padding-bottom:1mm}
+.dr-gruss{margin:0 0 1.5mm;font-weight:300;font-size:calc(11.6pt * var(--k));line-height:1.5;color:var(--dr-night)}
+.dr-sig--brief{margin:0 0 3mm;font-size:calc(34pt * var(--k))}
+img.dr-sig--brief{height:calc(18mm * var(--k));margin:1mm 0 4mm}
+.dr-brief__gruss .dr-siegel{width:9mm;margin:calc(8mm * var(--k)) 0 0}
+.dr-portraet img{max-width:none;width:auto;height:var(--ph,52mm);aspect-ratio:4/5}
+.dr-brief__kopf--folge{display:flex;flex-direction:column;align-items:center;gap:3mm;margin:0 0 9mm;padding-bottom:5mm;border-bottom:.25mm solid var(--dr-linie)}
+.dr-brief__kopf--folge .dr-wortmarke{width:30mm}
+.dr-brief__text{flex:none}
+.dr-brief-seite .dr-brief__text p:last-child{margin-bottom:0}
+/* Zeichen haben ihr Mass schon vor dem Laden (Einpassen misst sonst eine Seite ohne sie, Prüfung 6) */
+.dr-siegel{aspect-ratio:691/956}
+.dr-logo{aspect-ratio:3044/2193}
+.dr-wortmarke{aspect-ratio:3044/660}
+.dr-name{white-space:nowrap}
+/* «Am Tisch» auf eigener Seite: die Namen untereinander wie auf ihrer Tischordnung, ab neun Gästen in zwei Spalten */
+.dr-tisch .dr-gaeste__namen{display:block;columns:1;font-size:calc(20pt * var(--k));line-height:1.25}
+.dr-tisch .dr-gaeste__namen .dr-punkt{display:none}
+.dr-tisch .dr-name{display:block;padding:calc(2.4mm * var(--k)) 0;break-inside:avoid}
+.dr-tisch .dr-name+.dr-name{border-top:.25mm solid rgba(161,148,141,.45)}
+.dr-tisch .dr-gaeste{width:100%;max-width:120mm}
+.dr-tisch--zwei .dr-gaeste{max-width:none}
+.dr-tisch--zwei .dr-gaeste__namen{columns:2;column-gap:14mm}
+
+/* Bilder des Abends, neu (06.11.2026): ein Raster gleich grosser Bilder 4:5, die Seite als Ganzes in der Mitte, Bildzeile direkt am Bild, keine Linie im Bild */
+.dr-galerie-seite .dr-galerie{display:flex;flex-direction:column;height:100%}
+.dr-galerie__kopf{flex:none;text-align:center}
+.dr-galerie__kopf h2{margin-top:3mm;font-size:30pt;color:var(--dr-night)}
+.dr-galerie__kopf h2::after{content:'';display:block;width:14mm;height:.35mm;margin:5mm auto 0;background:var(--dr-berry)}
+.dr-raster{flex:1 1 auto;min-height:0;display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:8mm;padding-top:6mm}
+.dr-bild{margin:0;flex:none;width:var(--bw,60mm)}
+.dr-bild__b{width:100%;aspect-ratio:4/5;overflow:hidden;background:#E9E3DF}
+.dr-bild__b img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.dr-bild figcaption{margin:2.6mm 0 0;font-weight:300;font-size:8pt;line-height:1.4;color:var(--dr-night);text-wrap:balance;overflow-wrap:anywhere}
+
+/* Schlussblatt der Mappe: Siegel, Porträt mit ihrer Linie, Dank, Unterschrift, Name */
+.dr-schluss__bild{margin:auto 0 0}
+.dr-schluss__bild img{height:calc(118mm * var(--k));width:auto;max-width:none;aspect-ratio:4/5;object-fit:cover}
+.dr-schluss .dr-schluss__mitte{margin:calc(9mm * var(--k)) 0 auto}
+.dr-schluss .dr-schluss__satz{font-size:calc(28pt * var(--k))}
+.dr-schluss .dr-sig--hell{margin-top:calc(4mm * var(--k));font-size:calc(38pt * var(--k))}
+.dr-schluss .dr-etikett{margin-top:2mm}
+/* «Am Tisch» mit einem Foto des Abends: Namen links untereinander, das Foto rechts */
+.dr-tisch__mitte{margin:auto 0;width:100%;display:flex;align-items:center;justify-content:center;gap:12mm}
+.dr-tisch .dr-gaeste{margin:0;flex:1 1 0;max-width:80mm}
+.dr-tisch--ohne .dr-gaeste{max-width:120mm}
+.dr-bild--tisch{width:72mm}
+.dr-tisch--zwei .dr-gaeste{max-width:none}
+.dr-tisch--zwei .dr-gaeste__namen{columns:2;column-gap:10mm;font-size:calc(17pt * var(--k))}
+.dr-menue .dr-gaeste__namen{font-size:calc(10.5pt * var(--k))}   /* Gäste unter dem Menü lesbar (06.11.2026) */
+
+/* Bildseiten je Fotozahl (Prüfung 7, N14): das Raster füllt den Satzspiegel unter dem Kopf ganz; jedes Feld = Foto (füllt) + Bildzeile darunter */
+.dr-raster{display:grid;flex:1 1 auto;min-height:0;gap:6mm;padding-top:7mm;justify-content:stretch;align-content:stretch}
+.dr-raster .dr-bild{width:auto;min-width:0;min-height:0;display:flex;flex-direction:column}
+.dr-raster .dr-bild__b{flex:1 1 0;min-height:0;aspect-ratio:auto}
+.dr-raster .dr-bild__b img{object-position:50% 35%}
+.dr-raster .dr-bild figcaption{flex:none;min-height:5.6mm}
+.dr-raster--1{grid-template-areas:"a";grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)}
+.dr-raster--2{grid-template-areas:"a b";grid-template-rows:minmax(0,1fr);grid-template-columns:repeat(2,minmax(0,1fr))}
+.dr-raster--3{grid-template-areas:"a b" "a c";grid-template-rows:repeat(2,minmax(0,1fr));grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.dr-raster--4{grid-template-areas:"a b" "c d";grid-template-rows:repeat(2,minmax(0,1fr));grid-template-columns:repeat(2,minmax(0,1fr))}
+.dr-raster--5{grid-template-areas:"a a a b b b" "c c d d e e";grid-template-rows:minmax(0,1.15fr) minmax(0,1fr);grid-template-columns:repeat(6,minmax(0,1fr))}
+.dr-raster--6{grid-template-areas:"a b" "c d" "e f";grid-template-rows:repeat(3,minmax(0,1fr));grid-template-columns:repeat(2,minmax(0,1fr))}
+.dr-raster>.dr-bild:nth-child(1){grid-area:a}.dr-raster>.dr-bild:nth-child(2){grid-area:b}.dr-raster>.dr-bild:nth-child(3){grid-area:c}
+.dr-raster>.dr-bild:nth-child(4){grid-area:d}.dr-raster>.dr-bild:nth-child(5){grid-area:e}.dr-raster>.dr-bild:nth-child(6){grid-area:f}
+.dr-raster--1 .dr-bild figcaption{text-align:center;font-size:9pt}
+
+/* Bildseiten in Zeilen (Prüfung 8, N15): Grössen setzt DRUCK.raster in mm, die Seite füllt sich, der Ausschnitt sitzt auf den Menschen */
+.dr-raster--zeilen{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6mm}
+.dr-zeile{display:flex;justify-content:center;gap:6mm;flex:none}
+.dr-raster--zeilen .dr-bild{flex:none;display:block;min-width:0}
+.dr-raster--zeilen .dr-bild__b{flex:none;width:100%;aspect-ratio:auto}
+.dr-raster--zeilen .dr-bild figcaption{min-height:0;height:var(--zh,4.6mm);margin-top:2.6mm}

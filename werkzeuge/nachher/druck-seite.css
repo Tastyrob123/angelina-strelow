@@ -1,0 +1,18 @@
+/* Druckseite (druck.html): am Bildschirm die Blätter untereinander auf Nacht, im Druck und im PDF randlos Seite für Seite */
+@font-face{font-family:'Della Respira';font-weight:400;src:url('/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Pinyon Script';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/nachher/schrift/PinyonScript.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500 600;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-500.woff2') format('woff2')}
+html,body{margin:0;padding:0}
+body{background:#1E1418;min-height:100vh}
+#seiten{display:flex;flex-direction:column;align-items:center;gap:10mm;padding:10mm 0}
+.dr-seite{box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.dr-fehlt{color:#E1CFC5;font:15px/1.6 Montserrat,system-ui,sans-serif;padding:40px;text-align:center}
+@media print{body{background:#fff}#seiten{display:block;padding:0}.dr-seite{box-shadow:none;break-after:page;page-break-after:always}.dr-seite:last-child{break-after:auto;page-break-after:auto}}
+/* Vorschau im Werkzeug (druck.html?vorschau=1, eingebettet): durchsichtig, Blätter verkleinert nebeneinander, am Handy untereinander */
+html.vorschau,html.vorschau body{background:transparent;min-height:0;overflow:hidden}
+html.vorschau #seiten{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px;padding:0}
+html.vorschau .dr-seite{box-shadow:none}
+.dr-huelle{position:relative;flex:none;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.8)}
+.dr-huelle>.dr-seite{position:absolute;left:0;top:0}

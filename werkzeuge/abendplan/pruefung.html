@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Abendplan · Prüfung · Angelina Strelow</title>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/fehlermelder.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/namen.js?v=1793941135" defer></script>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina-zeichen.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/grund.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/abendplan.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/tafel.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/plan.css?v=1793941135">
+<style>
+body.anl{padding:0}
+.anl main{max-width:900px;margin:0 auto;padding:54px 24px 90px}
+.anl h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.05;color:var(--navy)}
+.anl h1 em{font-style:normal;color:var(--taupe)}
+.anl h2{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--navy);margin:40px 0 4px;padding-top:18px;border-top:1px solid rgba(18,13,16,.3)}
+.anl p{max-width:66ch;color:rgba(26,18,21,.82)}
+.anl .zuruck{display:inline-flex;margin-bottom:26px}
+.anl .gesund div span{min-width:0;overflow-wrap:anywhere}
+.anl .gesund div b{flex:none;max-width:60%;text-align:right;overflow-wrap:anywhere;text-transform:none;letter-spacing:.04em}
+.rep{display:grid;gap:10px;margin-top:16px}
+.rep div{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px;border-radius:16px;background:var(--platte);box-shadow:var(--platte-s)}
+.rep p{margin:0;font-size:14px}
+.rep .kn[data-scharf]{--o:#7A3442;--m:#49202D;--u:#2A1D22}
+.pr-quit{margin-top:12px;font-size:14px;min-height:1.4em}
+@media (max-width:560px){.rep div{flex-direction:column;align-items:stretch}.anl .gesund div{flex-direction:column}.anl .gesund div b{max-width:none;text-align:left}}
+</style>
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/auftritte.css?v=1793941135">
+</head>
+<body class="ap anl">
+<main>
+<a class="kn kn--klein kn--hell zuruck" href="/angelina-strelow/werkzeuge/abendplan/">Zurück: <span data-wo-name="abendplan">Der Abendplan</span></a>
+<h1>Prüfung <em>des Werkzeugs.</em></h1>
+<p style="margin-top:16px">Diese Seite läuft auch dann, wenn das Werkzeug selbst nicht startet. Sie zeigt, ob Browser, Server, Pläne, Druck und Sicherungen in Ordnung sind, und hält die Reparatur bereit. Was eine Meldung bedeutet, steht in der <a href="/angelina-strelow/werkzeuge/abendplan/anleitung.html#was-tun">Anleitung unter «Was tun, wenn …»</a>.</p>
+<h2>Browser</h2><div class="gesund" id="p-browser"></div>
+<h2>Server</h2><div class="gesund" id="p-server"><div><span>Antwort des Servers</span><b>wird gelesen …</b></div></div>
+<h2>Pläne</h2><div class="gesund" id="p-plaene"></div>
+<h2>Druck</h2><div class="gesund" id="p-druck"></div>
+<h2>Sicherungen</h2><div class="gesund" id="p-sich"></div>
+<h2>Fehler</h2><p>Die letzten Fehler, die die Seiten mitgeschrieben haben (neueste zuerst), dazu die in diesem Browser.</p><div class="gesund" id="p-fehler"></div>
+<h2>Reparatur</h2><p>Keine Reparatur ändert einen Plan. Zwei Klicks: der erste macht den Knopf scharf, der zweite führt aus.</p>
+<div class="rep" id="p-rep">
+  <div><p><b>Fehlerliste leeren.</b> Die Fehler beiseitelegen, damit neue auffallen (die alte Liste bleibt als Datei daneben).</p><button class="kn kn--klein" type="button" data-rep="fehler">Fehler leeren</button></div>
+</div>
+<p class="pr-quit" id="p-quit" aria-live="polite"></p>
+</main>
+<script src="/angelina-strelow/werkzeuge/abendplan/pruefung.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/auftritte.js?v=1793941135" data-alles></script>
+</body>
+</html>

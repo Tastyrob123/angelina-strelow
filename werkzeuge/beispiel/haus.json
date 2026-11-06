@@ -1,0 +1,102 @@
+{
+ "quelle": "_quelle/notizen.md, website/*.html, CHARAKTER.md (nur Belegtes, 05.11.2026)",
+ "name": "Angelina Strelow",
+ "marke": "Exklusive Gastgeberin · by Angelina Strelow",
+ "ort": "Köln und Umgebung",
+ "einsatzorte_belegt": [
+  "Bergisch Gladbach-Bensberg",
+  "Köln-Frechen",
+  "Düsseldorf"
+ ],
+ "email": "Strelowangelina@gmx.de",
+ "calendly": "https://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee",
+ "instagram": "https://instagram.com/by.angelina.strelow",
+ "saetze": [
+  "Du lädst ein. Ich begleite den Abend.",
+  "Dein Abend. Mein Service.",
+  "Du darfst selbst Gast sein.",
+  "Präsent | Souverän | Entspannt"
+ ],
+ "leistungen": [
+  {
+   "k": "empfang",
+   "t": "Empfang deiner Gäste",
+   "s": "Vom Sektempfang an."
+  },
+  {
+   "k": "betreuung",
+   "t": "Gästebetreuung",
+   "s": "Deine Gäste sind bestens versorgt."
+  },
+  {
+   "k": "ablauf",
+   "t": "Koordination des Ablaufs",
+   "s": "Im Hintergrund halte ich die Abläufe zusammen."
+  },
+  {
+   "k": "wein",
+   "t": "Wein und Service am Tisch",
+   "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt."
+  },
+  {
+   "k": "details",
+   "t": "Die Details im Hintergrund",
+   "s": "Mit Liebe zum Detail."
+  }
+ ],
+ "ablauf": [
+  "Das Erstgespräch",
+  "Stilvoller Empfang",
+  "Du geniesst den Moment",
+  "Begleitung",
+  "Was bleibt"
+ ],
+ "anlaesse_formular": [
+  "Privates Dinner",
+  "Geburtstag",
+  "Jubiläum",
+  "Feier zu Hause"
+ ],
+ "gaeste_formular": [
+  "bis 6",
+  "bis 10",
+  "bis 16",
+  "mehr"
+ ],
+ "abschluesse": [
+  "Gastronomiebetriebswirtin (IST), IST-Studieninstitut mit DEHOGA, Düsseldorf, Januar 2025",
+  "Professionelles Eventmanagement · Wein-Events, Deutsches Weininstitut mit AdCoach, Dezember 2025"
+ ],
+ "erfahrung": "Seit 2009 in der gehobenen Gastronomie",
+ "partner": [
+  {
+   "name": "Frank Muschik («MUSHYK»)",
+   "was": "Pianist",
+   "beleg": "Instagram-Reel 17.11.2025"
+  }
+ ],
+ "preise": "OFFEN — keine Preise belegt. Angelina trägt sie selbst ein; bis dahin nur als «Beispiel» gekennzeichnete Werte.",
+ "stimmen": [
+  {
+   "anlass": "Hochzeit",
+   "text": "Angelina hat an unserem Hochzeitstag einen unglaublichen Job gemacht … Sie war stets aufmerksam, aber nie aufdringlich, immer zur richtigen Zeit am richtigen Ort und hat sich um alles gekümmert, ohne dass wir überhaupt darum bitten mussten."
+  },
+  {
+   "anlass": "Eröffnung",
+   "text": "Bei meiner damaligen Laden-Neueröffnung hat sie sich reibungslos um meine Gäste gekümmert … Mit Liebe zum Detail denkt sie einfach an alles."
+  },
+  {
+   "anlass": "Privater Abend",
+   "datum": "2026-05",
+   "text": "Fachlich kompetent, unterstützt unaufdringlich, natürliche Freundlichkeit, alles lief von alleine."
+  },
+  {
+   "anlass": "Event",
+   "text": "Super organisiert gestern. Danke nochmal. Ich glaube, ich war selten so entspannt vor dem Event!"
+  },
+  {
+   "anlass": "Gast",
+   "text": "Diese Frau hat mich beeindruckt, weil ich sehen und spüren konnte, wie sie ihre Vision, ihre Berufung echt verkörpert. Unfassbarer Profi."
+  }
+ ]
+}

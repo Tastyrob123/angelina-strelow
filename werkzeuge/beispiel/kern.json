@@ -1,0 +1,268 @@
+{
+ "a-251214-kt": {
+  "status": "abgeschlossen",
+  "beispiel": false,
+  "quelle": "empfehlung",
+  "eingang": "2025-11-02T10:15",
+  "gastgeber": {
+   "name": "Klaus und Tanja",
+   "email": "",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Privates Dinner",
+   "datum": "2025-12-13",
+   "gaeste": "",
+   "ort": "Bergisch Gladbach-Bensberg",
+   "wunsch": "Gänseessen zu Hause. Klaus kocht drei Gänge selbst. Sektempfang, Flying Buffet, Sitzordnung als Memory-Spiel, abgestimmte Weine."
+  }
+ },
+ "a-260918-hb": {
+  "status": "abgeschlossen",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-09-18T19:40",
+  "gastgeber": {
+   "name": "Helene Brandt",
+   "email": "helene.brandt@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Jubiläum",
+   "datum": "2026-10-17",
+   "gaeste": "bis 16",
+   "ort": "Köln-Lindenthal",
+   "wunsch": "Unser 25. Hochzeitstag mit Familie und engen Freunden. Mein Mann und ich möchten an diesem Abend einfach am Tisch sitzen dürfen. Empfang, Weinservice und das Abräumen zwischen den Gängen."
+  }
+ },
+ "a-261009-mw": {
+  "status": "vorbei",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-10-09T08:05",
+  "gastgeber": {
+   "name": "Markus Wendt",
+   "email": "markus.wendt@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Geburtstag",
+   "datum": "2026-11-01",
+   "gaeste": "bis 10",
+   "ort": "Frechen",
+   "wunsch": "50. Geburtstag meiner Frau, als Überraschung. Ich koche, brauche aber jemanden, der den Empfang macht und den Abend im Blick behält."
+  }
+ },
+ "a-261014-sk": {
+  "status": "geplant",
+  "beispiel": true,
+  "quelle": "instagram",
+  "eingang": "2026-10-14T21:12",
+  "gastgeber": {
+   "name": "Sophie und Jan Kessler",
+   "email": "kessler.sophie@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Privates Dinner",
+   "datum": "2026-11-21",
+   "gaeste": "bis 6",
+   "ort": "Köln-Rodenkirchen",
+   "wunsch": "Wir laden zum ersten Mal Jans Eltern und meine Eltern gemeinsam ein. Vier Gänge, wir kochen selbst. Bitte Weinbegleitung und Service am Tisch."
+  }
+ },
+ "a-261020-cl": {
+  "status": "zugesagt",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-10-20T12:30",
+  "gastgeber": {
+   "name": "Claudia Lorenz",
+   "email": "c.lorenz@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Feier zu Hause",
+   "datum": "2026-12-05",
+   "gaeste": "bis 16",
+   "ort": "Pulheim",
+   "wunsch": "Adventsabend für Nachbarn und Freunde. Glühwein und Sekt zum Empfang im Garten, danach Buffet im Haus. Ich möchte die Gäste selbst begrüssen können, ohne ständig in die Küche zu laufen."
+  }
+ },
+ "a-261022-rf": {
+  "status": "zugesagt",
+  "beispiel": true,
+  "quelle": "empfehlung",
+  "eingang": "2026-10-22T17:48",
+  "gastgeber": {
+   "name": "Robert und Ines Falk",
+   "email": "ines.falk@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Privates Dinner",
+   "datum": "2026-12-12",
+   "gaeste": "bis 10",
+   "ort": "Düsseldorf-Oberkassel",
+   "wunsch": "Weihnachtsessen mit Geschäftsfreunden meines Mannes. Es soll ruhig und stilvoll sein. Menü kommt von unserem Caterer, wir brauchen jemanden, der den Abend führt."
+  }
+ },
+ "a-261027-tb": {
+  "status": "angebot",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-10-27T09:10",
+  "gastgeber": {
+   "name": "Thomas Berger",
+   "email": "t.berger@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Geburtstag",
+   "datum": "2026-12-19",
+   "gaeste": "bis 10",
+   "ort": "Brühl",
+   "wunsch": "60. Geburtstag. Kleines Essen zu Hause, ich koche drei Gänge. Gäste sollen sich willkommen fühlen, ich will bei ihnen sein."
+  }
+ },
+ "a-261030-nh": {
+  "status": "angebot",
+  "beispiel": true,
+  "quelle": "instagram",
+  "eingang": "2026-10-30T20:02",
+  "gastgeber": {
+   "name": "Nina Hoffmann",
+   "email": "nina.hoffmann@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Feier zu Hause",
+   "datum": "2026-12-31",
+   "gaeste": "bis 16",
+   "ort": "Köln-Ehrenfeld",
+   "wunsch": "Silvester zu Hause mit Freunden. Sektempfang, Fingerfood, um Mitternacht anstossen. Könntest du bis nach Mitternacht bleiben?"
+  }
+ },
+ "a-261102-ag": {
+  "status": "anfrage",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-11-02T11:24",
+  "gastgeber": {
+   "name": "Anna Gerlach",
+   "email": "anna.gerlach@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Privates Dinner",
+   "datum": "2026-11-28",
+   "gaeste": "bis 6",
+   "ort": "Leverkusen-Opladen",
+   "wunsch": "Kleines Abendessen für meine Schwiegereltern. Ich koche, bin aber unsicher mit dem Wein. Könntest du die Weine aussuchen und einschenken?"
+  }
+ },
+ "a-261103-dm": {
+  "status": "anfrage",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-11-03T22:41",
+  "gastgeber": {
+   "name": "David Meyer",
+   "email": "d.meyer@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Jubiläum",
+   "datum": "2027-01-16",
+   "gaeste": "bis 16",
+   "ort": "Bergisch Gladbach",
+   "wunsch": "10 Jahre unsere Firma, Feier bei uns zu Hause für Team und Partner. Empfang, Gästebetreuung, ein kurzer Ablauf mit Rede. Gibt es Musik dazu?"
+  }
+ },
+ "a-261104-lp": {
+  "status": "anfrage",
+  "beispiel": true,
+  "quelle": "kaffee",
+  "eingang": "2026-11-04T15:03",
+  "gastgeber": {
+   "name": "Laura Peters",
+   "email": "laura.peters@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Geburtstag",
+   "datum": "2026-12-06",
+   "gaeste": "bis 10",
+   "ort": "Köln-Sülz",
+   "wunsch": "Mein 40. Geburtstag. Ich möchte Freunde zu einem langen Essen einladen und selbst Gast sein. Was kostet so ein Abend ungefähr?"
+  }
+ },
+ "a-261105-mk": {
+  "status": "anfrage",
+  "beispiel": true,
+  "quelle": "website",
+  "eingang": "2026-11-05T08:47",
+  "gastgeber": {
+   "name": "Familie Kaya",
+   "email": "kaya.familie@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Feier zu Hause",
+   "datum": "2027-02-13",
+   "gaeste": "mehr",
+   "ort": "Hürth",
+   "wunsch": "Verlobungsfeier unserer Tochter, rund 25 Gäste, Essen kommt vom Caterer. Wir suchen jemanden, der Empfang und Service am Abend übernimmt."
+  }
+ },
+ "a-260929-js": {
+  "status": "vorbei",
+  "beispiel": true,
+  "quelle": "instagram",
+  "eingang": "2026-09-29T18:20",
+  "gastgeber": {
+   "name": "Julia und Stefan Roth",
+   "email": "julia.roth@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Geburtstag",
+   "datum": "2026-10-24",
+   "gaeste": "bis 10",
+   "ort": "Köln-Deutz",
+   "wunsch": "Stefan wird 40. Wir kochen zusammen ein Menü mit vier Gängen und möchten, dass sich jemand um die Gäste und den Wein kümmert, während wir am Tisch sitzen."
+  }
+ },
+ "a-261006-ew": {
+  "status": "vorbei",
+  "beispiel": true,
+  "quelle": "empfehlung",
+  "eingang": "2026-10-06T10:02",
+  "gastgeber": {
+   "name": "Elke Wagner",
+   "email": "elke.wagner@beispiel.de",
+   "telefon": "",
+   "adresse": ""
+  },
+  "anfrage": {
+   "anlass": "Privates Dinner",
+   "datum": "2026-10-31",
+   "gaeste": "bis 6",
+   "ort": "Bergisch Gladbach-Refrath",
+   "wunsch": "Ein Abendessen für meine Freundinnen aus der Studienzeit, wir sehen uns nur einmal im Jahr. Ein Caterer liefert, ich möchte aber nichts selbst servieren müssen."
+  }
+ }
+}

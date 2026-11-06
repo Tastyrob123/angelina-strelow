@@ -1,0 +1,125 @@
+{
+ "beispiel": true,
+ "liste": [
+  {
+   "k": "erste",
+   "t": "Erste Antwort",
+   "wann": "Gleich nach der Anfrage",
+   "bild": "studio-fenster",
+   "betreff": "{Dein|Euer} Abend am {datum}",
+   "text": "Hallo {vorname},\n\ndanke für {deine|eure} Anfrage und {dein|euer} Vertrauen. {anlass_ein} in {ort}, mit {gaeste}: Das klingt nach einem Abend, an dem {du selbst Gast sein darfst|ihr selbst Gäste sein dürft}.\n\nDamit mein Angebot genau zu {deinem|eurem} Abend passt, lerne ich {dich|euch} gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, {such dir|sucht euch} einfach eine Zeit aus:\n{calendly}\n\nIch freue mich auf {dich und deinen|euch und euren} Abend.\n\n{unterschrift}"
+  },
+  {
+   "k": "kaffee",
+   "t": "Einladung zum Kaffee",
+   "wann": "Wenn noch vieles offen ist",
+   "bild": "studio",
+   "betreff": "Ein virtueller Kaffee vor {deinem|eurem} Abend",
+   "text": "Hallo {vorname},\n\nbevor ich {dir|euch} ein Angebot schreibe, möchte ich {dich und deinen|euch und euren} Abend ein wenig kennenlernen: wer kommt, wie der Abend klingen soll und was {du abgeben möchtest|ihr abgeben möchtet}.\n\nAm liebsten bei einem virtuellen Kaffee. Hier {findest du|findet ihr} meine freien Zeiten:\n{calendly}\n\nBis bald,\n{unterschrift}"
+  },
+  {
+   "k": "nachfrage",
+   "t": "Nachfrage zu Gästen und Küche",
+   "wann": "Wenn Angaben fehlen",
+   "bild": "teller",
+   "betreff": "Zwei kurze Fragen zu {deinem|eurem} Abend",
+   "text": "Hallo {vorname},\n\nich bereite gerade {dein|euer} Angebot für den {datum_kurz} vor und habe zwei kurze Fragen:\n\nWie viele Gäste {erwartest du|erwartet ihr} ungefähr? Und {kochst du|kocht ihr} selbst, oder kommt das Essen von einem Caterer?\n\nDann weiss ich, wie ich {deinen|euren} Abend am besten begleite, und {du bekommst|ihr bekommt} ein Angebot, das genau passt.\n\n{unterschrift}"
+  },
+  {
+   "k": "vergeben",
+   "t": "Termin leider vergeben",
+   "wann": "Wenn das Datum belegt ist",
+   "bild": "p89",
+   "betreff": "{Dein|Euer} Abend am {datum}",
+   "text": "Hallo {vorname},\n\nvielen Dank für {deine|eure} schöne Anfrage. Am {datum_kurz} begleite ich leider schon einen anderen Abend, und ich möchte an jedem Abend ganz für einen Gastgeber da sein.\n\nWenn {dein|euer} Abend noch verschiebbar ist, schau ich sehr gern nach einem anderen Tag für {dich|euch}. {Schreib|Schreibt} mir einfach, welche Termine für {dich|euch} in Frage kommen.\n\n{unterschrift}"
+  },
+  {
+   "k": "preisfrage",
+   "t": "Was kostet ein Abend?",
+   "wann": "Wenn nach dem Preis gefragt wird",
+   "bild": "glas",
+   "betreff": "Was {dein|euer} Abend kostet",
+   "text": "Hallo {vorname},\n\nschön, dass {du fragst|ihr fragt}. Was ein Abend kostet, hängt davon ab, wie lange ich bei {dir|euch} bin und was {du abgeben möchtest|ihr abgeben möchtet}: den Empfang, den Service am Tisch, den Wein oder den ganzen Ablauf.\n\nAm liebsten besprechen wir das kurz bei einem virtuellen Kaffee. Danach {bekommst du|bekommt ihr} ein Angebot, das genau auf {deinen|euren} Abend zugeschnitten ist:\n{calendly}\n\n{unterschrift}"
+  },
+  {
+   "k": "angebot",
+   "t": "Dein Angebot",
+   "wann": "Zusammen mit dem PDF",
+   "bild": "p152",
+   "betreff": "{Dein|Euer} Angebot für den {datum_kurz}",
+   "text": "Hallo {vorname},\n\ndanke für das schöne Gespräch. Im Anhang {findest du|findet ihr} mein Angebot für {anlass_den} am {datum}.\n\nDarin steht, was ich an {deinem|eurem} Abend übernehme, damit {du bei deinen Gästen sitzen bleiben kannst|ihr bei euren Gästen sitzen bleiben könnt}. Das Angebot gilt bis zum {gueltig}. Wenn {du etwas anders haben möchtest, sag|ihr etwas anders haben möchtet, sagt} es mir, dann passe ich es an.\n\nIch freue mich, wenn ich {deinen|euren} Abend begleiten darf.\n\n{unterschrift}"
+  },
+  {
+   "k": "erinnerung",
+   "t": "Erinnerung nach einer Woche",
+   "wann": "Wenn das Angebot noch offen ist",
+   "bild": "gang",
+   "betreff": "{Dein|Euer} Abend am {datum_kurz}",
+   "text": "Hallo {vorname},\n\nich wollte mich noch einmal melden, ob mein Angebot für {deinen|euren} Abend bei {dir|euch} angekommen ist. {Hast du|Habt ihr} noch Fragen, oder soll ich etwas anpassen?\n\nDen {datum_kurz} halte ich {dir|euch} gern bis zum {gueltig} frei.\n\n{unterschrift}"
+  },
+  {
+   "k": "zusage",
+   "t": "Zusage bestätigen",
+   "wann": "Wenn der Gastgeber zusagt",
+   "bild": "handschuh",
+   "betreff": "Ich freue mich auf {deinen|euren} Abend",
+   "text": "Hallo {vorname},\n\nwie schön, dass ich {deinen|euren} Abend am {datum} begleiten darf. Der Termin ist für {dich|euch} fest eingetragen.\n\nIm Angebot steht die Anzahlung von {anzahlung} bei Zusage. Vor {deinem|eurem} Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und {deine|eure} Gäste.\n\nBis dahin {kannst du dich|könnt ihr euch} zurücklehnen.\n\n{unterschrift}"
+  },
+  {
+   "k": "anzahlung",
+   "t": "Anzahlung erhalten",
+   "wann": "Wenn die Anzahlung da ist",
+   "bild": "p156",
+   "betreff": "Danke, {dein|euer} Abend ist fest",
+   "text": "Hallo {vorname},\n\n{deine|eure} Anzahlung ist angekommen, danke. {Dein|Euer} Abend am {datum} ist damit fest.\n\nVor {deinem|eurem} Abend melde ich mich, damit wir den Ablauf in Ruhe besprechen.\n\n{unterschrift}"
+  },
+  {
+   "k": "ablauf",
+   "t": "Ablauf besprechen",
+   "wann": "Vor dem Abend",
+   "bild": "tafel",
+   "betreff": "{Dein|Euer} Abend rückt näher",
+   "text": "Hallo {vorname},\n\n{dein|euer} Abend rückt näher. {Lass|Lasst} uns einmal gemeinsam durch {deinen|euren} Abend gehen: Wann kommen die ersten Gäste, welche Gänge gibt es, welche Weine, und gibt es etwas, worauf ich bei einem Gast besonders achten soll?\n\n{Passt dir|Passt euch} ein kurzes Gespräch in den nächsten Tagen? Hier {findest du|findet ihr} meine Zeiten:\n{calendly}\n\n{unterschrift}"
+  },
+  {
+   "k": "musik",
+   "t": "Musik am Abend",
+   "wann": "Wenn nach Musik gefragt wird",
+   "bild": "kerze",
+   "betreff": "Musik für {deinen|euren} Abend",
+   "text": "Hallo {vorname},\n\nfür Musik am Abend arbeite ich gern mit Frank Muschik zusammen, Pianist (MUSHYK). Ob er an {deinem|eurem} Abend frei ist, frage ich für {dich|euch} an, sobald {dein|euer} Termin steht.\n\n{Sag|Sagt} mir einfach, ob {du dir|ihr euch} Musik zum Empfang, zum Essen oder für den ganzen Abend {wünschst|wünscht}.\n\n{unterschrift}"
+  },
+  {
+   "k": "spaet",
+   "t": "Abend über Mitternacht",
+   "wann": "Silvester und lange Feiern",
+   "bild": "kerzen",
+   "betreff": "{Dein|Euer} Abend bis nach Mitternacht",
+   "text": "Hallo {vorname},\n\nsehr gern bleibe ich, bis angestossen ist und {deine|eure} Gäste sich auf den Heimweg machen. Im Angebot {findest du|findet ihr} die Stunden nach Mitternacht eigens aufgeführt, damit {du genau weisst, womit du rechnen kannst|ihr genau wisst, womit ihr rechnen könnt}.\n\nSo {musst du|müsst ihr} an diesem Abend nicht ein einziges Mal auf die Uhr schauen.\n\n{unterschrift}"
+  },
+  {
+   "k": "viele",
+   "t": "Ein grösserer Abend",
+   "wann": "Wenn mehr als 16 Gäste kommen",
+   "bild": "p155",
+   "betreff": "{Dein|Euer} Abend mit {deinen|euren} Gästen",
+   "text": "Hallo {vorname},\n\ndanke für {deine|eure} Anfrage. Damit sich an einem grösseren Abend jeder {deiner|eurer} Gäste gut aufgehoben fühlt, möchte ich mit {dir|euch} genau durchgehen, wie der Abend läuft: wo empfangen wird, wann das Essen kommt und wer was übernimmt.\n\n{Lass|Lasst} uns dafür kurz bei einem virtuellen Kaffee sprechen:\n{calendly}\n\n{unterschrift}"
+  },
+  {
+   "k": "nach_kaffee",
+   "t": "Nach dem Kennenlernen",
+   "wann": "Gleich nach dem Kaffee",
+   "bild": "hintergrund",
+   "betreff": "Danke für das schöne Gespräch",
+   "text": "Hallo {vorname},\n\ndanke für unser Gespräch. Ich habe jetzt ein gutes Bild von {deinem|eurem} Abend: {wunsch_kurz}\n\nIn den nächsten Tagen {bekommst du|bekommt ihr} mein Angebot. Wenn {dir|euch} vorher noch etwas einfällt, {schreib|schreibt} mir einfach.\n\n{unterschrift}"
+  },
+  {
+   "k": "absage_verstehen",
+   "t": "Wenn der Gastgeber absagt",
+   "wann": "Nach einer Absage",
+   "bild": "dunkel",
+   "betreff": "Danke für {deine|eure} Nachricht",
+   "text": "Hallo {vorname},\n\ndanke, dass {du mir Bescheid gibst|ihr mir Bescheid gebt}. Ich wünsche {dir|euch} einen wunderbaren Abend mit {deinen|euren} Gästen.\n\nWenn {du|ihr} für einen anderen Anlass einmal selbst {Gast sein möchtest|Gäste sein möchtet}, bin ich gern für {dich|euch} da.\n\n{unterschrift}"
+  }
+ ]
+}

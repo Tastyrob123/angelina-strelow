@@ -1,0 +1,51 @@
+/* Fragebogen für den Gastgeber: in Angelinas Website-Sprache (website/stil.css), nicht im Rahmen der Werkzeuge. Night und Salt, ihre Rahmenlinie, Titel Della Respira,
+   Lauf Montserrat, nie fett, nie kursiv; Knopf = dunkle Platte mit rundem Knauf in Sand. Am Handy zuerst, ruhig, ein Blatt. */
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500 600;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-500.woff2') format('woff2')}
+/* Nie fett, nie kursiv (Prüfung 2, N2): keine schräg oder fett gerechnete Schrift, auch nicht aus em, i, b */
+html{font-synthesis:none}em,i,cite,dfn,address,var{font-style:normal}
+:root{--night:#0C0A0B;--nacht:#120D10;--salt:#F5F5F5;--papier:#F4EFEC;--blatt:#FBF8F6;--sand:#E1CFC5;--berry:#49202D;--tinte:#1A1215;--leise:#5E5157}
+*{box-sizing:border-box}
+html,body{margin:0}
+body.sf{min-height:100vh;background:var(--night) url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-dunkel-a.svg') 0 0/224px 224px;color:var(--tinte);font:400 16px/1.6 'Montserrat',system-ui,sans-serif;-webkit-font-smoothing:antialiased;padding:clamp(16px,5vw,64px) 16px}
+.sf-blatt{position:relative;max-width:640px;margin:0 auto;background:var(--blatt);border-radius:12px;padding:clamp(28px,6vw,56px) clamp(22px,6vw,58px) clamp(30px,5vw,48px);box-shadow:0 40px 80px -40px rgba(0,0,0,.9),0 0 0 1px rgba(225,207,197,.25);outline:1px solid rgba(73,32,45,.28);outline-offset:-10px}
+.sf-kopf{text-align:center;margin-bottom:28px;padding-bottom:22px;border-bottom:1px solid rgba(73,32,45,.18)}
+.sf-logo{display:block;width:min(220px,62%);height:auto;margin:0 auto}
+.sf-lade{text-align:center;color:var(--leise)}
+.sf-k{margin:0 0 10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--berry)}
+.sf-h{margin:0;font:400 clamp(30px,6.4vw,44px)/1.12 'Della Respira',Georgia,serif;color:var(--tinte);text-wrap:balance}
+.sf-h em{font-style:normal;color:var(--berry)}
+.sf-satz{margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--tinte)}
+.sf-bsp{margin:12px 0 0;font-size:13px;color:var(--leise)}
+.sf-form{margin-top:30px;display:flex;flex-direction:column;gap:20px}
+.sf-feld{display:flex;flex-direction:column;gap:8px;margin:0;border:0;padding:0;min-width:0}
+.sf-feld>span,.sf-feld legend{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--berry);padding:0}
+.sf-feld small{text-transform:none;letter-spacing:0;color:var(--leise);font-size:12px;margin-left:6px}
+.sf-feld textarea,.sf-feld input{width:100%;padding:14px 16px;border:0;border-radius:10px;font:400 16px/1.55 'Montserrat',system-ui,sans-serif;color:var(--tinte);background:#fff;box-shadow:inset 0 0 0 1px rgba(73,32,45,.22),inset 0 2px 4px rgba(12,10,11,.06);resize:vertical}
+.sf-feld textarea:focus,.sf-feld input:focus{outline:2px solid rgba(73,32,45,.4);outline-offset:1px}
+.sf-wahl{gap:10px}
+.sf-wahl legend{margin-bottom:10px}
+.sf-r{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;cursor:pointer;background:rgba(244,239,236,.9);box-shadow:inset 0 0 0 1px rgba(73,32,45,.14)}
+.sf-r input{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin:0;flex:none;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(73,32,45,.55);display:grid;place-items:center}
+.sf-r input:checked{box-shadow:inset 0 0 0 1.5px var(--berry),inset 0 0 0 5px #fff,inset 0 0 0 10px var(--berry)}
+.sf-r:has(input:checked){background:#fff;box-shadow:inset 0 0 0 1.5px rgba(73,32,45,.45)}
+.sf-zwei{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sf-zwei[hidden]{display:none}
+.sf-h2{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--tinte);cursor:pointer}
+.sf-h2 input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:#49202D}
+.sf-weg{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sf-fehler{margin:0;padding:12px 14px;border-radius:10px;font-size:14px;color:var(--berry);background:rgba(73,32,45,.07);box-shadow:inset 0 0 0 1px rgba(73,32,45,.25)}
+.sf-kn{align-self:flex-start;display:inline-flex;align-items:center;gap:16px;height:52px;padding:0 6px 0 24px;border:0;border-radius:10px;cursor:pointer;font:500 12px 'Montserrat',system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FBF8F6;
+  background:linear-gradient(180deg,#3A2A30 0%,#2A1D22 46%,#120D10 100%);box-shadow:inset 0 1px 0 rgba(255,244,240,.16),0 16px 30px -16px rgba(12,10,11,.75);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.sf-kn i{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#F4EBE6,#E1CFC5 52%,#C9B3A7);color:var(--night)}
+.sf-kn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+.sf-kn:hover{transform:translateY(-2px)}
+.sf-kn:disabled{opacity:.7;cursor:default;transform:none}
+.sf-klein{margin:0;font-size:12.5px;color:var(--leise)}
+.sf-schon{margin-top:26px;padding:18px 20px;border-radius:10px;background:var(--papier)}
+.sf-schon p{margin:0 0 8px}
+.sf-link{border:0;background:none;padding:0;font:inherit;font-size:14px;color:var(--berry);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.sf-gruss{margin:22px 0 0;font:400 26px 'Della Respira',Georgia,serif;color:var(--berry)}
+@media (max-width:520px){.sf-zwei{grid-template-columns:1fr}body.sf{padding:16px}.sf-blatt{border-radius:10px}}

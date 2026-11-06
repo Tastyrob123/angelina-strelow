@@ -1,0 +1,318 @@
+/* Tischkarten & Menü · eigenes Stilblatt (Vorsatz ti-, Master 9). Farben nur über --wo-…, Schrift wie das Kleid: Della Respira, Montserrat, DM Mono.
+   Nie fett, nie kursiv. Ihre Rahmenlinie (feine Linie innen um helle Flächen) ist das Ornament. */
+
+/* Druckschriften: dieselben TrueType-Dateien, die das PDF einbettet (Bildschirm und PDF gleich) */
+@font-face{font-family:'TI-titel';src:url('schrift/DellaRespira.ttf') format('truetype');font-display:block}
+@font-face{font-family:'TI-text';src:url('schrift/Montserrat-300.ttf') format('truetype');font-display:block}
+@font-face{font-family:'TI-kap';src:url('schrift/Montserrat-500.ttf') format('truetype');font-display:block}
+@font-face{font-family:'TI-mono';src:url('schrift/DMMono-400.ttf') format('truetype');font-display:block}
+
+/* R02 Auftakt: ruhig bis Daten, Schriften und Fotos im ersten Bild da sind, dann alles auf einmal. Rückfall ohne Skript nach 2,6 s. */
+html.ti-wartet body{visibility:hidden;animation:ti-zeigen 0s 2.6s forwards}
+@keyframes ti-zeigen{to{visibility:visible}}
+html.ti-laedt::after{content:'';position:fixed;left:50%;top:44%;width:30px;height:30px;margin:-15px;border-radius:50%;border:2px solid var(--wo-linie);border-top-color:var(--wo-akzent);animation:ti-dreh 1s linear infinite}
+@keyframes ti-dreh{to{transform:rotate(360deg)}}
+
+.ti-hinw{margin:-4px 0 22px;font-size:13px;line-height:1.5;color:var(--wo-leise)}
+.ti-hinw--rahmen{margin:0 0 16px;padding:12px 16px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);outline:1px solid rgba(73,32,45,.18);outline-offset:-5px}
+.ti-hinw--rot{margin:0 0 16px;padding:12px 16px;border-radius:var(--wo-r3);background:#f6e9ea;color:var(--wo-akzent);box-shadow:inset 0 0 0 1px rgba(73,32,45,.3)}
+.ti-klein{font-size:12.5px;line-height:1.5;color:var(--wo-leise);margin:8px 0 0}
+.ti-tipp{font-size:12.5px;color:var(--wo-leise);margin:18px 2px 4px}
+.ti-gut{color:var(--wo-gut)!important}
+.ti-rot{color:var(--wo-akzent)!important}
+
+/* ---------- Liste der Abende (Bilder 104 × 78, Handy 72 × 54; Master 3) ---------- */
+/* Suchfeld über der Liste: der Baustein .wo-such des Kleids (wie «In deinen Medien suchen …» im Vorbild, ⌘K) */
+.ti-zw{display:flex;align-items:flex-end;justify-content:space-between;gap:14px 20px;flex-wrap:wrap;margin:56px 0 20px}
+.ti-zw .wo-zw{margin:0}
+.ti-suche{flex:0 1 320px;min-width:220px}
+.ti-suche input{padding-right:52px}
+.ti-suche input::-webkit-search-cancel-button{display:none}
+.ti-suche kbd{position:absolute;right:12px;font:400 10px/1 var(--wo-mono);letter-spacing:.08em;padding:5px 7px;border-radius:6px;color:var(--wo-leise);box-shadow:inset 0 0 0 1px var(--wo-linie);pointer-events:none}
+.ti-ab[hidden],.ti-liste[hidden],[data-suchgruppe][hidden]{display:none}
+@media (max-width:640px){ .ti-zw{margin:40px 0 16px} .ti-suche{flex:1 1 100%} .ti-suche kbd{display:none} .ti-suche input{padding-right:16px} }
+.ti-liste{display:flex;flex-direction:column;border-radius:var(--wo-r2);overflow:hidden;background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie),0 22px 32px -26px rgba(0,0,0,.4)}
+.ti-ab{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:18px;align-items:center;padding:14px 20px 14px 14px;border-top:1px solid var(--wo-linie);color:inherit;text-decoration:none;position:relative;transition:background-color .3s var(--wo-e2)}
+.ti-ab:first-child{border-top:0}
+@media (hover:hover){.ti-ab:hover{background:var(--wo-blatt)}}
+.ti-ab__b{width:104px;height:78px;border-radius:var(--wo-r3);overflow:hidden;background:var(--wo-nacht);outline:1px solid rgba(225,207,197,.5);outline-offset:-4px}
+.ti-ab__b img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.ti-ab__t{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ti-ab__k{font:400 10.5px/1.4 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent)}
+.ti-ab__t b{font:400 21px/1.2 var(--wo-titel);color:var(--wo-tinte)}
+.ti-ab__t small{font-size:13px;line-height:1.5;color:var(--wo-leise)}
+.ti-ab__st{display:flex;flex-direction:column;align-items:flex-end;gap:6px;text-align:right}
+.ti-ab__st em{font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--wo-tinte);padding:6px 10px;border-radius:var(--wo-r3);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.ti-ab__st small{font-size:12px;color:var(--wo-leise)}
+.ti-ab--leise .ti-ab__t b{color:var(--wo-leise)}
+
+/* ---------- Mappe eines Abends ---------- */
+.ti-zeile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px}
+.ti-gest{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:22px 24px;border-radius:var(--wo-r1);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie),0 22px 32px -26px rgba(0,0,0,.4);outline:1px solid rgba(73,32,45,.2);outline-offset:-7px}
+.ti-gest b{font:400 22px/1.2 var(--wo-titel)}
+.ti-gest>span:not(.wo-mk){font-size:13px;color:var(--wo-leise);margin-bottom:10px}
+.ti-gest .wo-kn{margin-top:auto}
+
+.ti-mappe,.ti-raster{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
+.ti-blk{--ti-b:calc((100% - 72px) / 4);flex:0 0 var(--ti-b);min-width:0;display:flex;flex-direction:column;border-radius:var(--wo-r1);overflow:hidden;background:var(--wo-weiss);color:inherit;text-decoration:none;text-align:left;border:0;padding:0;cursor:pointer;font:inherit;
+  box-shadow:inset 0 0 0 1px var(--wo-linie),0 26px 36px -28px rgba(0,0,0,.45);transition:transform .45s var(--wo-e2),box-shadow .45s var(--wo-e2)}
+@media (hover:hover){.ti-blk:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px var(--wo-linie),0 34px 44px -28px rgba(0,0,0,.55)}}
+.ti-blk__flaeche{position:relative;display:grid;place-items:center;height:290px;padding:22px;background:var(--wo-nacht);isolation:isolate}
+.ti-blk__flaeche::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--wo-tapete);opacity:.5}
+.ti-blk__flaeche .ti-bild{box-shadow:0 1px 0 rgba(255,255,255,.08),0 18px 30px -12px rgba(0,0,0,.8)}
+.ti-blk__t{display:flex;flex-direction:column;gap:6px;padding:16px 18px 18px;flex:1}
+.ti-blk__k{font:400 10px/1.4 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent)}
+.ti-blk__t b{font:400 19px/1.2 var(--wo-titel);color:var(--wo-tinte)}
+.ti-blk__t small{font-size:12.5px;line-height:1.5;color:var(--wo-leise)}
+.ti-blk__st{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.ti-st{font:400 10px/1.3 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;font-style:normal;padding:5px 9px;border-radius:var(--wo-r3);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.ti-st--fertig{color:#fff;background:var(--wo-gut);box-shadow:none}
+.ti-st--arbeit{color:var(--wo-akzent);box-shadow:inset 0 0 0 1px rgba(73,32,45,.4)}
+.ti-st--vorschlag{color:var(--wo-leise)}
+.ti-bild{position:relative;overflow:hidden;flex:none;border-radius:1px}
+.ti-raster{margin-top:34px}
+
+/* ---------- Editor ---------- */
+@media (min-width:901px){
+  html.ti-im-editor .wo-rand{display:none}
+  html.ti-im-editor .wo-raum{grid-column:2/4;margin-left:0}
+  html.ti-im-editor .wo-leiste{left:28px}
+}
+.ti-ed{display:grid;grid-template-columns:360px minmax(0,1fr);grid-template-areas:"panel buehne";gap:24px;align-items:start}
+.ti-ed-buehne{grid-area:buehne;position:sticky;top:96px;display:flex;flex-direction:column;height:calc(100vh - 226px);min-height:380px;border-radius:var(--wo-r1);background:var(--wo-nacht);isolation:isolate;overflow:hidden;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 0 0 1px var(--wo-linie-d),0 40px 60px -40px rgba(0,0,0,.75)}
+.ti-ed-buehne::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--wo-tapete);opacity:.42;pointer-events:none}
+.ti-ed-leiste,.ti-ed-fuss{display:flex;align-items:center;gap:12px;padding:12px 14px 12px 18px;color:var(--wo-weiss);flex:none}
+.ti-ed-leiste{border-bottom:1px solid var(--wo-linie-d);background:rgba(12,10,11,.5)}
+.ti-ed-fuss{border-top:1px solid var(--wo-linie-d);background:rgba(12,10,11,.5);justify-content:space-between}
+.ti-zurueck{display:inline-flex;align-items:center;gap:8px;color:var(--wo-gold);text-decoration:none;font:400 10.5px/1.2 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;min-width:0}
+.ti-zurueck span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ti-ed-leiste__mitte{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;min-width:0}
+.ti-seite{font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:320px}
+.ti-ed-leiste__r{display:flex;align-items:center;gap:10px;flex:none}
+.ti-undo{display:flex;gap:6px;flex:none}
+.ti-undo .ti-rk[hidden]{display:grid!important;visibility:hidden}
+.ti-rk{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;color:var(--wo-gold);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px var(--wo-linie-d);padding:0}
+.ti-rk .wo-ic{width:15px;height:15px}
+.ti-ed-panel .ti-rk,.ti-rk--hell{color:var(--wo-tinte);background:linear-gradient(180deg,var(--wo-weiss),var(--wo-blatt));box-shadow:inset 0 0 0 1px var(--wo-linie),0 4px 10px -6px rgba(0,0,0,.35)}
+.ti-pruef{display:inline-flex;align-items:center;gap:9px;height:36px;padding:0 8px 0 12px;border:0;border-radius:var(--wo-rk);cursor:pointer;color:var(--wo-weiss);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px var(--wo-linie-d);font:400 10.5px/1 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase}
+.ti-pruef i{width:9px;height:9px;border-radius:50%;background:#7fae86}
+.ti-pruef--gelb i{background:#e2bd57}.ti-pruef--rot i{background:#e07b7b}
+.ti-pruef b{min-width:22px;height:22px;padding:0 7px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.12);font-size:11px;letter-spacing:0}
+.ti-flaeche{flex:1;min-height:0;overflow:auto;display:grid;place-items:center;padding:28px}
+.ti-halter{position:relative;flex:none;box-shadow:0 2px 0 rgba(255,255,255,.06),0 30px 50px -20px rgba(0,0,0,.85)}
+.ti-halter:not(.ti-halter--schnitt){overflow:hidden}
+.ti-schnitt{position:absolute;pointer-events:none;outline:1px dashed rgba(225,207,197,.9);box-shadow:0 0 0 9999px rgba(12,10,11,.35)}
+.ti-halter .el-key{cursor:text}
+.ti-halter .el-key:hover{box-shadow:inset 0 0 0 9999px rgba(225,207,197,.14)}
+.ti-halter .ti-sel{box-shadow:inset 0 0 0 2px rgba(225,207,197,.95),inset 0 0 0 4px rgba(73,32,45,.65)}
+.ti-halter .ti-schreibt{outline:none;background:rgba(255,255,255,.28);box-shadow:inset 0 0 0 2px rgba(225,207,197,.95);cursor:text;user-select:text;-webkit-user-select:text}
+.ti-ed-fuss__f{font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ti-zoom{display:flex;align-items:center;gap:6px;flex:none}
+.ti-zoom__w{min-width:64px;height:34px;padding:0 12px;display:inline-grid;place-items:center;text-align:center;border:0;border-radius:var(--wo-rk);cursor:pointer;color:var(--wo-weiss);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px var(--wo-linie-d);font:400 10.5px/1 var(--wo-mono);letter-spacing:.1em}
+
+/* Schalter im Hausstil (R21) */
+.ti-schalter{position:relative;display:inline-flex;align-items:center;gap:10px;cursor:pointer;font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.85);flex:none}
+/* Prüfung 2 (Punkt 14): die unsichtbare Checkbox hatte keinen Bezugsrahmen und ragte aus dem rollenden Panel, die Seite rollte ins Leere */
+.ti-schalter input{position:absolute;left:0;top:0;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.ti-schalter span{position:relative;width:38px;height:22px;border-radius:11px;background:rgba(255,255,255,.12);box-shadow:inset 0 0 0 1px var(--wo-linie-d);flex:none;transition:background-color .3s}
+.ti-schalter span::after{content:'';position:absolute;left:3px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--wo-gold);transition:transform .35s var(--wo-e2)}
+.ti-schalter input:checked+span{background:var(--wo-akzent)}
+.ti-schalter input:checked+span::after{transform:translateX(16px)}
+.ti-schalter input:focus-visible+span{outline:2px solid var(--wo-gold);outline-offset:2px}
+.ti-schalter--hell{color:var(--wo-tinte);font:500 13.5px/1.4 var(--wo-sans);letter-spacing:0;text-transform:none;margin-top:4px}
+.ti-schalter--hell span{background:var(--wo-papier2);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.ti-schalter--hell input:disabled+span{opacity:.5}
+
+/* Panel links (wie «Entwerfen» im Vorbild) */
+.ti-ed-panel{grid-area:panel;position:sticky;top:96px;display:flex;flex-direction:column;max-height:calc(100vh - 226px);min-height:380px;border-radius:var(--wo-r1);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie),0 26px 40px -30px rgba(0,0,0,.4)}
+/* Reiter wie im Vorbild (Schrift in Mono-Versalien, je Reiter so breit wie sein Wort plus Innenabstand der Rahmen-Knöpfe, Rest gleich verteilt);
+   Prüfung 05.11.2026: vorher klebte die Schrift an der Rundung und «Fassungen» wurde bei 920–1180 px abgeschnitten */
+.ti-reiter{margin:14px 14px 0;display:flex;flex:none}
+.ti-reiter button{flex:1 1 auto;padding:10px 9px;font:400 9.5px/1 var(--wo-mono);letter-spacing:.06em;white-space:nowrap;text-align:center;text-transform:uppercase;border-radius:var(--wo-rk);color:var(--wo-leise)}
+.ti-reiter button[aria-pressed="true"]{color:var(--wo-weiss);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));box-shadow:inset 0 1px 0 rgba(255,255,255,.16)}
+.ti-ed-panel__in{position:relative;flex:1;min-height:0;overflow:auto;padding:16px 18px 26px;overscroll-behavior:contain}
+.ti-block{padding:16px 0 18px;border-top:3px double rgba(73,32,45,.22);display:flex;flex-direction:column;gap:12px}
+.ti-block:first-child{border-top:0;padding-top:4px}
+.ti-block>header{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:34px}
+.ti-block>header b{font:400 18px/1.2 var(--wo-titel);color:var(--wo-tinte);min-width:0;overflow-wrap:anywhere}
+.ti-block>header small{font:400 10px/1.3 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-leise);text-align:right}
+.ti-blockkn{display:flex;align-items:center;gap:6px;flex:none}
+.ti-feld{gap:6px}
+.ti-feld>span{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ti-feld input,.ti-feld textarea{font-size:14.5px;padding:11px 14px;background:linear-gradient(180deg,var(--wo-papier),var(--wo-blatt));box-shadow:inset 0 2px 5px -2px rgba(0,0,0,.14),inset 0 0 0 1px var(--wo-linie);resize:vertical}
+.ti-feld textarea{line-height:1.45;min-height:44px;display:block}
+.ti-feld--sel input,.ti-feld--sel textarea{box-shadow:inset 0 2px 5px -2px rgba(0,0,0,.14),inset 0 0 0 1.5px var(--wo-akzent);background:#fff}
+.ti-feld--sel>span::before{content:'';width:3px;height:12px;border-radius:2px;background:var(--wo-akzent)}
+.ti-std,.ti-aus{border:0;background:none;cursor:pointer;padding:2px 0;font:500 11.5px/1.2 var(--wo-sans);letter-spacing:0;text-transform:none;color:var(--wo-akzent);border-bottom:1px solid currentColor}
+.ti-aus{color:var(--wo-leise);margin-left:auto}
+.ti-ausz{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13.5px;color:var(--wo-leise);margin:0}
+.ti-stile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ti-stil{display:flex;flex-direction:column;align-items:center;gap:7px;padding:10px 6px 9px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:pointer}
+.ti-stil b{font:500 12px/1.25 var(--wo-sans);color:var(--wo-tinte);text-align:center}
+.ti-stil__b{display:grid;place-items:center;width:100%;height:96px;border-radius:6px;background:var(--wo-papier2)}
+.ti-stil--an{background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));box-shadow:0 10px 18px -12px rgba(0,0,0,.6)}
+.ti-stil--an b{color:var(--wo-weiss)}
+.ti-stil--an .ti-stil__b{background:rgba(255,255,255,.06)}
+.ti-farben{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ti-farbe{display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:pointer;font:500 13px/1.2 var(--wo-sans);color:var(--wo-tinte)}
+.ti-farbe i{width:26px;height:26px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15),0 0 0 2px #fff,0 0 0 3px var(--wo-linie)}
+.ti-farbe--an{box-shadow:inset 0 0 0 1.5px var(--wo-tinte)}
+.ti-wahl button{flex:1 1 auto}
+.ti-formate{display:flex;flex-direction:column;gap:8px}
+.ti-format{display:flex;align-items:center;gap:14px;padding:10px 14px 10px 12px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:pointer;text-align:left}
+.ti-format i{display:block;width:26px;max-height:36px;flex:none;border-radius:2px;background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-tinte),0 3px 6px -3px rgba(0,0,0,.4)}
+.ti-format span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ti-format b{font:500 13.5px/1.3 var(--wo-sans);color:var(--wo-tinte)}
+.ti-format small{font-size:12px;line-height:1.4;color:var(--wo-leise)}
+.ti-format--an{background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));box-shadow:0 10px 18px -12px rgba(0,0,0,.6)}
+.ti-format--an b{color:var(--wo-weiss)}.ti-format--an small{color:rgba(255,255,255,.7)}.ti-format--an i{box-shadow:inset 0 0 0 1px var(--wo-gold)}
+.ti-stufe{display:grid;grid-template-columns:minmax(0,1fr) 34px 44px 34px;align-items:center;gap:6px;font-size:13.5px}
+.ti-stufe b{text-align:center;font-size:14px}
+.ti-stufe .ti-rk[hidden]{display:block!important;visibility:hidden}
+
+/* Sitzordnung: Gäste als ruhiges Raster (nie Pillen-Klumpen), Ziehen auf Plätze */
+.ti-gaeste{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:6px;margin:0 -6px;border-radius:var(--wo-r3)}
+.ti-gast{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:9px 12px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:grab;text-align:left;touch-action:none;user-select:none;-webkit-user-select:none;min-width:0}
+.ti-gast span{font:500 13.5px/1.25 var(--wo-sans);color:var(--wo-tinte);overflow-wrap:anywhere}
+.ti-gast small{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--wo-akzent)}
+.ti-gast--gesetzt small{color:var(--wo-gut)}
+.ti-gast--wahl{background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht))}
+.ti-gast--wahl span,.ti-gast--wahl small{color:var(--wo-weiss)}
+.ti-knr{display:flex;flex-wrap:wrap;gap:8px}
+.ti-miniplan{border-radius:var(--wo-r3);background:var(--wo-papier2);padding:8px;display:grid;place-items:center}
+.ti-halter [data-platz],.ti-miniplan [data-platz]{touch-action:none}
+.ti-halter .el-rahmen[data-platz],.ti-miniplan .el-rahmen[data-platz]{cursor:grab}
+.ti-ziel.el-rahmen{box-shadow:0 0 0 3px rgba(225,207,197,.9),0 0 0 5px rgba(73,32,45,.6)}
+.ti-ziel.el-hilfe,.ti-ziel.el-text{box-shadow:inset 0 0 0 9999px rgba(225,207,197,.22)}
+.ti-ziel--ueber.el-rahmen{box-shadow:0 0 0 5px #e2bd57,0 0 0 7px rgba(73,32,45,.7)}
+.ti-ziel--ueber.el-text,.ti-ziel--ueber.el-hilfe{box-shadow:inset 0 0 0 9999px rgba(226,189,87,.45)}
+.ti-gaeste.ti-ziel--ueber{box-shadow:inset 0 0 0 2px #e2bd57}
+.ti-geist{position:fixed;left:0;top:0;z-index:90;pointer-events:none;padding:9px 14px;border-radius:var(--wo-r3);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));color:var(--wo-weiss);font:500 13.5px/1.2 var(--wo-sans);box-shadow:0 14px 26px -10px rgba(0,0,0,.6)}
+html.ti-zieht,html.ti-zieht *{cursor:grabbing!important;user-select:none!important;-webkit-user-select:none!important}
+
+/* Memory-Motive */
+.ti-motive,.ti-motivwahl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ti-motivwahl{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ti-motiv{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:pointer;text-align:left;min-width:0;color:var(--wo-akzent)}
+.ti-motiv svg{width:34px;height:34px;flex:none}
+.ti-motiv span{display:flex;flex-direction:column;min-width:0}
+.ti-motiv b{font:500 13px/1.25 var(--wo-sans);color:var(--wo-tinte);overflow-wrap:anywhere}
+.ti-motiv small{font-size:11.5px;color:var(--wo-leise)}
+.ti-motiv--an{background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));color:var(--wo-gold)}
+.ti-motiv--an b{color:var(--wo-weiss)}.ti-motiv--an small{color:rgba(255,255,255,.7)}
+
+/* Frühere Fassungen (R14) */
+.ti-fassungen{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
+.ti-fassungen li{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:12px 14px;border-radius:var(--wo-r3);background:var(--wo-blatt);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.ti-fassungen li span{display:flex;flex-direction:column;gap:3px}
+.ti-fassungen b{font:400 16px/1.25 var(--wo-titel)}
+.ti-fassungen small{font-size:12.5px;line-height:1.45;color:var(--wo-leise)}
+.ti-fassungen__ur{outline:1px solid rgba(73,32,45,.2);outline-offset:-5px}
+
+/* ---------- Fenster (R01) ---------- */
+/* Spalte nie breiter als das Gerät (Prüfung 2, Punkt 15: zwei Knöpfe nebeneinander machten das Fenster am Handy 457 px breit) */
+#fenster{position:fixed;inset:0;z-index:60;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;padding:24px}
+#fenster[hidden]{display:none}
+.ti-fe__grund{position:absolute;inset:0;background:rgba(12,10,11,.58)}
+.ti-fe{position:relative;width:min(860px,100%);min-width:0;max-height:calc(100vh - 48px);display:flex;flex-direction:column;border-radius:var(--wo-r1);background:var(--wo-blatt);
+  box-shadow:inset 0 0 0 1px var(--wo-linie),0 40px 80px -30px rgba(0,0,0,.7);outline:1px solid rgba(73,32,45,.2);outline-offset:-8px;animation:ti-fe-auf .5s var(--wo-e1) both}
+@keyframes ti-fe-auf{from{transform:translateY(26px) scale(.985)}}
+.ti-fe__kopf{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"mk zu" "h zu";align-items:center;gap:4px 16px;padding:26px 28px 16px;border-bottom:3px double rgba(73,32,45,.18)}
+.ti-fe__kopf .wo-mk{grid-area:mk}
+.ti-fe__kopf h2{grid-area:h;font:400 clamp(22px,2vw,28px)/1.15 var(--wo-titel);margin:0;color:var(--wo-tinte)}
+.ti-fe__zu{grid-area:zu;color:var(--wo-tinte)!important;background:var(--wo-weiss)!important;box-shadow:inset 0 0 0 1px var(--wo-linie)!important}
+.ti-fe__inhalt{overflow:auto;padding:20px 28px 26px;min-height:0}
+.ti-fe__fuss{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;padding:14px 22px 18px;border-top:1px solid var(--wo-linie)}
+.ti-fe__satz{font-size:14.5px;line-height:1.6;color:var(--wo-leise);margin:0 0 16px}
+.ti-fe__h{font:400 19px/1.2 var(--wo-titel);margin:22px 0 12px}
+.ti-fe__drei{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px;padding:24px;border-radius:var(--wo-r2);background:var(--wo-nacht);position:relative;isolation:isolate}
+.ti-fe__drei::before{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;background:var(--wo-tapete);opacity:.45}
+.ti-fe__abende{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ti-fe__ab{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;padding:8px 14px 8px 8px;border:0;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie);cursor:pointer;text-align:left;color:inherit;text-decoration:none;font:inherit}
+.ti-fe__ab img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block}
+.ti-fe__ab span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ti-fe__ab b{font:400 17px/1.2 var(--wo-titel)}
+.ti-fe__ab small{font-size:12px;color:var(--wo-leise)}
+.ti-gest-fe{display:grid;grid-template-columns:auto minmax(0,1fr);gap:26px;align-items:start}
+.ti-gest-fe__bild{padding:20px;border-radius:var(--wo-r2);background:var(--wo-nacht);position:sticky;top:0}
+.ti-vn{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ti-vn figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px;border-radius:var(--wo-r2);background:var(--wo-nacht)}
+.ti-vn figcaption{font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-gold)}
+.ti-vn__liste{margin:16px 0 0;padding-left:18px;font-size:13.5px;line-height:1.6;color:var(--wo-leise)}
+.ti-druck-vor{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;padding:20px;border-radius:var(--wo-r2);background:var(--wo-nacht);margin-top:16px;max-height:420px;overflow:auto}
+.ti-druck-vor figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.ti-druck-vor figcaption{font:400 9.5px/1.3 var(--wo-mono);letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);max-width:160px;text-align:center}
+.ti-druck-vor .ti-klein{color:rgba(255,255,255,.7);width:100%;text-align:center}
+.ti-druck-stand{min-height:1.5em;font-size:13.5px;color:var(--wo-tinte);margin:14px 0 0}
+.ti-befunde{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.ti-befund{display:grid;grid-template-columns:12px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:11px 14px;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie);font-size:14px;line-height:1.5}
+.ti-befund i{width:9px;height:9px;border-radius:50%;background:#e2bd57;transform:translateY(-1px)}
+.ti-befund--rot i{background:#c8585c}
+
+/* Quittung (R11): unten rechts über der Leiste, höchstens drei */
+.ti-meldung{position:fixed;right:28px;bottom:96px;z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:8px;pointer-events:none}
+.ti-meldung .wo-quittung{pointer-events:auto;margin:0;background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie),0 22px 40px -18px rgba(0,0,0,.5);animation:ti-q .5s var(--wo-e1) both}
+@keyframes ti-q{from{transform:translateY(16px)}}
+.ti-quittung--fehler>i{background:var(--wo-akzent)!important}
+
+/* Rundgang (R18) */
+.ti-rg{position:fixed;inset:0;z-index:80}
+.ti-rg__kegel{position:fixed;border-radius:14px;box-shadow:0 0 0 9999px rgba(12,10,11,.62),0 0 0 2px rgba(225,207,197,.9);transition:all .5s var(--wo-e1);pointer-events:none}
+.ti-rg__karte{position:fixed;right:28px;bottom:104px;width:min(380px,calc(100vw - 32px));padding:22px 22px 18px;border-radius:var(--wo-r1);background:var(--wo-blatt);box-shadow:0 30px 60px -20px rgba(0,0,0,.6);outline:1px solid rgba(73,32,45,.2);outline-offset:-7px;display:flex;flex-direction:column;gap:8px}
+.ti-rg__karte b{font:400 22px/1.2 var(--wo-titel)}
+.ti-rg__karte p{font-size:14px;line-height:1.55;color:var(--wo-leise);margin:0}
+.ti-rg__kn{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:8px}
+.ti-rg__weg{margin-right:auto;border:0;background:none;cursor:pointer;font:500 13px var(--wo-sans);color:var(--wo-leise);border-bottom:1px solid currentColor;padding:0}
+
+/* Startfehler-Tür (R04) */
+.ti-tuer{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;background:var(--wo-papier)}
+.ti-tuer[hidden]{display:none}
+html.ti-wartet .ti-tuer:not([hidden]){visibility:visible}
+.ti-tuer__karte{max-width:520px;padding:36px;border-radius:var(--wo-r1);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie),0 30px 50px -30px rgba(0,0,0,.5);outline:1px solid rgba(73,32,45,.2);outline-offset:-8px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.ti-tuer__karte h1{font:400 28px/1.15 var(--wo-titel);margin:0}
+.ti-tuer__karte p{margin:0;color:var(--wo-leise);font-size:14.5px;line-height:1.55}
+.ti-tuer__grund{color:var(--wo-akzent)!important}
+
+/* ---------- Zwischenbreiten und Handy (R07) ---------- */
+/* Zwischenbreiten: zwei je Reihe; die siebte Karte allein wird bewusst breit (Bild links, Text rechts), nie eine schmale Karte allein (Fehlerbuch 10a) */
+@media (max-width:1320px){ .ti-blk,.ti-mappe .ti-blk{--ti-b:calc((100% - 24px) / 2)}
+  .ti-mappe .ti-blk:last-child:nth-child(odd),.ti-raster--arten .ti-blk:last-child:nth-child(odd){--ti-b:100%;flex-direction:row}
+  .ti-mappe .ti-blk:last-child:nth-child(odd) .ti-blk__flaeche,.ti-raster--arten .ti-blk:last-child:nth-child(odd) .ti-blk__flaeche{flex:0 0 50%} }
+@media (max-width:1180px){ .ti-ed{grid-template-columns:320px minmax(0,1fr)} .ti-stile{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:1100px){ .ti-zeile{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:900px){
+  .ti-ed{grid-template-columns:minmax(0,1fr);grid-template-areas:"buehne" "panel";gap:16px}
+  .ti-ed-buehne{position:relative;top:0;height:68vh;min-height:420px}
+  .ti-ed-panel{position:relative;top:0;max-height:none;min-height:0}
+  .ti-ed-panel__in{overflow:visible}
+  .ti-meldung{right:10px;left:10px;bottom:76px;align-items:stretch}
+  .ti-rg__karte{right:16px;bottom:84px}
+  .ti-gest-fe{grid-template-columns:minmax(0,1fr)}
+  .ti-gest-fe__bild{position:relative;display:grid;place-items:center}
+}
+@media (max-width:640px){
+  .ti-ab{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:12px}
+  .ti-ab__b{width:72px;height:54px}
+  .ti-ab__t b{font-size:18px}
+  .ti-ab__st{grid-column:2;align-items:flex-start;text-align:left;flex-direction:row;flex-wrap:wrap;gap:8px}
+  .ti-blk,.ti-mappe .ti-blk{--ti-b:100%}
+  .ti-mappe .ti-blk:last-child:nth-child(odd),.ti-raster--arten .ti-blk:last-child:nth-child(odd){flex-direction:column}
+  .ti-blk__flaeche{height:auto;min-height:250px}
+  .ti-ed-leiste{flex-wrap:wrap;padding:10px 12px}
+  .ti-ed-leiste__mitte{order:3;flex-basis:100%;justify-content:space-between}
+  .ti-ed-leiste__r{order:2;flex:1 1 100%;justify-content:flex-end}
+  .ti-undo{margin-left:auto}
+  .ti-ed-fuss{padding:10px 12px;gap:8px}
+  .ti-ed-fuss__f{font-size:9.5px;letter-spacing:.06em}
+  .ti-schalter{font-size:0;gap:0}
+  .ti-flaeche{padding:16px}
+  .ti-fe__abende,.ti-vn{grid-template-columns:minmax(0,1fr)}
+  .ti-motivwahl{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ti-fe__inhalt{padding:16px 18px 20px}.ti-fe__kopf{padding:20px 18px 14px}
+  #fenster{padding:10px}
+  .ti-fe__fuss{padding:12px 16px 16px}
+  .ti-fe__fuss>.wo-kn{flex:1 1 100%;justify-content:space-between}
+  .ti-reiter button{font-size:8.5px;letter-spacing:.04em;padding:10px 6px}
+}
+

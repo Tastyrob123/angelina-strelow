@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Anleitung · Tischkarten & Menü</title>
+<meta name="robots" content="noindex, nofollow">
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/grund.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/rahmen-buehne.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.css?v=1793941135">
+<link rel="stylesheet" href="tisch.css?v=1793941135">
+<style>
+.an-app{padding-bottom:70px}
+.an-text{max-width:760px}
+.an-text p,.an-text li{font-size:15.5px;line-height:1.7;color:var(--wo-tinte)}
+.an-text p{margin:0 0 14px}
+.an-schritte{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:s}
+.an-schritte li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start;padding:18px 22px;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie);outline:1px solid rgba(73,32,45,.16);outline-offset:-6px}
+.an-schritte li::before{content:counter(s);width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:400 15px var(--wo-mono);color:var(--wo-gold);background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht))}
+.an-schritte b{display:block;font:400 19px/1.3 var(--wo-titel);margin-bottom:4px}
+.an-schritte span{font-size:14.5px;line-height:1.6;color:var(--wo-leise)}
+.an-arten{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.an-arten div{padding:16px 20px;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.an-arten b{display:block;font:400 18px/1.3 var(--wo-titel)}
+.an-arten small{display:block;font:400 10px/1.5 var(--wo-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--wo-akzent);margin:3px 0 6px}
+.an-arten span{font-size:14px;line-height:1.55;color:var(--wo-leise)}
+@media (max-width:900px){.an-arten{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body class="wo-app an-app">
+<header class="wo-kopf" id="kopf"></header>
+<nav class="wo-rand" id="rand" aria-label="Bereiche"></nav>
+<main class="wo-raum" id="haupt">
+  <div id="sb"></div>
+  <div class="an-text">
+  <h2 class="wo-zw" id="wozu">Wozu <em>dieses Werkzeug</em></h2>
+  <p>Bei Klaus und Tanja fanden die Gäste ihren Platz über ein Memory-Spiel. Solche Stücke machen einen Abend besonders. Hier entstehen sie für jeden Abend: aus den Gängen, Weinen und Gästen, die im Abendplan stehen, in einer Gestaltung, die zum Anlass passt. Jeder Gast am Tisch sieht deine Handschrift, und deine kleine Karte am Platz sagt, wie man dich erreicht.</p>
+  <h2 class="wo-zw" id="mappe">Die Mappe <em>eines Abends</em></h2>
+  <div class="an-arten" id="arten"></div>
+  <h2 class="wo-zw" id="ablauf">So entsteht <em>eine Mappe</em></h2>
+  <ol class="an-schritte">
+    <li><div><b>Abend öffnen</b><span>In der Übersicht oder links unter «Abende». Jeder Abend ab der Zusage steht dort mit dem Stand seiner Drucksachen. Abende vor der Zusage lassen sich schon ansehen.</span></div></li>
+    <li><div><b>Gestaltung wählen</b><span>«Gestaltung wählen»: einer von zwölf Stilen, die Akzentfarbe, Monogramm oder Namen der Gastgeber im Kopf, deine Wortmarke klein im Fuss. Die Gestaltung gilt für alle Drucksachen des Abends, damit der Tisch aus einem Guss ist.</span></div></li>
+    <li><div><b>Ein Blatt öffnen und anpassen</b><span>Texte kommen aus dem Abendplan. Ändern geht im Feld links oder direkt im Blatt mit Doppelklick. Gänge und Weine lassen sich verschieben und ausblenden, die Grösse in festen Stufen ändern, das Format wählen. «wie im Abendplan» setzt einen Text zurück.</span></div></li>
+    <li><div><b>Plätze vergeben</b><span>Bei Tischkarten, Tischplan und Memory: Reiter «Plätze». Runde oder lange Tafel, Zahl der Plätze, dann einen Namen auf einen Platz ziehen. Am Handy: Namen antippen, dann den Platz. Ein Platz auf einen anderen gezogen tauscht die beiden.</span></div></li>
+    <li><div><b>Speichern und druckfertig vermerken</b><span>Was du änderst, wartet gelb, bis du speicherst (Knopf unten oder ⌘S). Stimmt alles, «Druckfertig vermerken». Ändert sich danach etwas, steht das Blatt wieder «In Arbeit», damit der Stand immer stimmt.</span></div></li>
+    <li><div><b>Drucken</b><span>«PDF» bei einem Blatt oder «Ganze Mappe als PDF» beim Abend. Für die Druckerei mit Schnittmarken und 3 mm Beschnitt, für den Drucker zu Hause ohne. Karten «auf Bogen» liegen auf A4 mit den Schnittmarken am Rand; die Memory-Rückseiten sind gespiegelt, damit sie beim beidseitigen Druck auf ihrer Vorderseite liegen. «Bild dieser Seite» gibt ein PNG, etwa um die Menükarte vorab an den Gastgeber zu schicken.</span></div></li>
+  </ol>
+  <h2 class="wo-zw" id="pruefen">Druckprüfung <em>vor dem Druck</em></h2>
+  <p>Oben am Blatt zählt die Druckprüfung, was zu klären ist. Rot heisst: vor dem Druck klären, etwa ein Text, der nicht aufs Blatt passt, oder eine Schrift unter 2 mm. Gelb ist ein Hinweis: Gäste ohne Platz, ein Text nah am Rand, Gänge, die noch ein Beispiel sind, weil der Abendplan sie noch nicht führt.</p>
+  <h2 class="wo-zw" id="fassungen">Frühere Fassungen <em>und Rückgängig</em></h2>
+  <p>Nach dem Speichern zeigt eine Quittung, was sich geändert hat, mit «Vorher, nachher» und «Rückgängig». Im Reiter «Fassungen» liegt jede gespeicherte Fassung der Drucksache und ganz unten der ursprüngliche Stand. «In den Entwurf holen» legt sie bereit; behalten wird sie erst mit «Speichern». Beim Arbeiten nehmen die runden Pfeile über dem Blatt (oder ⌘Z) die letzte Eingabe zurück und holen sie wieder (⇧⌘Z). In der Übersicht findet «Abende suchen» (⌘K) einen Abend nach Gastgeber, Ort, Anlass, Datum oder Gast.</p>
+  <h2 class="wo-zw" id="hakt">Wenn etwas <em>hakt</em></h2>
+  <p>Jede Meldung beginnt mit einem Stichwort und hat «Was tun?». Die Prüfung (runder Knopf oben rechts) zeigt, ob Server, Daten, Schriften, Fotos und das PDF-Werkzeug bereit sind, und erklärt jede Meldung. Ist das Werkzeug in zwei Fenstern offen, überschreibt keines das andere: das zweite bekommt den neuen Stand und kann seine Eingaben wieder einsetzen.</p>
+  <p>Nichts verlässt den Rechner: kein Versand, kein Hochladen. Das PDF entsteht hier und wird gespeichert, wo du es ablegst.</p>
+  </div>
+</main>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/oberflaeche.js?v=1793941135"></script>
+<script src="stile.js?v=1793941135"></script>
+<script src="anleitung.js?v=1793941135"></script>
+</body>
+</html>

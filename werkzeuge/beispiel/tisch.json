@@ -1,0 +1,356 @@
+{
+ "a-251214-kt": {
+  "stil": "advent",
+  "kopf": "zeile",
+  "sitz": {
+   "form": "rund",
+   "plaetze": 10,
+   "kopf": true,
+   "belegung": {
+    "0": "Tanja",
+    "1": "Petra",
+    "2": "Michael",
+    "3": "Sabine",
+    "4": "Thomas",
+    "5": "Klaus",
+    "6": "Andrea",
+    "7": "Jörg",
+    "8": "Monika",
+    "9": "Stefan"
+   }
+  },
+  "memory": {
+   "motive": {
+    "Tanja": "herz",
+    "Klaus": "krone",
+    "Petra": "weinglas",
+    "Michael": "flasche",
+    "Sabine": "kerze",
+    "Thomas": "glocke",
+    "Andrea": "stern",
+    "Jörg": "schluessel",
+    "Monika": "blume",
+    "Stefan": "mond"
+   }
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a4h",
+    "texte": {
+     "satz": "Schön, dass du heute Abend bei uns bist. Zieh beim Empfang eine Karte: Sie führt dich an deinen Platz."
+    }
+   },
+   "menue": {
+    "format": "a5h",
+    "texte": {
+     "kopf.zeile": "Gänseessen im Advent"
+    }
+   },
+   "weine": {
+    "format": "lang"
+   },
+   "tischkarten": {
+    "format": "faltbogen"
+   },
+   "tischplan": {
+    "format": "a4h"
+   },
+   "memory": {
+    "format": "memorybogen"
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platzbogen"
+   }
+  }
+ },
+ "a-260918-hb": {
+  "stil": "hochzeitstag",
+  "kopf": "namen",
+  "monogramm": "H & G",
+  "sitz": {
+   "form": "lang",
+   "plaetze": 14,
+   "kopf": true
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a4h",
+    "texte": {
+     "namen": "Helene und Georg Brandt",
+     "satz": "Fünfundzwanzig Jahre. Schön, dass du heute mit uns am Tisch sitzt."
+    }
+   },
+   "menue": {
+    "fertig": true,
+    "format": "lang",
+    "texte": {
+     "kopf.namen": "Helene und Georg"
+    }
+   },
+   "weine": {
+    "fertig": true,
+    "format": "lang",
+    "texte": {
+     "kopf.namen": "Helene und Georg"
+    }
+   },
+   "tischkarten": {
+    "fertig": true,
+    "format": "platz",
+    "texte": {
+     "zeile": "25 Jahre · 17. Oktober 2026"
+    }
+   },
+   "tischplan": {
+    "fertig": true,
+    "format": "a3q",
+    "texte": {
+     "kopf.namen": "Helene und Georg"
+    }
+   },
+   "memory": {
+    "fertig": true,
+    "format": "memorybogen"
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platz"
+   }
+  }
+ },
+ "a-261009-mw": {
+  "stil": "geburtstag",
+  "kopf": "monogramm",
+  "monogramm": "50",
+  "akzent": "kerze",
+  "sitz": {
+   "form": "rund",
+   "plaetze": 10,
+   "kopf": true
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a4h",
+    "texte": {
+     "kopf.titel": "Überraschung!",
+     "satz": "Heute feiern wir Andrea. Psst: Sie weiss noch von nichts.",
+     "namen": "Markus und eure Freunde"
+    }
+   },
+   "menue": {
+    "fertig": true,
+    "format": "a5h",
+    "texte": {
+     "kopf.zeile": "Für Andrea"
+    }
+   },
+   "weine": {
+    "fertig": true,
+    "format": "a5h",
+    "texte": {
+     "kopf.zeile": "Für Andrea"
+    }
+   },
+   "tischkarten": {
+    "fertig": true,
+    "format": "falt"
+   },
+   "tischplan": {
+    "fertig": true,
+    "format": "a4h"
+   },
+   "memory": {
+    "fertig": true,
+    "format": "memorybogen"
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platz"
+   }
+  }
+ },
+ "a-261014-sk": {
+  "stil": "familie",
+  "kopf": "namen",
+  "monogramm": "S & J",
+  "sitz": {
+   "form": "rund",
+   "plaetze": 6,
+   "kopf": true
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a5h",
+    "texte": {
+     "satz": "Zum ersten Mal alle an einem Tisch. Schön, dass ihr da seid.",
+     "namen": "Sophie und Jan"
+    }
+   },
+   "menue": {
+    "fertig": true,
+    "format": "a5h",
+    "weinImMenue": true,
+    "texte": {
+     "kopf.namen": "Sophie und Jan"
+    }
+   },
+   "weine": {
+    "fertig": true,
+    "format": "lang",
+    "texte": {
+     "kopf.namen": "Sophie und Jan"
+    }
+   },
+   "tischkarten": {
+    "fertig": true,
+    "format": "platz"
+   },
+   "tischplan": {
+    "format": "a4h",
+    "texte": {
+     "kopf.namen": "Sophie und Jan",
+     "satz": "Eltern neben Eltern, Kinder gegenüber."
+    }
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platz"
+   }
+  }
+ },
+ "a-261020-cl": {
+  "stil": "advent",
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a4h",
+    "texte": {
+     "satz": "Willkommen zum Adventsabend. Erst ans Feuer im Garten, dann ins Warme."
+    }
+   },
+   "menue": {
+    "format": "a5h",
+    "texte": {
+     "kopf.titel": "Vom Buffet",
+     "kopf.zeile": "Adventsabend bei Claudia"
+    }
+   },
+   "weine": {
+    "format": "lang"
+   }
+  }
+ },
+ "a-261022-rf": {
+  "stil": "smoking",
+  "monogramm": "R & I",
+  "sitz": {
+   "form": "lang",
+   "plaetze": 10,
+   "kopf": true,
+   "belegung": {
+    "0": "Ines Falk",
+    "1": "Robert Falk",
+    "2": "Dr. Martin Albers",
+    "3": "Katrin Albers",
+    "4": "Henrik Olsen",
+    "5": "Mette Olsen",
+    "6": "Bettina Roth",
+    "7": "Andreas Roth"
+   }
+  },
+  "stuecke": {
+   "menue": {
+    "format": "lang",
+    "texte": {
+     "kopf.zeile": "Weihnachtsessen bei Ines und Robert Falk"
+    }
+   },
+   "tischkarten": {
+    "format": "falt",
+    "texte": {
+     "gast:Dr. Martin Albers": "Martin Albers"
+    }
+   },
+   "tischplan": {
+    "format": "a3q"
+   }
+  }
+ },
+ "a-260929-js": {
+  "stil": "weinabend",
+  "kopf": "namen",
+  "sitz": {
+   "form": "lang",
+   "plaetze": 10,
+   "kopf": true
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a5h",
+    "texte": {
+     "kopf.titel": "Stefan wird vierzig",
+     "satz": "Schön, dass du heute Abend bei uns bist. Lehn dich zurück, für alles andere ist gesorgt."
+    }
+   },
+   "menue": {
+    "fertig": true,
+    "format": "lang",
+    "texte": {
+     "kopf.zeile": "Für Stefan"
+    }
+   },
+   "weine": {
+    "fertig": true,
+    "format": "lang"
+   },
+   "tischkarten": {
+    "fertig": true,
+    "format": "faltbogen"
+   },
+   "tischplan": {
+    "fertig": true,
+    "format": "a4q"
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platzbogen"
+   }
+  }
+ },
+ "a-261006-ew": {
+  "stil": "kerzenschein",
+  "kopf": "zeile",
+  "sitz": {
+   "form": "rund",
+   "plaetze": 6
+  },
+  "stuecke": {
+   "begruessung": {
+    "fertig": true,
+    "format": "a5h",
+    "texte": {
+     "kopf.titel": "Einmal im Jahr",
+     "satz": "Für die Freundinnen aus der Studienzeit. Heute wird nur erzählt, der Rest geschieht von selbst."
+    }
+   },
+   "menue": {
+    "fertig": true,
+    "format": "a5h"
+   },
+   "tischkarten": {
+    "fertig": true,
+    "format": "platzbogen"
+   },
+   "angelina": {
+    "fertig": true,
+    "format": "platz"
+   }
+  }
+ }
+}

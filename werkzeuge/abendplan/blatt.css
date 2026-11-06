@@ -1,0 +1,294 @@
+/* Der Abendplan · Blatt (05.11.2026, neu gesetzt 06.11.2026 nach ihrer Leistungsmappe und ihren Drucksachen, beigaben/mappen und beigaben/drucksachen).
+   Satz für Vorschau, PDF und Handy. «Dein Abend»: Salz mit ihrer Tapete, Foto des Abends mit Rahmenlinie, Siegel, Titel gross in Della Respira,
+   Zeiten abgesetzt, Ablauf als Zeitleiste, Menü als gesetzte Karte in doppelter Rahmenlinie, Fuss mit Kontakt. Arbeitsblatt: klar, Kopf auf Creme,
+   Zeiten links gross, Internes erkennbar. Lauf Montserrat in den festen Schnitten 300/400/500, Titel Della Respira 400. Nie fett, nie kursiv,
+   Sperrung höchstens .08em (Fehlerbuch 10a, Druckschriften: pdftotext liest sonst zerfallene Wörter). Farben wie mappe.css. */
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Montserrat Blatt';font-weight:300;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat Blatt';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat Blatt';font-weight:500;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-500.woff2') format('woff2')}
+:root{
+  --night:#0C0A0B;--salz:#F5F5F5;--sand:#E1CFC5;--beere:#49202D;--creme:#EDE7E3;--grau:#6E6467;--linie:#A1948D;
+  --haar:rgba(12,10,11,.12);--rahmen:rgba(73,32,45,.4);
+  --t:'Della Respira',Georgia,serif;--lauf:'Montserrat Blatt',Montserrat,system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:var(--lauf);font-weight:400;color:var(--night);-webkit-font-smoothing:antialiased;font-kerning:normal;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,p,ul,dl,dd,figure{margin:0;padding:0}
+b,strong{font-weight:500}
+i,em{font-style:normal}
+ul{list-style:none}
+img{display:block}
+.el{font-family:var(--lauf);font-weight:300}
+
+/* ---------------------------------------------------------------- Das Blatt (A4) */
+.blatt{--s:1;position:relative;width:210mm;height:297mm;background:var(--salz);overflow:hidden;font-size:calc(9.5pt * var(--s,1));line-height:1.5}
+.blatt--gastgeber{background:var(--salz) url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg') 0 0/30mm auto}
+/* ihre Rahmenlinie: eine feine Linie innen um die ganze Seite */
+.blatt::before{content:'';position:absolute;inset:7mm;border:.25mm solid var(--rahmen);pointer-events:none;z-index:2}
+.inhalt{--luft:0px;overflow-wrap:anywhere;position:absolute;left:20mm;right:20mm;top:20mm;bottom:22mm;display:flex;flex-direction:column;overflow:hidden}
+.bl-ende{margin-top:auto!important}
+.bl-abschnitt{flex:none}
+/* Robert 06.11.2026: ein Abschnitt beginnt oben am Satzspiegel; die Seite wird um ihn komponiert (gestalten() in blatt.js), nie verschoben */
+.inhalt>.bl-abschnitt:first-child>.bl-h:first-child,.inhalt>.bl-abschnitt:first-child>.bl-karte:first-child{margin-top:0}
+/* ihr Satz als ruhiges Element auf einer Seite mit Raum */
+.bl-satz{flex:none;margin-top:calc(8mm * var(--s,1));text-align:center}
+.bl-satz .bl-strich{margin:0 auto calc(5mm * var(--s,1))}
+.bl-satz p{font-family:var(--t);font-size:calc(19pt * var(--s,1));line-height:1.25;color:var(--beere)}
+.bl-satz img{height:14mm;width:auto;margin:calc(5mm * var(--s,1)) auto 0}
+/* Arbeitsblatt: freie Fläche als Notizlinien für den Abend, in den gleichen Abständen wie die Zeilen */
+.bl-notizen{flex:none;margin-top:calc(6mm * var(--s,1));padding:0 var(--innen,4mm);display:flex;flex-direction:column}
+.bl-notizen h2{padding-bottom:calc(1.6mm * var(--s,1));margin:0 calc(-1 * var(--innen,4mm));padding-left:var(--innen,4mm);font-family:var(--t);font-weight:400;font-size:calc(15pt * var(--s,1));border-bottom:.25mm solid var(--rahmen)}
+.bl-notizen i{display:block;height:8mm;margin:0 calc(-1 * var(--innen,4mm));border-bottom:.15mm solid var(--haar)}
+/* Foto auf einer Seite mit viel freiem Raum (gestalten() in blatt.js): ihr Foto, innere Rahmenlinie wie auf ihren Kacheln */
+.bl-fuellbild{flex:none;position:relative;margin:calc(8mm * var(--s,1)) calc(6mm * var(--s,1)) 0;overflow:hidden;background:var(--night)}
+.bl-fuellbild img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.bl-fuellbild::after{content:'';position:absolute;inset:3.2mm;border:.25mm solid rgba(245,245,245,.78)}
+.bl-seitenfuss{position:absolute;left:16mm;right:16mm;bottom:11mm;display:flex;justify-content:space-between;gap:6mm;font-weight:500;font-size:6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+
+/* Etiketten, Titel, Linie */
+.bl-vers{font-family:var(--lauf);font-weight:500;font-size:calc(6.6pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--beere);line-height:1.4}
+.bl-titel{font-family:var(--t);font-weight:400;line-height:1.04;letter-spacing:-.005em;color:var(--night);text-wrap:balance}
+.bl-strich{display:block;width:14mm;height:.35mm;background:var(--beere);margin:calc(5mm * var(--s,1)) auto}
+.bl-punkt{display:inline-block;width:1.3mm;height:1.3mm;margin:0 2.4mm .45mm;background:var(--beere);transform:rotate(45deg);vertical-align:middle}
+
+/* ---------------------------------------------------------------- «Dein Abend» */
+/* Kopf: Foto des Abends mit innerer Rahmenlinie, darauf das Siegel, darunter Titel, Datum, Gruss, Zeiten */
+.blatt--erste{--foto:86mm}
+.bl-bild{position:absolute;left:12mm;right:12mm;top:12mm;height:var(--foto);overflow:hidden;background:var(--night)}
+.bl-bild img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.bl-bild::after{content:'';position:absolute;inset:3.2mm;border:.25mm solid rgba(245,245,245,.78)}
+.bl-siegel{position:absolute;left:50%;top:var(--foto);width:24mm;height:24mm;margin-left:-12mm;border-radius:50%;background:var(--salz);display:grid;place-items:center;box-shadow:0 0 0 .25mm var(--rahmen);z-index:3}
+.bl-siegel::after{content:'';position:absolute;inset:1.3mm;border-radius:50%;border:.15mm solid rgba(73,32,45,.28)}
+.bl-siegel img{height:15mm;width:auto}
+.blatt--gastgeber.blatt--erste .inhalt{top:calc(var(--foto) + 28mm)}
+.blatt--gastgeber .inhalt{left:22mm;right:22mm}
+
+.bl-kopf{text-align:center;padding:0 0 calc(3mm * var(--s,1))}
+.bl-kopf .bl-titel{margin-top:calc(3mm * var(--s,1));font-size:calc(31pt * var(--s,1))}
+.bl-datum{margin-top:calc(3.5mm * var(--s,1));font-weight:500;font-size:calc(7pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.bl-kopf .bl-strich{margin:calc(5.5mm * var(--s,1)) auto calc(5mm * var(--s,1))}
+.bl-gruss{max-width:132mm;margin:0 auto;font-weight:300;font-size:calc(11.5pt * var(--s,1));line-height:1.55;color:var(--night);text-wrap:balance}
+.bl-eck{display:flex;justify-content:center;margin:calc(7mm * var(--s,1)) auto 0;max-width:150mm}
+.bl-eck>div{flex:1;padding:calc(1mm * var(--s,1)) calc(4mm * var(--s,1))}
+.bl-eck>div+div{border-left:.2mm solid var(--rahmen)}
+.bl-eck dt{font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.bl-eck dd{margin-top:calc(1.5mm * var(--s,1));font-family:var(--t);font-size:calc(23pt * var(--s,1));line-height:1;color:var(--beere)}
+
+/* Zwischentitel: Della mittig zwischen zwei feinen Linien */
+.bl-h{display:flex;align-items:center;gap:calc(5mm * var(--s,1));margin:calc(10mm * var(--s,1)) 0 calc(4mm * var(--s,1));font-family:var(--t);font-weight:400;font-size:calc(19pt * var(--s,1));line-height:1.15;color:var(--night);break-after:avoid}
+.blatt--gastgeber .bl-h{flex-wrap:wrap;justify-content:center;text-align:center}
+.blatt--gastgeber .bl-h::before,.blatt--gastgeber .bl-h::after{content:'';flex:1 1 10mm;height:0;border-top:.2mm solid var(--rahmen)}
+.blatt--gastgeber .bl-h__t{flex:0 1 auto}
+.blatt--gastgeber .bl-h small{order:5;flex:0 0 100%;margin-top:calc(1.5mm * var(--s,1));font-family:var(--lauf);font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+
+/* Ablauf als Zeitleiste: Uhrzeit in Della, eine feine senkrechte Spur mit Raute, Text, wer */
+.bl-z{display:grid;break-inside:avoid}
+.blatt--gastgeber .bl-ab{grid-template-columns:19mm 7mm minmax(0,1fr) 26mm;align-items:start}
+.blatt--gastgeber .bl-ab .bl-zeit{font-family:var(--t);font-size:calc(14pt * var(--s,1));line-height:1.1;color:var(--beere);text-align:right;padding-top:calc(1.6mm * var(--s,1))}
+.bl-spur{position:relative;align-self:stretch}
+.bl-spur::before{content:'';position:absolute;left:50%;top:0;bottom:0;border-left:.2mm solid var(--rahmen)}
+.bl-spur::after{content:'';position:absolute;left:50%;top:calc(3.2mm * var(--s,1));width:1.7mm;height:1.7mm;margin-left:-.85mm;background:var(--beere);transform:rotate(45deg)}
+.bl-ab--erst .bl-spur::before{top:calc(3.2mm * var(--s,1))}
+.bl-ab--letzt .bl-spur::before{bottom:auto;height:calc(3.2mm * var(--s,1))}
+.blatt--gastgeber .bl-ab>div{padding:calc(1.6mm * var(--s,1)) 0 calc(3mm * var(--s,1) + var(--luft,0px))}
+.blatt--gastgeber .bl-ab b{font-weight:500;font-size:calc(10pt * var(--s,1));line-height:1.35}
+.blatt--gastgeber .bl-ab p{margin-top:calc(.6mm * var(--s,1));font-weight:300;font-size:calc(9pt * var(--s,1));line-height:1.45;color:var(--night)}
+.blatt--gastgeber .bl-ab .bl-wer{padding-top:calc(2.2mm * var(--s,1));text-align:right;font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+
+/* Das Menü: gesetzte Karte in doppelter Rahmenlinie, Gang für Gang mittig, Rauten dazwischen */
+.bl-karte{position:relative;margin:calc(9mm * var(--s,1)) calc(6mm * var(--s,1)) 0;padding:calc(10mm * var(--s,1) + var(--luft,0px)) calc(12mm * var(--s,1)) calc(10mm * var(--s,1) + var(--luft,0px));background:#FAF9F8;border:.25mm solid var(--rahmen);text-align:center}
+.bl-karte::before{content:'';position:absolute;inset:1.3mm;border:.15mm solid rgba(73,32,45,.25);pointer-events:none}
+.bl-karte__t{font-family:var(--t);font-weight:400;font-size:calc(24pt * var(--s,1));line-height:1.1;color:var(--night)}
+.bl-karte__kopf .bl-strich{margin:calc(4mm * var(--s,1)) auto calc(6mm * var(--s,1))}
+.bl-karte__teil{margin-top:calc(2mm * var(--s,1));font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.bl-karte>.bl-karte__kopf+*{margin-top:0}
+.bl-gang,.bl-rund{position:relative;padding:calc(.6mm * var(--s,1)) 0;break-inside:avoid}
+.bl-karte>*+*{margin-top:calc(8mm * var(--s,1) + var(--luft,0px) * 1.4)}
+.bl-karte>.bl-gang+.bl-gang::before,.bl-karte>.bl-gang+.bl-rund::before,.bl-karte>.bl-rund+.bl-gang::before{content:'';position:absolute;left:50%;top:calc(-4.8mm * var(--s,1));width:1.6mm;height:1.6mm;margin-left:-.8mm;background:var(--beere);transform:rotate(45deg)}
+.bl-karte>.bl-rund--dazu{margin-top:calc(3.2mm * var(--s,1))}
+.bl-rund--dazu b{margin-top:0}
+.bl-gang b,.bl-rund b{display:block;margin:calc(1.6mm * var(--s,1)) auto 0;max-width:135mm;font-family:var(--t);font-weight:400;font-size:calc(16pt * var(--s,1));line-height:1.22;color:var(--night);text-wrap:balance}
+.bl-rund b{font-size:calc(13.5pt * var(--s,1))}
+.bl-besch,.bl-wz{margin:calc(1.2mm * var(--s,1)) auto 0;max-width:120mm;font-weight:300;font-size:calc(9pt * var(--s,1));line-height:1.45;color:var(--grau);text-wrap:balance}
+.bl-wein{margin-top:calc(2.6mm * var(--s,1));font-weight:400;font-size:calc(9pt * var(--s,1));color:var(--beere);text-wrap:balance}
+.bl-wein span{display:block;margin-top:.3mm;font-weight:300;font-size:calc(8pt * var(--s,1));color:var(--grau)}
+.bl-wein.bl-af{margin-top:calc(1.4mm * var(--s,1));font-weight:300;color:var(--grau)}
+.bl-koch{margin-top:calc(2mm * var(--s,1));font-weight:500;font-size:calc(6.2pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+
+/* Gäste: Namen in Della, drei Spalten, Platz klein davor */
+.bl-gaeste{columns:3;column-gap:8mm;padding:0 calc(4mm * var(--s,1))}
+.bl-gaeste p{display:flex;gap:2.5mm;align-items:baseline;break-inside:avoid;padding:calc(1.2mm * var(--s,1) + var(--luft,0px) / 3) 0}
+.bl-platz{flex:none;width:5mm;text-align:right;font-weight:500;font-size:calc(7pt * var(--s,1));color:var(--beere)}
+.bl-name{font-family:var(--t);font-size:calc(12.5pt * var(--s,1));line-height:1.2}
+.bl-name i{display:block;margin-top:.4mm;font-family:var(--lauf);font-weight:500;font-size:calc(5.8pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--beere)}
+.bl-achte{margin:calc(5mm * var(--s,1)) calc(10mm * var(--s,1)) 0;padding:calc(3.4mm * var(--s,1)) 0;border-top:.2mm solid var(--rahmen);border-bottom:.2mm solid var(--rahmen);text-align:center;font-weight:300;font-size:calc(9pt * var(--s,1));line-height:1.5;text-wrap:balance}
+.bl-achte .bl-vers{display:block;margin-bottom:calc(1mm * var(--s,1))}
+
+/* Zuhause: zwei Spalten mit Etiketten */
+.bl-zwei{display:grid;grid-template-columns:1fr 1fr;gap:calc(10mm * var(--s,1));padding:0 calc(4mm * var(--s,1));font-weight:300;font-size:calc(9.4pt * var(--s,1));line-height:1.5}
+.bl-zwei .bl-vers{margin:calc(3mm * var(--s,1) + var(--luft,0px) / 2) 0 calc(.8mm * var(--s,1))}
+.bl-zwei .bl-vers:first-child{margin-top:0}
+.bl-zwei li{position:relative;padding:calc(.5mm * var(--s,1) + var(--luft,0px) / 4) 0 calc(.5mm * var(--s,1) + var(--luft,0px) / 4) calc(4.5mm * var(--s,1))}
+.bl-zwei li::before{content:'';position:absolute;left:.4mm;top:calc(2.4mm * var(--s,1));width:1.2mm;height:1.2mm;background:var(--beere);transform:rotate(45deg)}
+
+/* Schluss: ihr Satz, Name, Kontakt */
+@font-face{font-family:'Angelina Hand';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/abendplan/schrift/PinyonScript.woff2') format('woff2')}
+.bl-fuss{padding-top:calc(6mm * var(--s,1))}
+.bl-fuss__k{position:relative;display:grid;grid-template-columns:var(--fw,50mm) minmax(0,1fr);gap:10mm;align-items:center;padding:4.5mm 10mm 4.5mm 4.5mm;border:.25mm solid var(--rahmen);background:#FAF9F8}
+.bl-fuss__k::after{content:'';position:absolute;inset:1.3mm;border:.15mm solid rgba(73,32,45,.22);pointer-events:none}
+.bl-fuss--gross .bl-fuss__k{--fw:66mm}
+.bl-fuss__foto{position:relative;height:var(--fh,62mm);overflow:hidden;background:var(--night)}
+.bl-fuss__foto img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.bl-fuss__foto::after{content:'';position:absolute;inset:2.6mm;border:.25mm solid rgba(245,245,245,.8)}
+.bl-fuss__siegel{height:13mm;width:auto;margin-bottom:4mm}
+.bl-schluss{font-family:var(--t);font-size:calc(13.5pt * var(--s,1));line-height:1.32;color:var(--night);text-wrap:balance}
+.bl-gruss-h{margin-top:calc(4mm * var(--s,1));font-family:var(--t);font-size:calc(13.5pt * var(--s,1));color:var(--night)}
+.bl-hand{margin:calc(.5mm * var(--s,1)) 0 0 -1mm;font-family:'Angelina Hand',var(--t);font-size:calc(36pt * var(--s,1));line-height:1.05;color:var(--beere);white-space:nowrap}
+.bl-fuss .bl-strich{margin:calc(3.5mm * var(--s,1)) 0 calc(3mm * var(--s,1))}
+.bl-absender{font-weight:500;font-size:calc(6.2pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.bl-kontakt{margin-top:calc(1.2mm * var(--s,1));font-weight:400;font-size:calc(8pt * var(--s,1));color:var(--night)}
+.bl-satz-k{margin-top:calc(3.5mm * var(--s,1));font-family:var(--t);font-size:calc(12pt * var(--s,1));color:var(--beere)}
+/* allein auf der letzten Seite: Schlussseite wie in der Mappe, Porträt über die ganze Breite, Gruss mittig darunter */
+.bl-fuss--seite{padding-top:0}
+.bl-fuss--seite .bl-fuss__k{grid-template-columns:minmax(0,1fr);gap:7mm;padding:4.5mm 4.5mm 9mm;text-align:center}
+.bl-fuss--seite .bl-fuss__text{display:flex;flex-direction:column;align-items:center}
+.bl-fuss--seite .bl-strich{margin-left:auto;margin-right:auto}
+.bl-fuss--seite .bl-hand{font-size:calc(46pt * var(--s,1));margin-left:0}
+
+/* ---------------------------------------------------------------- Arbeitsblatt: klar, schnell zu lesen */
+.blatt--arbeit{background:#FAFAF9;font-size:calc(8.8pt * var(--s,1))}
+.blatt--arbeit .inhalt{top:14mm;bottom:20mm;left:13mm;right:13mm}
+/* Robert 06.11.2026: Flächen und Linien links und rechts im gleichen Abstand zur Rahmenlinie (6 mm), Text mit 4 mm Innenabstand; nichts endet zufällig */
+.blatt--arbeit{--innen:calc(4mm * var(--s,1))}
+.blatt--arbeit .bl-seitenfuss{left:17mm;right:17mm}
+.bl-kopf--a{display:flex;justify-content:space-between;align-items:stretch;gap:calc(8mm * var(--s,1));text-align:left;padding:calc(6mm * var(--s,1)) calc(7mm * var(--s,1));background:var(--creme);position:relative}
+.bl-kopf--a::before{content:'';position:absolute;inset:1.3mm;border:.2mm solid rgba(73,32,45,.3);pointer-events:none}
+.bl-kopf--a .bl-titel{margin-top:calc(1.2mm * var(--s,1));font-size:calc(23pt * var(--s,1));line-height:1.08}
+.bl-kopf--a .bl-datum{margin-top:calc(2mm * var(--s,1));color:var(--night)}
+.bl-ort{font-weight:300;font-size:calc(8.6pt * var(--s,1));color:var(--night);margin-top:calc(.8mm * var(--s,1))}
+.bl-eck--a{flex:none;display:grid;grid-template-columns:repeat(2,auto);align-content:center;gap:calc(3mm * var(--s,1)) 0;margin:0;max-width:none;text-align:left}
+.bl-eck--a>div{padding:0 calc(5mm * var(--s,1))}
+.bl-eck--a>div+div{border-left:0}
+.bl-eck--a>div:nth-child(2n){border-left:.2mm solid var(--rahmen)}
+.bl-eck--a dd{font-size:calc(19pt * var(--s,1));margin-top:calc(1mm * var(--s,1))}
+.blatt--arbeit .bl-h{margin:calc(6.5mm * var(--s,1)) 0 0;padding:0 var(--innen) calc(1.6mm * var(--s,1));font-size:calc(15pt * var(--s,1));border-bottom:.25mm solid var(--rahmen)}
+.blatt--arbeit .bl-h small{margin-left:auto;font-family:var(--lauf);font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.blatt--arbeit .bl-z{grid-template-columns:calc(16mm * var(--s,1)) minmax(0,1fr) calc(22mm * var(--s,1));gap:0 calc(4mm * var(--s,1));padding:calc(1.9mm * var(--s,1) + var(--luft,0px) / 2) var(--innen);border-bottom:.15mm solid var(--haar)}
+.blatt--arbeit .bl-zeit{font-weight:500;font-size:calc(11pt * var(--s,1));line-height:1.2;color:var(--beere);font-variant-numeric:tabular-nums}
+.blatt--arbeit .bl-zeit small{display:block;margin-top:.4mm;font-weight:400;font-size:calc(6.8pt * var(--s,1));color:var(--grau)}
+.blatt--arbeit .bl-z b{font-weight:500;font-size:calc(9.4pt * var(--s,1));line-height:1.35}
+.blatt--arbeit .bl-z p{margin-top:calc(.5mm * var(--s,1));font-weight:400;font-size:calc(8.2pt * var(--s,1));line-height:1.42;color:var(--grau)}
+.blatt--arbeit .bl-wer{padding-top:calc(.8mm * var(--s,1));text-align:right;font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+.bl-intern{background:rgba(225,207,197,.38);box-shadow:inset .7mm 0 0 var(--beere)}
+.bl-nur{display:block;margin-bottom:.3mm;font-weight:500;font-size:calc(5.8pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--beere)}
+.bl-k{color:var(--beere)!important}
+.blatt--arbeit .bl-w{grid-template-columns:calc(24mm * var(--s,1)) minmax(0,1fr) calc(46mm * var(--s,1))}   /* Spalten wachsen mit der Zeilengrösse (gestalten), «ZWISCHENGANG» bleibt frei */
+.bl-zu{font-weight:500!important;font-size:calc(6.4pt * var(--s,1))!important;letter-spacing:.08em;text-transform:uppercase;padding-top:calc(.9mm * var(--s,1))}
+.blatt--arbeit .bl-w__r{font-weight:400;font-size:calc(7.4pt * var(--s,1));letter-spacing:0;text-transform:none;line-height:1.4;color:var(--night)}
+.blatt--arbeit .bl-q{grid-template-columns:calc(8mm * var(--s,1)) minmax(0,1fr)}
+.blatt--arbeit .bl-q .bl-zeit{font-family:var(--t);font-weight:400;font-size:calc(13pt * var(--s,1))}
+.bl-qs{display:grid;grid-template-columns:1fr 1fr;column-gap:calc(6mm * var(--s,1))}
+.bl-hinweis{margin:calc(3.5mm * var(--s,1)) 0 calc(1mm * var(--s,1));padding:calc(2.8mm * var(--s,1)) var(--innen,4mm);background:var(--creme);box-shadow:inset .7mm 0 0 var(--beere);font-size:calc(8.6pt * var(--s,1));break-inside:avoid}
+.bl-hinweis b{display:block;font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--beere);margin-bottom:calc(.8mm * var(--s,1))}
+.bl-hinweis p+p{margin-top:.6mm}
+.bl-hinweis--leise{background:none;box-shadow:none;border:.2mm solid var(--rahmen)}
+.bl-dl{display:grid;grid-template-columns:1fr 1fr;gap:0 calc(6mm * var(--s,1))}
+.bl-dl div{display:grid;grid-template-columns:calc(24mm * var(--s,1)) minmax(0,1fr);gap:calc(3mm * var(--s,1));padding:calc(1.5mm * var(--s,1) + var(--luft,0px) / 2) var(--innen,0);border-bottom:.15mm solid var(--haar);font-size:calc(8.4pt * var(--s,1));line-height:1.42}
+.bl-dl dt{font-weight:500;font-size:calc(6.4pt * var(--s,1));letter-spacing:.08em;text-transform:uppercase;color:var(--grau);padding-top:calc(.5mm * var(--s,1))}
+.bl-stellt{margin-top:calc(2.5mm * var(--s,1));padding:0 var(--innen,0)}
+.bl-stellt .bl-vers{margin-right:2mm}
+.bl-pack{columns:2;column-gap:8mm;padding:calc(1.6mm * var(--s,1)) var(--innen,0) 0}
+.bl-pack li{display:flex;gap:calc(2.6mm * var(--s,1));align-items:baseline;padding:calc(1mm * var(--s,1) + var(--luft,0px) / 2) 0;font-size:calc(8.6pt * var(--s,1));break-inside:avoid}
+.bl-pack i{flex:none;width:3mm;height:3mm;border:.22mm solid var(--beere);position:relative;top:.45mm}
+.bl-pack li.da i::after{content:'';position:absolute;left:.75mm;top:.15mm;width:1mm;height:1.7mm;border:solid var(--beere);border-width:0 .3mm .3mm 0;transform:rotate(45deg)}
+.bl-pack li.da{color:var(--grau)}
+
+/* ---------------------------------------------------------------- Vorschau im Werkzeug */
+html:has(body.vorschau),body.vorschau{background:#2A1D22}
+body.vorschau{padding:14px 0 30px;overflow-x:hidden}
+body.vorschau .blatt{margin:0 0 26px;transform-origin:0 0;box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 22px 40px -22px rgba(12,10,11,.6),0 2px 6px rgba(12,10,11,.2)}
+body.vorschau [data-k]{cursor:pointer;transition:background-color .25s,box-shadow .25s}
+body.vorschau [data-k]:hover{background-color:rgba(225,207,197,.28)}
+/* Fehlerbuch 10a (04.11.2026): Markierung als innen liegender Rahmen, nie Umriss nach aussen */
+body.vorschau .blitz{animation:blitz 2s cubic-bezier(.16,1,.3,1)}
+@keyframes blitz{0%,45%{background-color:rgba(225,207,197,.85);box-shadow:inset 0 0 0 .5mm rgba(73,32,45,.55)}100%{background-color:transparent;box-shadow:inset 0 0 0 .5mm rgba(73,32,45,0)}}
+@keyframes kt-auf{from{translate:0 80px;scale:.95}}
+body.vorschau #seiten.kt-auf>.blatt{animation:kt-auf 1.6s cubic-bezier(.3,1.26,.4,1) backwards}
+body.vorschau #seiten.kt-auf>.blatt:nth-child(2){animation-delay:90ms}
+body.vorschau #seiten.kt-auf>.blatt:nth-child(3){animation-delay:180ms}
+@media (prefers-reduced-motion:reduce){body.vorschau #seiten.kt-auf>.blatt{animation:none}}
+
+/* ---------------------------------------------------------------- Mini (ein Eintrag im Fenster) */
+body.mini{background:transparent;overflow:hidden}
+.blatt--mini{height:auto;min-height:0;width:172mm;background:var(--salz)}
+.blatt--mini::before{display:none}
+.blatt--mini .inhalt{position:static;padding:5mm 7mm;overflow:visible}
+.blatt--mini .bl-karte{margin:0}
+.blatt--mini .bl-gang,.blatt--mini .bl-rund{text-align:center}
+
+/* ---------------------------------------------------------------- Druck */
+@page{size:A4;margin:0}
+body.druck{background:#fff}
+@media print{.blatt{break-after:page;box-shadow:none!important;transform:none!important;margin:0!important}.blatt:last-child{break-after:auto}}
+
+/* ---------------------------------------------------------------- Handy: das Arbeitsblatt für unterwegs, eine Spalte, gross und ruhig */
+body.handy{background:var(--creme);font-size:15px;line-height:1.5}
+body.handy #seiten{overflow-wrap:anywhere;max-width:560px;margin:0 auto;padding:16px 16px 64px;background:#FAFAF9;min-height:100vh;box-shadow:0 0 0 1px var(--haar)}
+body.handy .bl-kopf--a{display:block;padding:20px 18px 18px;margin:0 -2px}
+body.handy .bl-kopf--a::before{inset:5px;border-width:1px}
+body.handy .bl-titel{font-size:31px}
+body.handy .bl-vers{font-size:11px}
+body.handy .bl-datum{font-size:11px;margin-top:8px}
+body.handy .bl-ort{font-size:13.5px}
+body.handy .bl-eck--a{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:16px;padding-top:14px;border-top:1px solid var(--rahmen)}
+body.handy .bl-eck--a>div{padding:0 8px}
+body.handy .bl-eck--a>div:first-child{padding-left:0}
+body.handy .bl-eck--a>div+div{border-left:1px solid var(--rahmen)}
+body.handy .bl-eck dt{font-size:9.5px;line-height:1.3}
+body.handy .bl-eck--a dd{font-size:24px;margin-top:4px}
+body.handy .bl-h{font-size:23px;margin:28px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--rahmen);display:flex;align-items:baseline;gap:12px;font-family:var(--t);font-weight:400}
+body.handy .bl-h small{margin-left:auto;font-family:var(--lauf);font-weight:500;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+body.handy .bl-z{display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:12px;padding:12px 0;border-bottom:1px solid var(--haar)}
+body.handy .bl-zeit{font-weight:500;font-size:18px;line-height:1.2;color:var(--beere);font-variant-numeric:tabular-nums}
+body.handy .bl-zeit small{display:block;white-space:nowrap;font-weight:400;font-size:11.5px;color:var(--grau);margin-top:2px}
+body.handy .bl-z b{font-weight:500;font-size:16px;line-height:1.35}
+body.handy .bl-z p{font-size:14px;color:var(--grau);margin-top:3px;line-height:1.45}
+body.handy .bl-z .bl-wer{grid-column:2;text-align:left;font-weight:500;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--grau);padding:4px 0 0}
+body.handy .bl-intern{margin:0 -16px;padding:12px 16px;box-shadow:inset 3px 0 0 var(--beere)}
+body.handy .bl-nur{font-size:10px;margin-bottom:2px}
+/* Prüfung 5 (2): am Handy steht das Etikett über dem Wein, damit auch «ZWISCHENGANG» ganz und mit Abstand steht */
+body.handy .bl-w{display:block}
+body.handy .bl-zu{display:block;font-size:10px!important;padding:0 0 3px}
+body.handy .bl-w .bl-w__r{display:block;padding-top:4px}
+body.handy .bl-w__r{font-size:13px!important;letter-spacing:0!important;text-transform:none!important;color:var(--night)!important}
+body.handy .bl-qs{display:block}
+body.handy .bl-q{grid-template-columns:40px minmax(0,1fr)}
+body.handy .bl-q .bl-zeit{font-family:var(--t);font-weight:400;font-size:21px}
+body.handy .bl-hinweis{font-size:14px;padding:12px 14px;box-shadow:inset 3px 0 0 var(--beere)}
+body.handy .bl-hinweis--leise{box-shadow:none;border:1px solid var(--rahmen)}
+body.handy .bl-hinweis b{font-size:10px}
+body.handy .bl-dl{display:block}
+body.handy .bl-dl div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:10px;font-size:14px;padding:8px 0;border-bottom:1px solid var(--haar)}
+body.handy .bl-dl dt{font-size:10px;padding-top:3px}
+body.handy .bl-stellt{font-size:14px;margin-top:10px}
+body.handy .bl-pack{columns:1}
+body.handy .bl-pack li{font-size:15px;padding:6px 0;gap:12px}
+body.handy .bl-pack i{width:16px;height:16px;border-width:1px;top:2px}
+body.handy .bl-pack li.da i::after{left:4.5px;top:1px;width:5px;height:9px;border-width:0 1.5px 1.5px 0}
+body.handy .bl-logo{height:46px;margin:6px auto 0}
+.hd-kopf{text-align:center;padding:10px 0 18px}
+.hd-kopf .bl-siegel-h{display:block;height:58px;width:auto;margin:8px auto 0}
+.hd-kopf .bl-vers{margin:16px 0 6px}
+.hd-kopf .bl-titel{font-size:34px}
+.hd-wahl li a{display:block;padding:15px 4px;border-bottom:1px solid var(--haar);color:inherit;text-decoration:none}
+.hd-wahl b{display:block;font-family:var(--t);font-weight:400;font-size:22px}
+.hd-wahl span{font-size:13px;color:var(--grau)}
+.hd-zurueck{margin:0 0 12px}
+.hd-zurueck a{font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--beere);text-decoration:none}
+.hd-fehler{padding:40px 10px;text-align:center;color:var(--grau)}
+[hidden]{display:none!important}
+
+/* Prüfung 2 (Fund 2): Etiketten und Spaltenköpfe brechen nie mitten im Wort («KÜHLSCHRAN / K»); nur der Fliesstext bricht lange Wörter um */
+.bl-vers,.bl-zu,.bl-eck dt,.bl-dl dt,.bl-hinweis b,.bl-h,.bl-nur,.bl-wer,.bl-datum{overflow-wrap:normal;word-break:keep-all;hyphens:manual}

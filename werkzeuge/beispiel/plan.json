@@ -1,0 +1,4526 @@
+{
+ "a-251214-kt": {
+  "beispiel": false,
+  "belegt": true,
+  "vorlage": "dinner",
+  "titel": "Gänseessen in Bensberg",
+  "ankunft": "",
+  "gaeste_ab": "",
+  "ende": "",
+  "gruss": "",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "",
+    "dauer": 0,
+    "art": "empfang",
+    "was": "Sektempfang",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p2",
+    "zeit": "",
+    "dauer": 0,
+    "art": "aperitif",
+    "was": "Flying Buffet",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p3",
+    "zeit": "",
+    "dauer": 0,
+    "art": "platz",
+    "was": "Platz nehmen: Sitzordnung als Memory-Spiel",
+    "wer": "alle",
+    "notiz": ""
+   },
+   {
+    "id": "p4",
+    "zeit": "",
+    "dauer": 0,
+    "art": "gang",
+    "was": "Erster Gang",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p5",
+    "zeit": "",
+    "dauer": 0,
+    "art": "gang",
+    "was": "Zweiter Gang",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p6",
+    "zeit": "",
+    "dauer": 0,
+    "art": "gang",
+    "was": "Dritter Gang",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g3"
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Erster Gang",
+    "gericht": "",
+    "beschreibung": "",
+    "koch": "Klaus",
+    "zeit": "",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Zweiter Gang",
+    "gericht": "",
+    "beschreibung": "",
+    "koch": "Klaus",
+    "zeit": "",
+    "hinweis": ""
+   },
+   {
+    "id": "g3",
+    "name": "Dritter Gang",
+    "gericht": "",
+    "beschreibung": "",
+    "koch": "Klaus",
+    "zeit": "",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Sekt zum Empfang",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "",
+    "oeffnen": "",
+    "menge": "",
+    "glas": "",
+    "notiz": ""
+   },
+   {
+    "id": "w2",
+    "zu": "g1",
+    "art": "",
+    "name": "",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "",
+    "oeffnen": "",
+    "menge": "",
+    "glas": "",
+    "notiz": "Auf das Menü abgestimmt"
+   },
+   {
+    "id": "w3",
+    "zu": "g2",
+    "art": "",
+    "name": "",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "",
+    "oeffnen": "",
+    "menge": "",
+    "glas": "",
+    "notiz": "Auf das Menü abgestimmt"
+   },
+   {
+    "id": "w4",
+    "zu": "g3",
+    "art": "",
+    "name": "",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "",
+    "oeffnen": "",
+    "menge": "",
+    "glas": "",
+    "notiz": "Auf das Menü abgestimmt"
+   }
+  ],
+  "gaeste": [],
+  "vorort": {
+   "adresse": "Bergisch Gladbach-Bensberg",
+   "anfahrt": "",
+   "parken": "",
+   "klingel": "",
+   "ansprech": "Klaus und Tanja",
+   "kueche": {},
+   "garderobe": "",
+   "tisch": "Sitzordnung als Memory-Spiel",
+   "raum": "",
+   "stellt": []
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe",
+    "hat": true
+   }
+  ],
+  "abstimmung": {},
+  "intern": "Nur Belegtes eingetragen. Zeiten, Gerichte, Weine und Gäste sind nicht überliefert.",
+  "stand": "2025-12-14T10:00",
+  "fassung": 1
+ },
+ "a-260918-hb": {
+  "beispiel": true,
+  "vorlage": "jubilaeum",
+  "titel": "Silberhochzeit von Helene und Georg",
+  "ankunft": "15:00",
+  "gaeste_ab": "18:00",
+  "ende": "23:30",
+  "gruss": "Ihr dürft an diesem Abend einfach am Tisch sitzen bleiben.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "15:00",
+    "dauer": 75,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Festliche Tafel im Wintergarten, Gläser, Getränke, Tisch für das Hochzeitsfoto von 2001."
+   },
+   {
+    "id": "p2",
+    "zeit": "16:15",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit Helene und dem Caterer",
+    "wer": "alle",
+    "notiz": "Reihenfolge der Gänge, Rede von Georg nach dem Platznehmen.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "17:30",
+    "dauer": 20,
+    "art": "sonst",
+    "was": "Letzter Blick auf Tisch und Licht",
+    "wer": "angelina",
+    "notiz": "Kerzen an, Wasser eingeschenkt.",
+    "intern": true
+   },
+   {
+    "id": "p4",
+    "zeit": "18:00",
+    "dauer": 50,
+    "art": "empfang",
+    "was": "Empfang mit Sekt im Wintergarten",
+    "wer": "angelina",
+    "notiz": "Helene und Georg empfangen an der Tür, ich reiche die Gläser."
+   },
+   {
+    "id": "p5",
+    "zeit": "18:50",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": "Tischkarten liegen, ich führe die Gäste an ihre Plätze."
+   },
+   {
+    "id": "p6",
+    "zeit": "19:00",
+    "dauer": 15,
+    "art": "programm",
+    "was": "Georg spricht",
+    "wer": "gastgeber",
+    "notiz": "Gläser sind gefüllt, Service ruht während der Rede."
+   },
+   {
+    "id": "p7",
+    "zeit": "19:15",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p8",
+    "zeit": "19:55",
+    "dauer": 30,
+    "art": "gang",
+    "was": "Zwischengang",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p9",
+    "zeit": "20:30",
+    "dauer": 60,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "caterer",
+    "notiz": "Der Wein wird nachgeschenkt, ihr bleibt sitzen.",
+    "gang": "g3"
+   },
+   {
+    "id": "p10",
+    "zeit": "21:35",
+    "dauer": 15,
+    "art": "programm",
+    "was": "Worte der Kinder",
+    "wer": "gaeste",
+    "notiz": "Lena und Paul sprechen gemeinsam."
+   },
+   {
+    "id": "p11",
+    "zeit": "21:50",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g4"
+   },
+   {
+    "id": "p12",
+    "zeit": "22:30",
+    "dauer": 50,
+    "art": "digestif",
+    "was": "Kaffee, Digestif, Zeit füreinander",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p13",
+    "zeit": "23:20",
+    "dauer": 20,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": "Mäntel liegen bereit, ich begleite zur Tür."
+   },
+   {
+    "id": "p14",
+    "zeit": "23:40",
+    "dauer": 50,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "Geschirr des Caterers gezählt in die Kisten.",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Carpaccio vom Kalb mit Kapern und Parmesan",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "19:15",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Zwischengang",
+    "gericht": "Klare Tomatenessenz mit Basilikum",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "19:55",
+    "hinweis": ""
+   },
+   {
+    "id": "g3",
+    "name": "Hauptgang",
+    "gericht": "Rehrücken mit Pfifferlingen und Kartoffelplätzchen",
+    "beschreibung": "Wie am Hochzeitstag 2001.",
+    "koch": "Caterer",
+    "zeit": "20:30",
+    "hinweis": "Teller kommen angerichtet, ich setze ein."
+   },
+   {
+    "id": "g4",
+    "name": "Dessert",
+    "gericht": "Weisse Mousse au Chocolat mit Himbeeren",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "21:50",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Pinot Brut",
+    "weingut": "Sektkellerei Raumland",
+    "rebsorte": "Pinot Noir, Chardonnay",
+    "jahrgang": "2018",
+    "herkunft": "Rheinhessen",
+    "temperatur": "6–8 °C",
+    "oeffnen": "17:45",
+    "menge": "4 Flaschen",
+    "glas": "Sektglas",
+    "notiz": "Fein und trocken, ein festlicher Anfang."
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Rosé-Secco alkoholfrei",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "6 °C",
+    "oeffnen": "17:45",
+    "menge": "2 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Riesling trocken",
+    "weingut": "Weingut Fritz Haag",
+    "rebsorte": "Riesling",
+    "jahrgang": "2022",
+    "herkunft": "Mosel",
+    "temperatur": "9 °C",
+    "oeffnen": "18:50",
+    "menge": "2 Flaschen",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g3",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "Weingut Meyer-Näkel",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "2020",
+    "herkunft": "Ahr",
+    "temperatur": "16 °C",
+    "oeffnen": "19:30, eine Stunde vorher dekantieren",
+    "menge": "4 Flaschen",
+    "glas": "Burgunderglas",
+    "notiz": "Weich und warm, trägt das Reh."
+   },
+   {
+    "id": "w5",
+    "zu": "g4",
+    "art": "suess",
+    "name": "Riesling Auslese",
+    "weingut": "Weingut Dr. Loosen",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Mosel",
+    "temperatur": "8 °C",
+    "oeffnen": "21:40",
+    "menge": "1 Flasche",
+    "glas": "Dessertweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w6",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "6 Flaschen je Sorte",
+    "glas": "Wasserglas",
+    "notiz": ""
+   },
+   {
+    "id": "w7",
+    "zu": "digestif",
+    "art": "digestif",
+    "name": "Williams-Christ-Birnenbrand",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "Raumtemperatur",
+    "oeffnen": "",
+    "menge": "1 Flasche",
+    "glas": "Digestifglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Helene Brandt",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": true,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Georg Brandt",
+    "karte": "",
+    "beziehung": "Gastgeber",
+    "ehrengast": true,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "trinkt am liebsten Rotwein",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Lena Brandt",
+    "karte": "",
+    "beziehung": "Tochter",
+    "ehrengast": false,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Paul Brandt",
+    "karte": "",
+    "beziehung": "Sohn",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "",
+    "vorlieben": "vegetarisch",
+    "alkoholfrei": false,
+    "notiz": "Bekommt den Hauptgang ohne Fleisch, der Caterer weiss Bescheid."
+   },
+   {
+    "id": "q5",
+    "name": "Ingrid Wolters",
+    "karte": "",
+    "beziehung": "Mutter von Helene",
+    "ehrengast": false,
+    "platz": "5",
+    "unvertraeglich": "Laktose",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Kommt mit Gehstock, Platz nah an der Tür."
+   },
+   {
+    "id": "q6",
+    "name": "Hans Wolters",
+    "karte": "",
+    "beziehung": "Vater von Helene",
+    "ehrengast": false,
+    "platz": "6",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q7",
+    "name": "Karin Brandt",
+    "karte": "",
+    "beziehung": "Schwester von Georg",
+    "ehrengast": false,
+    "platz": "7",
+    "unvertraeglich": "",
+    "vorlieben": "trinkt keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q8",
+    "name": "Thomas Lehmann",
+    "karte": "",
+    "beziehung": "Mann von Karin",
+    "ehrengast": false,
+    "platz": "8",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q9",
+    "name": "Birgit Sommer",
+    "karte": "",
+    "beziehung": "Trauzeugin",
+    "ehrengast": false,
+    "platz": "9",
+    "unvertraeglich": "Haselnuss",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q10",
+    "name": "Frank Sommer",
+    "karte": "",
+    "beziehung": "Mann von Birgit",
+    "ehrengast": false,
+    "platz": "10",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q11",
+    "name": "Martina Kühn",
+    "karte": "",
+    "beziehung": "Freundin seit der Schulzeit",
+    "ehrengast": false,
+    "platz": "11",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q12",
+    "name": "Stefan Kühn",
+    "karte": "",
+    "beziehung": "Mann von Martina",
+    "ehrengast": false,
+    "platz": "12",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q13",
+    "name": "Ulla Reinhardt",
+    "karte": "",
+    "beziehung": "Nachbarin",
+    "ehrengast": false,
+    "platz": "13",
+    "unvertraeglich": "",
+    "vorlieben": "keinen Alkohol, fährt",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q14",
+    "name": "Dieter Reinhardt",
+    "karte": "",
+    "beziehung": "Nachbar",
+    "ehrengast": false,
+    "platz": "14",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   }
+  ],
+  "vorort": {
+   "adresse": "Am Stadtwaldgürtel 7, 50931 Köln-Lindenthal",
+   "anfahrt": "Über die Dürener Strasse, dritte Einfahrt rechts.",
+   "parken": "Vor dem Haus, Anwohnerparken ist frei bis 8 Uhr.",
+   "klingel": "Brandt, Seiteneingang zur Küche",
+   "ansprech": "Helene Brandt",
+   "kueche": {
+    "glaeser": "Vitrine im Wintergarten, Sektgläser vom Caterer in Kisten",
+    "geschirr": "kommt vom Caterer",
+    "besteck": "kommt vom Caterer",
+    "kuehlschrank": "Getränke im Kühlschrank der Waschküche",
+    "ofen": "Ofen und Wärmeschrank des Caterers",
+    "spuele": "Spülmaschine leer, zweite in der Waschküche",
+    "notiz": "Der Caterer richtet in der Küche an, ich setze ein und räume ab."
+   },
+   "garderobe": "Gästezimmer im Erdgeschoss, Bügelstange steht bereit",
+   "tisch": "Lange Tafel im Wintergarten für vierzehn, weisse Leinen, Silberleuchter",
+   "raum": "Empfang im Wintergarten, Kaffee im Wohnzimmer am Kamin",
+   "stellt": [
+    "Weingläser und Wassergläser",
+    "Tischwäsche und Kerzen",
+    "Blumen vom Floristen",
+    "Getränke nach Absprache"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": true
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": true
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": true
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": true
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": true
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": true
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": true
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": true
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": true
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": true
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": true
+   }
+  ],
+  "intern": "Georg mag es, wenn der Rotwein zum Käse noch einmal kommt. Lena macht Fotos, ich halte mich aus den Bildern.",
+  "stand": "2026-10-15T20:10",
+  "fassung": 6,
+  "abstimmung": {
+   "gesendet": "2026-10-06",
+   "bestaetigt_am": "2026-10-08",
+   "bestaetigt_von": "Helene Brandt",
+   "fassung": 5,
+   "abdruck": {
+    "ablauf": [
+     {
+      "id": "p1",
+      "zeit": "15:00",
+      "was": "Ankommen und einrichten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p4",
+      "zeit": "18:00",
+      "was": "Empfang mit Sekt im Wintergarten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p5",
+      "zeit": "18:50",
+      "was": "Platz nehmen",
+      "wer": "angelina"
+     },
+     {
+      "id": "p6",
+      "zeit": "19:00",
+      "was": "Georg spricht",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p7",
+      "zeit": "19:15",
+      "was": "Vorspeise",
+      "wer": "caterer"
+     },
+     {
+      "id": "p8",
+      "zeit": "19:55",
+      "was": "Zwischengang",
+      "wer": "caterer"
+     },
+     {
+      "id": "p9",
+      "zeit": "20:30",
+      "was": "Hauptgang",
+      "wer": "caterer"
+     },
+     {
+      "id": "p10",
+      "zeit": "21:35",
+      "was": "Worte der Kinder",
+      "wer": "gaeste"
+     },
+     {
+      "id": "p11",
+      "zeit": "21:50",
+      "was": "Dessert",
+      "wer": "caterer"
+     },
+     {
+      "id": "p12",
+      "zeit": "22:30",
+      "was": "Kaffee, Digestif, Zeit füreinander",
+      "wer": "angelina"
+     },
+     {
+      "id": "p13",
+      "zeit": "23:20",
+      "was": "Abschied",
+      "wer": "angelina"
+     }
+    ],
+    "gaenge": [
+     {
+      "id": "g1",
+      "name": "Vorspeise",
+      "gericht": "Carpaccio vom Kalb mit Kapern und Parmesan",
+      "koch": "Caterer"
+     },
+     {
+      "id": "g2",
+      "name": "Zwischengang",
+      "gericht": "Klare Tomatenessenz mit Basilikum",
+      "koch": "Caterer"
+     },
+     {
+      "id": "g3",
+      "name": "Hauptgang",
+      "gericht": "Rehrücken mit Pfifferlingen und Kartoffelplätzchen",
+      "koch": "Caterer"
+     },
+     {
+      "id": "g4",
+      "name": "Dessert",
+      "gericht": "Weisse Mousse au Chocolat mit Himbeeren",
+      "koch": "Caterer"
+     }
+    ],
+    "weine": [
+     {
+      "id": "w1",
+      "zu": "empfang",
+      "name": "Pinot Brut",
+      "weingut": "Sektkellerei Raumland",
+      "jahrgang": "2018"
+     },
+     {
+      "id": "w2",
+      "zu": "empfang",
+      "name": "Rosé-Secco alkoholfrei",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w3",
+      "zu": "g1",
+      "name": "Riesling trocken",
+      "weingut": "Weingut Fritz Haag",
+      "jahrgang": "2022"
+     },
+     {
+      "id": "w4",
+      "zu": "g3",
+      "name": "Spätburgunder",
+      "weingut": "Weingut Meyer-Näkel",
+      "jahrgang": "2020"
+     },
+     {
+      "id": "w5",
+      "zu": "g4",
+      "name": "Riesling Auslese",
+      "weingut": "Weingut Dr. Loosen",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w6",
+      "zu": "tisch",
+      "name": "Wasser still und sprudelnd",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w7",
+      "zu": "digestif",
+      "name": "Williams-Christ-Birnenbrand",
+      "weingut": "",
+      "jahrgang": ""
+     }
+    ],
+    "gaeste": [
+     {
+      "id": "q1",
+      "name": "Helene Brandt",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "1"
+     },
+     {
+      "id": "q2",
+      "name": "Georg Brandt",
+      "unvertraeglich": "",
+      "vorlieben": "trinkt am liebsten Rotwein",
+      "platz": "2"
+     },
+     {
+      "id": "q3",
+      "name": "Lena Brandt",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "3"
+     },
+     {
+      "id": "q4",
+      "name": "Paul Brandt",
+      "unvertraeglich": "",
+      "vorlieben": "vegetarisch",
+      "platz": "4"
+     },
+     {
+      "id": "q5",
+      "name": "Ingrid Wolters",
+      "unvertraeglich": "Laktose",
+      "vorlieben": "",
+      "platz": "5"
+     },
+     {
+      "id": "q6",
+      "name": "Hans Wolters",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "6"
+     },
+     {
+      "id": "q7",
+      "name": "Karin Brandt",
+      "unvertraeglich": "",
+      "vorlieben": "trinkt keinen Alkohol",
+      "platz": "7"
+     },
+     {
+      "id": "q8",
+      "name": "Thomas Lehmann",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "8"
+     },
+     {
+      "id": "q9",
+      "name": "Birgit Sommer",
+      "unvertraeglich": "Haselnuss",
+      "vorlieben": "",
+      "platz": "9"
+     },
+     {
+      "id": "q10",
+      "name": "Frank Sommer",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "10"
+     },
+     {
+      "id": "q11",
+      "name": "Martina Kühn",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "11"
+     },
+     {
+      "id": "q12",
+      "name": "Stefan Kühn",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "12"
+     },
+     {
+      "id": "q13",
+      "name": "Ulla Reinhardt",
+      "unvertraeglich": "",
+      "vorlieben": "keinen Alkohol, fährt",
+      "platz": "13"
+     },
+     {
+      "id": "q14",
+      "name": "Dieter Reinhardt",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "14"
+     }
+    ]
+   },
+   "nachher": []
+  }
+ },
+ "a-261009-mw": {
+  "beispiel": true,
+  "vorlage": "geburtstag",
+  "titel": "Der 50. Geburtstag von Andrea",
+  "ankunft": "16:00",
+  "gaeste_ab": "18:00",
+  "ende": "23:30",
+  "gruss": "Du kochst, ich halte den Abend für dich zusammen.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "16:00",
+    "dauer": 60,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Tisch decken, Gläser, Getränke; Andrea ist bis 19 Uhr mit ihrer Schwester unterwegs."
+   },
+   {
+    "id": "p2",
+    "zeit": "17:00",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit Markus in der Küche",
+    "wer": "alle",
+    "notiz": "Wann die Gänge kommen, wo die Geschenke hinkommen.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "18:00",
+    "dauer": 45,
+    "art": "empfang",
+    "was": "Gäste kommen leise an",
+    "wer": "angelina",
+    "notiz": "Mäntel ins Arbeitszimmer, Geschenke auf den Sekretär, Sekt reichen."
+   },
+   {
+    "id": "p4",
+    "zeit": "18:50",
+    "dauer": 10,
+    "art": "programm",
+    "was": "Licht aus, alle im Wohnzimmer",
+    "wer": "alle",
+    "notiz": "Sabine schreibt, wenn sie mit Andrea vor der Tür steht."
+   },
+   {
+    "id": "p5",
+    "zeit": "19:00",
+    "dauer": 20,
+    "art": "programm",
+    "was": "Überraschung und Anstossen",
+    "wer": "gaeste",
+    "notiz": "Alle Gläser sind vorher gefüllt, Andreas Glas steht an der Tür bereit."
+   },
+   {
+    "id": "p6",
+    "zeit": "19:20",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p7",
+    "zeit": "19:30",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p8",
+    "zeit": "20:15",
+    "dauer": 55,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "gastgeber",
+    "notiz": "Markus serviert selbst, ich schenke nach.",
+    "gang": "g2"
+   },
+   {
+    "id": "p9",
+    "zeit": "21:15",
+    "dauer": 15,
+    "art": "programm",
+    "was": "Markus spricht",
+    "wer": "gastgeber",
+    "notiz": "Gläser vorher nachgeschenkt."
+   },
+   {
+    "id": "p10",
+    "zeit": "21:30",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert mit Kerze",
+    "wer": "angelina",
+    "notiz": "Licht gedimmt, das Dessert kommt mit Kerze an Andreas Platz.",
+    "gang": "g3"
+   },
+   {
+    "id": "p11",
+    "zeit": "22:10",
+    "dauer": 60,
+    "art": "digestif",
+    "was": "Kaffee, Digestif und Zeit füreinander",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p12",
+    "zeit": "23:10",
+    "dauer": 20,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": "Geschenke stehen gesammelt, Blumen versorgt."
+   },
+   {
+    "id": "p13",
+    "zeit": "23:30",
+    "dauer": 45,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Feldsalat mit Birne, Walnüssen und Ziegenkäse",
+    "beschreibung": "",
+    "koch": "Markus",
+    "zeit": "19:30",
+    "hinweis": "Für Jonas ohne Walnüsse anrichten."
+   },
+   {
+    "id": "g2",
+    "name": "Hauptgang",
+    "gericht": "Kalbsrücken mit Rotweinjus, Selleriepüree und Bohnen",
+    "beschreibung": "Andreas Lieblingsgericht.",
+    "koch": "Markus",
+    "zeit": "20:15",
+    "hinweis": "Teller im Ofen bei 60 °C vorwärmen."
+   },
+   {
+    "id": "g3",
+    "name": "Dessert",
+    "gericht": "Schokoladentarte mit Vanillesahne",
+    "beschreibung": "",
+    "koch": "Markus",
+    "zeit": "21:30",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Riesling Sekt brut",
+    "weingut": "Sektkellerei Raumland",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Rheinhessen",
+    "temperatur": "6–8 °C",
+    "oeffnen": "17:50",
+    "menge": "3 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Hausgemachte Holunderschorle",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kalt",
+    "oeffnen": "",
+    "menge": "2 Karaffen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Sauvignon Blanc",
+    "weingut": "Weingut Bernhard Huber",
+    "rebsorte": "Sauvignon Blanc",
+    "jahrgang": "2023",
+    "herkunft": "Baden",
+    "temperatur": "9 °C",
+    "oeffnen": "19:20",
+    "menge": "2 Flaschen",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g2",
+    "art": "rot",
+    "name": "Lemberger",
+    "weingut": "Weingut Aldinger",
+    "rebsorte": "Lemberger",
+    "jahrgang": "2021",
+    "herkunft": "Württemberg",
+    "temperatur": "16 °C",
+    "oeffnen": "19:15, dekantieren",
+    "menge": "3 Flaschen",
+    "glas": "Rotweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w5",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "je 4 Flaschen",
+    "glas": "Wasserglas",
+    "notiz": ""
+   },
+   {
+    "id": "w6",
+    "zu": "digestif",
+    "art": "digestif",
+    "name": "Grappa",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "Raumtemperatur",
+    "oeffnen": "",
+    "menge": "1 Flasche",
+    "glas": "Digestifglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Andrea Wendt",
+    "karte": "",
+    "beziehung": "Geburtstagskind, Frau von Markus",
+    "ehrengast": true,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Markus Wendt",
+    "karte": "",
+    "beziehung": "Gastgeber",
+    "ehrengast": false,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Sabine Kraus",
+    "karte": "",
+    "beziehung": "Schwester von Andrea",
+    "ehrengast": false,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Bringt Andrea um 19 Uhr nach Hause."
+   },
+   {
+    "id": "q4",
+    "name": "Jonas Kraus",
+    "karte": "",
+    "beziehung": "Neffe",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "Walnuss",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Vorspeise ohne Walnüsse."
+   },
+   {
+    "id": "q5",
+    "name": "Petra Lindner",
+    "karte": "",
+    "beziehung": "beste Freundin",
+    "ehrengast": false,
+    "platz": "5",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q6",
+    "name": "Uwe Lindner",
+    "karte": "",
+    "beziehung": "Mann von Petra",
+    "ehrengast": false,
+    "platz": "6",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q7",
+    "name": "Claudia Hess",
+    "karte": "",
+    "beziehung": "Kollegin",
+    "ehrengast": false,
+    "platz": "7",
+    "unvertraeglich": "",
+    "vorlieben": "schwanger, keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q8",
+    "name": "Michael Hess",
+    "karte": "",
+    "beziehung": "Mann von Claudia",
+    "ehrengast": false,
+    "platz": "8",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q9",
+    "name": "Renate Wendt",
+    "karte": "",
+    "beziehung": "Mutter von Markus",
+    "ehrengast": false,
+    "platz": "9",
+    "unvertraeglich": "Gluten",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Tarte ohne Boden, Markus stellt ein Stück zur Seite."
+   },
+   {
+    "id": "q10",
+    "name": "Dirk Brenner",
+    "karte": "",
+    "beziehung": "Freund aus dem Chor",
+    "ehrengast": false,
+    "platz": "10",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   }
+  ],
+  "vorort": {
+   "adresse": "Am Rosengarten 22, 50226 Frechen",
+   "anfahrt": "Ausfahrt Frechen, Richtung Stadtmitte.",
+   "parken": "Bitte in der Seitenstrasse parken, Andrea soll kein fremdes Auto sehen.",
+   "klingel": "Wendt, Eingang über die Garage",
+   "ansprech": "Markus Wendt (nicht über Andrea)",
+   "kueche": {
+    "glaeser": "Schrank über der Kaffeemaschine",
+    "geschirr": "Hängeschrank links, die guten Teller im Esszimmer",
+    "besteck": "Schublade neben dem Herd",
+    "kuehlschrank": "Getränke im Keller, Sekt im Kühlschrank der Küche",
+    "ofen": "Ein Ofen, Markus braucht ihn bis 20:00",
+    "spuele": "Spülmaschine bis 18 Uhr leer",
+    "notiz": "Markus kocht, ich halte die Arbeitsfläche frei."
+   },
+   "garderobe": "Arbeitszimmer im Erdgeschoss",
+   "tisch": "Esstisch für zehn, Leinen in Creme, Kerzen von Andrea",
+   "raum": "Empfang im Wohnzimmer, Überraschung im Flur",
+   "stellt": [
+    "Gläser und Geschirr",
+    "Tischwäsche und Kerzen",
+    "Getränke",
+    "Blumen für Andrea"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": true
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": true
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": true
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": true
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": true
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": true
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": true
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": true
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": true
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": true
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": true
+   }
+  ],
+  "intern": "Andrea darf vorher nichts merken: keine Nachricht an ihre Nummer, alles über Markus.",
+  "stand": "2026-10-30T18:05",
+  "fassung": 5,
+  "abstimmung": {
+   "gesendet": "2026-10-21",
+   "bestaetigt_am": "2026-10-24",
+   "bestaetigt_von": "Markus Wendt",
+   "fassung": 4,
+   "abdruck": {
+    "ablauf": [
+     {
+      "id": "p1",
+      "zeit": "16:00",
+      "was": "Ankommen und einrichten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p3",
+      "zeit": "18:00",
+      "was": "Gäste kommen leise an",
+      "wer": "angelina"
+     },
+     {
+      "id": "p4",
+      "zeit": "18:50",
+      "was": "Licht aus, alle im Wohnzimmer",
+      "wer": "alle"
+     },
+     {
+      "id": "p5",
+      "zeit": "19:00",
+      "was": "Überraschung und Anstossen",
+      "wer": "gaeste"
+     },
+     {
+      "id": "p6",
+      "zeit": "19:20",
+      "was": "Platz nehmen",
+      "wer": "angelina"
+     },
+     {
+      "id": "p7",
+      "zeit": "19:30",
+      "was": "Vorspeise",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p8",
+      "zeit": "20:15",
+      "was": "Hauptgang",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p9",
+      "zeit": "21:15",
+      "was": "Markus spricht",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p10",
+      "zeit": "21:30",
+      "was": "Dessert mit Kerze",
+      "wer": "angelina"
+     },
+     {
+      "id": "p11",
+      "zeit": "22:10",
+      "was": "Kaffee, Digestif und Zeit füreinander",
+      "wer": "angelina"
+     },
+     {
+      "id": "p12",
+      "zeit": "23:10",
+      "was": "Abschied",
+      "wer": "angelina"
+     }
+    ],
+    "gaenge": [
+     {
+      "id": "g1",
+      "name": "Vorspeise",
+      "gericht": "Feldsalat mit Birne, Walnüssen und Ziegenkäse",
+      "koch": "Markus"
+     },
+     {
+      "id": "g2",
+      "name": "Hauptgang",
+      "gericht": "Kalbsrücken mit Rotweinjus, Selleriepüree und Bohnen",
+      "koch": "Markus"
+     },
+     {
+      "id": "g3",
+      "name": "Dessert",
+      "gericht": "Schokoladentarte mit Vanillesahne",
+      "koch": "Markus"
+     }
+    ],
+    "weine": [
+     {
+      "id": "w1",
+      "zu": "empfang",
+      "name": "Riesling Sekt brut",
+      "weingut": "Sektkellerei Raumland",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w2",
+      "zu": "empfang",
+      "name": "Hausgemachte Holunderschorle",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w3",
+      "zu": "g1",
+      "name": "Sauvignon Blanc",
+      "weingut": "Weingut Bernhard Huber",
+      "jahrgang": "2023"
+     },
+     {
+      "id": "w4",
+      "zu": "g2",
+      "name": "Lemberger",
+      "weingut": "Weingut Aldinger",
+      "jahrgang": "2021"
+     },
+     {
+      "id": "w5",
+      "zu": "tisch",
+      "name": "Wasser still und sprudelnd",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w6",
+      "zu": "digestif",
+      "name": "Grappa",
+      "weingut": "",
+      "jahrgang": ""
+     }
+    ],
+    "gaeste": [
+     {
+      "id": "q1",
+      "name": "Andrea Wendt",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "1"
+     },
+     {
+      "id": "q2",
+      "name": "Markus Wendt",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "2"
+     },
+     {
+      "id": "q3",
+      "name": "Sabine Kraus",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "3"
+     },
+     {
+      "id": "q4",
+      "name": "Jonas Kraus",
+      "unvertraeglich": "Walnuss",
+      "vorlieben": "",
+      "platz": "4"
+     },
+     {
+      "id": "q5",
+      "name": "Petra Lindner",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "5"
+     },
+     {
+      "id": "q6",
+      "name": "Uwe Lindner",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "6"
+     },
+     {
+      "id": "q7",
+      "name": "Claudia Hess",
+      "unvertraeglich": "",
+      "vorlieben": "schwanger, keinen Alkohol",
+      "platz": "7"
+     },
+     {
+      "id": "q8",
+      "name": "Michael Hess",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "8"
+     },
+     {
+      "id": "q9",
+      "name": "Renate Wendt",
+      "unvertraeglich": "Gluten",
+      "vorlieben": "",
+      "platz": "9"
+     },
+     {
+      "id": "q10",
+      "name": "Dirk Brenner",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "10"
+     }
+    ]
+   },
+   "nachher": []
+  }
+ },
+ "a-261014-sk": {
+  "beispiel": true,
+  "vorlage": "dinner",
+  "titel": "Das erste Essen beider Familien",
+  "ankunft": "16:30",
+  "gaeste_ab": "18:30",
+  "ende": "23:30",
+  "gruss": "Ihr dürft an diesem Abend einfach bei euren Eltern sitzen. Um alles andere kümmere ich mich.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "16:30",
+    "dauer": 60,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Tisch mit euch durchgehen, Gläser polieren, Weine auf Temperatur bringen."
+   },
+   {
+    "id": "p2",
+    "zeit": "17:30",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung in der Küche",
+    "wer": "alle",
+    "notiz": "Wann welcher Gang kommt, wer anrichtet, wo abgeräumt wird.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "18:10",
+    "dauer": 20,
+    "art": "sonst",
+    "was": "Letzter Blick auf Tisch und Licht",
+    "wer": "angelina",
+    "notiz": "Kerzen an, Wasser eingeschenkt, Musik leise.",
+    "intern": true
+   },
+   {
+    "id": "p4",
+    "zeit": "18:30",
+    "dauer": 45,
+    "art": "empfang",
+    "was": "Empfang im Wohnzimmer",
+    "wer": "angelina",
+    "notiz": "Ich nehme die Mäntel ab und reiche Sekt. Ihr begrüsst eure Eltern selbst."
+   },
+   {
+    "id": "p5",
+    "zeit": "19:15",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": "Ich führe zu den Plätzen, Wasser ist eingeschenkt."
+   },
+   {
+    "id": "p6",
+    "zeit": "19:25",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p7",
+    "zeit": "20:05",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Zwischengang",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p8",
+    "zeit": "20:45",
+    "dauer": 60,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "gastgeber",
+    "notiz": "Der Wein wird nachgeschenkt, ihr bleibt sitzen.",
+    "gang": "g3"
+   },
+   {
+    "id": "p9",
+    "zeit": "21:50",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g4"
+   },
+   {
+    "id": "p10",
+    "zeit": "22:30",
+    "dauer": 45,
+    "art": "digestif",
+    "was": "Kaffee und Digestif am Kamin",
+    "wer": "angelina",
+    "notiz": "Der Tisch darf ruhen."
+   },
+   {
+    "id": "p11",
+    "zeit": "23:15",
+    "dauer": 15,
+    "art": "abschied",
+    "was": "Abschied an der Tür",
+    "wer": "angelina",
+    "notiz": "Mäntel liegen bereit."
+   },
+   {
+    "id": "p12",
+    "zeit": "23:30",
+    "dauer": 45,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "Gläser gespült, Reste verpackt.",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Kürbisrahmsuppe mit gerösteten Kernen",
+    "beschreibung": "Mit Kürbis aus dem Garten von Sophies Eltern.",
+    "koch": "Sophie",
+    "zeit": "19:25",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Zwischengang",
+    "gericht": "Lachsforelle auf Beluga-Linsen",
+    "beschreibung": "",
+    "koch": "Jan",
+    "zeit": "20:05",
+    "hinweis": ""
+   },
+   {
+    "id": "g3",
+    "name": "Hauptgang",
+    "gericht": "Rinderschmorbraten mit Kartoffelpüree und glasierten Möhren",
+    "beschreibung": "Seit dem Mittag im Ofen.",
+    "koch": "Jan",
+    "zeit": "20:45",
+    "hinweis": "Teller im oberen Ofen bei 60 °C vorwärmen."
+   },
+   {
+    "id": "g4",
+    "name": "Dessert",
+    "gericht": "Apfeltarte mit Vanilleeis",
+    "beschreibung": "",
+    "koch": "Sophie",
+    "zeit": "21:50",
+    "hinweis": "Eis 10 Minuten vorher aus dem Gefrierfach."
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Riesling Sekt brut",
+    "weingut": "Sektkellerei Raumland",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Rheinhessen",
+    "temperatur": "6–8 °C",
+    "oeffnen": "18:20",
+    "menge": "2 Flaschen",
+    "glas": "Sektglas",
+    "notiz": "Frisch und fein zum Ankommen."
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Rosé-Secco alkoholfrei",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "6 °C",
+    "oeffnen": "18:20",
+    "menge": "1 Flasche",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Grauburgunder trocken",
+    "weingut": "Weingut Bernhard Huber",
+    "rebsorte": "Grauburgunder",
+    "jahrgang": "2022",
+    "herkunft": "Baden",
+    "temperatur": "10 °C",
+    "oeffnen": "19:15",
+    "menge": "1 Flasche",
+    "glas": "Weissweinglas",
+    "notiz": "Rund und weich, passt zum Kürbis."
+   },
+   {
+    "id": "w4",
+    "zu": "g2",
+    "art": "weiss",
+    "name": "Riesling Kabinett trocken",
+    "weingut": "Weingut Fritz Haag",
+    "rebsorte": "Riesling",
+    "jahrgang": "2022",
+    "herkunft": "Mosel",
+    "temperatur": "9 °C",
+    "oeffnen": "19:55",
+    "menge": "1 Flasche",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w5",
+    "zu": "g3",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "Weingut Meyer-Näkel",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "2020",
+    "herkunft": "Ahr",
+    "temperatur": "16 °C",
+    "oeffnen": "19:45, eine Stunde vorher dekantieren",
+    "menge": "2 Flaschen",
+    "glas": "Burgunderglas",
+    "notiz": "Weich und warm, trägt den Schmorbraten."
+   },
+   {
+    "id": "w6",
+    "zu": "g3",
+    "art": "alkoholfrei",
+    "name": "Roter Traubensaft mit Wasser",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "1 Karaffe",
+    "glas": "Rotweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w7",
+    "zu": "g4",
+    "art": "suess",
+    "name": "Riesling Auslese",
+    "weingut": "Weingut Dr. Loosen",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Mosel",
+    "temperatur": "8 °C",
+    "oeffnen": "21:40",
+    "menge": "1 Flasche",
+    "glas": "Dessertweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w8",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "je 3 Flaschen",
+    "glas": "Wasserglas",
+    "notiz": ""
+   },
+   {
+    "id": "w9",
+    "zu": "digestif",
+    "art": "digestif",
+    "name": "Williams-Christ-Birnenbrand",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "Raumtemperatur",
+    "oeffnen": "",
+    "menge": "1 Flasche",
+    "glas": "Digestifglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Sophie Kessler",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": false,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Jan Kessler",
+    "karte": "",
+    "beziehung": "Gastgeber",
+    "ehrengast": false,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Margret Kessler",
+    "karte": "",
+    "beziehung": "Mutter von Jan",
+    "ehrengast": true,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "mag es ruhig, Platz am Fenster",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Werner Kessler",
+    "karte": "",
+    "beziehung": "Vater von Jan",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "",
+    "vorlieben": "trinkt gern Rotwein",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q5",
+    "name": "Ulrike Brandes",
+    "karte": "",
+    "beziehung": "Mutter von Sophie",
+    "ehrengast": true,
+    "platz": "5",
+    "unvertraeglich": "",
+    "vorlieben": "trinkt keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q6",
+    "name": "Peter Brandes",
+    "karte": "",
+    "beziehung": "Vater von Sophie",
+    "ehrengast": false,
+    "platz": "6",
+    "unvertraeglich": "Haselnuss",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Beim Dessert nachfragen, die Tarte ist ohne Nüsse."
+   }
+  ],
+  "vorort": {
+   "adresse": "Weisser Weg 14, 50996 Köln-Rodenkirchen",
+   "anfahrt": "Über die Rheinuferstrasse, Haus mit der weissen Tür.",
+   "parken": "In der Einfahrt, zweiter Platz links ist frei.",
+   "klingel": "Kessler, Eingang über den Garten",
+   "ansprech": "Jan Kessler",
+   "kueche": {
+    "glaeser": "Vitrine im Esszimmer, Rotweingläser oben",
+    "geschirr": "Hängeschrank rechts neben dem Herd",
+    "besteck": "Schublade unter der Arbeitsfläche, Dessertbesteck in der Holzkiste",
+    "kuehlschrank": "Weine im zweiten Kühlschrank im Keller",
+    "ofen": "Zwei Öfen, der obere zum Vorwärmen",
+    "spuele": "Spülmaschine leer, Spülmittel unter der Spüle",
+    "notiz": ""
+   },
+   "garderobe": "Garderobe im Flur, Bügel liegen bereit",
+   "tisch": "Ausgezogener Esstisch für sechs, weisse Decke, Kerzen von Sophie",
+   "raum": "Empfang im Wohnzimmer, Kaffee später am Kamin",
+   "stellt": [
+    "Gläser für Sekt, Weisswein, Rotwein und Wasser",
+    "Geschirr und Besteck für vier Gänge",
+    "Tischdecke und Servietten",
+    "Kerzen"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": true
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": true
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": false
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": false
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": false
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": false
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": false
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": false
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": false
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": false
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": false
+   }
+  ],
+  "intern": "Werner Kessler trinkt gern noch einen Rotwein nach dem Dessert. Beide Mütter haben sich bisher nur einmal gesehen: beim Empfang nebeneinander stellen.",
+  "stand": "2026-11-04T10:20",
+  "fassung": 5,
+  "abstimmung": {
+   "gesendet": "2026-10-30",
+   "bestaetigt_am": "2026-11-02",
+   "bestaetigt_von": "Sophie Kessler",
+   "fassung": 4,
+   "abdruck": {
+    "ablauf": [
+     {
+      "id": "p1",
+      "zeit": "16:30",
+      "was": "Ankommen und einrichten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p4",
+      "zeit": "18:30",
+      "was": "Empfang im Wohnzimmer",
+      "wer": "angelina"
+     },
+     {
+      "id": "p5",
+      "zeit": "19:15",
+      "was": "Platz nehmen",
+      "wer": "angelina"
+     },
+     {
+      "id": "p6",
+      "zeit": "19:25",
+      "was": "Vorspeise",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p7",
+      "zeit": "20:05",
+      "was": "Zwischengang",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p8",
+      "zeit": "20:45",
+      "was": "Hauptgang",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p9",
+      "zeit": "21:50",
+      "was": "Dessert",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p10",
+      "zeit": "22:30",
+      "was": "Kaffee und Digestif am Kamin",
+      "wer": "angelina"
+     },
+     {
+      "id": "p11",
+      "zeit": "23:15",
+      "was": "Abschied an der Tür",
+      "wer": "angelina"
+     }
+    ],
+    "gaenge": [
+     {
+      "id": "g1",
+      "name": "Vorspeise",
+      "gericht": "Kürbisrahmsuppe mit gerösteten Kernen",
+      "koch": "Sophie"
+     },
+     {
+      "id": "g2",
+      "name": "Zwischengang",
+      "gericht": "Lachsforelle auf Beluga-Linsen",
+      "koch": "Jan"
+     },
+     {
+      "id": "g3",
+      "name": "Hauptgang",
+      "gericht": "Rinderschmorbraten mit Kartoffelpüree und glasierten Möhren",
+      "koch": "Jan"
+     },
+     {
+      "id": "g4",
+      "name": "Dessert",
+      "gericht": "Apfeltarte mit Vanilleeis",
+      "koch": "Sophie"
+     }
+    ],
+    "weine": [
+     {
+      "id": "w1",
+      "zu": "empfang",
+      "name": "Riesling Sekt brut",
+      "weingut": "Sektkellerei Raumland",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w2",
+      "zu": "empfang",
+      "name": "Rosé-Secco alkoholfrei",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w3",
+      "zu": "g1",
+      "name": "Grauburgunder trocken",
+      "weingut": "Weingut Bernhard Huber",
+      "jahrgang": "2022"
+     },
+     {
+      "id": "w4",
+      "zu": "g2",
+      "name": "Riesling Kabinett trocken",
+      "weingut": "Weingut Fritz Haag",
+      "jahrgang": "2022"
+     },
+     {
+      "id": "w5",
+      "zu": "g3",
+      "name": "Spätburgunder",
+      "weingut": "Weingut Meyer-Näkel",
+      "jahrgang": "2020"
+     },
+     {
+      "id": "w6",
+      "zu": "g3",
+      "name": "Roter Traubensaft mit Wasser",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w7",
+      "zu": "g4",
+      "name": "Riesling Auslese",
+      "weingut": "Weingut Dr. Loosen",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w8",
+      "zu": "tisch",
+      "name": "Wasser still und sprudelnd",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w9",
+      "zu": "digestif",
+      "name": "Williams-Christ-Birnenbrand",
+      "weingut": "",
+      "jahrgang": ""
+     }
+    ],
+    "gaeste": [
+     {
+      "id": "q1",
+      "name": "Sophie Kessler",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "1"
+     },
+     {
+      "id": "q2",
+      "name": "Jan Kessler",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "2"
+     },
+     {
+      "id": "q3",
+      "name": "Margret Kessler",
+      "unvertraeglich": "",
+      "vorlieben": "mag es ruhig, Platz am Fenster",
+      "platz": "3"
+     },
+     {
+      "id": "q4",
+      "name": "Werner Kessler",
+      "unvertraeglich": "",
+      "vorlieben": "trinkt gern Rotwein",
+      "platz": "4"
+     },
+     {
+      "id": "q5",
+      "name": "Ulrike Brandes",
+      "unvertraeglich": "",
+      "vorlieben": "trinkt keinen Alkohol",
+      "platz": "5"
+     },
+     {
+      "id": "q6",
+      "name": "Peter Brandes",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "6"
+     }
+    ]
+   },
+   "nachher": [
+    {
+     "zeit": "2026-11-04T10:20",
+     "was": "Gast geändert: Peter Brandes (verträgt Haselnuss nicht)"
+    }
+   ]
+  }
+ },
+ "a-261020-cl": {
+  "beispiel": true,
+  "vorlage": "feier",
+  "titel": "Adventsabend mit Nachbarn und Freunden",
+  "ankunft": "15:30",
+  "gaeste_ab": "17:30",
+  "ende": "22:30",
+  "gruss": "Du begrüsst deine Gäste, ich halte im Hintergrund alles zusammen.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "15:30",
+    "dauer": 75,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Glühweinstation im Garten, Feuerschale, Gläser; Buffet-Tisch im Esszimmer."
+   },
+   {
+    "id": "p2",
+    "zeit": "16:45",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit Claudia",
+    "wer": "alle",
+    "notiz": "Wann das Buffet öffnet, wer nachlegt.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "17:30",
+    "dauer": 60,
+    "art": "empfang",
+    "was": "Empfang im Garten",
+    "wer": "angelina",
+    "notiz": "Glühwein und Sekt an der Feuerschale, Kinderpunsch für die Kleinen."
+   },
+   {
+    "id": "p4",
+    "zeit": "18:30",
+    "dauer": 10,
+    "art": "programm",
+    "was": "Claudia begrüsst ihre Gäste",
+    "wer": "gastgeber",
+    "notiz": ""
+   },
+   {
+    "id": "p5",
+    "zeit": "18:40",
+    "dauer": 90,
+    "art": "gang",
+    "was": "Buffet im Haus",
+    "wer": "gastgeber",
+    "notiz": "Ich halte das Buffet schön und räume leise ab.",
+    "gang": "g1"
+   },
+   {
+    "id": "p6",
+    "zeit": "20:10",
+    "dauer": 45,
+    "art": "dessert",
+    "was": "Süsses und Kaffee",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p7",
+    "zeit": "20:55",
+    "dauer": 60,
+    "art": "sonst",
+    "was": "Getränke und Gespräche",
+    "wer": "angelina",
+    "notiz": "Gläser werden nachgefüllt, leere verschwinden."
+   },
+   {
+    "id": "p8",
+    "zeit": "21:55",
+    "dauer": 25,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p9",
+    "zeit": "22:20",
+    "dauer": 60,
+    "art": "aufraeumen",
+    "was": "Aufräumen",
+    "wer": "angelina",
+    "notiz": "",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Buffet",
+    "gericht": "Kürbissuppe, Feldsalat mit Birne, Rinderrouladen, Kartoffelgratin, Rotkohl",
+    "beschreibung": "Alles aus Claudias Küche.",
+    "koch": "Claudia",
+    "zeit": "18:40",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Süsses",
+    "gericht": "Spekulatius-Tiramisu und Plätzchen",
+    "beschreibung": "Die Plätzchen bringen die Nachbarn mit.",
+    "koch": "Claudia",
+    "zeit": "20:10",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "rot",
+    "name": "Glühwein, hausgemacht",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "heiss",
+    "oeffnen": "17:15 erwärmen",
+    "menge": "ein Topf, 6 Liter",
+    "glas": "Henkelbecher",
+    "notiz": "Claudias Rezept mit Orange und Nelke."
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Winzersekt brut",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "6–8 °C",
+    "oeffnen": "17:20",
+    "menge": "4 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Kinderpunsch",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "warm",
+    "oeffnen": "17:15",
+    "menge": "ein Topf",
+    "glas": "Henkelbecher",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g1",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "16 °C",
+    "oeffnen": "18:15",
+    "menge": "",
+    "glas": "Rotweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w5",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "",
+    "glas": "Wasserglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Claudia Lorenz",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Bernd Lorenz",
+    "karte": "",
+    "beziehung": "Mann von Claudia",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Familie Schäfer",
+    "karte": "",
+    "beziehung": "Nachbarn links, zwei Kinder",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "Kinder trinken Punsch",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Elke Vogt",
+    "karte": "",
+    "beziehung": "Nachbarin gegenüber",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "Laktose",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q5",
+    "name": "Rolf Vogt",
+    "karte": "",
+    "beziehung": "Nachbar gegenüber",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q6",
+    "name": "Anke Busch",
+    "karte": "",
+    "beziehung": "Freundin aus dem Chor",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q7",
+    "name": "Heike Jansen",
+    "karte": "",
+    "beziehung": "Freundin",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q8",
+    "name": "Tom Jansen",
+    "karte": "",
+    "beziehung": "Mann von Heike",
+    "ehrengast": false,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q9",
+    "name": "Gisela Lorenz",
+    "karte": "",
+    "beziehung": "Schwiegermutter",
+    "ehrengast": true,
+    "platz": "",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Sitzt gern nah am Ofen, Stuhl mit Lehne."
+   }
+  ],
+  "vorort": {
+   "adresse": "Lindenring 5, 50259 Pulheim",
+   "anfahrt": "Ortsmitte Pulheim, dann Richtung Sportplatz.",
+   "parken": "",
+   "klingel": "Lorenz",
+   "ansprech": "Claudia Lorenz",
+   "kueche": {},
+   "garderobe": "",
+   "tisch": "Buffet auf dem Esstisch, Stehtische im Garten",
+   "raum": "Empfang im Garten an der Feuerschale, Buffet im Esszimmer",
+   "stellt": [
+    "Glühweintopf und Henkelbecher",
+    "Feuerschale und Holz"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": false
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": false
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": false
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": false
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": false
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": false
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": false
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": false
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": false
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": false
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": false
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": false
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": false
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": false
+   }
+  ],
+  "abstimmung": {},
+  "intern": "Bei Regen Empfang im Wintergarten, Claudia entscheidet am Freitag.",
+  "stand": "2026-11-03T21:15",
+  "fassung": 2
+ },
+ "a-261022-rf": {
+  "beispiel": true,
+  "vorlage": "dinner",
+  "titel": "Weihnachtsessen mit Geschäftsfreunden",
+  "ankunft": "16:30",
+  "gaeste_ab": "19:00",
+  "ende": "23:45",
+  "gruss": "Ein ruhiger, stilvoller Abend. Ihr seid Gastgeber, ich führe den Abend.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "16:30",
+    "dauer": 60,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Tafel, Gläser, Weine; Platz für den Caterer in der Küche."
+   },
+   {
+    "id": "p2",
+    "zeit": "17:30",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit dem Caterer",
+    "wer": "alle",
+    "notiz": "Anrichten, Zeiten, Abräumen.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "18:40",
+    "dauer": 20,
+    "art": "sonst",
+    "was": "Letzter Blick auf Tisch und Licht",
+    "wer": "angelina",
+    "notiz": "",
+    "intern": true
+   },
+   {
+    "id": "p4",
+    "zeit": "19:00",
+    "dauer": 40,
+    "art": "empfang",
+    "was": "Empfang mit Champagner",
+    "wer": "angelina",
+    "notiz": "Ines und Robert empfangen an der Tür, ich nehme die Mäntel und reiche die Gläser."
+   },
+   {
+    "id": "p5",
+    "zeit": "19:40",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": "Tischkarten liegen."
+   },
+   {
+    "id": "p6",
+    "zeit": "19:50",
+    "dauer": 10,
+    "art": "programm",
+    "was": "Robert begrüsst seine Gäste",
+    "wer": "gastgeber",
+    "notiz": ""
+   },
+   {
+    "id": "p7",
+    "zeit": "20:00",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p8",
+    "zeit": "20:40",
+    "dauer": 30,
+    "art": "gang",
+    "was": "Zwischengang",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p9",
+    "zeit": "21:15",
+    "dauer": 55,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "caterer",
+    "notiz": "Der Wein wird nachgeschenkt.",
+    "gang": "g3"
+   },
+   {
+    "id": "p10",
+    "zeit": "22:15",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g4"
+   },
+   {
+    "id": "p11",
+    "zeit": "22:55",
+    "dauer": 40,
+    "art": "digestif",
+    "was": "Kaffee und Digestif in der Bibliothek",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p12",
+    "zeit": "23:35",
+    "dauer": 15,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": "Taxis für 23:45 sind bestellt."
+   },
+   {
+    "id": "p13",
+    "zeit": "23:50",
+    "dauer": 45,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Geräucherter Saibling mit Meerrettich und Rote Bete",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "20:00",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Zwischengang",
+    "gericht": "Maronensuppe mit Trüffelöl",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "20:40",
+    "hinweis": ""
+   },
+   {
+    "id": "g3",
+    "name": "Hauptgang",
+    "gericht": "Entenbrust mit Orangenjus, Rotkohl und Kartoffelknödeln",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "21:15",
+    "hinweis": "Vegetarisch für Frau Albers: Steinpilz-Knödel."
+   },
+   {
+    "id": "g4",
+    "name": "Dessert",
+    "gericht": "Zimtparfait mit Glühweinbirne",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "22:15",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Champagner Brut Réserve",
+    "weingut": "",
+    "rebsorte": "Chardonnay, Pinot Noir",
+    "jahrgang": "",
+    "herkunft": "Champagne",
+    "temperatur": "7 °C",
+    "oeffnen": "18:50",
+    "menge": "3 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Riesling-Secco alkoholfrei",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "6 °C",
+    "oeffnen": "18:50",
+    "menge": "1 Flasche",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Riesling Grosses Gewächs",
+    "weingut": "Weingut Wittmann",
+    "rebsorte": "Riesling",
+    "jahrgang": "2021",
+    "herkunft": "Rheinhessen",
+    "temperatur": "10 °C",
+    "oeffnen": "19:30",
+    "menge": "2 Flaschen",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g3",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "Weingut Bernhard Huber",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "2019",
+    "herkunft": "Baden",
+    "temperatur": "16 °C",
+    "oeffnen": "20:15, dekantieren",
+    "menge": "3 Flaschen",
+    "glas": "Burgunderglas",
+    "notiz": "Zur Ente, weich und tief."
+   },
+   {
+    "id": "w5",
+    "zu": "g4",
+    "art": "suess",
+    "name": "Riesling Spätlese",
+    "weingut": "Weingut Dr. Loosen",
+    "rebsorte": "Riesling",
+    "jahrgang": "2020",
+    "herkunft": "Mosel",
+    "temperatur": "8 °C",
+    "oeffnen": "22:05",
+    "menge": "1 Flasche",
+    "glas": "Dessertweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w6",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "je 5 Flaschen",
+    "glas": "Wasserglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Ines Falk",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": false,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Robert Falk",
+    "karte": "",
+    "beziehung": "Gastgeber",
+    "ehrengast": false,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Dr. Martin Albers",
+    "karte": "",
+    "beziehung": "Geschäftspartner",
+    "ehrengast": true,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Katrin Albers",
+    "karte": "",
+    "beziehung": "Frau von Martin Albers",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "",
+    "vorlieben": "vegetarisch",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q5",
+    "name": "Henrik Olsen",
+    "karte": "",
+    "beziehung": "Geschäftsfreund aus Kopenhagen",
+    "ehrengast": false,
+    "platz": "5",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Spricht Englisch, Deutsch versteht er gut."
+   },
+   {
+    "id": "q6",
+    "name": "Mette Olsen",
+    "karte": "",
+    "beziehung": "Frau von Henrik Olsen",
+    "ehrengast": false,
+    "platz": "6",
+    "unvertraeglich": "",
+    "vorlieben": "keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q7",
+    "name": "Bettina Roth",
+    "karte": "",
+    "beziehung": "Geschäftsführerin, langjährige Kundin",
+    "ehrengast": false,
+    "platz": "7",
+    "unvertraeglich": "Laktose",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q8",
+    "name": "Andreas Roth",
+    "karte": "",
+    "beziehung": "Mann von Bettina Roth",
+    "ehrengast": false,
+    "platz": "8",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q9",
+    "name": "Julia Weber",
+    "karte": "",
+    "beziehung": "Kanzlei, Beraterin der Firma",
+    "ehrengast": false,
+    "platz": "9",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q10",
+    "name": "Sebastian Weber",
+    "karte": "",
+    "beziehung": "Mann von Julia Weber",
+    "ehrengast": false,
+    "platz": "10",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   }
+  ],
+  "vorort": {
+   "adresse": "Kaiser-Wilhelm-Ring 3, 40545 Düsseldorf-Oberkassel",
+   "anfahrt": "Über die Oberkasseler Brücke, erste rechts.",
+   "parken": "Tiefgarage, Platz 12 ist für mich frei.",
+   "klingel": "Falk, Lieferanteneingang zur Küche",
+   "ansprech": "Ines Falk",
+   "kueche": {
+    "glaeser": "Gläser kommen vom Caterer",
+    "geschirr": "kommt vom Caterer",
+    "besteck": "Silberbesteck der Familie im Sideboard",
+    "kuehlschrank": "Weinkühlschrank im Hauswirtschaftsraum",
+    "ofen": "Dampfgarer und Ofen für den Caterer",
+    "spuele": "Spülmaschine leer",
+    "notiz": ""
+   },
+   "garderobe": "Garderobenschrank im Eingang",
+   "tisch": "Esstisch für zehn, Leinen in Dunkelgrün, Tannengrün und Kerzen",
+   "raum": "Empfang in der Halle, Kaffee in der Bibliothek",
+   "stellt": [
+    "Silberbesteck",
+    "Tischwäsche",
+    "Weine nach meiner Auswahl",
+    "Kerzen und Tannengrün"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": false
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": false
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": false
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": false
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": false
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": false
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": false
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": false
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": false
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": false
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": false
+   }
+  ],
+  "intern": "Robert möchte, dass Dr. Albers rechts von Ines sitzt. Tischkarten macht Tischkarten & Menü.",
+  "stand": "2026-11-04T16:40",
+  "fassung": 3,
+  "abstimmung": {
+   "gesendet": "2026-11-04",
+   "bestaetigt_am": "",
+   "bestaetigt_von": "",
+   "nachher": []
+  }
+ },
+ "a-260929-js": {
+  "beispiel": true,
+  "vorlage": "geburtstag",
+  "titel": "Stefans 40. Geburtstag",
+  "ankunft": "16:00",
+  "gaeste_ab": "18:30",
+  "ende": "23:45",
+  "gruss": "Ihr kocht, ich kümmere mich um eure Gäste und den Wein. Ihr dürft am Tisch sitzen bleiben.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "16:00",
+    "dauer": 75,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Tisch für zehn, Gläser, Weine temperieren, Platz für Geschenke auf der Kommode."
+   },
+   {
+    "id": "p2",
+    "zeit": "17:15",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit Julia und Stefan in der Küche",
+    "wer": "alle",
+    "notiz": "Wann welcher Gang kommt, wer anrichtet, wo abgeräumt wird.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "18:30",
+    "dauer": 45,
+    "art": "empfang",
+    "was": "Empfang mit Sekt",
+    "wer": "angelina",
+    "notiz": "Ich nehme Mäntel und Geschenke ab, Blumen kommen gleich ins Wasser."
+   },
+   {
+    "id": "p4",
+    "zeit": "19:15",
+    "dauer": 10,
+    "art": "programm",
+    "was": "Anstossen auf Stefan",
+    "wer": "gaeste",
+    "notiz": "Alle Gläser sind vorher gefüllt."
+   },
+   {
+    "id": "p5",
+    "zeit": "19:25",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": "Tischkarten liegen."
+   },
+   {
+    "id": "p6",
+    "zeit": "19:35",
+    "dauer": 30,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p7",
+    "zeit": "20:10",
+    "dauer": 30,
+    "art": "gang",
+    "was": "Suppe",
+    "wer": "gastgeber",
+    "notiz": "",
+    "gang": "g2"
+   },
+   {
+    "id": "p8",
+    "zeit": "20:50",
+    "dauer": 55,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "gastgeber",
+    "notiz": "Julia und Stefan richten an, ich trage auf und schenke nach.",
+    "gang": "g3"
+   },
+   {
+    "id": "p9",
+    "zeit": "21:50",
+    "dauer": 15,
+    "art": "programm",
+    "was": "Julia spricht (Überraschung für Stefan)",
+    "wer": "gastgeber",
+    "notiz": "Mit Julia allein abgesprochen: Gläser vorher nachschenken, Licht etwas dunkler, danach Ruhe am Tisch.",
+    "intern": true
+   },
+   {
+    "id": "p10",
+    "zeit": "22:05",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert mit Kerze",
+    "wer": "angelina",
+    "notiz": "Licht gedimmt, das Dessert kommt mit Kerze an Stefans Platz.",
+    "gang": "g4"
+   },
+   {
+    "id": "p11",
+    "zeit": "22:45",
+    "dauer": 50,
+    "art": "digestif",
+    "was": "Kaffee, Digestif und Zeit füreinander",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p12",
+    "zeit": "23:35",
+    "dauer": 15,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": "Geschenke stehen gesammelt, Mäntel liegen bereit."
+   },
+   {
+    "id": "p13",
+    "zeit": "23:50",
+    "dauer": 45,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Vitello tonnato mit Kapernäpfeln",
+    "beschreibung": "",
+    "koch": "Stefan",
+    "zeit": "19:35",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Suppe",
+    "gericht": "Maronensuppe mit Speckchip",
+    "beschreibung": "",
+    "koch": "Julia",
+    "zeit": "20:10",
+    "hinweis": "Für Nora ohne Speck."
+   },
+   {
+    "id": "g3",
+    "name": "Hauptgang",
+    "gericht": "Geschmorte Ochsenbacke mit Selleriepüree und Wurzelgemüse",
+    "beschreibung": "Stefans Lieblingsgericht aus dem Urlaub im Piemont.",
+    "koch": "Stefan",
+    "zeit": "20:50",
+    "hinweis": "Teller im Ofen bei 60 °C vorwärmen."
+   },
+   {
+    "id": "g4",
+    "name": "Dessert",
+    "gericht": "Panna cotta mit Feigen",
+    "beschreibung": "",
+    "koch": "Julia",
+    "zeit": "22:05",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Riesling Sekt brut",
+    "weingut": "Sektkellerei Raumland",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Rheinhessen",
+    "temperatur": "6–8 °C",
+    "oeffnen": "18:20",
+    "menge": "3 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w2",
+    "zu": "empfang",
+    "art": "alkoholfrei",
+    "name": "Ingwer-Limonade, hausgemacht",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kalt",
+    "oeffnen": "",
+    "menge": "1 Karaffe",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Grauburgunder trocken",
+    "weingut": "Weingut Bernhard Huber",
+    "rebsorte": "Grauburgunder",
+    "jahrgang": "2022",
+    "herkunft": "Baden",
+    "temperatur": "10 °C",
+    "oeffnen": "19:25",
+    "menge": "2 Flaschen",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g3",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "Weingut Meyer-Näkel",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "2020",
+    "herkunft": "Ahr",
+    "temperatur": "16 °C",
+    "oeffnen": "19:50, eine Stunde vorher dekantieren",
+    "menge": "3 Flaschen",
+    "glas": "Burgunderglas",
+    "notiz": "Weich und tief, zur Ochsenbacke."
+   },
+   {
+    "id": "w5",
+    "zu": "g4",
+    "art": "suess",
+    "name": "Riesling Auslese",
+    "weingut": "Weingut Dr. Loosen",
+    "rebsorte": "Riesling",
+    "jahrgang": "2019",
+    "herkunft": "Mosel",
+    "temperatur": "8 °C",
+    "oeffnen": "21:55",
+    "menge": "1 Flasche",
+    "glas": "Dessertweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w6",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "je 4 Flaschen",
+    "glas": "Wasserglas",
+    "notiz": ""
+   },
+   {
+    "id": "w7",
+    "zu": "digestif",
+    "art": "digestif",
+    "name": "Grappa",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "Raumtemperatur",
+    "oeffnen": "",
+    "menge": "1 Flasche",
+    "glas": "Digestifglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Stefan Roth",
+    "karte": "",
+    "beziehung": "Geburtstagskind",
+    "ehrengast": true,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Julia Roth",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": false,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Hannelore Roth",
+    "karte": "",
+    "beziehung": "Mutter von Stefan",
+    "ehrengast": false,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "mag es gern ruhig",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Tim Roth",
+    "karte": "",
+    "beziehung": "Bruder von Stefan",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q5",
+    "name": "Nora Busch",
+    "karte": "",
+    "beziehung": "Freundin von Julia",
+    "ehrengast": false,
+    "platz": "5",
+    "unvertraeglich": "",
+    "vorlieben": "vegetarisch",
+    "alkoholfrei": false,
+    "notiz": "Suppe ohne Speck, Hauptgang: Julia hat Steinpilzrisotto vorbereitet."
+   },
+   {
+    "id": "q6",
+    "name": "Jonas Busch",
+    "karte": "",
+    "beziehung": "Freund aus dem Studium",
+    "ehrengast": false,
+    "platz": "6",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q7",
+    "name": "Mira Klein",
+    "karte": "",
+    "beziehung": "Kollegin von Stefan",
+    "ehrengast": false,
+    "platz": "7",
+    "unvertraeglich": "",
+    "vorlieben": "trinkt keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q8",
+    "name": "Ben Klein",
+    "karte": "",
+    "beziehung": "Mann von Mira",
+    "ehrengast": false,
+    "platz": "8",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q9",
+    "name": "Sarah Yilmaz",
+    "karte": "",
+    "beziehung": "Nachbarin",
+    "ehrengast": false,
+    "platz": "9",
+    "unvertraeglich": "Laktose",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q10",
+    "name": "Can Yilmaz",
+    "karte": "",
+    "beziehung": "Nachbar",
+    "ehrengast": false,
+    "platz": "10",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   }
+  ],
+  "vorort": {
+   "adresse": "Siegburger Strasse 41, 50679 Köln-Deutz",
+   "anfahrt": "Über die Deutzer Brücke, dann am Rheinufer entlang.",
+   "parken": "Parkhaus am Bahnhof Deutz, fünf Minuten zu Fuss.",
+   "klingel": "Roth, dritter Stock, Aufzug",
+   "ansprech": "Julia Roth",
+   "kueche": {
+    "glaeser": "Hochschrank im Esszimmer",
+    "geschirr": "Schrank links neben dem Herd",
+    "besteck": "oberste Schublade an der Insel",
+    "kuehlschrank": "Weine im Weinkühlschrank unter der Insel",
+    "ofen": "Ofen und Dampfgarer, Stefan braucht beide bis 20:40",
+    "spuele": "Spülmaschine bis 18 Uhr leer",
+    "notiz": "Die Küche ist offen zum Esszimmer: leise abräumen."
+   },
+   "garderobe": "Schlafzimmer, Bett ist frei für die Mäntel",
+   "tisch": "Langer Tisch für zehn, Leinen in Grau, Kerzen und Eukalyptus",
+   "raum": "Empfang im Wohnzimmer mit Blick auf den Rhein",
+   "stellt": [
+    "Gläser und Geschirr",
+    "Tischwäsche, Kerzen, Blumen",
+    "Getränke nach Absprache"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": true
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": true
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": true
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": true
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": true
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": true
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": true
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": true
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": true
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": true
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": true
+   }
+  ],
+  "intern": "Julias Rede ist eine Überraschung für Stefan: sie steht nur auf meinem Arbeitsblatt, nicht auf «Dein Abend», abgesprochen mit Julia allein am Telefon. Hannelore Roth sitzt gern mit dem Rücken zur Wand.",
+  "stand": "2026-10-22T19:10",
+  "fassung": 4,
+  "abstimmung": {
+   "gesendet": "2026-10-12",
+   "bestaetigt_am": "2026-10-14",
+   "bestaetigt_von": "Julia Roth",
+   "fassung": 4,
+   "abdruck": {
+    "ablauf": [
+     {
+      "id": "p1",
+      "zeit": "16:00",
+      "was": "Ankommen und einrichten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p3",
+      "zeit": "18:30",
+      "was": "Empfang mit Sekt",
+      "wer": "angelina"
+     },
+     {
+      "id": "p4",
+      "zeit": "19:15",
+      "was": "Anstossen auf Stefan",
+      "wer": "gaeste"
+     },
+     {
+      "id": "p5",
+      "zeit": "19:25",
+      "was": "Platz nehmen",
+      "wer": "angelina"
+     },
+     {
+      "id": "p6",
+      "zeit": "19:35",
+      "was": "Vorspeise",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p7",
+      "zeit": "20:10",
+      "was": "Suppe",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p8",
+      "zeit": "20:50",
+      "was": "Hauptgang",
+      "wer": "gastgeber"
+     },
+     {
+      "id": "p10",
+      "zeit": "22:05",
+      "was": "Dessert mit Kerze",
+      "wer": "angelina"
+     },
+     {
+      "id": "p11",
+      "zeit": "22:45",
+      "was": "Kaffee, Digestif und Zeit füreinander",
+      "wer": "angelina"
+     },
+     {
+      "id": "p12",
+      "zeit": "23:35",
+      "was": "Abschied",
+      "wer": "angelina"
+     }
+    ],
+    "gaenge": [
+     {
+      "id": "g1",
+      "name": "Vorspeise",
+      "gericht": "Vitello tonnato mit Kapernäpfeln",
+      "koch": "Stefan"
+     },
+     {
+      "id": "g2",
+      "name": "Suppe",
+      "gericht": "Maronensuppe mit Speckchip",
+      "koch": "Julia"
+     },
+     {
+      "id": "g3",
+      "name": "Hauptgang",
+      "gericht": "Geschmorte Ochsenbacke mit Selleriepüree und Wurzelgemüse",
+      "koch": "Stefan"
+     },
+     {
+      "id": "g4",
+      "name": "Dessert",
+      "gericht": "Panna cotta mit Feigen",
+      "koch": "Julia"
+     }
+    ],
+    "weine": [
+     {
+      "id": "w1",
+      "zu": "empfang",
+      "name": "Riesling Sekt brut",
+      "weingut": "Sektkellerei Raumland",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w2",
+      "zu": "empfang",
+      "name": "Ingwer-Limonade, hausgemacht",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w3",
+      "zu": "g1",
+      "name": "Grauburgunder trocken",
+      "weingut": "Weingut Bernhard Huber",
+      "jahrgang": "2022"
+     },
+     {
+      "id": "w4",
+      "zu": "g3",
+      "name": "Spätburgunder",
+      "weingut": "Weingut Meyer-Näkel",
+      "jahrgang": "2020"
+     },
+     {
+      "id": "w5",
+      "zu": "g4",
+      "name": "Riesling Auslese",
+      "weingut": "Weingut Dr. Loosen",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w6",
+      "zu": "tisch",
+      "name": "Wasser still und sprudelnd",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w7",
+      "zu": "digestif",
+      "name": "Grappa",
+      "weingut": "",
+      "jahrgang": ""
+     }
+    ],
+    "gaeste": [
+     {
+      "id": "q1",
+      "name": "Stefan Roth",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "1"
+     },
+     {
+      "id": "q2",
+      "name": "Julia Roth",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "2"
+     },
+     {
+      "id": "q3",
+      "name": "Hannelore Roth",
+      "unvertraeglich": "",
+      "vorlieben": "mag es gern ruhig",
+      "platz": "3"
+     },
+     {
+      "id": "q4",
+      "name": "Tim Roth",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "4"
+     },
+     {
+      "id": "q5",
+      "name": "Nora Busch",
+      "unvertraeglich": "",
+      "vorlieben": "vegetarisch",
+      "platz": "5"
+     },
+     {
+      "id": "q6",
+      "name": "Jonas Busch",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "6"
+     },
+     {
+      "id": "q7",
+      "name": "Mira Klein",
+      "unvertraeglich": "",
+      "vorlieben": "trinkt keinen Alkohol",
+      "platz": "7"
+     },
+     {
+      "id": "q8",
+      "name": "Ben Klein",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "8"
+     },
+     {
+      "id": "q9",
+      "name": "Sarah Yilmaz",
+      "unvertraeglich": "Laktose",
+      "vorlieben": "",
+      "platz": "9"
+     },
+     {
+      "id": "q10",
+      "name": "Can Yilmaz",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "10"
+     }
+    ]
+   },
+   "nachher": []
+  }
+ },
+ "a-261006-ew": {
+  "beispiel": true,
+  "vorlage": "dinner",
+  "titel": "Ein Abend mit den Freundinnen aus der Studienzeit",
+  "ankunft": "17:00",
+  "gaeste_ab": "19:00",
+  "ende": "23:30",
+  "gruss": "Du sitzt bei deinen Freundinnen. Den Rest übernehmen der Caterer und ich.",
+  "ablauf": [
+   {
+    "id": "p1",
+    "zeit": "17:00",
+    "dauer": 60,
+    "art": "ankommen",
+    "was": "Ankommen und einrichten",
+    "wer": "angelina",
+    "notiz": "Tisch für sechs, Gläser, Weine, Platz für den Caterer in der Küche."
+   },
+   {
+    "id": "p2",
+    "zeit": "18:00",
+    "dauer": 30,
+    "art": "sonst",
+    "was": "Abstimmung mit dem Caterer",
+    "wer": "alle",
+    "notiz": "Anrichten, Zeiten, wer abräumt.",
+    "intern": true
+   },
+   {
+    "id": "p3",
+    "zeit": "19:00",
+    "dauer": 40,
+    "art": "empfang",
+    "was": "Empfang im Wintergarten",
+    "wer": "angelina",
+    "notiz": "Mäntel abnehmen, Crémant reichen. Du begrüsst deine Freundinnen selbst."
+   },
+   {
+    "id": "p4",
+    "zeit": "19:40",
+    "dauer": 10,
+    "art": "platz",
+    "was": "Platz nehmen",
+    "wer": "angelina",
+    "notiz": ""
+   },
+   {
+    "id": "p5",
+    "zeit": "19:50",
+    "dauer": 35,
+    "art": "gang",
+    "was": "Vorspeise",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g1"
+   },
+   {
+    "id": "p6",
+    "zeit": "20:30",
+    "dauer": 55,
+    "art": "gang",
+    "was": "Hauptgang",
+    "wer": "caterer",
+    "notiz": "Der Wein wird nachgeschenkt, du bleibst sitzen.",
+    "gang": "g2"
+   },
+   {
+    "id": "p7",
+    "zeit": "21:35",
+    "dauer": 35,
+    "art": "dessert",
+    "was": "Dessert",
+    "wer": "caterer",
+    "notiz": "",
+    "gang": "g3"
+   },
+   {
+    "id": "p8",
+    "zeit": "22:15",
+    "dauer": 60,
+    "art": "digestif",
+    "was": "Kaffee und Zeit füreinander",
+    "wer": "angelina",
+    "notiz": "Der Tisch darf ruhen, Kaffee im Wohnzimmer."
+   },
+   {
+    "id": "p9",
+    "zeit": "23:15",
+    "dauer": 15,
+    "art": "abschied",
+    "was": "Abschied",
+    "wer": "angelina",
+    "notiz": "Taxi für Katrin und Lisa um 23:20."
+   },
+   {
+    "id": "p10",
+    "zeit": "23:30",
+    "dauer": 40,
+    "art": "aufraeumen",
+    "was": "Küche und Tisch in Ordnung bringen",
+    "wer": "angelina",
+    "notiz": "Geschirr des Caterers gezählt in die Kisten.",
+    "intern": true
+   }
+  ],
+  "gaenge": [
+   {
+    "id": "g1",
+    "name": "Vorspeise",
+    "gericht": "Geräucherte Forelle mit Rote Bete und Meerrettich",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "19:50",
+    "hinweis": ""
+   },
+   {
+    "id": "g2",
+    "name": "Hauptgang",
+    "gericht": "Kalbsrücken mit Pfifferlingen und Kartoffelgratin",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "20:30",
+    "hinweis": "Für Anja: Pfifferlingrisotto ohne Fleisch."
+   },
+   {
+    "id": "g3",
+    "name": "Dessert",
+    "gericht": "Zwetschgen-Crumble mit Vanilleeis",
+    "beschreibung": "",
+    "koch": "Caterer",
+    "zeit": "21:35",
+    "hinweis": ""
+   }
+  ],
+  "weine": [
+   {
+    "id": "w1",
+    "zu": "empfang",
+    "art": "sekt",
+    "name": "Crémant d’Alsace brut",
+    "weingut": "",
+    "rebsorte": "Pinot Blanc",
+    "jahrgang": "",
+    "herkunft": "Elsass",
+    "temperatur": "6–8 °C",
+    "oeffnen": "18:50",
+    "menge": "2 Flaschen",
+    "glas": "Sektglas",
+    "notiz": ""
+   },
+   {
+    "id": "w2",
+    "zu": "g1",
+    "art": "weiss",
+    "name": "Riesling trocken",
+    "weingut": "Weingut Fritz Haag",
+    "rebsorte": "Riesling",
+    "jahrgang": "2022",
+    "herkunft": "Mosel",
+    "temperatur": "9 °C",
+    "oeffnen": "19:40",
+    "menge": "1 Flasche",
+    "glas": "Weissweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w3",
+    "zu": "g2",
+    "art": "rot",
+    "name": "Spätburgunder",
+    "weingut": "Weingut Bernhard Huber",
+    "rebsorte": "Spätburgunder",
+    "jahrgang": "2019",
+    "herkunft": "Baden",
+    "temperatur": "16 °C",
+    "oeffnen": "19:30, dekantieren",
+    "menge": "2 Flaschen",
+    "glas": "Burgunderglas",
+    "notiz": ""
+   },
+   {
+    "id": "w4",
+    "zu": "g2",
+    "art": "alkoholfrei",
+    "name": "Rote Traubenschorle",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "1 Karaffe",
+    "glas": "Rotweinglas",
+    "notiz": ""
+   },
+   {
+    "id": "w5",
+    "zu": "tisch",
+    "art": "wasser",
+    "name": "Wasser still und sprudelnd",
+    "weingut": "",
+    "rebsorte": "",
+    "jahrgang": "",
+    "herkunft": "",
+    "temperatur": "kühl",
+    "oeffnen": "",
+    "menge": "je 3 Flaschen",
+    "glas": "Wasserglas",
+    "notiz": ""
+   }
+  ],
+  "gaeste": [
+   {
+    "id": "q1",
+    "name": "Elke Wagner",
+    "karte": "",
+    "beziehung": "Gastgeberin",
+    "ehrengast": false,
+    "platz": "1",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q2",
+    "name": "Katrin Vogel",
+    "karte": "",
+    "beziehung": "Freundin aus dem Studium",
+    "ehrengast": false,
+    "platz": "2",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q3",
+    "name": "Anja Hartmann",
+    "karte": "",
+    "beziehung": "Freundin aus dem Studium",
+    "ehrengast": false,
+    "platz": "3",
+    "unvertraeglich": "",
+    "vorlieben": "vegetarisch",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q4",
+    "name": "Lisa Behrens",
+    "karte": "",
+    "beziehung": "Freundin aus dem Studium",
+    "ehrengast": false,
+    "platz": "4",
+    "unvertraeglich": "",
+    "vorlieben": "fährt, keinen Alkohol",
+    "alkoholfrei": true,
+    "notiz": ""
+   },
+   {
+    "id": "q5",
+    "name": "Petra Lange",
+    "karte": "",
+    "beziehung": "Freundin aus dem Studium",
+    "ehrengast": false,
+    "platz": "5",
+    "unvertraeglich": "Sellerie",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": ""
+   },
+   {
+    "id": "q6",
+    "name": "Susanne Kaiser",
+    "karte": "",
+    "beziehung": "Freundin aus dem Studium",
+    "ehrengast": true,
+    "platz": "6",
+    "unvertraeglich": "",
+    "vorlieben": "",
+    "alkoholfrei": false,
+    "notiz": "Kommt aus Hamburg, zum ersten Mal seit fünf Jahren dabei."
+   }
+  ],
+  "vorort": {
+   "adresse": "Am Eichenhang 12, 51427 Bergisch Gladbach-Refrath",
+   "anfahrt": "Über die Dolmanstrasse, dann zweite links.",
+   "parken": "In der Einfahrt.",
+   "klingel": "Wagner",
+   "ansprech": "Elke Wagner",
+   "kueche": {
+    "glaeser": "Vitrine im Esszimmer",
+    "geschirr": "kommt vom Caterer",
+    "besteck": "Silberbesteck im Sideboard",
+    "kuehlschrank": "Getränke im Kühlschrank der Garage",
+    "ofen": "Ofen frei für den Caterer",
+    "spuele": "Spülmaschine leer",
+    "notiz": ""
+   },
+   "garderobe": "Garderobe im Flur",
+   "tisch": "Runder Tisch für sechs, Leinen in Creme, Herbstblumen",
+   "raum": "Empfang im Wintergarten, Kaffee im Wohnzimmer",
+   "stellt": [
+    "Gläser und Silberbesteck",
+    "Tischwäsche und Blumen",
+    "Weine nach meiner Auswahl"
+   ]
+  },
+  "packliste": [
+   {
+    "id": "k1",
+    "was": "Smoking, weisses Hemd, Fliege in Berry",
+    "hat": true
+   },
+   {
+    "id": "k2",
+    "was": "Weisse Handschuhe, zwei Paar",
+    "hat": true
+   },
+   {
+    "id": "k3",
+    "was": "Kellnermesser und Ersatz",
+    "hat": true
+   },
+   {
+    "id": "k4",
+    "was": "Champagnerverschluss",
+    "hat": true
+   },
+   {
+    "id": "k5",
+    "was": "Dekantierkaraffe",
+    "hat": true
+   },
+   {
+    "id": "k6",
+    "was": "Weinthermometer",
+    "hat": true
+   },
+   {
+    "id": "k7",
+    "was": "Poliertücher für die Gläser, vier Stück",
+    "hat": true
+   },
+   {
+    "id": "k8",
+    "was": "Servietten zum Einschenken",
+    "hat": true
+   },
+   {
+    "id": "k9",
+    "was": "Tablett mit rutschfester Matte",
+    "hat": true
+   },
+   {
+    "id": "k10",
+    "was": "Feuerzeug für die Kerzen",
+    "hat": true
+   },
+   {
+    "id": "k11",
+    "was": "Kleine Notizkarte mit Ablauf und Gästen",
+    "hat": true
+   },
+   {
+    "id": "k12",
+    "was": "Ausgedrucktes Arbeitsblatt",
+    "hat": true
+   },
+   {
+    "id": "k13",
+    "was": "Bequeme Schuhe zum Wechseln",
+    "hat": true
+   },
+   {
+    "id": "k14",
+    "was": "Telefon geladen, Ladekabel",
+    "hat": true
+   }
+  ],
+  "intern": "Elke möchte nichts selbst servieren. Susanne bekommt den Platz mit Blick in den Garten.",
+  "stand": "2026-10-28T09:30",
+  "fassung": 3,
+  "abstimmung": {
+   "gesendet": "2026-10-20",
+   "bestaetigt_am": "2026-10-21",
+   "bestaetigt_von": "Elke Wagner",
+   "fassung": 3,
+   "abdruck": {
+    "ablauf": [
+     {
+      "id": "p1",
+      "zeit": "17:00",
+      "was": "Ankommen und einrichten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p3",
+      "zeit": "19:00",
+      "was": "Empfang im Wintergarten",
+      "wer": "angelina"
+     },
+     {
+      "id": "p4",
+      "zeit": "19:40",
+      "was": "Platz nehmen",
+      "wer": "angelina"
+     },
+     {
+      "id": "p5",
+      "zeit": "19:50",
+      "was": "Vorspeise",
+      "wer": "caterer"
+     },
+     {
+      "id": "p6",
+      "zeit": "20:30",
+      "was": "Hauptgang",
+      "wer": "caterer"
+     },
+     {
+      "id": "p7",
+      "zeit": "21:35",
+      "was": "Dessert",
+      "wer": "caterer"
+     },
+     {
+      "id": "p8",
+      "zeit": "22:15",
+      "was": "Kaffee und Zeit füreinander",
+      "wer": "angelina"
+     },
+     {
+      "id": "p9",
+      "zeit": "23:15",
+      "was": "Abschied",
+      "wer": "angelina"
+     }
+    ],
+    "gaenge": [
+     {
+      "id": "g1",
+      "name": "Vorspeise",
+      "gericht": "Geräucherte Forelle mit Rote Bete und Meerrettich",
+      "koch": "Caterer"
+     },
+     {
+      "id": "g2",
+      "name": "Hauptgang",
+      "gericht": "Kalbsrücken mit Pfifferlingen und Kartoffelgratin",
+      "koch": "Caterer"
+     },
+     {
+      "id": "g3",
+      "name": "Dessert",
+      "gericht": "Zwetschgen-Crumble mit Vanilleeis",
+      "koch": "Caterer"
+     }
+    ],
+    "weine": [
+     {
+      "id": "w1",
+      "zu": "empfang",
+      "name": "Crémant d’Alsace brut",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w2",
+      "zu": "g1",
+      "name": "Riesling trocken",
+      "weingut": "Weingut Fritz Haag",
+      "jahrgang": "2022"
+     },
+     {
+      "id": "w3",
+      "zu": "g2",
+      "name": "Spätburgunder",
+      "weingut": "Weingut Bernhard Huber",
+      "jahrgang": "2019"
+     },
+     {
+      "id": "w4",
+      "zu": "g2",
+      "name": "Rote Traubenschorle",
+      "weingut": "",
+      "jahrgang": ""
+     },
+     {
+      "id": "w5",
+      "zu": "tisch",
+      "name": "Wasser still und sprudelnd",
+      "weingut": "",
+      "jahrgang": ""
+     }
+    ],
+    "gaeste": [
+     {
+      "id": "q1",
+      "name": "Elke Wagner",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "1"
+     },
+     {
+      "id": "q2",
+      "name": "Katrin Vogel",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "2"
+     },
+     {
+      "id": "q3",
+      "name": "Anja Hartmann",
+      "unvertraeglich": "",
+      "vorlieben": "vegetarisch",
+      "platz": "3"
+     },
+     {
+      "id": "q4",
+      "name": "Lisa Behrens",
+      "unvertraeglich": "",
+      "vorlieben": "fährt, keinen Alkohol",
+      "platz": "4"
+     },
+     {
+      "id": "q5",
+      "name": "Petra Lange",
+      "unvertraeglich": "Sellerie",
+      "vorlieben": "",
+      "platz": "5"
+     },
+     {
+      "id": "q6",
+      "name": "Susanne Kaiser",
+      "unvertraeglich": "",
+      "vorlieben": "",
+      "platz": "6"
+     }
+    ]
+   },
+   "nachher": []
+  }
+ }
+}

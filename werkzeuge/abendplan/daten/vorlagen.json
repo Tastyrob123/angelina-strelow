@@ -1,0 +1,587 @@
+{
+ "quelle": "Der Abendplan · Vorlagen je Anlass, Packliste, Textbausteine (05.11.2026). Zeiten als Minuten ab Ankunft der Gäste (ab), Dauer in Minuten. Alles Vorschläge, Angelina passt sie im Vorgespräch an.",
+ "anlaesse": [
+  {
+   "k": "dinner",
+   "t": "Privates Dinner",
+   "satz": "Ein langer Abend am Tisch: Empfang, Platz nehmen, Gang für Gang, Kaffee zum Ausklang.",
+   "bild": "tafel",
+   "gaeste_ab": "19:00",
+   "punkte": [
+    {
+     "ab": -150,
+     "dauer": 60,
+     "art": "ankommen",
+     "was": "Ankommen und einrichten",
+     "wer": "angelina",
+     "notiz": "Tisch gemeinsam durchgehen, Gläser polieren, Weine auf Temperatur bringen."
+    },
+    {
+     "ab": -90,
+     "dauer": 30,
+     "art": "sonst",
+     "was": "Abstimmung in der Küche",
+     "wer": "alle",
+     "notiz": "Zeiten der Gänge, Teller, wer richtet an, wo wird abgeräumt.",
+     "intern": true
+    },
+    {
+     "ab": -20,
+     "dauer": 20,
+     "art": "sonst",
+     "was": "Letzter Blick auf Tisch und Licht",
+     "wer": "angelina",
+     "notiz": "Kerzen an, Wasser eingeschenkt, Musik leise.",
+     "intern": true
+    },
+    {
+     "ab": 0,
+     "dauer": 40,
+     "art": "empfang",
+     "was": "Empfang deiner Gäste",
+     "wer": "angelina",
+     "notiz": "Mäntel abnehmen, Sekt reichen. Du begrüsst deine Gäste selbst."
+    },
+    {
+     "ab": 40,
+     "dauer": 10,
+     "art": "platz",
+     "was": "Platz nehmen",
+     "wer": "angelina",
+     "notiz": "Ich führe deine Gäste an ihre Plätze."
+    },
+    {
+     "ab": 50,
+     "dauer": 35,
+     "art": "gang",
+     "was": "Vorspeise",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 90,
+     "dauer": 30,
+     "art": "gang",
+     "was": "Zwischengang",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 125,
+     "dauer": 55,
+     "art": "gang",
+     "was": "Hauptgang",
+     "wer": "gastgeber",
+     "notiz": "Der Wein wird nachgeschenkt, du bleibst sitzen."
+    },
+    {
+     "ab": 190,
+     "dauer": 35,
+     "art": "dessert",
+     "was": "Dessert",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 230,
+     "dauer": 40,
+     "art": "digestif",
+     "was": "Kaffee und Digestif",
+     "wer": "angelina",
+     "notiz": "Gern im Wohnzimmer, der Tisch darf ruhen."
+    },
+    {
+     "ab": 270,
+     "dauer": 15,
+     "art": "abschied",
+     "was": "Abschied",
+     "wer": "angelina",
+     "notiz": "Mäntel liegen bereit, ich begleite zur Tür."
+    },
+    {
+     "ab": 285,
+     "dauer": 45,
+     "art": "aufraeumen",
+     "was": "Küche und Tisch in Ordnung bringen",
+     "wer": "angelina",
+     "notiz": "Gläser gespült, Reste verpackt, Küche aufgeräumt.",
+     "intern": true
+    }
+   ]
+  },
+  {
+   "k": "geburtstag",
+   "t": "Geburtstag",
+   "satz": "Ein Abend für einen Menschen: Ankommen, Anstossen, ein paar Worte, dann das Essen in Ruhe.",
+   "bild": "empfang",
+   "gaeste_ab": "18:30",
+   "punkte": [
+    {
+     "ab": -150,
+     "dauer": 60,
+     "art": "ankommen",
+     "was": "Ankommen und einrichten",
+     "wer": "angelina",
+     "notiz": "Tisch, Gläser, Getränke; Platz für Geschenke und Blumen vorbereiten."
+    },
+    {
+     "ab": -90,
+     "dauer": 30,
+     "art": "sonst",
+     "was": "Abstimmung in der Küche",
+     "wer": "alle",
+     "notiz": "Ablauf, Zeiten, wann die Rede kommt.",
+     "intern": true
+    },
+    {
+     "ab": 0,
+     "dauer": 45,
+     "art": "empfang",
+     "was": "Empfang mit Sekt",
+     "wer": "angelina",
+     "notiz": "Ich nehme Mäntel und Geschenke ab, Blumen kommen gleich ins Wasser."
+    },
+    {
+     "ab": 45,
+     "dauer": 10,
+     "art": "programm",
+     "was": "Anstossen auf das Geburtstagskind",
+     "wer": "gastgeber",
+     "notiz": "Alle Gläser sind vorher gefüllt."
+    },
+    {
+     "ab": 55,
+     "dauer": 10,
+     "art": "platz",
+     "was": "Platz nehmen",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 65,
+     "dauer": 35,
+     "art": "gang",
+     "was": "Vorspeise",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 105,
+     "dauer": 55,
+     "art": "gang",
+     "was": "Hauptgang",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 165,
+     "dauer": 15,
+     "art": "programm",
+     "was": "Ein paar Worte",
+     "wer": "gaeste",
+     "notiz": "Gläser vorher nachgeschenkt, danach Ruhe am Tisch."
+    },
+    {
+     "ab": 180,
+     "dauer": 35,
+     "art": "dessert",
+     "was": "Dessert mit Kerze",
+     "wer": "angelina",
+     "notiz": "Licht gedimmt, das Dessert kommt mit Kerze an den Platz."
+    },
+    {
+     "ab": 220,
+     "dauer": 45,
+     "art": "digestif",
+     "was": "Kaffee, Digestif und Zeit füreinander",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 265,
+     "dauer": 20,
+     "art": "abschied",
+     "was": "Abschied",
+     "wer": "angelina",
+     "notiz": "Geschenke stehen gesammelt, Blumen versorgt."
+    },
+    {
+     "ab": 285,
+     "dauer": 45,
+     "art": "aufraeumen",
+     "was": "Küche und Tisch in Ordnung bringen",
+     "wer": "angelina",
+     "notiz": "",
+     "intern": true
+    }
+   ]
+  },
+  {
+   "k": "jubilaeum",
+   "t": "Jubiläum",
+   "satz": "Ein Abend mit Geschichte: feierlicher Empfang, eine Rede an der richtigen Stelle, ein Menü in Ruhe.",
+   "bild": "festtafel",
+   "gaeste_ab": "18:00",
+   "punkte": [
+    {
+     "ab": -180,
+     "dauer": 75,
+     "art": "ankommen",
+     "was": "Ankommen und einrichten",
+     "wer": "angelina",
+     "notiz": "Festliche Tafel, Gläser, Getränke, Platz für Fotos und Erinnerungsstücke."
+    },
+    {
+     "ab": -105,
+     "dauer": 30,
+     "art": "sonst",
+     "was": "Abstimmung mit Gastgeber und Küche",
+     "wer": "alle",
+     "notiz": "Zeitpunkt der Rede, Reihenfolge der Gänge.",
+     "intern": true
+    },
+    {
+     "ab": 0,
+     "dauer": 50,
+     "art": "empfang",
+     "was": "Empfang mit Sekt",
+     "wer": "angelina",
+     "notiz": "Ihr empfangt eure Gäste an der Tür, ich reiche die Gläser."
+    },
+    {
+     "ab": 50,
+     "dauer": 10,
+     "art": "platz",
+     "was": "Platz nehmen",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 60,
+     "dauer": 15,
+     "art": "programm",
+     "was": "Begrüssung und Rede",
+     "wer": "gastgeber",
+     "notiz": "Gläser sind gefüllt, Service ruht während der Rede."
+    },
+    {
+     "ab": 75,
+     "dauer": 35,
+     "art": "gang",
+     "was": "Vorspeise",
+     "wer": "caterer",
+     "notiz": ""
+    },
+    {
+     "ab": 115,
+     "dauer": 30,
+     "art": "gang",
+     "was": "Zwischengang",
+     "wer": "caterer",
+     "notiz": ""
+    },
+    {
+     "ab": 150,
+     "dauer": 60,
+     "art": "gang",
+     "was": "Hauptgang",
+     "wer": "caterer",
+     "notiz": ""
+    },
+    {
+     "ab": 215,
+     "dauer": 15,
+     "art": "programm",
+     "was": "Worte der Gäste",
+     "wer": "gaeste",
+     "notiz": ""
+    },
+    {
+     "ab": 230,
+     "dauer": 35,
+     "art": "dessert",
+     "was": "Dessert",
+     "wer": "caterer",
+     "notiz": ""
+    },
+    {
+     "ab": 270,
+     "dauer": 60,
+     "art": "digestif",
+     "was": "Kaffee, Digestif, Zeit füreinander",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 330,
+     "dauer": 20,
+     "art": "abschied",
+     "was": "Abschied",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 350,
+     "dauer": 50,
+     "art": "aufraeumen",
+     "was": "Küche und Tisch in Ordnung bringen",
+     "wer": "angelina",
+     "notiz": "",
+     "intern": true
+    }
+   ]
+  },
+  {
+   "k": "feier",
+   "t": "Feier zu Hause",
+   "satz": "Ein Fest im ganzen Haus: Empfang, Buffet oder Flying Buffet. Du bist bei deinen Gästen, ich halte die Abläufe im Hintergrund zusammen.",
+   "bild": "p151",
+   "gaeste_ab": "18:00",
+   "punkte": [
+    {
+     "ab": -150,
+     "dauer": 75,
+     "art": "ankommen",
+     "was": "Ankommen und einrichten",
+     "wer": "angelina",
+     "notiz": "Getränkestation, Gläser, Buffet-Tisch, Wege für die Gäste."
+    },
+    {
+     "ab": -75,
+     "dauer": 30,
+     "art": "sonst",
+     "was": "Abstimmung mit Gastgeber und Caterer",
+     "wer": "alle",
+     "notiz": "Wann das Buffet öffnet, wer nachlegt.",
+     "intern": true
+    },
+    {
+     "ab": 0,
+     "dauer": 60,
+     "art": "empfang",
+     "was": "Empfang",
+     "wer": "angelina",
+     "notiz": "Getränke beim Ankommen, Mäntel an die Garderobe."
+    },
+    {
+     "ab": 30,
+     "dauer": 60,
+     "art": "aperitif",
+     "was": "Flying Buffet",
+     "wer": "angelina",
+     "notiz": "Ich reiche kleine Bissen dort, wo deine Gäste gerade stehen und erzählen."
+    },
+    {
+     "ab": 90,
+     "dauer": 10,
+     "art": "programm",
+     "was": "Begrüssung durch den Gastgeber",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 100,
+     "dauer": 90,
+     "art": "gang",
+     "was": "Buffet ist eröffnet",
+     "wer": "caterer",
+     "notiz": "Ich halte das Buffet schön und räume leise ab."
+    },
+    {
+     "ab": 190,
+     "dauer": 45,
+     "art": "dessert",
+     "was": "Süsses und Kaffee",
+     "wer": "caterer",
+     "notiz": ""
+    },
+    {
+     "ab": 235,
+     "dauer": 60,
+     "art": "sonst",
+     "was": "Getränke und Gespräche",
+     "wer": "angelina",
+     "notiz": "Gläser werden nachgefüllt, leere verschwinden."
+    },
+    {
+     "ab": 295,
+     "dauer": 25,
+     "art": "abschied",
+     "was": "Abschied",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 320,
+     "dauer": 60,
+     "art": "aufraeumen",
+     "was": "Aufräumen",
+     "wer": "angelina",
+     "notiz": "",
+     "intern": true
+    }
+   ]
+  },
+  {
+   "k": "silvester",
+   "t": "Silvester",
+   "satz": "Ein Abend bis über Mitternacht: Empfang, Essen, Gläser bereit, wenn das neue Jahr beginnt.",
+   "bild": "glas",
+   "gaeste_ab": "19:30",
+   "punkte": [
+    {
+     "ab": -150,
+     "dauer": 60,
+     "art": "ankommen",
+     "was": "Ankommen und einrichten",
+     "wer": "angelina",
+     "notiz": "Champagner und Sekt kalt stellen, Gläser für Mitternacht zählen."
+    },
+    {
+     "ab": -90,
+     "dauer": 30,
+     "art": "sonst",
+     "was": "Abstimmung in der Küche",
+     "wer": "alle",
+     "notiz": "",
+     "intern": true
+    },
+    {
+     "ab": 0,
+     "dauer": 45,
+     "art": "empfang",
+     "was": "Sektempfang",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 45,
+     "dauer": 60,
+     "art": "aperitif",
+     "was": "Fingerfood",
+     "wer": "angelina",
+     "notiz": "Ich reiche kleine Bissen zu den Gesprächen."
+    },
+    {
+     "ab": 105,
+     "dauer": 10,
+     "art": "platz",
+     "was": "Platz nehmen",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 115,
+     "dauer": 60,
+     "art": "gang",
+     "was": "Hauptgang",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 180,
+     "dauer": 40,
+     "art": "dessert",
+     "was": "Dessert",
+     "wer": "gastgeber",
+     "notiz": ""
+    },
+    {
+     "ab": 220,
+     "dauer": 45,
+     "art": "sonst",
+     "was": "Zeit füreinander",
+     "wer": "alle",
+     "notiz": "Getränke werden nachgefüllt."
+    },
+    {
+     "ab": 265,
+     "dauer": 15,
+     "art": "programm",
+     "was": "Gläser für Mitternacht",
+     "wer": "angelina",
+     "notiz": "Jeder Gast hält ein volles Glas, wenn das Jahr beginnt."
+    },
+    {
+     "ab": 280,
+     "dauer": 30,
+     "art": "programm",
+     "was": "Mitternacht",
+     "wer": "alle",
+     "notiz": "Anstossen, ich bleibe im Hintergrund."
+    },
+    {
+     "ab": 310,
+     "dauer": 40,
+     "art": "digestif",
+     "was": "Kaffee und Ausklang",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 350,
+     "dauer": 20,
+     "art": "abschied",
+     "was": "Abschied",
+     "wer": "angelina",
+     "notiz": ""
+    },
+    {
+     "ab": 370,
+     "dauer": 45,
+     "art": "aufraeumen",
+     "was": "Küche und Tisch in Ordnung bringen",
+     "wer": "angelina",
+     "notiz": "",
+     "intern": true
+    }
+   ]
+  }
+ ],
+ "packliste": [
+  "Smoking, weisses Hemd, Fliege in Berry",
+  "Weisse Handschuhe, zwei Paar",
+  "Kellnermesser und Ersatz",
+  "Champagnerverschluss",
+  "Dekantierkaraffe",
+  "Weinthermometer",
+  "Poliertücher für die Gläser, vier Stück",
+  "Servietten zum Einschenken",
+  "Tablett mit rutschfester Matte",
+  "Feuerzeug für die Kerzen",
+  "Kleine Notizkarte mit Ablauf und Gästen",
+  "Ausgedrucktes Arbeitsblatt",
+  "Bequeme Schuhe zum Wechseln",
+  "Telefon geladen, Ladekabel"
+ ],
+ "stellt": [
+  "Gläser für Sekt, Weisswein, Rotwein und Wasser",
+  "Geschirr und Besteck für alle Gänge",
+  "Tischdecke und Servietten",
+  "Kerzen und Blumen",
+  "Getränke nach Absprache",
+  "Eiswürfel und Kühlung"
+ ],
+ "texte": {
+  "senden": [
+   {
+    "t": "Dein Abend, zum Durchsehen",
+    "text": "Hallo {anrede},\n\nwie besprochen schicke ich {dir} den Plan für {deinen} Abend am {datum}. Darin steht alles: wann ich komme, wann {deine} Gäste kommen, die Gänge, die Weine und wer an welchem Platz sitzt.\n\n{Schau} ihn {dir} in Ruhe an. Wenn alles so passt, reicht mir ein kurzes «Passt so». Wenn {du} etwas ändern {moechtest}, {sag} es mir einfach.\n\nIch freue mich auf {deinen} Abend.\nAngelina"
+   },
+   {
+    "t": "Kurz und herzlich",
+    "text": "Hallo {anrede},\n\nhier ist {dein} Abend am {datum} auf einem Blatt. {Magst} {du} kurz drüberschauen und mir sagen, ob alles stimmt?\n\nHerzlich,\nAngelina"
+   },
+   {
+    "t": "Nach einer Änderung",
+    "text": "Hallo {anrede},\n\nich habe den Plan für {deinen} Abend am {datum} angepasst. Geändert hat sich: {aenderungen}.\n\nPasst es so für {dich}?\n\nHerzlich,\nAngelina"
+   }
+  ],
+  "gruss": [
+   "Du lädst ein. Ich begleite den Abend.",
+   "Du darfst an diesem Abend selbst Gast sein.",
+   "Ihr dürft an diesem Abend einfach am Tisch sitzen bleiben.",
+   "Dein Abend. Mein Service."
+  ]
+ }
+}

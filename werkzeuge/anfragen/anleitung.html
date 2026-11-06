@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de" data-wo-titel="Anleitung · {name} · Angelina Strelow">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anleitung · Anfragen &amp; Angebote · Angelina Strelow</title>
+<meta name="description" content="Schritt für Schritt durch Anfragen &amp; Angebote: jede Anfrage an einem Ort, Antwort aus deinen Bausteinen, Angebot in deiner Marke.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0C0A0B">
+<link rel="icon" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina-zeichen.svg?v=1">
+<link rel="preload" href="/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500 600;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-500.woff2') format('woff2')}
+@font-face{font-family:'Angelina Mono';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/DMMono-normal-400.woff2') format('woff2')}
+:root{--navy:#1E1418;--nacht:#0C0A0B;--papier:#F4EFEC;--weiss:#FBF8F6;--gold:#E1CFC5;--messing:#6A3444;--taupe:#49202D;--tinte:#1A1215;--serif:'Della Respira',Georgia,serif;--sans:'Montserrat',system-ui,sans-serif;--mono:'Angelina Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.65 var(--sans);color:var(--tinte);background:linear-gradient(rgba(229,224,221,.86),rgba(229,224,221,.86)),url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg') 0 0/224px 224px,var(--papier)}
+a{color:inherit}
+.kopf{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:18px;padding:14px clamp(18px,4vw,56px);background:linear-gradient(180deg,#2A1D22,#1E1418 60%,#0C0A0B);color:var(--weiss);box-shadow:0 0 0 1px rgba(226,208,198,.4),0 14px 30px -18px rgba(24,16,20,.7)}
+.kopf b{font:400 12px var(--serif);letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.kopf nav{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.kopf a.kn{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;font:400 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--weiss);box-shadow:inset 0 0 0 1px rgba(226,208,198,.4)}
+.kopf a.gold{background:linear-gradient(180deg,#F4EBE6,#E1CFC5 52%,#C9B3A7);color:var(--nacht);box-shadow:none}
+.hero{position:relative;overflow:hidden;color:var(--weiss);padding:clamp(48px,7vw,96px) clamp(22px,6vw,90px);background:linear-gradient(90deg,rgba(12,10,11,.94),rgba(12,10,11,.62)),url('/angelina-strelow/werkzeuge/assets/bild/tafel-1000.webp') center/cover,var(--navy)}
+.hero span.m{font:11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font:400 clamp(36px,5.6vw,68px)/1.06 var(--serif);margin:14px 0 16px;max-width:15em}
+.hero h1 em{color:var(--gold)}
+.hero p{max-width:56ch;color:#dcd1cb}
+main{max-width:1060px;margin:0 auto;padding:46px clamp(18px,4vw,40px) 90px}
+.inhalt{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:0 0 20px}
+.inhalt a{display:flex;gap:12px;align-items:baseline;padding:14px 18px;border-radius:16px;background:var(--weiss);text-decoration:none;box-shadow:0 0 0 1px rgba(71,30,42,.25),0 12px 24px -18px rgba(24,16,20,.5)}
+.inhalt a b{font:400 11px var(--mono);letter-spacing:.14em;color:var(--taupe)}
+.k{margin-top:60px;padding-top:22px;border-top:1px solid rgba(71,30,42,.4)}
+.k .m{font:11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--taupe)}
+.k h2{font:400 clamp(28px,3.6vw,40px)/1.1 var(--serif);color:var(--navy);margin:6px 0 12px}
+.k h2 em{color:var(--taupe)}
+.k p.s{max-width:68ch;color:rgba(24,16,20,.82)}
+.k ol{list-style:none;counter-reset:z;display:grid;gap:10px;margin:16px 0;max-width:72ch}
+.k ol li{counter-increment:z;position:relative;padding:12px 16px 12px 52px;border-radius:14px;background:rgba(245,242,240,.8);box-shadow:inset 0 0 0 1px rgba(71,30,42,.2)}
+.k ol li::before{content:counter(z);position:absolute;left:14px;top:11px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font:400 12px var(--sans);color:var(--nacht);background:linear-gradient(180deg,#F4EBE6,#E1CFC5 52%,#C9B3A7)}
+.k .gut{margin:14px 0 18px;max-width:72ch;padding:14px 18px;border-radius:14px;background:linear-gradient(180deg,#2A1D22,#1E1418);color:var(--weiss);box-shadow:inset 0 0 0 1px rgba(226,208,198,.35)}
+.k .gut b{display:block;font:400 11px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+figure{margin:22px 0 4px}
+figure img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 0 0 1px rgba(71,30,42,.3),0 30px 50px -30px rgba(24,16,20,.7);cursor:zoom-in}
+figcaption{font:11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--taupe);margin-top:8px}
+.gross{position:fixed;inset:0;z-index:20;background:rgba(24,16,20,.88);display:none;place-items:center;padding:24px;cursor:zoom-out}
+.gross.auf{display:grid}.gross img{max-width:min(1400px,100%);max-height:100%;border-radius:12px}
+.hilfe{display:grid;gap:10px;margin-top:16px}
+.hilfe div{padding:14px 18px;border-radius:14px;background:var(--weiss);box-shadow:inset 0 0 0 1px rgba(71,30,42,.25)}
+.hilfe b{font:400 11px var(--mono);letter-spacing:.16em;color:var(--taupe)}
+/* Messlauf 29.10.2026 (Regel einzelwort): kein einzelnes Wort allein in der letzten Titelzeile */
+h1,h2,h3,h4,figcaption{text-wrap:balance}
+.zs{white-space:nowrap}
+</style>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/oberflaeche.js?v=1793941135" defer></script>
+<script src="studio/namen.js?v=1793941135" defer></script>
+</head>
+<body>
+<header class="kopf"><b>Anleitung · <span data-wo-name="anfragen">Werkzeug</span></b><nav><a class="kn" href="#kapitel">Kapitel</a><a class="kn gold" href="./">Werkzeug öffnen</a></nav></header>
+<section class="hero"><span class="m">Anfragen und Angebote, Schritt für Schritt</span>
+<h1>Du lädst ein. <em>Ich begleite den Abend.</em></h1>
+<p>Wie eine Anfrage in deinen Eingang kommt, wie du in deiner Stimme antwortest, wie aus deiner Preisliste ein Angebot in deiner Marke wird und wie die Zusage den Abend in den Abendplan schickt. Zwölf kurze Kapitel. Jedes Bild lässt sich mit einem Klick gross ansehen. Verschickt wird nie etwas aus dem Werkzeug, du schickst selbst.</p></section>
+<main id="kapitel">
+<div class="inhalt"><a href="#k1"><b>01</b>Übersicht</a><a href="#k2"><b>02</b>Eingang</a><a href="#k3"><b>03</b>Eine Anfrage</a><a href="#k4"><b>04</b>Von Hand anlegen</a><a href="#k5"><b>05</b>Die Antwort</a><a href="#k6"><b>06</b>Das Angebot</a><a href="#k7"><b>07</b>PDF und Fassungen</a><a href="#k8"><b>08</b>Zusage und Absage</a><a href="#k9"><b>09</b>Terminblick</a><a href="#k10"><b>10</b>Preisliste</a><a href="#k11"><b>11</b>Textbausteine</a><a href="#k12"><b>12</b>Einstellungen</a></div>
+
+<section class="k" id="k1"><span class="m">01 · Übersicht</span><h2>So ist <em>dein Werkzeug</em> aufgebaut.</h2>
+<p class="s"><span data-wo-name="anfragen">Anfragen &amp; Angebote</span> ist der eine Ort für jede Anfrage zu einem Abend: ob sie über das Formular deiner Website kommt, auf Instagram, nach einer Empfehlung oder nach einem Kennenlernen bei einem Kaffee.</p>
+<ol><li>Oben der Gruss und ein Satz, was heute auf dich wartet: neue Anfragen, Angebote ohne Antwort und dein nächster Abend.</li><li>Darunter drei Felder: «Neu», «Angebot raus» und «Nächster Abend», jedes mit einem Weg dorthin.</li><li>«Nach Station» zeigt die Abende als Kacheln: Neue Anfragen, Angebot raus, Zugesagt, Abgesagt. Ein Klick öffnet den Eingang mit genau dieser Station.</li><li>Links die Bereiche: Eingang, Terminblick, Preisliste, Textbausteine, Einstellungen. Am Handy öffnet «Bereiche» die Liste.</li><li>Oben im Kopf die vier Werkzeuge eines Abends: Anfragen &amp; Angebote, der Abendplan, Tischkarten &amp; Menü und Nach dem Abend.</li></ol>
+<figure><img src="bilder/anl-uebersicht.jpg?v=1" alt="Übersicht" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Übersicht</figcaption></figure></section>
+
+<section class="k" id="k2"><span class="m">02 · Eingang</span><h2>Jede Anfrage <em>an einem Ort.</em></h2>
+<p class="s">Im Eingang stehen alle Abende, die neuesten oben. Links wählst du die Station, suchst nach Namen, Ort oder Wunsch und filterst nach Anlass und Monat.</p>
+<ol><li>Die Kästchen oben zählen die Abende je Station: Alle, Neu, Angebot raus, Zugesagt, Vorbei, Abgesagt.</li><li>Jede Zeile zeigt ein Foto zum Anlass, den Namen, Datum, Gäste, Ort und woher die Anfrage kam.</li><li>Wartet jemand länger auf dich, steht das leise darunter: «seit 3 Tagen ohne Antwort» oder «Angebot seit 7 Tagen ohne Rückmeldung».</li><li>Hinweise stehen in Versalien darunter, etwa «Abend daneben», «Musik» oder «Viele Gäste».</li></ol>
+<figure><img src="bilder/anl-eingang.jpg?v=1" alt="Eingang" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Eingang</figcaption></figure></section>
+
+<section class="k" id="k3"><span class="m">03 · Eine Anfrage</span><h2>Alles, was der Gastgeber <em>geschrieben hat.</em></h2>
+<p class="s">Rechts öffnet sich die Anfrage: Anlass, Station, Datum, Gäste, Ort, E-Mail und Telefon, dazu die Antwort auf «Was möchtest du abgeben?» aus deinem Formular.</p>
+<ol><li>Hinweise rechnet das Werkzeug aus den Daten: ein anderer Abend am selben Tag, ein belegter Abend am Vortag, mehr als 16 Gäste, eine Frage nach Musik oder nach dem Preis.</li><li>«Notizen aus dem Vorgespräch» hält fest, was du beim Kaffee erfahren hast: Stimmung des Abends, wer kocht, Caterer, Besonderheiten. Der Abendplan liest es mit.</li><li>«Verlauf des Abends» zeigt jeden Schritt mit Datum: Anfrage, Vorgespräch, Antworten, Angebote, Zusage.</li></ol>
+<figure><img src="bilder/anl-anfrage.jpg?v=1" alt="Eine Anfrage" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Eine Anfrage</figcaption></figure></section>
+
+<section class="k" id="k4"><span class="m">04 · Von Hand anlegen</span><h2>Eine Anfrage <em>am Telefon.</em></h2>
+<p class="s">Ruft jemand an oder schreibt dir auf Instagram, legst du die Anfrage mit «Neue Anfrage» selbst an.</p>
+<ol><li>Oben im Kopf oder in der Übersicht auf «Neue Anfrage».</li><li>Woher, Anlass, Datum, Gäste, Ort, Name, E-Mail oder Telefon und «Was möchtest du abgeben?», dieselben Felder wie auf deiner Website.</li><li>«Anfrage anlegen»: Sie steht sofort im Eingang, als neue Anfrage.</li></ol>
+<figure><img src="bilder/anl-neu.jpg?v=1" alt="Anfrage von Hand anlegen" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Anfrage von Hand anlegen</figcaption></figure></section>
+
+<section class="k" id="k5"><span class="m">05 · Die Antwort</span><h2>Deine Antwort <em>in deiner Stimme.</em></h2>
+<p class="s">Unter der Anfrage steht «Die Antwort». Das Werkzeug schlägt den Baustein vor, der zur Station passt, und füllt ihn mit Name, Anlass, Datum, Ort und deinem Kaffee-Link.</p>
+<ol><li>Oben einen anderen Baustein wählen, wenn ein anderer besser passt.</li><li>Betreff und Text direkt im Blatt ändern. Die Leiste unten wird gelb: «Speichern» hält deinen Entwurf beim Abend fest.</li><li>«Text kopieren» legt Betreff und Antwort in die Zwischenablage. Füg sie in dein Postfach oder bei Instagram ein und schick sie selbst.</li><li>«Als gesendet vermerken» trägt die Antwort mit Datum in den Verlauf ein.</li></ol>
+<figure><img src="bilder/anl-antwort.jpg?v=1" alt="Die Antwort" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Die Antwort</figcaption></figure></section>
+
+<section class="k" id="k6"><span class="m">06 · Das Angebot</span><h2>Ein Angebot <em>in wenigen Handgriffen.</em></h2>
+<p class="s">Mit «Angebot» neben «Antwort» öffnest du das Angebot. Links stellst du es zusammen, darunter siehst du es als Blatt in deiner Marke.</p>
+<ol><li>Beginn, Dauer und Anfahrt (Kilometer hin und zurück) eintragen. Halbe Stunden mit Komma (6,5). Passt eine Zahl nicht, wird das Feld rot und darunter steht, was es braucht.</li><li>Wählen, was du übernimmst: Empfang, Gästebetreuung, Ablauf, Wein und Service am Tisch, die Details im Hintergrund.</li><li>Zusätze dazunehmen: Weinauswahl, Sitzordnung und Tischkarten, Abend über Mitternacht, Musik mit Frank Muschik auf Anfrage.</li><li>Anzahlung, gültig bis und deine persönliche Zeile. Die Summe rechnet sich mit deiner Preisliste.</li><li>«Speichern» sichert die Fassung beim Abend.</li></ol>
+<figure><img src="bilder/anl-angebot.jpg?v=1" alt="Das Angebot" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Das Angebot</figcaption></figure></section>
+
+<section class="k" id="k7"><span class="m">07 · PDF und Fassungen</span><h2>Als PDF sichern <em>und vermerken.</em></h2>
+<p class="s">Das Blatt im Werkzeug ist das PDF, Seite für Seite gleich.</p>
+<ol><li>«Als PDF speichern» setzt das Angebot als A4 und lädt es herunter, etwa «Angebot – Thomas Berger – 2026-12-19.pdf». Ist es länger als eine Seite, geht es sauber auf einer zweiten Seite weiter, mit «Seite 1 von 2».</li><li>Häng es an deine Antwort («Antwort zum Angebot schreiben» füllt den passenden Baustein).</li><li>«Als gesendet vermerken» sichert das Angebot, wie es im Blatt steht, und setzt den Abend auf «Angebot raus».</li><li>Eine gesendete Fassung bleibt, wie sie war. Änderst du etwas, entsteht beim Speichern eine neue Fassung. Frühere Fassungen holst du oben mit einem Klick zurück.</li></ol>
+<figure><img src="bilder/anl-pdf.jpg?v=1" alt="PDF und Fassungen" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · PDF und Fassungen</figcaption></figure></section>
+
+<section class="k" id="k8"><span class="m">08 · Zusage und Absage</span><h2>Ja, nein, <em>später vielleicht.</em></h2>
+<p class="s">Oben rechts in der Anfrage stehen «Zusage», «Absage» und der Papierkorb zum Löschen.</p>
+<ol><li>«Zusage»: wählen, wie sie kam, und vermerken. Der Abend steht damit im Abendplan, dort planst du Zeiten, Gänge, Wein und Gäste.</li><li>Absage mit Grund: Gastgeber hat abgesagt, Termin bei mir vergeben, Termin passt nicht mehr, zu weit entfernt, anderer Grund. Die Anfrage bleibt unter «Abgesagt».</li><li>«Wieder öffnen» holt eine Absage zurück in den Eingang.</li><li>Der Papierkorb löscht eine Anfrage nach einer Rückfrage ganz, etwa eine doppelt oder aus Versehen angelegte. Die Quittung bietet «Rückgängig».</li><li>Jeder Schritt steht im Verlauf des Abends, die Quittung unten bietet «Rückgängig».</li></ol>
+<figure><img src="bilder/anl-zusage.jpg?v=1" alt="Zusage" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Zusage</figcaption></figure></section>
+
+<section class="k" id="k9"><span class="m">09 · Terminblick</span><h2>Ist der Tag <em>noch frei?</em></h2>
+<p class="s">Der Terminblick zeigt deinen Monat: belegte Abende dunkel, offene Anfragen hell.</p>
+<ol><li>Mit den Pfeilen den Monat wechseln.</li><li>«Datum prüfen»: ein Datum wählen, darunter steht, ob es frei, angefragt oder belegt ist, und ob am Vortag oder Tag danach schon ein Abend liegt.</li><li>Zwei Anfragen am selben Tag sind markiert.</li><li>Ein Klick auf einen Namen öffnet seine Anfrage.</li></ol>
+<figure><img src="bilder/anl-termine.jpg?v=1" alt="Terminblick" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Terminblick</figcaption></figure></section>
+
+<section class="k" id="k10"><span class="m">10 · Preisliste</span><h2>Deine Preise, <em>dein Massstab.</em></h2>
+<p class="s">Preise sind offen: Bis du deine eigenen einträgst, sind alle Beträge Beispiele. Jede Karte trägt das sichtbar.</p>
+<ol><li>«Ändern» an jedem Posten: Name, Satz für den Gastgeber, Einheit (pauschal, je Stunde, je Gast, auf Anfrage), Preis und Foto.</li><li>Die Begleitung des Abends rechnet je Stunde, mit Mindestdauer. Die Anfahrt je Kilometer, mit enthaltenen Kilometern.</li><li>«Posten anlegen» für etwas Neues, «Entfernen» für etwas, das du nicht mehr anbietest.</li><li>Gesendete Angebote behalten ihre Preise. «Frühere Fassungen» holt eine ältere Preisliste zurück.</li></ol>
+<figure><img src="bilder/anl-preise.jpg?v=1" alt="Preisliste" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Preisliste</figcaption></figure></section>
+
+<section class="k" id="k11"><span class="m">11 · Textbausteine</span><h2>Deine Sätze, <em>immer zur Hand.</em></h2>
+<p class="s">Fünfzehn Bausteine für jede Station eines Abends, vom ersten Hallo bis zum Gespräch über den Ablauf vor dem Abend.</p>
+<ol><li>«Text ansehen» zeigt den Baustein gefüllt für eine echte Anfrage.</li><li>«Ändern»: Name, wann er passt, Betreff, Text und Foto. Die Felder in geschweiften Klammern ({vorname}, {datum}, {calendly} …) füllt das Werkzeug; ein Klick setzt sie in den Text. Fehlt ein Wert, etwa der Wunsch, lässt das Werkzeug den Satz weg statt einer Klammer.</li><li>Für zwei Gastgeber, ein Paar oder eine Familie, schreibst du beide Formen: {dich|euch}, {kannst du|könnt ihr}. Links steht die Form für einen, rechts die für zwei; das Werkzeug wählt nach dem Namen.</li><li>«Baustein anlegen» für eigene Fälle.</li></ol>
+<figure><img src="bilder/anl-bausteine.jpg?v=1" alt="Textbausteine" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Textbausteine</figcaption></figure></section>
+
+<section class="k" id="k12"><span class="m">12 · Einstellungen</span><h2>So klingt <em>dein Angebot.</em></h2>
+<p class="s">Was für jedes neue Angebot gilt.</p>
+<ol><li>Gültigkeit in Tagen, Anzahlung in Prozent, Beginn und Dauer, wenn nichts anderes besprochen ist.</li><li>Umsatzsteuer: noch offen, Kleinunternehmerin oder 19 % in den Beträgen.</li><li>Unterschrift, persönliche Zeile und Fusszeile.</li><li>E-Mail, Instagram und Kaffee-Link kommen von deiner Website.</li><li>Eingaben warten gelb, bis du unten «Speichern» drückst (oder ⌘S). Danach wird der Knopf grün, und die Quittung bietet «Rückgängig». Verlässt du die Seite mit ungespeicherten Eingaben, fragt der Browser nach.</li></ol>
+<figure><img src="bilder/anl-einstellungen.jpg?v=1" alt="Einstellungen" loading="lazy" width="1440" height="900"><figcaption><span data-wo-name="anfragen">Werkzeug</span> · Einstellungen</figcaption></figure></section>
+
+<section class="k" id="hilfe"><span class="m">Wenn etwas nicht geht</span><h2>Hilfe <em>in einem Griff.</em></h2>
+<div class="hilfe"><div><b>MELDUNG MIT STICHWORT</b><p>Jede Meldung beginnt mit einem Stichwort. «Was tun?» führt zur Prüfseite, dort steht Sehen, Grund und Tun.</p></div><div><b>ZWEI FENSTER</b><p>Hat ein anderes Fenster zuerst gespeichert, holt das Werkzeug den neuen Stand und speichert nur, was du selbst geändert hast; das andere bleibt. Habt ihr beide dasselbe Feld geändert, nennt die Meldung den Wert dort, bei einem Text genau den Teil, der dort anders lautet. Deine Eingabe bleibt, «Beides behalten» setzt den Teil von dort in deinen Text. Habt ihr an derselben Stelle geschrieben, steht dein Satz zuerst, dann der von dort, jeder ganz; was in beiden gleich lautet, steht einmal. Erst dein zweites Speichern gilt.</p></div><div><b>KURZER RUNDGANG</b><p>Links unten im Rand «Kurzer Rundgang» zeigt in vier Schritten, wo was liegt.</p></div></div></section>
+</main>
+<div class="gross" id="gross" role="dialog" aria-label="Bild gross"><img alt=""></div>
+<script src="studio/anleitung.js?v=1793941135"></script>
+</body>
+</html>

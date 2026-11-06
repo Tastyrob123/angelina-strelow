@@ -1,0 +1,118 @@
+{
+ "beispiel": true,
+ "posten": [
+  {
+   "k": "abend",
+   "gruppe": "grund",
+   "t": "Begleitung {deines|eures} Abends",
+   "s": "Ich bin von der Ankunft der ersten Gäste bis zum letzten Glas für {dich und deine|euch und eure} Gäste da.",
+   "preis": 65,
+   "einheit": "Stunde",
+   "mindest": 4,
+   "bild": "handschuh",
+   "beispiel": true
+  },
+  {
+   "k": "empfang",
+   "gruppe": "leistung",
+   "t": "Empfang {deiner|eurer} Gäste",
+   "s": "Vom Sektempfang an.",
+   "preis": 0,
+   "einheit": "enthalten",
+   "bild": "empfang",
+   "beispiel": true
+  },
+  {
+   "k": "betreuung",
+   "gruppe": "leistung",
+   "t": "Gästebetreuung",
+   "s": "{Deine|Eure} Gäste sind bestens versorgt.",
+   "preis": 0,
+   "einheit": "enthalten",
+   "bild": "p140",
+   "beispiel": true
+  },
+  {
+   "k": "ablauf",
+   "gruppe": "leistung",
+   "t": "Koordination des Ablaufs",
+   "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+   "preis": 0,
+   "einheit": "enthalten",
+   "bild": "p158",
+   "beispiel": true
+  },
+  {
+   "k": "wein",
+   "gruppe": "leistung",
+   "t": "Wein und Service am Tisch",
+   "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+   "preis": 0,
+   "einheit": "enthalten",
+   "bild": "einschenken",
+   "beispiel": true
+  },
+  {
+   "k": "details",
+   "gruppe": "leistung",
+   "t": "Die Details im Hintergrund",
+   "s": "Mit Liebe zum Detail.",
+   "preis": 0,
+   "einheit": "enthalten",
+   "bild": "kerzen",
+   "beispiel": true
+  },
+  {
+   "k": "weinauswahl",
+   "gruppe": "zusatz",
+   "t": "Weinauswahl zu {deinem|eurem} Menü",
+   "s": "Ich stimme die Weine auf {deine|eure} Gänge ab und sage {dir, was du besorgst|euch, was ihr besorgt}.",
+   "preis": 90,
+   "einheit": "pauschal",
+   "bild": "flasche",
+   "beispiel": true
+  },
+  {
+   "k": "sitzordnung",
+   "gruppe": "zusatz",
+   "t": "Sitzordnung und Tischkarten",
+   "s": "Auf Wunsch als Memory-Spiel, damit sich jeder Gast seinen Platz selbst findet.",
+   "preis": 60,
+   "einheit": "pauschal",
+   "bild": "festtafel",
+   "beispiel": true
+  },
+  {
+   "k": "verlaengerung",
+   "gruppe": "zusatz",
+   "t": "Abend über Mitternacht",
+   "s": "Jede Stunde nach Mitternacht, damit niemand auf die Uhr schauen muss.",
+   "preis": 80,
+   "einheit": "Stunde",
+   "bild": "glas",
+   "beispiel": true
+  },
+  {
+   "k": "musik",
+   "gruppe": "zusatz",
+   "t": "Musik am Klavier mit Frank Muschik (MUSHYK)",
+   "s": "Pianist, auf Anfrage. Ich frage für {deinen|euren} Abend bei ihm an.",
+   "preis": null,
+   "einheit": "auf Anfrage",
+   "anfrage": true,
+   "bild": "kerze",
+   "beispiel": true
+  },
+  {
+   "k": "anfahrt",
+   "gruppe": "anfahrt",
+   "t": "Anfahrt",
+   "s": "Hin und zurück ab Köln. Die ersten 20 Kilometer sind enthalten.",
+   "preis": 0.5,
+   "einheit": "km",
+   "frei": 20,
+   "bild": "raum",
+   "beispiel": true
+  }
+ ]
+}

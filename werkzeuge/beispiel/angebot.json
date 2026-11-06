@@ -1,0 +1,1701 @@
+{
+ "a-251214-kt": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Gänseessen im Advent, festlich und herzlich.",
+   "kueche": "selbst",
+   "wer_kocht": "Klaus kocht drei Gänge selbst.",
+   "caterer": "",
+   "besonderheiten": "Sektempfang, danach Flying Buffet. Sitzordnung als Memory-Spiel. Weine auf die Gänge abgestimmt.",
+   "gespraech": "2025-11-06"
+  },
+  "antworten": [
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Euer Angebot für den 13. Dezember",
+    "text": "Hallo Klaus und Tanja,\n\ndanke für das schöne Gespräch. Im Anhang findet ihr mein Angebot für euer privates Dinner am Samstag, 13. Dezember 2025.\n\nDarin steht, was ich an eurem Abend übernehme, damit ihr bei euren Gästen sitzen bleiben könnt. Das Angebot gilt bis zum 22. November. Wenn ihr etwas anders haben möchtet, sagt es mir, dann passe ich es an.\n\nIch freue mich, wenn ich euren Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2025-11-08T11:05",
+    "gesendet": "2025-11-08T11:05"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf euren Abend",
+    "text": "Hallo Klaus und Tanja,\n\nwie schön, dass ich euren Abend am Samstag, 13. Dezember 2025 begleiten darf. Der Termin ist für euch fest eingetragen.\n\nIm Angebot steht die Anzahlung von 184 € bei Zusage. Vor eurem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und eure Gäste.\n\nBis dahin könnt ihr euch zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2025-11-12T19:00",
+    "gesendet": "2025-11-12T19:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2025-11-08T10:30",
+    "gesendet": "2025-11-08T11:05",
+    "beginn": "17:30",
+    "stunden": 7,
+    "km": 36,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "weinauswahl": 1,
+     "sitzordnung": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2025-11-22",
+    "zeile": "Ein Gänseessen bei euch zu Hause, Klaus am Herd und ihr beide bei euren Gästen: Darauf freue ich mich.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung eures Abends",
+      "menge": 7,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 455
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang eurer Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Eure Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "weinauswahl",
+      "t": "Weinauswahl zu eurem Menü",
+      "s": "Ich stimme die Weine auf eure Gänge ab und sage euch, was ihr besorgt.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 90,
+      "betrag": 90
+     },
+     {
+      "k": "sitzordnung",
+      "t": "Sitzordnung und Tischkarten",
+      "s": "Auf Wunsch als Memory-Spiel, damit sich jeder Gast seinen Platz selbst findet.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 60,
+      "betrag": 60
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "36 km hin und zurück, 20 km enthalten",
+      "menge": 16,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 8.0
+     }
+    ],
+    "summe": 613.0,
+    "anzahlung_betrag": 184
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2025-11-06T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2025-11-08T11:05",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2025-11-08T11:05",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (613 €)"
+   },
+   {
+    "zeit": "2025-11-12T18:20",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2025-11-12T19:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2025-11-12T18:20",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-260918-hb": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Silberhochzeit im engsten Kreis, ruhig und feierlich.",
+   "kueche": "caterer",
+   "wer_kocht": "",
+   "caterer": "Menü vom Caterer, drei Gänge.",
+   "besonderheiten": "Die beiden möchten den ganzen Abend sitzen bleiben. Rede des Sohnes vor dem Hauptgang.",
+   "gespraech": "2026-09-20"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Samstag, 17. Oktober 2026",
+    "text": "Hallo Helene,\n\ndanke für deine Anfrage und dein Vertrauen. Ein Jubiläum in Köln-Lindenthal, mit bis zu 16 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-09-18T21:00",
+    "gesendet": "2026-09-18T21:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Dein Angebot für den 17. Oktober",
+    "text": "Hallo Helene,\n\ndanke für das schöne Gespräch. Im Anhang findest du mein Angebot für euer Jubiläum am Samstag, 17. Oktober 2026.\n\nDarin steht, was ich an deinem Abend übernehme, damit du bei deinen Gästen sitzen bleiben kannst. Das Angebot gilt bis zum 5. Oktober. Wenn du etwas anders haben möchtest, sag es mir, dann passe ich es an.\n\nIch freue mich, wenn ich deinen Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-09-21T10:15",
+    "gesendet": "2026-09-21T10:15"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf deinen Abend",
+    "text": "Hallo Helene,\n\nwie schön, dass ich deinen Abend am Samstag, 17. Oktober 2026 begleiten darf. Der Termin ist für dich fest eingetragen.\n\nIm Angebot steht die Anzahlung von 144 € bei Zusage. Vor deinem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und deine Gäste.\n\nBis dahin kannst du dich zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-09-24T20:30",
+    "gesendet": "2026-09-24T20:30"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-09-21T09:40",
+    "gesendet": "2026-09-21T10:15",
+    "beginn": "18:00",
+    "stunden": 6,
+    "km": 10,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "weinauswahl": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-10-05",
+    "zeile": "Euer 25. Hochzeitstag soll ein Abend werden, an dem ihr beide einfach am Tisch sitzen dürft.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 6,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 390
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "weinauswahl",
+      "t": "Weinauswahl zu deinem Menü",
+      "s": "Ich stimme die Weine auf deine Gänge ab und sage dir, was du besorgst.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 90,
+      "betrag": 90
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "10 km hin und zurück, 20 km enthalten",
+      "menge": 0,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 0.0
+     }
+    ],
+    "summe": 480,
+    "anzahlung_betrag": 144
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-09-18T21:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-09-20T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-09-21T10:15",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-09-21T10:15",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (480 €)"
+   },
+   {
+    "zeit": "2026-09-24T20:10",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-09-24T20:30",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-09-24T20:10",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261009-mw": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Überraschung zum 50. Geburtstag, die Gäste sind vor ihr da.",
+   "kueche": "selbst",
+   "wer_kocht": "Markus kocht.",
+   "caterer": "",
+   "besonderheiten": "Gäste kommen ab 18:30, die Jubilarin um 19:15. Leise empfangen, Sekt bereit.",
+   "gespraech": "2026-10-11"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Sonntag, 1. November 2026",
+    "text": "Hallo Markus,\n\ndanke für deine Anfrage und dein Vertrauen. Ein Geburtstag in Frechen, mit bis zu 10 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-09T10:00",
+    "gesendet": "2026-10-09T10:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Dein Angebot für den 1. November",
+    "text": "Hallo Markus,\n\ndanke für das schöne Gespräch. Im Anhang findest du mein Angebot für deinen Geburtstag am Sonntag, 1. November 2026.\n\nDarin steht, was ich an deinem Abend übernehme, damit du bei deinen Gästen sitzen bleiben kannst. Das Angebot gilt bis zum 26. Oktober. Wenn du etwas anders haben möchtest, sag es mir, dann passe ich es an.\n\nIch freue mich, wenn ich deinen Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-12T09:20",
+    "gesendet": "2026-10-12T09:20"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf deinen Abend",
+    "text": "Hallo Markus,\n\nwie schön, dass ich deinen Abend am Sonntag, 1. November 2026 begleiten darf. Der Termin ist für dich fest eingetragen.\n\nIm Angebot steht die Anzahlung von 99 € bei Zusage. Vor deinem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und deine Gäste.\n\nBis dahin kannst du dich zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-13T20:00",
+    "gesendet": "2026-10-13T20:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-12T08:50",
+    "gesendet": "2026-10-12T09:20",
+    "beginn": "18:00",
+    "stunden": 5,
+    "km": 30,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein"
+    ],
+    "zusaetze": {},
+    "anzahlung": 30,
+    "gueltig_bis": "2026-10-26",
+    "zeile": "Eine Überraschung für deine Frau: Ich empfange die Gäste, damit du bei ihr bleiben kannst.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 5,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 325
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "30 km hin und zurück, 20 km enthalten",
+      "menge": 10,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 5.0
+     }
+    ],
+    "summe": 330.0,
+    "anzahlung_betrag": 99
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-09T10:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-11T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-12T09:20",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-12T09:20",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (330 €)"
+   },
+   {
+    "zeit": "2026-10-13T19:45",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-10-13T20:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-10-13T19:45",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-260929-js": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "40. Geburtstag von Stefan, Freunde und Familie, fröhlich und warm.",
+   "kueche": "selbst",
+   "wer_kocht": "Julia und Stefan kochen vier Gänge zusammen.",
+   "caterer": "",
+   "besonderheiten": "Weinbegleitung zu jedem Gang. Die beiden möchten am Tisch sitzen bleiben, auch zwischen den Gängen.",
+   "gespraech": "2026-09-30"
+  },
+  "antworten": [
+   {
+    "vorlage": "kaffee",
+    "t": "Einladung zum Kaffee",
+    "betreff": "Ein virtueller Kaffee vor eurem Abend",
+    "text": "Hallo Julia und Stefan,\n\nbevor ich euch ein Angebot schreibe, möchte ich euch und euren Abend ein wenig kennenlernen: wer kommt, wie der Abend klingen soll und was ihr abgeben möchtet.\n\nAm liebsten bei einem virtuellen Kaffee. Hier findet ihr meine freien Zeiten:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nBis bald,\nHerzlich\nAngelina",
+    "zeit": "2026-09-29T20:00",
+    "gesendet": "2026-09-29T20:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Euer Angebot für den 24. Oktober",
+    "text": "Hallo Julia und Stefan,\n\ndanke für das schöne Gespräch. Im Anhang findet ihr mein Angebot für euren Geburtstag am Samstag, 24. Oktober 2026.\n\nDarin steht, was ich an eurem Abend übernehme, damit ihr bei euren Gästen sitzen bleiben könnt. Das Angebot gilt bis zum 15. Oktober. Wenn ihr etwas anders haben möchtet, sagt es mir, dann passe ich es an.\n\nIch freue mich, wenn ich euren Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-01T10:05",
+    "gesendet": "2026-10-01T10:05"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf euren Abend",
+    "text": "Hallo Julia und Stefan,\n\nwie schön, dass ich euren Abend am Samstag, 24. Oktober 2026 begleiten darf. Der Termin ist für euch fest eingetragen.\n\nIm Angebot steht die Anzahlung von 144 € bei Zusage. Vor eurem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und eure Gäste.\n\nBis dahin könnt ihr euch zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-03T19:00",
+    "gesendet": "2026-10-03T19:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-01T09:30",
+    "gesendet": "2026-10-01T10:05",
+    "beginn": "18:00",
+    "stunden": 6,
+    "km": 10,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "weinauswahl": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-10-15",
+    "zeile": "Ihr zwei am Herd, dann am Tisch bei euren Gästen: Ich kümmere mich um den Wein und darum, dass sich jeder willkommen fühlt.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung eures Abends",
+      "menge": 6,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 390
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang eurer Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Eure Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "weinauswahl",
+      "t": "Weinauswahl zu eurem Menü",
+      "s": "Ich stimme die Weine auf eure Gänge ab und sage euch, was ihr besorgt.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 90,
+      "betrag": 90
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "10 km hin und zurück, 20 km enthalten",
+      "menge": 0,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 0.0
+     }
+    ],
+    "summe": 480,
+    "anzahlung_betrag": 144
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-09-29T20:00",
+    "was": "Antwort «Einladung zum Kaffee» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-09-30T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-01T10:05",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-01T10:05",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (480 €)"
+   },
+   {
+    "zeit": "2026-10-03T18:40",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-10-03T19:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-10-03T18:40",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261006-ew": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Freundinnen aus der Studienzeit, vertraut und herzlich.",
+   "kueche": "caterer",
+   "wer_kocht": "",
+   "caterer": "Drei Gänge vom Caterer, Lieferung um 18 Uhr.",
+   "besonderheiten": "Elke möchte nichts selbst servieren. Sekt zum Ankommen, danach Wein am Tisch.",
+   "gespraech": "2026-10-07"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Samstag, 31. Oktober 2026",
+    "text": "Hallo Elke,\n\ndanke für deine Anfrage und dein Vertrauen. Ein privates Dinner in Bergisch Gladbach-Refrath, mit bis zu 6 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-06T12:00",
+    "gesendet": "2026-10-06T12:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Dein Angebot für den 31. Oktober",
+    "text": "Hallo Elke,\n\ndanke für das schöne Gespräch. Im Anhang findest du mein Angebot für dein privates Dinner am Samstag, 31. Oktober 2026.\n\nDarin steht, was ich an deinem Abend übernehme, damit du bei deinen Gästen sitzen bleiben kannst. Das Angebot gilt bis zum 22. Oktober. Wenn du etwas anders haben möchtest, sag es mir, dann passe ich es an.\n\nIch freue mich, wenn ich deinen Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-08T11:30",
+    "gesendet": "2026-10-08T11:30"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf deinen Abend",
+    "text": "Hallo Elke,\n\nwie schön, dass ich deinen Abend am Samstag, 31. Oktober 2026 begleiten darf. Der Termin ist für dich fest eingetragen.\n\nIm Angebot steht die Anzahlung von 100 € bei Zusage. Vor deinem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und deine Gäste.\n\nBis dahin kannst du dich zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-10T09:30",
+    "gesendet": "2026-10-10T09:30"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-08T11:00",
+    "gesendet": "2026-10-08T11:30",
+    "beginn": "18:00",
+    "stunden": 5,
+    "km": 34,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {},
+    "anzahlung": 30,
+    "gueltig_bis": "2026-10-22",
+    "zeile": "Einmal im Jahr seht ihr euch. An diesem Abend soll keine von euch aufstehen müssen.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 5,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 325
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "34 km hin und zurück, 20 km enthalten",
+      "menge": 14,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 7.0
+     }
+    ],
+    "summe": 332.0,
+    "anzahlung_betrag": 100
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-06T12:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-07T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-08T11:30",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-08T11:30",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (332 €)"
+   },
+   {
+    "zeit": "2026-10-10T09:15",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-10-10T09:30",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-10-10T09:15",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261014-sk": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Erstes Treffen beider Elternpaare, warm und ein wenig aufgeregt.",
+   "kueche": "selbst",
+   "wer_kocht": "Sophie und Jan kochen vier Gänge.",
+   "caterer": "",
+   "besonderheiten": "Weinbegleitung zu jedem Gang. Jans Vater trinkt keinen Rotwein.",
+   "gespraech": "2026-10-16"
+  },
+  "antworten": [
+   {
+    "vorlage": "kaffee",
+    "t": "Einladung zum Kaffee",
+    "betreff": "Ein virtueller Kaffee vor eurem Abend",
+    "text": "Hallo Sophie und Jan,\n\nbevor ich euch ein Angebot schreibe, möchte ich euch und euren Abend ein wenig kennenlernen: wer kommt, wie der Abend klingen soll und was ihr abgeben möchtet.\n\nAm liebsten bei einem virtuellen Kaffee. Hier findet ihr meine freien Zeiten:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nBis bald,\nHerzlich\nAngelina",
+    "zeit": "2026-10-15T09:00",
+    "gesendet": "2026-10-15T09:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Euer Angebot für den 21. November",
+    "text": "Hallo Sophie und Jan,\n\ndanke für das schöne Gespräch. Im Anhang findet ihr mein Angebot für euer privates Dinner am Samstag, 21. November 2026.\n\nDarin steht, was ich an eurem Abend übernehme, damit ihr bei euren Gästen sitzen bleiben könnt. Das Angebot gilt bis zum 31. Oktober. Wenn ihr etwas anders haben möchtet, sagt es mir, dann passe ich es an.\n\nIch freue mich, wenn ich euren Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-17T11:30",
+    "gesendet": "2026-10-17T11:30"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf euren Abend",
+    "text": "Hallo Sophie und Jan,\n\nwie schön, dass ich euren Abend am Samstag, 21. November 2026 begleiten darf. Der Termin ist für euch fest eingetragen.\n\nIm Angebot steht die Anzahlung von 124 € bei Zusage. Vor eurem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und eure Gäste.\n\nBis dahin könnt ihr euch zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-20T09:00",
+    "gesendet": "2026-10-20T09:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-17T11:00",
+    "gesendet": "2026-10-17T11:30",
+    "beginn": "18:00",
+    "stunden": 5,
+    "km": 16,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "weinauswahl": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-10-31",
+    "zeile": "Wenn sich eure Eltern zum ersten Mal an einem Tisch kennenlernen, sollt ihr zwei dabei sein und nicht in der Küche stehen.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung eures Abends",
+      "menge": 5,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 325
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang eurer Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Eure Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "weinauswahl",
+      "t": "Weinauswahl zu eurem Menü",
+      "s": "Ich stimme die Weine auf eure Gänge ab und sage euch, was ihr besorgt.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 90,
+      "betrag": 90
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "16 km hin und zurück, 20 km enthalten",
+      "menge": 0,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 0.0
+     }
+    ],
+    "summe": 415,
+    "anzahlung_betrag": 124
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-15T09:00",
+    "was": "Antwort «Einladung zum Kaffee» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-16T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-17T11:30",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-17T11:30",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (415 €)"
+   },
+   {
+    "zeit": "2026-10-20T08:15",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-10-20T09:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-10-20T08:15",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261020-cl": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Adventsabend mit Nachbarn und Freunden, gemütlich.",
+   "kueche": "caterer",
+   "wer_kocht": "",
+   "caterer": "Buffet vom Caterer aus Pulheim.",
+   "besonderheiten": "Empfang mit Glühwein und Sekt im Garten, Feuerkorb. Buffet ab 19 Uhr im Haus.",
+   "gespraech": "2026-10-22"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Samstag, 5. Dezember 2026",
+    "text": "Hallo Claudia,\n\ndanke für deine Anfrage und dein Vertrauen. Eine Feier zu Hause in Pulheim, mit bis zu 16 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-20T15:00",
+    "gesendet": "2026-10-20T15:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Dein Angebot für den 5. Dezember",
+    "text": "Hallo Claudia,\n\ndanke für das schöne Gespräch. Im Anhang findest du mein Angebot für deine Feier zu Hause am Samstag, 5. Dezember 2026.\n\nDarin steht, was ich an deinem Abend übernehme, damit du bei deinen Gästen sitzen bleiben kannst. Das Angebot gilt bis zum 6. November. Wenn du etwas anders haben möchtest, sag es mir, dann passe ich es an.\n\nIch freue mich, wenn ich deinen Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-23T14:20",
+    "gesendet": "2026-10-23T14:20"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf deinen Abend",
+    "text": "Hallo Claudia,\n\nwie schön, dass ich deinen Abend am Samstag, 5. Dezember 2026 begleiten darf. Der Termin ist für dich fest eingetragen.\n\nIm Angebot steht die Anzahlung von 119 € bei Zusage. Vor deinem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und deine Gäste.\n\nBis dahin kannst du dich zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-30T18:00",
+    "gesendet": "2026-10-30T18:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-23T14:00",
+    "gesendet": "2026-10-23T14:20",
+    "beginn": "17:00",
+    "stunden": 6,
+    "km": 36,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "details"
+    ],
+    "zusaetze": {},
+    "anzahlung": 30,
+    "gueltig_bis": "2026-11-06",
+    "zeile": "Glühwein im Garten, dann das Buffet im Haus, und du begrüsst jeden Gast selbst.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 6,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 390
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "36 km hin und zurück, 20 km enthalten",
+      "menge": 16,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 8.0
+     }
+    ],
+    "summe": 398.0,
+    "anzahlung_betrag": 119
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-20T15:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-22T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-23T14:20",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-23T14:20",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (398 €)"
+   },
+   {
+    "zeit": "2026-10-30T17:40",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-10-30T18:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-10-30T17:40",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261022-rf": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Weihnachtsessen mit Geschäftsfreunden, ruhig und stilvoll.",
+   "kueche": "caterer",
+   "wer_kocht": "",
+   "caterer": "Menü vom Caterer der Familie, vier Gänge.",
+   "besonderheiten": "Zehn Gäste, Tischkarten gewünscht. Ines möchte den Toast selbst sprechen.",
+   "gespraech": "2026-10-24"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Euer Abend am Samstag, 12. Dezember 2026",
+    "text": "Hallo Robert und Ines,\n\ndanke für eure Anfrage und euer Vertrauen. Ein privates Dinner in Düsseldorf-Oberkassel, mit bis zu 10 Gästen: Das klingt nach einem Abend, an dem ihr selbst Gäste sein dürft.\n\nDamit mein Angebot genau zu eurem Abend passt, lerne ich euch gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, sucht euch einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf euch und euren Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-22T19:00",
+    "gesendet": "2026-10-22T19:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Euer Angebot für den 12. Dezember",
+    "text": "Hallo Robert und Ines,\n\ndanke für das schöne Gespräch. Im Anhang findet ihr mein Angebot für euer privates Dinner am Samstag, 12. Dezember 2026.\n\nDarin steht, was ich an eurem Abend übernehme, damit ihr bei euren Gästen sitzen bleiben könnt. Das Angebot gilt bis zum 9. November. Wenn ihr etwas anders haben möchtet, sagt es mir, dann passe ich es an.\n\nIch freue mich, wenn ich euren Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-26T10:40",
+    "gesendet": "2026-10-26T10:40"
+   },
+   {
+    "vorlage": "zusage",
+    "t": "Zusage bestätigen",
+    "betreff": "Ich freue mich auf euren Abend",
+    "text": "Hallo Robert und Ines,\n\nwie schön, dass ich euren Abend am Samstag, 12. Dezember 2026 begleiten darf. Der Termin ist für euch fest eingetragen.\n\nIm Angebot steht die Anzahlung von 145 € bei Zusage. Vor eurem Abend gehen wir gemeinsam den Ablauf durch: Zeiten, Gänge, Wein und eure Gäste.\n\nBis dahin könnt ihr euch zurücklehnen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-11-02T13:00",
+    "gesendet": "2026-11-02T13:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-26T10:00",
+    "gesendet": "2026-10-26T10:40",
+    "beginn": "18:00",
+    "stunden": 6,
+    "km": 84,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "sitzordnung": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-11-09",
+    "zeile": "Ein ruhiger, stilvoller Abend mit euren Geschäftsfreunden, und ihr beide bleibt bei euren Gästen.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung eures Abends",
+      "menge": 6,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 390
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang eurer Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Eure Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "sitzordnung",
+      "t": "Sitzordnung und Tischkarten",
+      "s": "Auf Wunsch als Memory-Spiel, damit sich jeder Gast seinen Platz selbst findet.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 60,
+      "betrag": 60
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "84 km hin und zurück, 20 km enthalten",
+      "menge": 64,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 32.0
+     }
+    ],
+    "summe": 482.0,
+    "anzahlung_betrag": 145
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-22T19:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-24T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-26T10:40",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-26T10:40",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (482 €)"
+   },
+   {
+    "zeit": "2026-11-02T12:05",
+    "was": "Zusage. Der Abend geht in den Abendplan."
+   },
+   {
+    "zeit": "2026-11-02T13:00",
+    "was": "Antwort «Zusage bestätigen» als gesendet vermerkt"
+   }
+  ],
+  "zusage": {
+   "zeit": "2026-11-02T12:05",
+   "fassung": 1,
+   "wie": "per E-Mail"
+  }
+ },
+ "a-261027-tb": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "60. Geburtstag, kleiner Kreis, herzlich.",
+   "kueche": "selbst",
+   "wer_kocht": "Thomas kocht drei Gänge.",
+   "caterer": "",
+   "besonderheiten": "Möchte Wein zu den Gängen, weiss aber noch nicht welchen.",
+   "gespraech": "2026-10-28"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Samstag, 19. Dezember 2026",
+    "text": "Hallo Thomas,\n\ndanke für deine Anfrage und dein Vertrauen. Ein Geburtstag in Brühl, mit bis zu 10 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-27T11:00",
+    "gesendet": "2026-10-27T11:00"
+   },
+   {
+    "vorlage": "angebot",
+    "t": "Dein Angebot",
+    "betreff": "Dein Angebot für den 19. Dezember",
+    "text": "Hallo Thomas,\n\ndanke für das schöne Gespräch. Im Anhang findest du mein Angebot für deinen Geburtstag am Samstag, 19. Dezember 2026.\n\nDarin steht, was ich an deinem Abend übernehme, damit du bei deinen Gästen sitzen bleiben kannst. Das Angebot gilt bis zum 12. November. Wenn du etwas anders haben möchtest, sag es mir, dann passe ich es an.\n\nIch freue mich, wenn ich deinen Abend begleiten darf.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-29T10:00",
+    "gesendet": "2026-10-29T10:00"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-10-28T16:00",
+    "gesendet": null,
+    "beginn": "18:00",
+    "stunden": 5,
+    "km": 34,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {},
+    "anzahlung": 30,
+    "gueltig_bis": "2026-11-11",
+    "zeile": "Zu deinem 60. sollst du bei deinen Gästen sein. Den Rest übernehme ich.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 5,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 325
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "34 km hin und zurück, 20 km enthalten",
+      "menge": 14,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 7.0
+     }
+    ],
+    "summe": 332.0,
+    "anzahlung_betrag": 100
+   },
+   {
+    "nr": 2,
+    "zeit": "2026-10-29T09:30",
+    "gesendet": "2026-10-29T10:00",
+    "beginn": "18:00",
+    "stunden": 6,
+    "km": 34,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "weinauswahl": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-11-12",
+    "zeile": "Zu deinem 60. sollst du bei deinen Gästen sein. Den Rest übernehme ich, auch den Wein zu deinen drei Gängen.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 6,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 390
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "weinauswahl",
+      "t": "Weinauswahl zu deinem Menü",
+      "s": "Ich stimme die Weine auf deine Gänge ab und sage dir, was du besorgst.",
+      "menge": 1,
+      "einheit": "pauschal",
+      "preis": 90,
+      "betrag": 90
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "34 km hin und zurück, 20 km enthalten",
+      "menge": 14,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 7.0
+     }
+    ],
+    "summe": 487.0,
+    "anzahlung_betrag": 146
+   }
+  ],
+  "aktuell": 2,
+  "verlauf": [
+   {
+    "zeit": "2026-10-27T11:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-28T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-10-29T10:00",
+    "was": "Antwort «Dein Angebot» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-10-29T10:00",
+    "was": "Angebot, Fassung 2, als gesendet vermerkt (487 €)"
+   }
+  ]
+ },
+ "a-261030-nh": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Silvester mit Freunden, ausgelassen und schön.",
+   "kueche": "gemischt",
+   "wer_kocht": "Nina macht das Fingerfood.",
+   "caterer": "Dessert vom Konditor.",
+   "besonderheiten": "Bis nach Mitternacht, Anstossen um zwölf. Fragt nach Musik.",
+   "gespraech": "2026-11-02"
+  },
+  "antworten": [
+   {
+    "vorlage": "erste",
+    "t": "Erste Antwort",
+    "betreff": "Dein Abend am Donnerstag, 31. Dezember 2026",
+    "text": "Hallo Nina,\n\ndanke für deine Anfrage und dein Vertrauen. Eine Feier zu Hause in Köln-Ehrenfeld, mit bis zu 16 Gästen: Das klingt nach einem Abend, an dem du selbst Gast sein darfst.\n\nDamit mein Angebot genau zu deinem Abend passt, lerne ich dich gern vorher kennen. Am liebsten bei einem virtuellen Kaffee, such dir einfach eine Zeit aus:\nhttps://calendly.com/angelinastrelow/kennenlernen-bei-einem-virtuellen-kaffee\n\nIch freue mich auf dich und deinen Abend.\n\nHerzlich\nAngelina",
+    "zeit": "2026-10-31T10:00",
+    "gesendet": "2026-10-31T10:00"
+   },
+   {
+    "vorlage": "spaet",
+    "t": "Abend über Mitternacht",
+    "betreff": "Dein Abend bis nach Mitternacht",
+    "text": "Hallo Nina,\n\nsehr gern bleibe ich, bis angestossen ist und deine Gäste sich auf den Heimweg machen. Im Angebot findest du die Stunden nach Mitternacht eigens aufgeführt, damit du genau weisst, womit du rechnen kannst.\n\nSo musst du an diesem Abend nicht ein einziges Mal auf die Uhr schauen.\n\nHerzlich\nAngelina",
+    "zeit": "2026-11-03T09:25",
+    "gesendet": "2026-11-03T09:25"
+   }
+  ],
+  "fassungen": [
+   {
+    "nr": 1,
+    "zeit": "2026-11-03T09:00",
+    "gesendet": "2026-11-03T09:25",
+    "beginn": "19:00",
+    "stunden": 5,
+    "km": 12,
+    "leistungen": [
+     "empfang",
+     "betreuung",
+     "ablauf",
+     "wein",
+     "details"
+    ],
+    "zusaetze": {
+     "verlaengerung": 2,
+     "musik": 1
+    },
+    "anzahlung": 30,
+    "gueltig_bis": "2026-11-17",
+    "zeile": "Sekt um Mitternacht, und keiner von euch muss auf die Uhr schauen.",
+    "preise_beispiel": true,
+    "posten": [
+     {
+      "k": "abend",
+      "t": "Begleitung deines Abends",
+      "menge": 5,
+      "einheit": "Stunde",
+      "preis": 65,
+      "betrag": 325
+     },
+     {
+      "k": "empfang",
+      "t": "Empfang deiner Gäste",
+      "s": "Vom Sektempfang an.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "betreuung",
+      "t": "Gästebetreuung",
+      "s": "Deine Gäste sind bestens versorgt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "ablauf",
+      "t": "Koordination des Ablaufs",
+      "s": "Im Hintergrund halte ich die Abläufe zusammen.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "wein",
+      "t": "Wein und Service am Tisch",
+      "s": "Der Wein wird nachgeschenkt. Der nächste Gang kommt.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "details",
+      "t": "Die Details im Hintergrund",
+      "s": "Mit Liebe zum Detail.",
+      "menge": 1,
+      "einheit": "enthalten",
+      "preis": 0,
+      "betrag": 0
+     },
+     {
+      "k": "verlaengerung",
+      "t": "Abend über Mitternacht",
+      "s": "Jede Stunde nach Mitternacht, damit niemand auf die Uhr schauen muss.",
+      "menge": 2,
+      "einheit": "Stunde",
+      "preis": 80,
+      "betrag": 160
+     },
+     {
+      "k": "musik",
+      "t": "Musik am Klavier mit Frank Muschik (MUSHYK)",
+      "s": "Pianist, auf Anfrage. Ich frage für deinen Abend bei ihm an.",
+      "menge": 1,
+      "einheit": "auf Anfrage",
+      "preis": null,
+      "betrag": null
+     },
+     {
+      "k": "anfahrt",
+      "t": "Anfahrt",
+      "s": "12 km hin und zurück, 20 km enthalten",
+      "menge": 0,
+      "einheit": "km",
+      "preis": 0.5,
+      "betrag": 0.0
+     }
+    ],
+    "summe": 485,
+    "anzahlung_betrag": 146
+   }
+  ],
+  "aktuell": 1,
+  "verlauf": [
+   {
+    "zeit": "2026-10-31T10:00",
+    "was": "Antwort «Erste Antwort» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-11-02T10:00",
+    "was": "Vorgespräch"
+   },
+   {
+    "zeit": "2026-11-03T09:25",
+    "was": "Antwort «Abend über Mitternacht» als gesendet vermerkt"
+   },
+   {
+    "zeit": "2026-11-03T09:25",
+    "was": "Angebot, Fassung 1, als gesendet vermerkt (485 €)"
+   }
+  ]
+ },
+ "a-261104-lp": {
+  "beispiel": true,
+  "vorgespraech": {
+   "stimmung": "Langes Essen mit Freunden, sie möchte selbst Gast sein.",
+   "kueche": "caterer",
+   "wer_kocht": "",
+   "caterer": "Sucht noch einen Caterer.",
+   "besonderheiten": "Fragt nach dem Preis. Rund zehn Freunde, eher ruhig, mit viel Zeit am Tisch.",
+   "gespraech": "2026-11-04"
+  },
+  "antworten": [],
+  "fassungen": [],
+  "aktuell": 0,
+  "verlauf": [
+   {
+    "zeit": "2026-11-04T10:00",
+    "was": "Kennenlernen bei einem Kaffee"
+   }
+  ]
+ }
+}

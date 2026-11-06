@@ -1,0 +1,241 @@
+@font-face{font-family:'Pinyon Script';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/nachher/schrift/PinyonScript.woff2') format('woff2')}   /* Unterschrift in Brief, Karte, Mappe (ihre Marke) */
+/* Nie fett, nie kursiv (Prüfung 2, N2): keine schräg oder fett gerechnete Schrift, auch nicht aus em, i, b */
+html{font-synthesis:none}em,i,cite,dfn,address,var{font-style:normal}
+/* Nach dem Abend · eigene Teile (05.11.2026), die das Gästebuch nicht hat: Stationen eines Abends, Bausteine, Dankeskarte, Mappe mit Vorschau, Fotos mit Freigabe,
+   Bildarchiv, Stimmen, Empfehlungen, Wiedersehen. Masse und Flächen aus dem Vorbild (re-a, re-notiz, re-post, brief, wahl2, feld, kn), Farben nur aus dem Kleid
+   (--wo-…, umgefärbte Werte des Vorbilds). Nie fett, nie kursiv; ihre Rahmenlinie innen um helle Flächen; keine Pillen-Reihen als Schmuck, keine Einkerbungen. */
+.na-bsp{margin:14px 0 0;font:400 12.5px/1.5 var(--sans);color:rgba(239,229,223,.82)}
+.na-bsp--echt{color:rgba(239,229,223,.7)}
+.na-bsp--frei{margin:0 auto 18px;max-width:1400px;color:var(--leise)}
+.re-post .na-bsp,.na-archiv-leiste .na-bsp{color:var(--leise)}
+.na-reiter.wahl2{margin-top:20px;display:flex;flex-wrap:wrap;background:linear-gradient(180deg,#0D090C,#181115);box-shadow:inset 0 2px 5px rgba(0,0,0,.55),0 0 0 1px rgba(226,208,198,.22)}
+.na-reiter.wahl2 button{flex:1 1 auto;color:rgba(239,229,223,.78)}
+.na-reiter.wahl2 button[aria-pressed="true"]{color:#0C0A0B}
+.na-stand{font:400 10px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-akzent);padding:8px 12px;border-radius:10px;box-shadow:inset 0 0 0 1px rgba(73,32,45,.3)}
+.na-abstand{margin-top:42px!important}
+.na-kn{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.na-zwei{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.na-zwei .re-notiz b{display:block;margin:6px 0 8px;font:400 19px/1.25 var(--serif);color:var(--navy)}
+.na-zwei .re-notiz p{margin:0 0 10px;font-size:13.5px;line-height:1.55;color:var(--leise)}
+.na-text{white-space:pre-line}
+.na-link{font:400 12px/1.5 var(--mono);color:var(--tinte)!important;overflow-wrap:anywhere;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(73,32,45,.18)}
+.na-warn{margin:8px 0 0;padding:9px 12px;border-radius:10px;font-size:12.5px;line-height:1.45;color:#4A212D;background:rgba(73,32,45,.08);box-shadow:inset 0 0 0 1px rgba(73,32,45,.25)}
+.na-hak{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--tinte);cursor:pointer}
+.na-hak input{width:18px;height:18px;margin:0;accent-color:#49202D}
+.na-hak:has(input:disabled){opacity:.45;cursor:default}
+.na-fe2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input.falsch{box-shadow:inset 0 0 0 1.5px #9B3A44!important}
+
+/* Stationen eines Abends: ruhige Liste, erledigt mit Haken */
+.na-stationen{list-style:none;margin:0;padding:6px 22px;border-radius:22px;background:linear-gradient(180deg,#FBF8F6,#F1EAE6);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(73,32,45,.22),0 20px 34px -24px rgba(12,10,11,.5);outline:1px solid rgba(73,32,45,.16);outline-offset:-7px}
+.na-stationen li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:14px;align-items:center;padding:15px 0;border-top:1px solid rgba(73,32,45,.12)}
+.na-stationen li:first-child{border-top:0}
+.na-stationen li>i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1.5px rgba(73,32,45,.4)}
+.na-stationen li.fertig>i{background:#49202D;box-shadow:none;color:#F4EFEC}
+.na-stationen li>i svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8}
+.na-stationen b{display:block;font:400 18px/1.25 var(--serif);color:var(--navy)}
+.na-stationen small{display:block;margin-top:2px;font-size:13px;color:var(--leise)}
+
+/* Dank: Bausteine links, Brief rechts */
+.na-dank{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
+.na-bausteine{padding:18px 18px 20px;border-radius:22px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 10px;align-items:start}
+.na-bausteine .mono,.na-bausteine .kn{grid-column:1/-1}
+.na-bausteine .mono{margin:12px 4px 2px}
+.na-bausteine .mono:first-child{margin-top:2px}
+.na-bausteine .kn{margin-top:12px;align-self:flex-start}
+.na-bs{display:grid;grid-template-columns:20px minmax(0,1fr);gap:10px;padding:10px 10px;border-radius:12px;cursor:pointer;transition:background .3s}
+.na-bs:hover{background:rgba(73,32,45,.05)}
+.na-bs input{width:17px;height:17px;margin:2px 0 0;accent-color:#49202D}
+.na-bs b{display:block;font:400 15px/1.3 var(--serif);color:var(--navy)}
+.na-bs small{display:block;margin-top:3px;font-size:12px;line-height:1.45;color:var(--leise)}
+.na-bs.aus{opacity:.5;cursor:default}
+.na-brief .brief{max-width:none}
+.na-brief .brief__text textarea{display:block;width:100%;min-height:200px;padding:0;border:0;resize:none;overflow:hidden;background:transparent;font:inherit;line-height:inherit;color:inherit;outline:0}
+.na-logo{display:block;width:min(220px,60%);height:auto;margin:0 auto}
+.na-brief .brief__kopf{text-align:center}
+.na-brief .re-post__kn{margin-top:16px;flex-direction:row;flex-wrap:wrap;justify-content:flex-end}
+.na-brief .re-hinweis{flex:1 1 100%;text-align:right}
+
+/* Dankeskarte und Mappe: Wahl links, Vorschau rechts (derselbe Satz wie Druck und PDF) */
+.na-karte,.na-mappe{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}
+.na-karte__wahl{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px 20px}.na-karte__wahl>.feld:first-child{grid-row:span 2}.na-karte__wahl .na-kn{grid-column:1/-1}
+@media (max-width:760px){.na-karte__wahl{grid-template-columns:minmax(0,1fr)}.na-karte__wahl>.feld:first-child{grid-row:auto}}
+.na-karte__wahl,.na-mappe__wahl{display:flex;flex-direction:column;gap:6px}
+.na-wahl-spalte.wahl2{display:flex;flex-direction:column;align-items:stretch}
+.na-wahl-spalte.wahl2 button{text-align:left;text-transform:none;letter-spacing:0;font:400 14px/1.3 var(--serif);padding:10px 14px;height:auto}
+.na-minis{display:flex;flex-wrap:wrap;gap:8px}
+.na-mini{width:58px;height:58px;padding:0;border:0;border-radius:12px;overflow:hidden;cursor:pointer;box-shadow:0 0 0 1px rgba(73,32,45,.3);transition:transform .3s var(--e1),box-shadow .3s}
+.na-mini[aria-pressed="true"]{box-shadow:0 0 0 2px #49202D,0 0 0 5px rgba(73,32,45,.18)}
+.na-mini__b,.na-mini__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-saetze{display:flex;flex-direction:column;gap:6px}
+.na-saetze button{text-align:left;padding:10px 14px;border:0;border-radius:12px;cursor:pointer;font:400 14.5px/1.4 var(--serif);color:var(--navy);background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(73,32,45,.16);transition:background .3s}
+.na-saetze button[aria-pressed="true"]{color:#FBF8F6;background:linear-gradient(180deg,#3A2A30,#120D10);box-shadow:inset 0 1px 0 rgba(255,244,240,.16)}
+.na-mappe__wahl .re-notiz{margin:6px 0 10px}
+.dr-vorschau{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-content:flex-start;min-width:0;padding:22px;border-radius:22px;background:linear-gradient(180deg,#2A1D22,#120D10);box-shadow:inset 0 1px 0 rgba(255,244,240,.1),0 0 0 1px rgba(225,207,197,.2)}
+.dr-fenster{display:block;flex:1 1 100%;width:100%;height:240px;border:0;background:transparent;color-scheme:normal}   /* die Druckseite selbst (druck.html?vorschau=1), Höhe setzt sie */
+.na-mappe__vorschau{max-height:none}
+
+/* Fotos des Abends: Karte je Foto mit Freigabe */
+.na-datei{position:relative;cursor:pointer}
+.na-datei input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:0}
+.na-fotos{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.na-foto{display:flex;flex-direction:column;min-width:0;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,#FBF8F6,#F1EAE6);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(73,32,45,.22),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-foto.in-mappe{box-shadow:inset 0 1px 0 #fff,0 0 0 1.5px rgba(73,32,45,.6),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-foto__b{position:relative;margin:0;aspect-ratio:4/3;background:#D9CCC4;overflow:hidden}
+.na-foto__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-foto__b figcaption{position:absolute;left:12px;top:12px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:400 12px var(--mono);color:#FBF8F6;background:rgba(12,10,11,.72)}
+.na-foto__t{display:flex;flex-direction:column;gap:10px;padding:14px 16px 16px}
+.na-foto__titel{width:100%;padding:8px 10px;border:0;border-radius:10px;font:400 16px/1.3 var(--serif);color:var(--navy);background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(73,32,45,.16)}
+.na-foto__titel:focus{outline:2px solid rgba(73,32,45,.35);outline-offset:1px}
+.na-wahl{display:flex;flex-direction:column;gap:6px}
+.na-wahl .mono{font-size:9.5px}
+.na-wahl .wahl2{display:flex;width:100%}
+.na-wahl .wahl2 button{flex:1 1 0;min-width:0;padding-left:6px;padding-right:6px}
+.na-foto__kn{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:2px}
+.na-rund{display:inline-flex;gap:6px}
+.na-rund .rund{color:#49202D;background:none;box-shadow:inset 0 0 0 1px rgba(73,32,45,.35)}
+.na-rund .rund:disabled{opacity:.35;cursor:default}
+
+/* Bildarchiv */
+.na-archiv-leiste{max-width:1400px;margin:0 auto 18px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}
+.na-archiv-leiste .na-bsp{margin:0}
+.na-archiv{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.na-foto--archiv{padding:0;border:0;text-align:left;cursor:pointer;transition:transform .45s var(--e1)}
+.na-foto--archiv:hover{transform:translateY(-3px)}
+.na-foto--archiv .na-foto__t{gap:4px}
+.na-foto--archiv .na-foto__t b{font:400 17px/1.3 var(--serif);color:var(--navy)}
+.na-foto--archiv .na-foto__t small{font-size:12.5px;color:var(--leise)}
+.na-gross{margin:0 0 18px;border-radius:16px;overflow:hidden;background:#D9CCC4}
+.na-gross img{display:block;width:100%;max-height:62vh;object-fit:contain;background:#120D10}
+
+/* Stimmen */
+.na-stimmen{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.na-stimme{display:grid;grid-template-columns:150px minmax(0,1fr);border-radius:22px;overflow:hidden;background:linear-gradient(180deg,#FBF8F6,#F1EAE6);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(73,32,45,.22),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-stimme__b{display:block;min-height:100%;background:#D9CCC4}
+.na-stimme__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-stimme__t{display:flex;flex-direction:column;gap:10px;padding:20px 22px 22px}
+.na-stimme__z{margin:0;font:400 19px/1.45 var(--serif);color:var(--navy);text-wrap:pretty}
+.na-stimme__l{margin:0;font-size:13.5px;line-height:1.55;color:var(--leise)}
+.na-stimme small{font-size:12.5px;line-height:1.45;color:var(--leise)}
+.na-stimme--offen{opacity:.92}
+.na-stimme--offen .na-stimme__z{font-size:17px}
+.na-stimme .link{align-self:flex-start}
+.na-pre{margin:0 0 10px;max-height:260px;overflow:auto;white-space:pre-wrap;font:400 13px/1.55 var(--sans);color:var(--tinte);padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(73,32,45,.16)}
+
+/* Stimme eines Abends */
+.na-antwort{padding:26px 28px;border-radius:22px;display:flex;flex-direction:column;gap:14px}
+.na-antwort__satz{margin:0;font:400 24px/1.35 var(--serif);color:var(--navy)}
+.na-antwort__wie{margin:0;font-size:15px;line-height:1.6;color:var(--tinte)}
+.na-antwort .re-angaben{margin:6px 0 0}
+.na-antwort .re-angaben dd{color:var(--tinte)}
+.na-nachricht .brief__text p{white-space:normal}
+
+/* Empfehlungen */
+.na-empf{max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.na-e{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:16px 22px;border-radius:22px;background:linear-gradient(180deg,#FBF8F6,#F1EAE6);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(73,32,45,.22),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-e.angelegt{opacity:.86}
+.na-e__b{display:block;width:104px;height:78px;border-radius:14px;overflow:hidden;background:#D9CCC4}
+.na-e__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-e__t h3{margin:4px 0 2px;font:400 21px/1.2 var(--serif);color:var(--navy)}
+.na-e__t p{margin:4px 0 0;font-size:13.5px;line-height:1.5;color:var(--tinte)}
+.na-e__t .na-e__bz{color:var(--leise)}
+.na-e__t .na-e__k{font:400 12px/1.4 var(--mono);color:var(--leise);letter-spacing:.02em}
+.na-e__kn{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+
+/* Wiedersehen */
+.na-wieder{max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.na-w{display:grid;grid-template-columns:104px minmax(0,1fr) minmax(0,1.15fr);gap:22px;align-items:start;padding:20px 22px;border-radius:22px;background:linear-gradient(180deg,#FBF8F6,#F1EAE6);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(73,32,45,.22),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-w.bald{box-shadow:inset 0 1px 0 #fff,0 0 0 1.5px rgba(73,32,45,.62),0 20px 34px -24px rgba(12,10,11,.55)}
+.na-w__b{display:block;width:104px;height:78px;border-radius:14px;overflow:hidden;background:#D9CCC4}
+.na-w__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-w__t h3{margin:4px 0 6px;font:400 22px/1.2 var(--serif);color:var(--navy)}
+.na-w__wann{margin:0 0 6px;font-size:14px;color:var(--tinte)}
+.na-w__wann b{font-weight:400;color:var(--wo-akzent)}
+.na-w__felder{display:grid;grid-template-columns:1fr;gap:4px;margin-top:10px}
+.na-w__felder .wahl2{display:flex}
+.na-w__felder .wahl2 button{flex:1 1 0;min-width:0}
+.na-w__n textarea{display:block;width:100%;padding:14px 16px;border:0;border-radius:14px;resize:vertical;font:400 14px/1.6 var(--sans);color:var(--tinte);background:#fff;box-shadow:inset 0 0 0 1px rgba(73,32,45,.18)}
+.na-w__kopf{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+.na-w__kopf select{max-width:60%}
+.na-w__n .na-kn{margin-top:10px;justify-content:flex-end}
+
+/* Fenster: Vorher/Nachher, frühere Fassungen, Auswahl aus den eigenen Fotos */
+.na-vn{display:flex;flex-direction:column;gap:12px;margin:14px 0 6px}
+.na-vn__z{padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(73,32,45,.14)}
+.na-vn__alt{margin:6px 0 0;font-size:13px;line-height:1.5;color:var(--leise);text-decoration:line-through;text-decoration-color:rgba(73,32,45,.45);white-space:pre-line}
+.na-vn__neu{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--tinte);padding-left:10px;box-shadow:inset 2px 0 0 #49202D;white-space:pre-line}
+.na-verlauf{list-style:none;margin:14px 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.na-verlauf li{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.6);box-shadow:inset 0 0 0 1px rgba(73,32,45,.14)}
+.na-verlauf b{display:block;font:400 15px var(--serif);color:var(--navy)}
+.na-verlauf small{font-size:12px;color:var(--leise)}
+.na-bestand{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));grid-auto-rows:max-content;gap:14px;margin:14px 0}
+.na-bestand__k{display:flex;flex-direction:column;gap:6px;padding:0;border:0;background:none;text-align:left;cursor:pointer}
+.na-bestand__b{display:block;aspect-ratio:4/3;border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(73,32,45,.25)}
+.na-bestand__b img{display:block;width:100%;height:100%;object-fit:cover}
+.na-bestand__k small{font-size:12px;line-height:1.4;color:var(--leise)}
+.na-bestand__k[aria-pressed="true"] .na-bestand__b{box-shadow:0 0 0 2.5px #49202D,0 0 0 6px rgba(73,32,45,.16)}
+.na-bestand__k:disabled{opacity:.42;cursor:default}
+.na-weg{margin-right:auto;color:#6A3444!important}
+
+@media (max-width:1180px){.na-dank,.na-karte,.na-mappe{grid-template-columns:minmax(0,1fr)}.na-archiv{grid-template-columns:repeat(3,minmax(0,1fr))}.na-stimmen{grid-template-columns:minmax(0,1fr)}.na-w{grid-template-columns:104px minmax(0,1fr)}.na-w__n{grid-column:1/-1}}
+@media (max-width:760px){
+  .na-zwei,.na-fe2{grid-template-columns:minmax(0,1fr)}
+  .na-archiv{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .na-stimme{grid-template-columns:minmax(0,1fr)}.na-stimme__b{height:200px}
+  .na-e{grid-template-columns:minmax(0,1fr);padding:14px 16px}.na-e__kn{flex-direction:row;justify-content:space-between;align-items:center}
+  .na-w{grid-template-columns:72px minmax(0,1fr);padding:16px;gap:14px}.na-w__b{width:72px;height:54px}
+  .na-stationen{padding:4px 14px}.na-stationen li{grid-template-columns:26px minmax(0,1fr);gap:10px}.na-stationen li .link{grid-column:2}
+  .na-fotos{grid-template-columns:minmax(0,1fr)}
+  .dr-vorschau{padding:12px;gap:12px}
+  .na-brief .re-post__kn{justify-content:stretch}.na-brief .re-post__kn .kn{flex:1 1 100%}.na-brief .re-hinweis{text-align:left}
+  .na-reiter.wahl2 button{flex:1 1 30%}
+}
+@media (max-width:420px){.na-archiv{grid-template-columns:minmax(0,1fr)}}
+
+/* Nachträge nach dem ersten Ansehen (05.11.2026) */
+.na-brief .brief__kopf .na-logo{width:210px!important;max-width:60%;height:auto!important}
+.na-rund .rund svg,.na-stationen svg{fill:none;stroke:currentColor;stroke-width:1.6}
+.na-stimmen>.na-stimme:last-child:nth-child(odd){grid-column:1/-1}
+.na-stimmen>.na-stimme:last-child:nth-child(odd){grid-template-columns:150px minmax(0,1fr)}
+.na-wahl-spalte.wahl2{border-radius:16px}
+/* 320 px (Breitenlauf): lange Glieder der Kennzeile (Ort, Wochentag mit Datum) brechen in sich um, statt hinauszuragen; Felder im Wiedersehen schrumpfen mit */
+@media (max-width:360px){.re-gl{white-space:normal!important;overflow-wrap:anywhere}}
+.na-w__t,.na-w__n,.na-w__felder,.na-w__felder .feld{min-width:0}
+.na-w__felder input,.na-w__felder .wahl2{width:100%;min-width:0;box-sizing:border-box}
+@media (max-width:360px){.na-w{grid-template-columns:minmax(0,1fr)}.na-w__b{width:100%;height:120px}.na-w__felder .wahl2 button{padding-left:4px;padding-right:4px;letter-spacing:.06em}}
+
+/* Prüfung 05.11.2026 */
+/* 9: Empfehlungen nach Abend: ein Foto je Abend neben seiner Gruppe, nie in jeder Zeile dasselbe */
+.na-egr{display:grid;grid-template-columns:200px minmax(0,1fr);gap:18px;align-items:start}
+.na-egr+.na-egr{margin-top:10px;padding-top:24px;border-top:1px solid rgba(73,32,45,.16)}
+.na-egr__b{position:sticky;top:96px;margin:0;display:flex;flex-direction:column;gap:10px}
+.na-egr__f{display:block;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:#D9CCC4;box-shadow:0 0 0 1px rgba(73,32,45,.25)}
+.na-egr__f img{display:block;width:100%;height:100%;object-fit:cover}
+.na-egr__b figcaption b{display:block;margin-top:2px;font:400 19px/1.25 var(--serif);color:var(--navy)}
+.na-egr__b figcaption small{font-size:12.5px;color:var(--leise)}
+.na-egr__l{display:flex;flex-direction:column;gap:12px;min-width:0}
+@media (max-width:760px){.na-egr{grid-template-columns:minmax(0,1fr)}.na-egr__b{position:static;display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:14px}}
+/* 10: Kennzeilen ohne «·» am Zeilenanfang, auch ausserhalb der Liste (wie .re-a/.re-d im Gästebuch) */
+.na-stimme__t .re-gl-r,.na-w__t .re-gl-r{margin-left:-1.6em;clip-path:inset(-4px -4px -4px 1.6em);white-space:normal;display:block}
+/* 11: Zitate in der Liste stehen ganz, nie mit «…» */
+.re-a__n b.na-zitat{white-space:normal;overflow:visible;text-overflow:clip;display:block;text-wrap:pretty;line-height:1.25}
+/* 12: Status der Abend-Karte ist eine kleine Zeile, nie ein Balken (wie «Brief bereit» im Gästebuch) */
+.re-a__st{background:none!important;box-shadow:none!important;padding:0!important;border-radius:0!important;justify-self:start}
+/* Stimme: neue Antwort wartet auf Durchsicht */
+.na-neu{padding:22px 24px;border-radius:22px;display:flex;flex-direction:column;gap:10px;margin-bottom:22px;box-shadow:inset 0 0 0 1.5px rgba(73,32,45,.5),0 20px 34px -24px rgba(12,10,11,.55)!important}
+.na-neu>b{font:400 20px/1.3 var(--serif);color:var(--navy)}
+.na-verlauf__nr{display:block;font:400 10px/1.4 var(--mono)!important;letter-spacing:.12em;text-transform:uppercase;color:var(--wo-akzent)!important}
+/* Quittung bei offenem Fenster oben (Fund 1366 × 650, Prüflauf WebKit): unten lag sie über dem Hauptknopf des Fensters */
+body:has(#fenster:not([hidden])) .meldung{bottom:auto;top:14px}
+/* Prüfung 3, N8: oben lag die Quittung am Handy über dem Schliessen-Knopf. Reicht der Platz über dem Fenster nicht, rückt das Fenster unter die Quittung
+   (nachher.js meldungPlatz) und bleibt dort, bis es zugeht, damit kein Knopf unter dem Finger springt */
+.fenster.unter-meldung{padding-top:var(--mh,24px);align-items:start}
+.fenster.unter-meldung .fenster__k{max-height:calc(100dvh - var(--mh,24px) - 24px)}
+
+/* Deine Unterschrift (Dankeskarte): Probe, hinterlegen, zurück zur Schreibschrift */
+.na-sig__zeile{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.na-sig__probe{display:grid;place-items:center;min-width:150px;height:64px;padding:6px 14px;border-radius:12px;background:#F5F5F5;box-shadow:inset 0 0 0 1px rgba(73,32,45,.16)}
+.na-sig__probe img{display:block;max-height:52px;max-width:180px;mix-blend-mode:multiply}
+.na-sig__schrift{font:400 34px/1 'Pinyon Script',serif;color:#49202D}
+.na-sig__kn{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.na-sig .leise{margin:8px 0 0}

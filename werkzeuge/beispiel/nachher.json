@@ -1,0 +1,726 @@
+{
+ "a-251214-kt": {
+  "beispiel": false,
+  "hinweis": "Echter Abend (Dezember 2025, Bensberg). Belegt: Ort, Anlass, Ablauf und die zehn Fotos. Dank, Satz der Mappe und Wiedersehen sind Entwürfe aus den Bausteinen.",
+  "dank": {
+   "beispiel": true,
+   "bausteine": [
+    "d02",
+    "d05",
+    "d11",
+    "d13"
+   ],
+   "text": "Hallo Klaus und Tanja,\n\nich bin in Gedanken noch ein bisschen bei eurem Abend in Bergisch Gladbach-Bensberg. Danke für euer Vertrauen und dafür, dass ich in euren vier Wänden Gastgeberin sein durfte.\n\nMein schönstes Bild des Abends: ihr beide mitten unter euren Gästen, im Gespräch, mit einem Glas in der Hand. Genau dafür war ich da. Ihr dürft selbst Gast sein.\n\nEin paar Bilder des Abends lege ich euch in einer kleinen Erinnerungs-Mappe zusammen, mit eurem Menü und den Weinen. Sie kommt in den nächsten Tagen.\n\nIch freue mich, wenn wir uns wiedersehen, beim nächsten Anlass oder einfach so.\n\nHerzlich\nAngelina",
+   "gesendet": "",
+   "karte": {
+    "vorn": "k01",
+    "foto": "f-kt-05",
+    "zeilen": "Danke für euer Vertrauen und einen Abend, der von allein lief."
+   }
+  },
+  "fotos": [
+   {
+    "id": "f-kt-01",
+    "quelle": "haus",
+    "datei": "festtafel",
+    "titel": "Die festlich gedeckte Tafel",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-02",
+    "quelle": "haus",
+    "datei": "empfang",
+    "titel": "Der Sekt zum Empfang",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-03",
+    "quelle": "haus",
+    "datei": "einschenken",
+    "titel": "Nachschenken mit weissem Handschuh",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-04",
+    "quelle": "haus",
+    "datei": "teller",
+    "titel": "Der Gang kommt an den Tisch",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-05",
+    "quelle": "haus",
+    "datei": "kerzen",
+    "titel": "Kerzenlicht auf der Tafel",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-06",
+    "quelle": "haus",
+    "datei": "tafel",
+    "titel": "Die Tafel vor dem Empfang",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-07",
+    "quelle": "haus",
+    "datei": "glas",
+    "titel": "Das Glas für den Wein",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-08",
+    "quelle": "haus",
+    "datei": "kerze",
+    "titel": "Angelina zündet die Kerzen an",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-09",
+    "quelle": "haus",
+    "datei": "gang",
+    "titel": "Unterwegs zwischen Küche und Tisch",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   },
+   {
+    "id": "f-kt-10",
+    "quelle": "haus",
+    "datei": "flasche",
+    "titel": "Der Wein des Abends",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Steht schon auf Instagram (Dezember 2025) und auf der Website."
+   }
+  ],
+  "mappe": {
+   "beispiel": true,
+   "titel": "Gänseessen in Bensberg",
+   "satz": "m03",
+   "satz_text": "",
+   "gesendet": ""
+  },
+  "stimme": {
+   "schluessel": "",
+   "angefragt": "",
+   "antwort": null
+  },
+  "empfehlungen": [],
+  "wiedersehen": {
+   "beispiel": true,
+   "art": "gans",
+   "datum": "2026-12-12",
+   "erinnern": "2026-10-31",
+   "baustein": "w05",
+   "text": "",
+   "gesendet": "",
+   "notiz": "Das Gänseessen war am Samstag, 13. Dezember 2025. Der gleiche Samstag im Advent 2026 ist der 12. Dezember."
+  },
+  "abgeschlossen": {
+   "am": "",
+   "von": "Kern (echter Abend, schon abgeschlossen)"
+  },
+  "fassung": 1
+ },
+ "a-260918-hb": {
+  "beispiel": true,
+  "hinweis": "Beispiel: erfundener Abend, damit jede Station gefüllt ist.",
+  "dank": {
+   "beispiel": true,
+   "bausteine": [
+    "d01",
+    "d10",
+    "d08",
+    "d11",
+    "d14"
+   ],
+   "text": "Hallo Helene,\n\ndanke, dass ich deinen Abend am Samstag begleiten durfte. Es war mir eine Freude, deine Gäste zu empfangen und zu sehen, wie du einfach am Tisch sitzen konntest.\n\nDass ich ausgerechnet euren 25. Hochzeitstag begleiten durfte, berührt mich. Solche Abende vergisst man nicht.\n\nDeine Gäste waren herzlich und offen, es war eine Freude, sie durch den Abend zu begleiten. Danke, dass ich sie kennenlernen durfte.\n\nEin paar Bilder des Abends lege ich dir in einer kleinen Erinnerungs-Mappe zusammen, mit deinem Menü und den Weinen. Sie kommt in den nächsten Tagen.\n\nDanke noch einmal. Dein Abend, mein Service: so darf es gern wieder sein.\n\nAlles Liebe\nAngelina",
+   "gesendet": "2026-10-19",
+   "karte": {
+    "vorn": "k05",
+    "foto": "f-hb-02",
+    "zeilen": "Auf fünfundzwanzig Jahre und auf einen Abend, an dem ihr beide einfach am Tisch sitzen durftet.",
+    "gedruckt": "2026-10-20"
+   }
+  },
+  "fotos": [
+   {
+    "id": "f-hb-01",
+    "quelle": "haus",
+    "datei": "p136",
+    "titel": "Die Gäste am Tisch",
+    "freigabe": "mappe",
+    "erlaubnis": false,
+    "gaeste": true,
+    "mappe": true,
+    "notiz": "Beispielfoto. Gäste erkennbar: nur in der Mappe."
+   },
+   {
+    "id": "f-hb-02",
+    "quelle": "haus",
+    "datei": "p151",
+    "titel": "Der Empfang ist vorbereitet",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto. Helene hat am 24.10. für Website und Instagram zugestimmt."
+   },
+   {
+    "id": "f-hb-03",
+    "quelle": "haus",
+    "datei": "tisch",
+    "titel": "Wein am Tisch",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto. Freigegeben am 24.10."
+   },
+   {
+    "id": "f-hb-04",
+    "quelle": "haus",
+    "datei": "p140",
+    "titel": "Ein Moment mit den Gästen",
+    "freigabe": "mappe",
+    "erlaubnis": false,
+    "gaeste": true,
+    "mappe": true,
+    "notiz": "Beispielfoto. Gäste erkennbar: nur in der Mappe."
+   },
+   {
+    "id": "f-hb-05",
+    "quelle": "haus",
+    "datei": "p152",
+    "titel": "Die Flasche für den Hauptgang",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto. Freigegeben am 24.10."
+   },
+   {
+    "id": "f-hb-06",
+    "quelle": "haus",
+    "datei": "hintergrund",
+    "titel": "Vorbereiten im Hintergrund",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto. Freigegeben am 24.10."
+   },
+   {
+    "id": "f-hb-07",
+    "quelle": "haus",
+    "datei": "p158",
+    "titel": "Bevor die Gäste kommen",
+    "freigabe": "privat",
+    "erlaubnis": false,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto. Nur für Angelina."
+   }
+  ],
+  "mappe": {
+   "beispiel": true,
+   "titel": "Fünfundzwanzig Jahre",
+   "satz": "m07",
+   "satz_text": "",
+   "gesendet": "2026-10-28"
+  },
+  "stimme": {
+   "schluessel": "hb7c2e91",
+   "angefragt": "2026-10-21",
+   "baustein": "s03",
+   "antwort": {
+    "eingang": "2026-10-24T20:14",
+    "herkunft": "fragebogen",
+    "wie": "Wir haben unseren Hochzeitstag so entspannt erlebt wie keinen Abend davor. Angelina war da, bevor wir überhaupt gemerkt haben, dass ein Glas leer ist, und unsere Kinder durften einfach mitfeiern statt in der Küche zu stehen.",
+    "satz": "Zum ersten Mal sassen wir an unserem eigenen Fest einfach am Tisch.",
+    "name": "Helene",
+    "ort": "Köln-Lindenthal",
+    "zeigen": "vorname",
+    "fotos_ok": true
+   },
+   "freigabe": "web"
+  },
+  "empfehlungen": [
+   {
+    "id": "e-hb-1",
+    "name": "Ines Falk",
+    "beziehung": "Freundin von Helene, sass am Tisch neben dem Brautpaar",
+    "notiz": "Fragte beim Dessert nach meiner Karte. Plant mit ihrem Mann Robert ein Dinner in Düsseldorf-Oberkassel.",
+    "kontakt": "ines.falk@beispiel.de",
+    "datum": "2026-10-17",
+    "anfrage": "a-261022-rf"
+   },
+   {
+    "id": "e-hb-2",
+    "name": "Sabine Roth",
+    "beziehung": "Schwester von Helene",
+    "notiz": "Ihr Mann wird im März sechzig. Möchte zu Hause feiern, im kleinen Kreis, und selbst kochen.",
+    "kontakt": "sabine.roth@beispiel.de",
+    "datum": "2026-10-17",
+    "anfrage": ""
+   },
+   {
+    "id": "e-hb-3",
+    "name": "Thomas und Eva Lindner",
+    "beziehung": "Nachbarn von Helene",
+    "notiz": "Haben gefragt, ob ich auch Sommerfeste im Garten begleite. Kennenlernen bei einem virtuellen Kaffee angeboten.",
+    "kontakt": "lindner.eva@beispiel.de",
+    "datum": "2026-10-18",
+    "anfrage": ""
+   },
+   {
+    "id": "e-hb-4",
+    "name": "Dr. Karin Brenner",
+    "beziehung": "Kollegin von Helenes Mann",
+    "notiz": "Lädt jedes Jahr im Advent ihr Team zu sich nach Hause ein. Hat meine Karte mitgenommen.",
+    "kontakt": "",
+    "datum": "2026-10-17",
+    "anfrage": ""
+   },
+   {
+    "id": "e-hb-5",
+    "name": "Lea Brandt",
+    "beziehung": "Tochter von Helene",
+    "notiz": "Möchte im Frühjahr ihren Eltern ein Dinner schenken. Hat nach einem Gutschein gefragt.",
+    "kontakt": "lea.brandt@beispiel.de",
+    "datum": "2026-10-19",
+    "anfrage": ""
+   },
+   {
+    "id": "e-hb-6",
+    "name": "Familie Okafor",
+    "beziehung": "Freunde der Familie",
+    "notiz": "Taufe im Januar, Feier zu Hause mit beiden Familien.",
+    "kontakt": "okafor.familie@beispiel.de",
+    "datum": "2026-10-20",
+    "anfrage": ""
+   }
+  ],
+  "wiedersehen": {
+   "beispiel": true,
+   "art": "jubilaeum",
+   "datum": "2027-10-17",
+   "erinnern": "2027-09-19",
+   "baustein": "w02",
+   "text": "",
+   "gesendet": "",
+   "notiz": "26. Hochzeitstag. Helene hat erzählt, dass sie im nächsten Jahr eher im kleinen Kreis feiern möchten."
+  },
+  "abgeschlossen": {
+   "am": "2026-10-29",
+   "von": "Angelina"
+  },
+  "fassung": 1
+ },
+ "a-261009-mw": {
+  "beispiel": true,
+  "hinweis": "Beispiel: erfundener Abend, damit jede Station gefüllt ist.",
+  "dank": {
+   "beispiel": true,
+   "bausteine": [
+    "d01",
+    "d07",
+    "d12",
+    "d13"
+   ],
+   "text": "Hallo Markus,\n\ndanke, dass ich deinen Abend am Sonntag begleiten durfte. Es war mir eine Freude, deine Gäste zu empfangen und zu sehen, wie du einfach am Tisch sitzen konntest.\n\nDer Empfang an der Tür ist für mich immer der Moment, in dem ein Abend beginnt. Bei dir hat jeder Gast gleich gespürt, dass er erwartet wird. Und dass die Überraschung für deine Frau gelungen ist, hat mich sehr gefreut.\n\nWenn du magst, erzähl mir in ein paar Worten, wie du den Abend erlebt hast. Ich schicke dir dafür einen kurzen Fragebogen, zwei Minuten genügen.\n\nIch freue mich, wenn wir uns wiedersehen, beim nächsten Anlass oder einfach so.\n\nHerzlich\nAngelina",
+   "gesendet": "",
+   "karte": {
+    "vorn": "k03",
+    "foto": "f-mw-03",
+    "zeilen": "Danke für die schönste Überraschung, die ich begleiten durfte."
+   }
+  },
+  "fotos": [
+   {
+    "id": "f-mw-01",
+    "quelle": "haus",
+    "datei": "p155",
+    "titel": "Ankommen am Tisch",
+    "freigabe": "privat",
+    "erlaubnis": null,
+    "gaeste": true,
+    "mappe": true,
+    "notiz": "Beispielfoto. Erlaubnis noch nicht gefragt."
+   },
+   {
+    "id": "f-mw-02",
+    "quelle": "haus",
+    "datei": "p156",
+    "titel": "Sekt für die Überraschung",
+    "freigabe": "mappe",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto. Für die Mappe."
+   },
+   {
+    "id": "f-mw-03",
+    "quelle": "haus",
+    "datei": "p150",
+    "titel": "Der Tisch im Wintergarten",
+    "freigabe": "mappe",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto. Für die Mappe; Website erst nach Markus' Ja."
+   },
+   {
+    "id": "f-mw-04",
+    "quelle": "haus",
+    "datei": "handschuh",
+    "titel": "Der Wein zum Hauptgang",
+    "freigabe": "mappe",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto."
+   },
+   {
+    "id": "f-mw-05",
+    "quelle": "haus",
+    "datei": "p132",
+    "titel": "Ein Glas für den Toast",
+    "freigabe": "privat",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto."
+   }
+  ],
+  "mappe": {
+   "beispiel": true,
+   "titel": "Eine Überraschung zum Fünfzigsten",
+   "satz": "m02",
+   "satz_text": "",
+   "gesendet": ""
+  },
+  "stimme": {
+   "schluessel": "mw41d0a3",
+   "angefragt": "2026-11-03",
+   "baustein": "s01",
+   "antwort": null,
+   "freigabe": ""
+  },
+  "empfehlungen": [
+   {
+    "id": "e-mw-1",
+    "name": "Petra Jansen",
+    "beziehung": "beste Freundin von Markus' Frau",
+    "notiz": "Wird im Mai fünfzig und war von der Überraschung ganz begeistert. Wollte wissen, ob ich auch an einem Freitag kann.",
+    "kontakt": "petra.jansen@beispiel.de",
+    "datum": "2026-11-01",
+    "anfrage": ""
+   },
+   {
+    "id": "e-mw-2",
+    "name": "Jürgen Wendt",
+    "beziehung": "Bruder von Markus",
+    "notiz": "Kocht leidenschaftlich gern und möchte zu Weihnachten die Familie bei sich haben, ohne den ganzen Abend in der Küche zu stehen.",
+    "kontakt": "j.wendt@beispiel.de",
+    "datum": "2026-11-01",
+    "anfrage": ""
+   },
+   {
+    "id": "e-mw-3",
+    "name": "Ayşe Demir",
+    "beziehung": "Kollegin von Markus",
+    "notiz": "Fragte nach einem Abend für ihr Team im kleinen Kreis bei ihr zu Hause. Noch kein Datum.",
+    "kontakt": "ayse.demir@beispiel.de",
+    "datum": "2026-11-01",
+    "anfrage": ""
+   },
+   {
+    "id": "e-mw-4",
+    "name": "Herr und Frau Schäfer",
+    "beziehung": "Nachbarn, waren eingeladen",
+    "notiz": "Goldene Hochzeit im nächsten Sommer. Haben meine Karte am Garderobenspiegel mitgenommen.",
+    "kontakt": "",
+    "datum": "2026-11-02",
+    "anfrage": ""
+   }
+  ],
+  "wiedersehen": {
+   "beispiel": true,
+   "art": "geburtstag",
+   "datum": "2027-11-01",
+   "erinnern": "2027-10-04",
+   "baustein": "w03",
+   "text": "",
+   "gesendet": "",
+   "notiz": "Geburtstag von Markus' Frau. Im nächsten Jahr eher ein kleines Dinner zu zweit mit ihren Eltern."
+  },
+  "abgeschlossen": {
+   "am": "",
+   "von": ""
+  },
+  "fassung": 1
+ },
+ "a-260929-js": {
+  "beispiel": true,
+  "hinweis": "Beispiel: erfundener Abend, damit jede Station gefüllt ist.",
+  "dank": {
+   "beispiel": true,
+   "bausteine": [
+    "d01",
+    "d05",
+    "d08",
+    "d14"
+   ],
+   "text": "Hallo Julia und Stefan,\n\ndanke, dass ich euren Abend am Samstag begleiten durfte. Es war mir eine Freude, eure Gäste zu empfangen und zu sehen, wie ihr einfach am Tisch sitzen konntet.\n\nMein schönstes Bild des Abends: ihr beide mitten unter euren Gästen, im Gespräch, mit einem Glas in der Hand. Genau dafür war ich da. Ihr dürft selbst Gast sein.\n\nEure Gäste waren herzlich und offen, es war eine Freude, sie durch den Abend zu begleiten. Danke, dass ich sie kennenlernen durfte.\n\nDanke noch einmal. Euer Abend, mein Service: so darf es gern wieder sein.\n\nAlles Liebe\nAngelina",
+   "gesendet": "2026-10-26",
+   "karte": {
+    "vorn": "k04",
+    "foto": "f-js-01",
+    "zeilen": "Auf Stefans Vierzigsten und auf einen Abend, an dem ihr beide mitfeiern durftet.",
+    "gedruckt": "2026-10-27"
+   }
+  },
+  "fotos": [
+   {
+    "id": "f-js-01",
+    "quelle": "haus",
+    "datei": "kirche",
+    "titel": "Sekt für den Empfang",
+    "freigabe": "web",
+    "erlaubnis": true,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto (Angelinas eigenes), steht für die Fotos dieses Abends. Julia hat am 27.10. im Fragebogen zugestimmt."
+   },
+   {
+    "id": "f-js-02",
+    "quelle": "haus",
+    "datei": "studio-fenster",
+    "titel": "Kurz vor dem ersten Klingeln",
+    "freigabe": "mappe",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto (Angelinas eigenes)."
+   },
+   {
+    "id": "f-js-03",
+    "quelle": "haus",
+    "datei": "p69",
+    "titel": "Ein ruhiger Moment vor dem Dessert",
+    "freigabe": "privat",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto (Angelinas eigenes). Nur für Angelina."
+   }
+  ],
+  "mappe": {
+   "beispiel": true,
+   "titel": "Vierzig, in Deutz",
+   "satz": "m03",
+   "satz_text": "",
+   "gesendet": "2026-10-30"
+  },
+  "stimme": {
+   "schluessel": "js5e81c0",
+   "angefragt": "2026-10-26",
+   "baustein": "s01",
+   "antwort": {
+    "eingang": "2026-10-27T21:40",
+    "herkunft": "fragebogen",
+    "wie": "Wir haben gekocht und durften danach einfach am Tisch sitzen. Angelina hatte die Gläser, die Gänge und unsere Gäste im Blick, ohne dass wir es überhaupt gemerkt haben.",
+    "satz": "An unserem eigenen Fest haben wir zum ersten Mal einfach mitgefeiert.",
+    "name": "Julia und Stefan",
+    "ort": "Köln-Deutz",
+    "zeigen": "vorname",
+    "fotos_ok": true
+   },
+   "neu": {
+    "eingang": "2026-11-02T09:15",
+    "herkunft": "fragebogen",
+    "wie": "Wir wollten noch etwas ergänzen: Stefan erzählt bis heute jedem von diesem Abend, und unsere Freunde fragen schon nach deiner Karte.",
+    "satz": "Stefan erzählt bis heute jedem von diesem Abend.",
+    "name": "Julia und Stefan",
+    "ort": "Köln-Deutz",
+    "zeigen": "vorname",
+    "fotos_ok": true
+   },
+   "freigabe": "web"
+  },
+  "empfehlungen": [
+   {
+    "id": "e-js-1",
+    "name": "Malte Brück",
+    "beziehung": "Kollege von Stefan",
+    "notiz": "Feiert im Januar die Verlobung zu Hause, möchte selbst kochen. Fragte, ob ich auch an einem Sonntag kann.",
+    "kontakt": "malte.brueck@beispiel.de",
+    "datum": "2026-10-24",
+    "anfrage": ""
+   },
+   {
+    "id": "e-js-2",
+    "name": "Nora Roth",
+    "beziehung": "Schwester von Stefan",
+    "notiz": "Ihre Eltern haben im Frühjahr goldene Hochzeit. Möchte ein Dinner im kleinen Kreis bei sich zu Hause.",
+    "kontakt": "nora.roth@beispiel.de",
+    "datum": "2026-10-24",
+    "anfrage": ""
+   }
+  ],
+  "wiedersehen": {
+   "beispiel": true,
+   "art": "geburtstag",
+   "datum": "2027-10-24",
+   "erinnern": "2027-09-26",
+   "baustein": "w03",
+   "text": "",
+   "gesendet": "",
+   "notiz": "Stefans Geburtstag. Julia sagte, im nächsten Jahr eher ein kleines Essen mit den Eltern."
+  },
+  "abgeschlossen": {
+   "am": "",
+   "von": ""
+  },
+  "fassung": 1
+ },
+ "a-261006-ew": {
+  "beispiel": true,
+  "hinweis": "Beispiel: erfundener Abend, damit jede Station gefüllt ist.",
+  "dank": {
+   "beispiel": true,
+   "bausteine": [
+    "d02",
+    "d08",
+    "d09",
+    "d13"
+   ],
+   "text": "Hallo Elke,\n\nich bin in Gedanken noch ein bisschen bei deinem Abend in Bergisch Gladbach-Refrath. Danke für dein Vertrauen und dafür, dass ich in deinen vier Wänden Gastgeberin sein durfte.\n\nDeine Gäste waren herzlich und offen, es war eine Freude, sie durch den Abend zu begleiten. Danke, dass ich sie kennenlernen durfte.\n\nIm Hintergrund lief alles ruhig zusammen: Gläser, Gänge, der nächste Moment. Du musstest an nichts davon denken, und so soll es sein.\n\nIch freue mich, wenn wir uns wiedersehen, beim nächsten Anlass oder einfach so.\n\nHerzlich\nAngelina",
+   "gesendet": "",
+   "karte": {
+    "vorn": "k01",
+    "foto": "f-ew-01",
+    "zeilen": "Auf eure Freundschaft und auf euer nächstes Wiedersehen."
+   }
+  },
+  "fotos": [
+   {
+    "id": "f-ew-01",
+    "quelle": "haus",
+    "datei": "studio",
+    "titel": "Bereit für den Empfang",
+    "freigabe": "mappe",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": true,
+    "notiz": "Beispielfoto (Angelinas eigenes), steht für die Fotos dieses Abends."
+   },
+   {
+    "id": "f-ew-02",
+    "quelle": "haus",
+    "datei": "p89",
+    "titel": "Nachdem die letzten Gäste gegangen sind",
+    "freigabe": "privat",
+    "erlaubnis": null,
+    "gaeste": false,
+    "mappe": false,
+    "notiz": "Beispielfoto (Angelinas eigenes). Nur für Angelina."
+   }
+  ],
+  "mappe": {
+   "beispiel": true,
+   "titel": "Die Freundinnen",
+   "satz": "m09",
+   "satz_text": "",
+   "gesendet": ""
+  },
+  "stimme": {
+   "schluessel": "",
+   "angefragt": "",
+   "antwort": null,
+   "freigabe": ""
+  },
+  "empfehlungen": [
+   {
+    "id": "e-ew-1",
+    "name": "Birgit Hahn",
+    "beziehung": "Freundin aus der Studienzeit",
+    "notiz": "Lädt im Mai zum Sechzigsten ihres Mannes ein, etwa zwölf Gäste, mit Caterer.",
+    "kontakt": "birgit.hahn@beispiel.de",
+    "datum": "2026-10-31",
+    "anfrage": ""
+   },
+   {
+    "id": "e-ew-2",
+    "name": "Sandra Klein",
+    "beziehung": "Freundin aus der Studienzeit",
+    "notiz": "Fand die Idee schön für ein Weihnachtsessen mit der Familie. Hat keine Adresse dagelassen; Elke gibt ihr meine Karte.",
+    "kontakt": "",
+    "datum": "2026-10-31",
+    "anfrage": ""
+   },
+   {
+    "id": "e-ew-3",
+    "name": "Dr. Miriam Ost",
+    "beziehung": "Freundin aus der Studienzeit",
+    "notiz": "Möchte im Sommer ein Dinner auf ihrer Terrasse in Bensberg geben.",
+    "kontakt": "miriam.ost@beispiel.de",
+    "datum": "2026-10-31",
+    "anfrage": ""
+   }
+  ],
+  "wiedersehen": {
+   "beispiel": true,
+   "art": "jahr",
+   "datum": "2027-10-30",
+   "erinnern": "2027-09-18",
+   "baustein": "w01",
+   "text": "",
+   "gesendet": "",
+   "notiz": "Die Freundinnen treffen sich einmal im Jahr, Ende Oktober."
+  },
+  "abgeschlossen": {
+   "am": "",
+   "von": ""
+  },
+  "fassung": 1
+ }
+}

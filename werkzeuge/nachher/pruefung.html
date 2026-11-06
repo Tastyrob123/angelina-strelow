@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de" data-auftakt-bilder="/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg" data-wo-titel="Prüfung · {name} · Angelina Strelow">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfung · Nach dem Abend · Angelina Strelow</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1E151B">
+<script src="studio/auftakt.js?v=1793941135"></script>
+<link rel="icon" href="/angelina-strelow/werkzeuge/assets/zeichen/icon.svg">
+<!-- Prüfseite von «Nach dem Abend» (Kopie der Prüfseite des Gästebuchs); dort: Prüfseite von La Réception (Master Werkzeug-Bau R23, Vorlage Le Bureau des Rivage: studio/pruefung.html). Läuft ohne das Werkzeug:
+     prüft Browser, Server-Teil, Ablage, Wissen, PDF-Satz, zeigt die mitgeschriebenen Browserfehler und erklärt jedes Stichwort (Sehen · Grund · Tun). -->
+<style>
+@font-face{font-family:'Della Respira';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:300;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-300.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-400.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500 600;font-display:block;src:url('/angelina-strelow/werkzeuge/assets/schrift/Montserrat-500.woff2') format('woff2')}
+/* Nie fett, nie kursiv (Prüfung 2, N2): keine schräg oder fett gerechnete Schrift, auch nicht aus em, i, b */
+html{font-synthesis:none}em,i,cite,dfn,address,var{font-style:normal}
+:root{--navy:#1E151B;--nacht:#120D10;--papier:#E6E0DC;--weiss:#F5F2F0;--gold:#E2D0C6;--messing:#6A3443;--taupe:#4A212D;--tinte:#120D10;--gut:#462D3B;--gelb:#6A3443;--rot:#4A212D;
+  --serif:'Della Respira',Georgia,serif;--sans:'Montserrat',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:15px/1.6 var(--sans);color:var(--tinte);background:linear-gradient(rgba(230,224,220,.86),rgba(230,224,220,.86)),url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg') 0 0/224px 224px,var(--papier)}
+.kopf{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px clamp(16px,4vw,56px);color:var(--weiss);background:linear-gradient(rgba(30,21,27,.5),rgba(30,21,27,.5)),url('/angelina-strelow/werkzeuge/assets/zeichen/tapete-hell-a.svg') 0 0/224px 224px,var(--navy);box-shadow:0 0 0 1px rgba(226,208,198,.35)}
+.kopf img{width:58px;height:auto}
+.kopf b{display:block;font:400 22px/1.1 var(--serif)}
+.kopf small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kopf .re{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.kn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 18px;border:0;border-radius:999px;font:400 13px var(--sans);text-decoration:none;cursor:pointer;color:var(--nacht);background:linear-gradient(180deg,#E9D8CE,#6A3443);box-shadow:0 8px 18px -10px rgba(18,13,16,.6)}
+.kn--linie{color:var(--weiss);background:transparent;box-shadow:inset 0 0 0 1px rgba(226,208,198,.5)}
+main{max-width:1080px;margin:0 auto;padding:28px clamp(16px,4vw,40px) 64px}
+h1{font:400 clamp(30px,4vw,44px)/1.1 var(--serif);color:var(--navy);margin:0 0 6px}
+h2{font:400 26px/1.2 var(--serif);color:var(--navy);margin:38px 0 12px}
+.satz{max-width:70ch;color:#271C23;margin:0 0 18px}
+.blatt{background:var(--weiss);border-radius:14px;box-shadow:0 0 0 1px rgba(74,33,45,.25),0 16px 30px -22px rgba(18,13,16,.5);overflow:hidden}
+.z{display:grid;grid-template-columns:14px minmax(0,1.1fr) minmax(0,2fr) auto;gap:14px;align-items:center;padding:12px 18px;border-top:1px solid rgba(74,33,45,.18)}
+.z:first-child{border-top:0}
+.z i{width:12px;height:12px;border-radius:50%;background:var(--gut)}
+.z.gelb i{background:var(--gelb)}.z.rot i{background:var(--rot)}
+.z b{font-weight:400}
+.z span{color:#35262E;overflow-wrap:anywhere}
+.z a{font-size:12px;color:var(--taupe)}
+.gr{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--taupe);padding:14px 18px 4px;background:rgba(220,209,203,.35)}
+.lex{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.lex article{padding:16px 18px;background:var(--weiss);border-radius:14px;box-shadow:0 0 0 1px rgba(74,33,45,.25);scroll-margin-top:20px}
+.lex article:target{box-shadow:0 0 0 2px var(--messing),0 16px 30px -18px rgba(18,13,16,.5)}
+.lex h3{margin:0 0 6px;font:500 12px var(--sans);letter-spacing:.16em;color:var(--navy)}
+.lex p{margin:4px 0;font-size:14px}.lex p b{font-weight:400;color:var(--taupe)}
+.fl{margin:0;padding:0;list-style:none}
+.fl li{padding:10px 18px;border-top:1px solid rgba(74,33,45,.18);font-size:13px;overflow-wrap:anywhere}
+.fl li:first-child{border-top:0}
+.fl time{color:var(--taupe);margin-right:10px}
+.rep{display:flex;gap:10px;flex-wrap:wrap}
+.rep .kn{background:var(--weiss);box-shadow:inset 0 0 0 1px rgba(74,33,45,.45)}
+.rep .kn.scharf{color:var(--weiss);background:var(--rot);box-shadow:none}
+.leer{padding:14px 18px;color:#402E39}
+@media (max-width:640px){.z{grid-template-columns:12px minmax(0,1fr);row-gap:2px}.z span,.z a{grid-column:2}.kopf .re{margin-left:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/oberflaeche.js?v=1793941135" defer></script>
+<script src="studio/namen.js?v=1793941135" defer></script>
+</head>
+<body>
+<header class="kopf">
+  <img src="/angelina-strelow/werkzeuge/assets/zeichen/siegel-sand.svg" width="691" height="956" alt="" style="width:30px;height:auto">
+  <div><b>Prüfung</b><small><span data-wo-name="nachher">Nach dem Abend</span> · Angelina Strelow</small></div>
+  <div class="re"><a class="kn kn--linie" href="./">Zum Werkzeug</a><button class="kn" type="button" id="neu">Neu prüfen</button></div>
+</header>
+<main>
+  <h1>Ist alles in Ordnung?</h1>
+  <p class="satz" id="satz">Die Seite prüft Browser, Server, Datenordner, Teile der Abende, Fotos und PDF-Satz. Sie läuft auch, wenn das Werkzeug selbst nicht startet.</p>
+  <div class="blatt" id="punkte"><p class="leer">Prüfe …</p></div>
+
+  <h2>Fehler, die der Browser mitgeschrieben hat</h2>
+  <div class="blatt"><ul class="fl" id="fehler"><li>Lade …</li></ul></div>
+
+  <h2>Reparaturen</h2>
+  <p class="satz">Jede Reparatur erst nach einem zweiten Klick. «Letzte gute Fassung zurückholen» setzt den Teil «Nach dem Abend» auf die Sicherung vor dem letzten Speichern, Antworten aus dem Fragebogen, die danach kamen, bleiben; «Nicht mehr gebrauchte Fotos wegräumen» löscht hinzugefügte Fotos, die weder ein Abend noch eine frühere Fassung nennt; alles andere berührt keine Daten der Abende.</p>
+  <div class="rep">
+    <button class="kn" type="button" data-rep="fehler">Fehlerliste leeren</button>
+    <button class="kn" type="button" data-rep="geraet">Ansicht und Namen in diesem Browser zurücksetzen</button>
+    <button class="kn" type="button" data-rep="sicherung">Letzte gute Fassung zurückholen</button>
+    <button class="kn" type="button" data-rep="fotos">Nicht mehr gebrauchte Fotos wegräumen</button>
+  </div>
+
+  <h2>Lexikon</h2>
+  <p class="satz">Jede Meldung des Werkzeugs beginnt mit einem Stichwort. «Was tun?» in der Meldung führt hierher.</p>
+  <div class="lex" id="lex"></div>
+</main>
+<script src="pruefung.js?v=1793941135"></script>
+</body>
+</html>

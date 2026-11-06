@@ -1,0 +1,111 @@
+/* Der Abendplan · was Angelinas Fall braucht und die Pairing-Karte nicht hat (05.11.2026): Zeilen mit Langtext, Gäste mit Monogramm, «Worauf ich achte»,
+   Packliste, Stufen der Abstimmung, Vorlagen je Anlass, Nachricht als Brief, Ziehen zum Anordnen, Startfehler-Tür. Werte nur über die Variablen des Kleids. */
+
+.r__t .r__lang{white-space:normal;overflow:visible;text-overflow:clip}
+.r__t .r__offen{color:var(--wo-akzent)}
+.r__t .r__wein{color:var(--wo-akzent)}
+.r__t .r__mono{font-family:var(--wo-mono);font-size:11.5px;letter-spacing:.02em}
+.r__t .r__intern{color:var(--wo-leise)}
+.r--intern .r__t b{color:var(--wo-leise)}
+.r--abend .r__t{cursor:pointer}
+.r--abend .r__p{opacity:1!important;font-family:var(--wo-mono);font-size:12px;color:var(--wo-akzent)}
+.r__mono-b{display:grid;place-items:center;background:linear-gradient(180deg,var(--wo-nacht2),var(--wo-nacht));box-shadow:inset 0 0 0 1px rgba(225,207,197,.35),inset 0 0 0 5px var(--wo-nacht2),inset 0 0 0 6px rgba(225,207,197,.22)}
+.r__mono-b i{font-style:normal;font-family:var(--wo-titel);font-size:24px;letter-spacing:.04em;color:var(--wo-sand)}
+.r .chip{margin-left:6px;vertical-align:2px}
+.r .chip.grau{color:var(--wo-leise)}
+.leer{padding:16px 20px;color:var(--wo-leise);font-size:14px}
+.mw-hinweis{margin-top:8px;font-size:13px;line-height:1.5;color:var(--wo-leise)}
+.mw-lang{min-height:64px}
+.zieht{position:relative;z-index:5;background:var(--wo-blatt);box-shadow:0 18px 30px -18px rgba(12,10,11,.45),0 0 0 1px var(--wo-linie);transition:none!important}
+.r{transition:background-color .3s,transform .2s var(--e1)}
+.r__zieh{cursor:grab;touch-action:none}
+.zieht .r__zieh{cursor:grabbing}
+
+/* Worauf ich achte */
+.achte{margin:0;padding:14px 20px 12px;border-bottom:1px solid var(--wo-linie);background:rgba(234,226,222,.45)}
+.achte ul{margin:6px 0 0;padding:0;list-style:none}
+.achte li{position:relative;padding:3px 0 3px 18px;font-size:14px;line-height:1.5}
+.achte li::before{content:'';position:absolute;left:0;top:.8em;width:10px;border-top:1px solid var(--wo-akzent)}
+
+/* Packliste */
+.pack{display:grid;gap:2px}
+.pack__z{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px solid var(--wo-linie)}
+.pack__z .schalter{flex:1;min-width:0}
+.pack__z .rund{opacity:.0;transition:opacity .25s}
+.pack__z:hover .rund,.pack__z:focus-within .rund{opacity:1}
+@media (hover:none){.pack__z .rund{opacity:1}}
+.pack__neu{display:flex;gap:10px;align-items:center;margin-top:10px}
+.pack__neu input{flex:1;min-width:0;height:42px;padding:0 14px;border-radius:10px;border:0;background:var(--kuhle);box-shadow:var(--kuhle-s);font-size:14px}
+
+/* Stufen der Abstimmung: gesendet → bestätigt → der Abend (eine Linie, Punkte mittig darauf, Fehlerbuch 10a 04.11.2026) */
+.stufen{list-style:none;margin:4px 0 12px;padding:0;display:grid;gap:0}
+.stufen li{position:relative;display:grid;gap:2px;padding:6px 0 14px 34px}
+.stufen li::before{content:'';position:absolute;left:10px;top:12px;bottom:-6px;width:1px;background:var(--wo-linie)}
+.stufen li:last-child::before{display:none}
+.stufen li::after{content:'';position:absolute;left:4px;top:7px;width:13px;height:13px;border-radius:50%;box-sizing:border-box;border:1px solid var(--wo-akzent);background:var(--wo-blatt);display:grid;place-items:center}
+.stufen li.fertig::after{background:var(--wo-akzent);box-shadow:inset 0 0 0 3px var(--wo-blatt)}
+.stufen li.jetzt::after{box-shadow:0 0 0 4px rgba(73,32,45,.14)}
+.stufen b{font-family:var(--wo-titel);font-weight:400;font-size:17px}
+.stufen span{font-size:13.5px;color:var(--wo-leise)}
+.nachher{margin:6px 0 12px;padding:12px 16px;border-radius:12px;background:rgba(234,226,222,.55);outline:1px solid rgba(73,32,45,.22);outline-offset:-5px}
+.nachher ul{list-style:none;margin:6px 0 0;padding:0}
+.nachher li{padding:3px 0;font-size:14px}
+
+/* Vorlagen je Anlass */
+.vorlagen{display:grid;gap:14px;margin:6px 0 4px}
+.vorlage{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:16px;align-items:start;padding:14px;border-radius:16px;background:var(--platte);box-shadow:var(--platte-s)}
+.vorlage.an{outline:1px solid rgba(73,32,45,.4);outline-offset:-6px}
+.vorlage__b{width:104px;height:78px;border-radius:10px;background:var(--wo-nacht2) center/cover no-repeat}
+.vorlage b{font-family:var(--wo-titel);font-weight:400;font-size:19px}
+.vorlage p{margin:3px 0 6px;font-size:14px;color:var(--wo-leise)}
+.vorlage details{margin-top:6px;font-size:13.5px}
+.vorlage summary{cursor:pointer;color:var(--wo-akzent);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.vorlage ol{margin:8px 0 0;padding:0;list-style:none;columns:2;column-gap:20px}
+.vorlage li{padding:2px 0;break-inside:avoid}
+@media (max-width:640px){.vorlage{grid-template-columns:72px minmax(0,1fr)}.vorlage__b{width:72px;height:54px}.vorlage>.wo-kn{grid-column:1/-1;justify-self:start}.vorlage ol{columns:1}}
+
+/* Nachricht an den Gastgeber: gesetzter Brief, nie Rohtext (Fehlerbuch 10a 20.10.2026) */
+.brief{margin:10px 0 4px;padding:22px 26px;border-radius:14px;background:var(--wo-blatt);box-shadow:var(--platte-s);outline:1px solid rgba(73,32,45,.22);outline-offset:-8px}
+.brief__k{display:flex;gap:10px;align-items:baseline;padding:4px 0;border-bottom:1px solid var(--wo-linie);font-size:14px}
+.brief__k .mono{min-width:64px}
+.brief__mail{color:var(--wo-leise);overflow-wrap:anywhere}
+.brief__t{margin-top:14px}
+.brief__t p{margin:0 0 12px;font-size:15px;line-height:1.6}
+
+/* Frühere Fassungen */
+.verlauf__b{width:104px;height:78px;border-radius:10px;background:var(--wo-nacht2) center/cover no-repeat;flex:none}
+.verlauf__n{font-size:12.5px;color:var(--wo-akzent)}
+
+/* Quittung: Schliessen ×, R11 */
+.quit__zu{font-size:18px!important;line-height:1;padding:0 4px!important;opacity:.7}
+.quit__zu:hover{opacity:1}
+
+/* Vorschau gleich gross wie die Liste daneben, Ladezeichen erst nach 280 ms (R15) */
+body.laedt .arbeit{opacity:.55;transition:opacity .2s}
+
+/* R04: Startfehler-Tür */
+.tuer{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--wo-tief);color:var(--wo-blatt);text-align:center;font-family:var(--wo-sans)}
+.tuer__t{font-family:var(--wo-titel);font-size:30px;margin:0 0 10px}
+.tuer__s{margin:0 0 22px;color:rgba(251,248,246,.72)}
+.tuer__k{display:inline-block;padding:13px 24px;border-radius:10px;background:var(--wo-sand);color:var(--wo-tief);text-decoration:none;letter-spacing:.06em}
+
+/* Rand: Bereiche des Abends, leere Gruppe */
+aside.wo-rand .leer-z{padding:6px 10px;font-size:13px;color:var(--wo-leise)}
+aside.wo-rand .wo-rk .wo-zahl{margin-left:auto;flex:none}
+.ap .wo-sb__h em{display:block}
+.ap .r .r__b.r__mono-b{display:grid;place-items:center;background:linear-gradient(180deg,#2A1D22,var(--wo-nacht));box-shadow:inset 0 0 0 1px rgba(225,207,197,.3);outline:1px solid rgba(225,207,197,.28);outline-offset:-6px}
+@media (max-width:560px){.ap .verlauf__z{flex-wrap:wrap}.ap .verlauf__z>div:first-of-type{flex:1 1 0;min-width:0}.ap .verlauf__z div:last-child{flex:1 1 100%;justify-content:flex-start}.verlauf__b{width:72px;height:54px}}
+
+/* Prüfung 05.11.2026 */
+:where(.ap) i,:where(.ap) em{font-style:normal}   /* (8) nie kursiv, auch Kennzeichen */
+.ap #rand .abende>ul:first-child{margin-bottom:16px}   /* (10) Luft zwischen «Übersicht» und «Kommende Abende» */
+@media (max-width:760px){.ap .wo-sb__foto img{object-position:50% 8%}}   /* (9) am Handy bleibt ihr Gesicht im Bild */
+.pack__z{min-width:0}.pack__z .schalter{min-width:0;white-space:normal;overflow-wrap:anywhere}.pack__z .rund{flex:none}.pack__neu{flex-wrap:wrap}.pack__neu input{min-width:0;flex:1 1 160px}   /* (12) 320 px */
+.ap label.feld.falsch textarea,.ap label.feld.falsch input{box-shadow:inset 0 0 0 2px var(--wo-akzent)}   /* (3) falsche Uhrzeit bleibt markiert */
+.ap label.feld.falsch>span::after{content:' · bitte als 18:30';text-transform:none;letter-spacing:0;color:var(--wo-akzent)}
+.verlauf__kopf{display:flex;gap:14px;align-items:center;margin:6px 0 12px}   /* (13) ein Foto für die ganze Gruppe */
+.r--rubrik-bild{background:rgba(234,226,222,.4)}
+.r--rubrik-bild .r__t{cursor:default}
+.ap .r__t span.chip{display:inline-block;margin-top:0;white-space:nowrap;overflow:visible;text-overflow:clip;font-size:9px;line-height:1;color:var(--tief)}   /* Kennzeichen bleiben in der Zeile (seit sie span statt i sind) */
+.ap .r__t span.chip.grau{color:var(--wo-leise)}
+.pack__z .schalter{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}

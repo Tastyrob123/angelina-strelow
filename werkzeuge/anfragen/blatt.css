@@ -1,0 +1,131 @@
+/* Angebotsblatt A4 · Angelina Strelow. Neu gesetzt am 06.11.2026 nach Roberts «Das muss viel schöner aussehen»: Massstab sind ihre Leistungsmappe und ihr Briefbogen
+   (beigaben/mappen, beigaben/drucksachen). Gleich in der Vorschau (anfragen.js) und im PDF (blatt-pdf.html). Grösse in px bei 96 dpi: 794 × 1123 je Seite.
+   Farben ihrer Marke: Salt #F5F5F5 (Papier), Night #0C0A0B, Berry #49202D, Sand #E1CFC5, Grau #6E6467. Titel Della Respira (zweifarbig wie in der Mappe),
+   Lauf Montserrat 300/400/500, Preise in Della Respira. Nie fett, nie kursiv, Sperrung höchstens .08em (pdftotext liest Wort für Wort).
+   Ihre Rahmenlinie: eine feine Linie um die Seite, innen um Fotos und um die dunkle Summentafel. Bausteine (.ab-blk) bleiben ganz; blatt.js verteilt sie auf Folgeseiten. */
+.ab-blatt{--gr:1;--night:#0C0A0B;--berry:#49202D;--sand:#E1CFC5;--grau:#6E6467;--salt:#F5F5F5;--linie:rgba(73,32,45,.2);display:flex;flex-direction:column;gap:24px}
+.ab-seite{position:relative;width:794px;height:1123px;flex:none;background:var(--salt);color:var(--night);font:400 13px/1.6 'Montserrat',system-ui,sans-serif;overflow:hidden;box-sizing:border-box;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ab-seite *{box-sizing:border-box}
+.ab-seite b,.ab-seite strong{font-weight:400}
+.ab-seite em{font-style:normal}
+.ab-rahmen{position:absolute;inset:24px;border:1px solid rgba(73,32,45,.42);pointer-events:none}
+.ab-inhalt{position:absolute;inset:52px 68px 40px;display:flex;flex-direction:column}
+.ab-fluss{flex:1 1 auto;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+.ab-fluss>.ab-blk{flex:none}
+/* Abschnitte: Eröffnung, Leistungen, Angebot, Schluss; zwischen ihnen immer derselbe Abstand, übriger Raum verteilt sich (blatt.js gestalten) */
+.ab-fluss>.ab-blk+.ab-blk{margin-top:34px}
+.ab-fluss--verteilt{justify-content:space-between}
+.ab-etikett,.ab-k,.ab-angaben dt,.ab-zeile,.ab-wer{font:500 8.4px/1.3 'Montserrat',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--berry)}
+
+/* Kopf wie der Briefbogen: Siegel mit Namen und «Exklusive Gastgeberin», mittig */
+.ab-kopf{display:flex;justify-content:center;padding:0 0 22px}
+.ab-kopf .ab-marke{display:block;width:136px;height:auto}
+.ab-kopf--klein{justify-content:space-between;align-items:center;gap:20px;padding:0 0 14px;margin-bottom:26px;border-bottom:1px solid var(--linie)}
+.ab-kopf--klein .ab-marke{width:150px}
+.ab-zeile{margin:0}
+
+/* Titel gross und zweifarbig wie in der Leistungsmappe, daneben ein echtes Foto von ihr mit ihrer Linie innen */
+.ab-titel{display:grid;grid-template-columns:minmax(0,1fr) 236px;gap:40px;align-items:start;padding:0 0 28px}
+.ab-k{margin:6px 0 18px}
+.ab-titel h1{margin:0;font:400 58px/1.02 'Della Respira',Georgia,serif;letter-spacing:-.005em;color:var(--night);overflow-wrap:break-word}
+.ab-titel h1 em{display:block;color:var(--berry);font-size:.62em;line-height:1.12;margin-top:8px}
+.ab-strich{display:block;width:52px;height:1px;background:var(--berry);margin:26px 0 22px}
+.ab-persoenlich{margin:0;font:400 17px/1.5 'Della Respira',Georgia,serif;color:var(--night);overflow-wrap:anywhere}
+.ab-foto{position:relative;margin:0;width:236px;height:var(--fh,270px);overflow:hidden;background:#E8E2DE}
+.ab-foto img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.ab-foto::after,.ab-leist__bild::after{content:'';position:absolute;inset:8px;border:1px solid rgba(245,245,245,.8)}
+
+/* Die Angaben zum Abend: ruhige Reihe mit Linien, Werte in der Titelschrift */
+.ab-angaben{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;margin:0;border-top:1px solid rgba(73,32,45,.42);border-bottom:1px solid rgba(73,32,45,.42)}
+.ab-angaben div{padding:13px 0 12px}
+.ab-angaben--zwei div:nth-child(-n+3){border-bottom:1px solid var(--linie)}   /* Linien laufen immer über die ganze Breite, nie halb (06.11.2026) */
+.ab-angaben dt{margin-bottom:5px;color:var(--grau)}
+.ab-angaben dd{margin:0;font:400 15.5px/1.3 'Della Respira',Georgia,serif;color:var(--night);overflow-wrap:anywhere}
+
+/* Überschriften wie in der Mappe: erste Hälfte Night, zweite Berry */
+.ab-seite h2{margin:0 0 14px;font:400 30px/1.08 'Della Respira',Georgia,serif;color:var(--night)}
+.ab-seite h2 em{color:var(--berry)}
+
+/* «Was ich für euch übernehme»: gesetzt wie die Seite «Was du an mich abgeben kannst», je Leistung ein Bild, Name und Satz */
+.ab-leist{margin:0}
+.ab-leist ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;border-bottom:1px solid var(--linie)}
+.ab-leist li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:16px;align-items:center;padding:var(--lp,9px) 0;border-top:1px solid var(--linie)}
+.ab-leist__bild{position:relative;display:block;width:54px;height:54px;overflow:hidden;background:#E8E2DE}
+.ab-leist__bild img{display:block;width:100%;height:100%;object-fit:cover}
+.ab-leist__bild::after{inset:4px}
+.ab-leist__t{grid-column:2}
+.ab-leist li b{display:block;font:400 15.5px/1.25 'Della Respira',Georgia,serif;color:var(--night)}
+.ab-leist li span span{display:block;margin-top:3px;font:300 11.2px/1.45 'Montserrat',sans-serif;color:var(--grau)}
+
+/* Das Angebot: Name links, Preis in der Titelschrift rechts, feine Linien */
+.ab-mit{padding-top:4px}
+.ab-pz{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:baseline;padding:var(--pp,10px) 0 calc(var(--pp,10px) - 1px);border-top:1px solid var(--linie)}
+.ab-mit+.ab-pz{border-top-color:rgba(73,32,45,.42)}
+.ab-t{display:block;font:400 13.4px/1.4 'Montserrat',sans-serif;color:var(--night)}
+.ab-s{display:block;margin-top:2px;font:300 11.2px/1.45 'Montserrat',sans-serif;color:var(--grau)}
+.ab-z{text-align:right;white-space:nowrap;font:400 19px/1.2 'Della Respira',Georgia,serif;color:var(--night)}
+.ab-leise{font:500 8.4px/1.3 'Montserrat',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--grau)}
+
+/* Die Summe klar abgesetzt: dunkle Tafel mit ihrer Linie innen, Betrag gross */
+.ab-abschluss{padding-top:14px}
+.ab-tafel{position:relative;background:var(--night);color:var(--salt);padding:22px 28px 18px}
+.ab-tafel::after{content:'';position:absolute;inset:7px;border:1px solid rgba(225,207,197,.45);pointer-events:none}
+.ab-summe{display:flex;justify-content:space-between;align-items:baseline;gap:24px;font:400 26px/1.1 'Della Respira',Georgia,serif;color:var(--salt)}
+.ab-summe .ab-z{font-size:44px;line-height:1;color:var(--salt)}
+.ab-anz{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-top:16px;padding-top:12px;border-top:1px solid rgba(225,207,197,.3);font:400 12px/1.4 'Montserrat',sans-serif;color:var(--sand)}
+.ab-anz .ab-z{font-size:17px;color:var(--sand)}
+.ab-gilt{margin:12px 0 0;font:300 11.2px/1.5 'Montserrat',sans-serif;color:var(--grau)}
+.ab-gilt:empty{display:none}
+
+/* Schlussblock wie ein Brief von ihr: Porträt mit ihrer Linie, Siegel, Gruss, «Angelina» als Unterschrift in Pinyon Script (Markenbuch: «Unterschrift»),
+   ihre Zeile und ihr Satz; umrahmt von ihrer Rahmenlinie. --sh (Höhe des Porträts) setzt blatt.js, damit der Block den freien Raum der Seite trägt. */
+@font-face{font-family:'Angelina Hand';font-weight:400;font-display:block;src:url('/angelina-strelow/werkzeuge/anfragen/schrift/PinyonScript.woff2') format('woff2')}
+.ab-unterschrift{margin-top:0}
+.ab-schluss__k{position:relative;display:grid;grid-template-columns:var(--sw,190px) minmax(0,1fr);gap:40px;align-items:center;padding:18px 40px 18px 18px;border:1px solid rgba(73,32,45,.42)}
+.ab-schluss__k::after{content:'';position:absolute;inset:5px;border:1px solid rgba(73,32,45,.14);pointer-events:none}
+.ab-schluss--gross .ab-schluss__k{--sw:260px;gap:44px;padding:22px 36px 22px 22px}
+.ab-schluss__foto{position:relative;margin:0;width:100%;height:var(--sh,236px);overflow:hidden;background:#E8E2DE}
+.ab-schluss__foto img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 18%;transform:scale(1.18);transform-origin:50% 12%}
+.ab-schluss__foto::after{content:'';position:absolute;inset:8px;border:1px solid rgba(245,245,245,.8)}
+.ab-schluss__text{position:relative;display:flex;flex-direction:column;align-items:flex-start}
+.ab-schluss__siegel{display:block;width:34px;height:auto;margin:0 0 18px}
+.ab-schluss--gross .ab-schluss__siegel{width:46px;margin-bottom:26px}
+.ab-unter{margin:0;font:400 22px/1.3 'Della Respira',Georgia,serif;color:var(--night)}
+.ab-name{margin:2px 0 0 -4px;white-space:nowrap;font:400 64px/1.05 'Angelina Hand','Della Respira',Georgia,serif;color:var(--berry);letter-spacing:0}
+.ab-schluss--gross .ab-unter{font-size:26px}
+.ab-schluss--gross .ab-name{font-size:72px}
+.ab-name--bild{margin:8px 0 4px}
+.ab-name--bild img{display:block;max-width:280px;max-height:96px;width:auto;height:auto;mix-blend-mode:multiply}   /* weisses Papier der Vorlage verschwindet im Blatt */
+.ab-schluss .ab-strich{margin:16px 0 12px}
+.ab-wer{margin:0}
+.ab-schluss__satz{margin:14px 0 0;font:400 15px/1.35 'Della Respira',Georgia,serif;color:var(--berry)}
+.ab-schluss--gross .ab-schluss__satz{font-size:18px;margin-top:20px}
+/* Allein auf der letzten Seite: Schlussseite wie in der Mappe, Porträt über die ganze Breite, Gruss mittig darunter */
+.ab-schluss--seite{padding-top:0}
+.ab-schluss--seite .ab-schluss__k{grid-template-columns:minmax(0,1fr);gap:30px;padding:22px 22px 34px;justify-items:center;text-align:center}
+.ab-schluss--seite .ab-schluss__foto img{transform:none}
+.ab-schluss--seite .ab-schluss__text{align-items:center}
+.ab-schluss--seite .ab-schluss__siegel{width:44px;margin-bottom:18px}
+.ab-schluss--seite .ab-unter{font-size:28px}
+.ab-schluss--seite .ab-name{font-size:88px;margin-left:0}
+.ab-schluss--seite .ab-schluss__satz{font-size:19px}
+.ab-seite--folge .ab-fluss>.ab-pz:first-child{border-top:0;padding-top:0}   /* Folgeseite: keine zweite Linie unter der Kopflinie (Prüfung 6) */
+.ab-leist__bild--leer{background:transparent}
+.ab-leist__bild--leer::after{inset:0;border-color:rgba(73,32,45,.3)}
+/* Leistungen auf eigener Seite: gesetzt wie die Mappenseite «Was du an mich abgeben kannst», eine Spalte, grosse Bilder */
+.ab-leist--seite h2{font-size:40px;margin-bottom:26px}
+.ab-leist--seite ul{grid-template-columns:minmax(0,1fr)}
+.ab-leist--seite li{grid-template-columns:150px minmax(0,1fr);gap:28px}
+.ab-leist--seite .ab-leist__bild{width:150px;height:96px}
+.ab-leist--seite .ab-leist__bild::after{inset:6px}
+.ab-leist--seite li b{font-size:21px}
+.ab-leist--seite li span span{font-size:12.5px;margin-top:5px}
+/* Angebot sehr lang: der zweite Teil steht auf eigener Seite unter derselben Überschrift, mit Kopf, nie mitten in der Liste weiter */
+
+/* Fuss wie der Briefbogen: ihr Satz, darunter Kontakt; Seitenzahl rechts */
+.ab-fussz{position:relative;flex:none;margin-top:18px;padding-top:14px;border-top:1px solid var(--linie);text-align:center}
+.ab-satz{margin:0 0 4px;font:400 13px/1.3 'Della Respira',Georgia,serif;color:var(--berry)}
+.ab-kontakt{margin:0;font:400 8.6px/1.5 'Montserrat',sans-serif;letter-spacing:.04em;color:var(--grau);white-space:pre-wrap}
+.ab-seitenzahl{position:absolute;right:0;bottom:0;margin:0;font:400 8.6px/1.5 'Montserrat',sans-serif;letter-spacing:.04em;color:var(--grau)}
+.ab-seitenzahl:empty{display:none}
+@media print{@page{size:A4;margin:0}html,body{margin:0;padding:0;background:#F5F5F5}.ab-blatt{gap:0}.ab-seite{break-after:page}.ab-seite:last-child{break-after:auto}}

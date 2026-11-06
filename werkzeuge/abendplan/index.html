@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Abendplan · Angelina Strelow</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0C0A0B">
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/namen.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/fehlermelder.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/auftakt.js?v=1793941135"></script>
+<link rel="icon" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina-zeichen.svg" type="image/svg+xml">
+<link rel="preload" href="/angelina-strelow/werkzeuge/assets/schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/angelina-strelow/werkzeuge/assets/schrift/Montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/grund.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/rahmen-buehne.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/abendplan.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/tafel.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/schweben.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/abendplan/plan.css?v=1793941135">
+</head>
+<body class="ap wo-app">
+<header class="wo-kopf" id="oben"></header>
+<aside class="wo-rand rand" id="rand" aria-label="Abende und Wege"></aside>
+<main class="wo-raum haupt">
+  <header class="kopf" id="kopf"></header>
+  <div class="arbeit" id="arbeit">
+    <section class="liste" id="liste" aria-label="Der Plan des Abends"></section>
+    <section class="vorschau" aria-label="Vorschau des Blatts">
+      <div class="vorschau__k"><div class="ansicht" role="group" aria-label="Blatt"><button type="button" data-blatt="gastgeber" aria-pressed="true">Dein Abend</button><button type="button" data-blatt="arbeit" aria-pressed="false">Arbeitsblatt</button></div><span class="mono" id="v-zahl">Vorschau</span><span class="vorschau__w" id="v-warn" hidden></span><div class="vorschau__z"><button type="button" class="rund rund--d" data-zoom="-1" aria-label="Kleiner"><svg viewBox="0 0 14 14"><path d="M3 7h8"/></svg></button><button type="button" class="rund rund--d" data-zoom="1" aria-label="Grösser"><svg viewBox="0 0 14 14"><path d="M7 3v8M3 7h8"/></svg></button></div></div>
+      <iframe class="vorschau__f" id="vf" title="Das Blatt, wie es in der PDF steht" src="/angelina-strelow/werkzeuge/abendplan/blatt.html"></iframe>
+    </section>
+  </div>
+</main>
+<footer class="wo-leiste leiste" id="leiste" aria-live="polite"></footer>
+<div class="fenster" id="fenster" hidden></div>
+<div class="meldung" id="meldung" aria-live="polite"></div>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/oberflaeche.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/abendplan.js?v=1793941135"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/schweben.js?v=1793941135" data-wurzel=".haupt" data-blaetter=".vorschau__k"></script>
+<script src="/angelina-strelow/werkzeuge/abendplan/rundgang.js?v=1793941135" defer></script>
+</body>
+</html>

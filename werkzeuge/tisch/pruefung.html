@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><script src="/angelina-strelow/werkzeuge/demo.js?v=1793941135"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prüfung · Tischkarten & Menü</title>
+<meta name="robots" content="noindex, nofollow">
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.js?v=1793941135"></script>
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/grund.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/rahmen-buehne.css?v=1793941135">
+<link rel="stylesheet" href="/angelina-strelow/werkzeuge/assets/oberflaeche/kleid/angelina.css?v=1793941135">
+<link rel="stylesheet" href="tisch.css?v=1793941135">
+<style>
+.pr-raster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:8px}
+.pr-zeile{display:grid;grid-template-columns:14px minmax(0,1fr);gap:12px;align-items:baseline;padding:14px 18px;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie)}
+.pr-zeile i{width:10px;height:10px;border-radius:50%;background:#bbb;transform:translateY(-1px)}
+.pr-zeile.gut i{background:var(--wo-gut)}.pr-zeile.gelb i{background:#d9b34d}.pr-zeile.rot i{background:#c8585c}
+.pr-zeile b{font:400 18px/1.25 var(--wo-titel);display:block}
+.pr-zeile span{font-size:13.5px;line-height:1.5;color:var(--wo-leise)}
+.pr-lex{display:flex;flex-direction:column;gap:10px}
+.pr-lex article{padding:16px 20px;border-radius:var(--wo-r3);background:var(--wo-weiss);box-shadow:inset 0 0 0 1px var(--wo-linie);scroll-margin-top:110px}
+.pr-lex article:target{box-shadow:inset 0 0 0 2px var(--wo-akzent)}
+.pr-lex h3{font:400 10.5px/1.3 var(--wo-mono);letter-spacing:.2em;color:var(--wo-akzent);margin:0 0 8px}
+.pr-lex dl{display:grid;grid-template-columns:70px minmax(0,1fr);gap:4px 14px;margin:0;font-size:14px;line-height:1.5}
+.pr-lex dt{font:400 10px/1.9 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-leise)}
+.pr-lex dd{margin:0}
+.pr-rep{display:flex;flex-wrap:wrap;gap:10px}
+.pr-fehler{font:12.5px/1.5 var(--wo-mono);white-space:pre-wrap;background:var(--wo-weiss);border-radius:var(--wo-r3);padding:14px 16px;box-shadow:inset 0 0 0 1px var(--wo-linie);max-height:320px;overflow:auto;margin:0}
+.pr-app{padding-bottom:60px}
+@media (max-width:900px){.pr-raster{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body class="wo-app pr-app">
+<header class="wo-kopf" id="kopf"></header>
+<nav class="wo-rand" id="rand" aria-label="Bereiche"></nav>
+<main class="wo-raum" id="haupt">
+  <div id="sb"></div>
+  <h2 class="wo-zw">Was geprüft wird <em>und wie es steht</em></h2>
+  <p class="ti-hinw">Diese Seite läuft ohne das Werkzeug. Grün: in Ordnung. Gelb: ein Hinweis. Rot: hier liegt der Grund.</p>
+  <div class="pr-raster" id="liste"></div>
+  <h2 class="wo-zw" id="reparieren">Reparieren <em>mit Doppelklick</em></h2>
+  <p class="ti-hinw">Jede Reparatur braucht einen Doppelklick, damit nichts aus Versehen passiert. Keine löscht Drucksachen.</p>
+  <div class="pr-rep">
+    <button class="wo-kn wo-kn--dunkel wo-kn--klein" type="button" data-rep="sichern"><span>Alle Drucksachen als Datei sichern</span><i><svg class="wo-ic" viewBox="0 0 24 24"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></i></button>
+    <button class="wo-kn wo-kn--hell wo-kn--klein" type="button" data-rep="fehler"><span>Fehlerliste leeren</span><i><svg class="wo-ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></i></button>
+    <button class="wo-kn wo-kn--hell wo-kn--klein" type="button" data-rep="rundgang"><span>Rundgang wieder zeigen</span><i><svg class="wo-ic" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5M4 9h11a5 5 0 0 1 0 10h-3"/></svg></i></button>
+    <button class="wo-kn wo-kn--hell wo-kn--klein" type="button" data-rep="ansicht"><span>Letzte Ansicht vergessen</span><i><svg class="wo-ic" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5M4 9h11a5 5 0 0 1 0 10h-3"/></svg></i></button>
+  </div>
+  <p class="ti-druck-stand" id="rep-stand" aria-live="polite"></p>
+  <h2 class="wo-zw">Mitgeschriebene <em>Fehler</em></h2>
+  <pre class="pr-fehler" id="fehler"></pre>
+  <h2 class="wo-zw" id="lexikon">Lexikon <em>der Meldungen</em></h2>
+  <p class="ti-hinw">Jede Meldung des Werkzeugs beginnt mit einem Stichwort. «Was tun?» führt hierher.</p>
+  <div class="pr-lex" id="lex"></div>
+</main>
+<script src="/angelina-strelow/werkzeuge/assets/oberflaeche/oberflaeche.js?v=1793941135"></script>
+<script src="zeichen.js?v=1793941135"></script>
+<script src="stile.js?v=1793941135"></script>
+<script src="beispiele.js?v=1793941135"></script>
+<script src="satz.js?v=1793941135"></script>
+<script src="pruefung.js?v=1793941135"></script>
+</body>
+</html>

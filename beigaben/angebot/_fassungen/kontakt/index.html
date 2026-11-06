@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kontaktbereich · zehn Fassungen · Angebot Angelina Strelow</title>
+<style>
+@font-face{font-family:Antonio;src:url(../../_bau/schrift/Antonio-700.ttf) format('truetype');font-weight:700;font-display:block}
+@font-face{font-family:Instrument;src:url(../../_bau/schrift/InstrumentSans-400.ttf) format('truetype');font-weight:400;font-display:block}
+@font-face{font-family:Mono;src:url(../../_bau/schrift/DMMono-400.woff2) format('woff2');font-display:block}
+:root{--n0:#111421;--n1:#1f213b;--taupe:#9e947f;--creme:#ebdbce}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--n0);color:#fff;font-family:Instrument,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.rahmen{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,4vw,64px);align-items:center;min-height:100vh;padding:28px clamp(16px,4vw,56px);max-width:1400px;margin:0 auto}
+.et{font-family:Mono;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe)}
+.nr{font-family:Antonio;font-weight:700;font-size:clamp(120px,16vw,240px);line-height:.85;color:var(--creme);margin-top:16px}
+.nr small{font-size:.28em;color:var(--taupe);margin-left:.15em}
+h1{font-family:Antonio;font-weight:700;text-transform:uppercase;font-size:clamp(30px,3.4vw,48px);line-height:1;margin-top:18px}
+p{margin-top:16px;font-size:16px;line-height:1.6;color:rgba(255,255,255,.8);max-width:420px}
+.pf{display:flex;gap:12px;margin-top:28px}
+.pf button{width:56px;height:56px;border-radius:50%;border:0;cursor:pointer;background:var(--creme);color:var(--n0);display:grid;place-items:center;box-shadow:0 1px 0 rgba(255,255,255,.4) inset,0 10px 22px -12px rgba(0,0,0,.9);transition:transform .2s}
+.pf button:active{transform:translateY(1px)}
+.pf svg{width:18px;height:18px}
+.leiste{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin-top:28px;max-width:460px}
+.leiste button{border:1px solid rgba(235,219,206,.3);background:none;color:var(--creme);font-family:Antonio;font-weight:700;font-size:17px;padding:8px 0;cursor:pointer;border-radius:4px}
+.leiste button.an{background:var(--creme);color:var(--n0);border-color:var(--creme)}
+.blatt{height:calc(100vh - 56px);aspect-ratio:210/297;position:relative;box-shadow:0 30px 70px -30px rgba(0,0,0,.9);background:#1a1d2c}
+.blatt img{position:absolute;inset:0;width:100%;height:100%;opacity:0}
+.blatt img.an{opacity:1}
+.hinweis{margin-top:22px;font-size:13px;color:rgba(255,255,255,.55)}
+@media (max-width:860px){
+ .rahmen{grid-template-columns:1fr;min-height:0}
+ .blatt{height:auto;width:100%}
+ .nr{font-size:110px}
+ .leiste{max-width:none}
+}
+</style></head>
+<body>
+<div class="rahmen">
+ <div>
+  <div class="et">Angebot Angelina Strelow · Seite 5 · Kontaktbereich</div>
+  <div class="nr"><span id="nr">1</span><small>/ 10</small></div>
+  <h1 id="name"></h1>
+  <p>Zehn Fassungen des Bereichs mit euren Namen und Bildern. Kopf und Foto der Seite bleiben gleich, die Inhalte auch.</p>
+  <div class="pf"><button type="button" id="zur" aria-label="Vorige Fassung"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3 5 8l5 5"/></svg></button><button type="button" id="vor" aria-label="Nächste Fassung"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 3 5 5-5 5"/></svg></button></div>
+  <div class="leiste" id="leiste"></div>
+  <div class="hinweis">Pfeiltasten ← → blättern.</div>
+ </div>
+ <div class="blatt" id="blatt"></div>
+</div>
+<script>
+var NAMEN=['Kreis neben dem Namen','Karten mit Bild oben','Grosse Kreise, mittig','Als Paar','Briefschluss','Hochformat mit Rahmenlinie','Visitenkarten','Zeilen über die ganze Breite','Bogenfenster','Band mit Zeichen auf der Naht'];
+var blatt=document.getElementById('blatt'),leiste=document.getElementById('leiste'),bilder=[],knoepfe=[],i=0;
+NAMEN.forEach(function(n,k){var im=new Image();im.src='seiten/fassung-'+(k+1)+'.jpg';im.alt='Fassung '+(k+1)+': '+n;im.decoding='sync';blatt.appendChild(im);bilder.push(im);
+ var b=document.createElement('button');b.type='button';b.textContent=k+1;b.onclick=function(){geh(k)};leiste.appendChild(b);knoepfe.push(b)});
+function geh(k){i=(k+10)%10;bilder.forEach(function(b,j){b.classList.toggle('an',j===i)});knoepfe.forEach(function(b,j){b.classList.toggle('an',j===i)});
+ document.getElementById('nr').textContent=i+1;document.getElementById('name').textContent=NAMEN[i];history.replaceState(null,'','#'+(i+1))}
+document.getElementById('zur').onclick=function(){geh(i-1)};document.getElementById('vor').onclick=function(){geh(i+1)};
+addEventListener('keydown',function(e){if(e.key==='ArrowRight')geh(i+1);if(e.key==='ArrowLeft')geh(i-1)});
+geh((parseInt(location.hash.slice(1))||1)-1);
+</script>
+</body></html>

@@ -157,7 +157,7 @@ html.auf .at__k,html.auf .at__h,html.auf .at__r{transform:none;opacity:1}
 
 /* Für draussen */
 .dr{padding:clamp(80px,11vw,150px) 0}
-.dr__raster{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(26px,3vw,46px) clamp(14px,1.8vw,28px);margin-top:clamp(40px,5vw,70px)}
+.dr__raster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(26px,3vw,46px) clamp(14px,1.8vw,28px);margin-top:clamp(40px,5vw,70px)}
 .bg{display:flex;flex-direction:column;cursor:pointer}
 .bg__b{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;border-radius:4px;background:var(--nacht2);box-shadow:0 26px 40px -30px rgba(26,18,21,.7)}
 .bg__b img{width:100%;height:100%;object-fit:cover;background-size:cover;transition:transform 1.6s var(--e1)}
@@ -194,7 +194,7 @@ html.auf .at__k,html.auf .at__h,html.auf .at__r{transform:none;opacity:1}
 /* Hereinkommen von unten (nur transform und opacity) */
 [data-a]{transform:translateY(46px);opacity:0;transition:transform 1.3s var(--e1),opacity .9s ease}
 [data-a].da{transform:none;opacity:1}
-.dr__raster .bg:nth-child(4n+2){transition-delay:.07s}.dr__raster .bg:nth-child(4n+3){transition-delay:.14s}.dr__raster .bg:nth-child(4n+4){transition-delay:.21s}
+.dr__raster .bg:nth-child(3n+2){transition-delay:.07s}.dr__raster .bg:nth-child(3n+3){transition-delay:.14s}
 
 /* Rundgang durch ein Werkzeug (online, wo die Werkzeuge nicht laufen) */
 .rg{position:fixed;inset:0;z-index:50;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:clamp(12px,2vh,22px);padding:clamp(22px,3.4vh,40px) clamp(18px,3vw,48px);background:var(--night) url(zeichen/tapete-dunkel-a.svg) 50% 0/224px auto;color:var(--salt);isolation:isolate;opacity:0;transition:opacity .45s ease}

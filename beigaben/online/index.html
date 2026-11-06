@@ -34,20 +34,6 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
 .schritte{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .schritte div{background:#fff;border:1px solid var(--linie);padding:20px 22px;font-size:14.5px;line-height:1.55}
 .schritte b{display:block;font:400 26px/1 D;color:var(--berry);margin-bottom:8px}
-/* Reels */
-.reels{margin-top:36px;display:grid;gap:28px}
-.reel{background:#fff;border:1px solid var(--linie);display:grid;grid-template-columns:420px 1fr;min-width:0}
-.reel .bilder{background:var(--night);display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr;gap:2px;padding:2px}
-.reel .bilder img,.reel .bilder .neu{height:100%;min-height:0;aspect-ratio:auto!important}
-.reel .bilder img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
-.reel .bilder .neu{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;color:var(--sand);font:500 10px/1.4 M;letter-spacing:.14em;text-transform:uppercase;border:1px dashed rgba(225,207,197,.4);padding:6px}
-.reel .inh{padding:26px 30px 28px;min-width:0}
-.reel .nr{font:500 11px/1 M;letter-spacing:.22em;text-transform:uppercase;color:var(--berry)}
-.reel h3{font:400 34px/1.05 D;margin:10px 0 18px}
-.reel dl{display:grid;grid-template-columns:150px 1fr;gap:10px 18px;font-size:14.5px;line-height:1.55}
-.reel dt{font:500 11px/1.9 M;letter-spacing:.14em;text-transform:uppercase;color:#6b6264}
-.reel dd{min-width:0}
-.reel .tafel{display:inline-block;background:var(--night);color:var(--salt);font:400 15px/1.35 D;padding:3px 9px;margin:0 4px 6px 0}
 /* Google */
 .g{margin-top:36px;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:32px;align-items:start}
 .feld{background:#fff;border:1px solid var(--linie);padding:20px 22px;margin-bottom:16px}
@@ -91,12 +77,6 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
  .hlbuehne{padding:32px 16px;gap:18px 10px}
  .hlbuehne figcaption{font-size:11.5px}
  .schritte{grid-template-columns:1fr}
- .reel{grid-template-columns:1fr}
- .reel .bilder img,.reel .bilder .neu{aspect-ratio:4/5!important;height:auto}
- .reel .inh{padding:20px 18px 22px}
- .reel h3{font-size:28px}
- .reel dl{grid-template-columns:1fr;gap:2px}
- .reel dd{margin-bottom:10px}
  .fotos{grid-template-columns:repeat(3,1fr)}
  .feld{padding:16px}
 }
@@ -108,7 +88,7 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
  <div><div class="zeile">Angelina Strelow · Online</div><h1>Gefunden werden</h1></div>
  <a class="zur" href="../../werkbank/index.html">Zur Werkbank</a>
 </header>
-<nav class="nav"><a href="#highlights">Highlight-Cover</a><a href="#reels">Zehn Reel-Ideen</a><a href="#google">Google-Profil</a><a href="../feed/index.html">Feed</a></nav>
+<nav class="nav"><a href="#highlights">Highlight-Cover</a><a href="#google">Google-Profil</a><a href="../feed/index.html">Feed</a></nav>
 
 <section id="highlights">
  <h2>Acht Highlight-Cover</h2>
@@ -119,12 +99,6 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
   <div><b>2</b>Auf Instagram das Highlight lange drücken, «Highlight bearbeiten», dann «Titelbild bearbeiten».</div>
   <div><b>3</b>Bild aus der Galerie wählen, Kreis mittig lassen, «Fertig». Das Highlight selbst bleibt, wie es ist.</div>
  </div>
-</section>
-
-<section id="reels">
- <h2>Zehn Reel-Ideen</h2>
- <p class="vor">Alle zehn kommen aus ihren echten Abenden und Aufnahmen, die schon da sind. Keine wiederholt ein Reel, das sie schon gepostet hat: keine Weintipps, keine Servietten, keine Tischmanieren, kein «Kaum sitzt du». Zwei Ideen brauchen eine kurze neue Aufnahme mit dem Handy, das steht jeweils dabei.</p>
- <div class="reels" id="reelliste"></div>
 </section>
 
 <section id="google">
@@ -151,72 +125,6 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var HL=[['vor-ort','vor Ort','eine angelehnte Tür'],['feedback','Feedback','Anführungszeichen in ihrer Titelschrift'],['anfrage','Anfrage','ein Brief'],['private-insight','private insight','ein Glas'],['selected','Selected','die Raute aus ihrer Fliege'],['erfolge','Erfolge','ihr Siegel'],['ueber-mich','ÜBER MICH.','ihre Fliege'],['qa','Q&A','ein Fragezeichen']];
 document.getElementById('hlb').innerHTML=HL.map(function(h){return '<figure><img src="highlights/rund-'+h[0]+'.png" alt="Cover '+esc(h[1])+': '+h[2]+'" decoding="sync"><figcaption>'+esc(h[1])+'<a href="highlights/'+h[0]+'.png" download>Bild</a></figcaption></figure>'}).join('');
-
-var R=[
- {t:'Die Minute vor dem Klingeln',b:['k-tafel','k-kerze','k-sekt'],
-  ein:'Der leere, gedeckte Tisch, eine Sekunde ganz ohne Schrift. Dann geht eine Kerze an.',
-  folge:'Leere Tafel, Kerze wird angezündet, Brot im Kerzenlicht, Sekt wird eingeschenkt, Angelina im Raum. Fünf Bilder, harte Schnitte im Takt der Musik, je etwa zwei Sekunden.',
-  text:['Noch eine Minute.','Kerzen an.','Das erste Glas steht bereit.','Ab jetzt gehört der Abend dir.'],
-  ton:'Ruhiges Klavierstück aus der Musik-Auswahl von Instagram, darunter leise das Klicken des Feuerzeugs.',
-  auf:'Fotos vom Abend in Bensberg, Dezember 2025 (Karussell vom 23.12.2025, Bilder 19, 4, 14, 5 und 2).'},
- {t:'Ein Abend in Bensberg, in vier Stationen',b:['k-sekt','k-kueche','k-gang'],
-  ein:'Die Schrift «Bensberg, Dezember.» auf dem Sekt, der ins Glas läuft.',
-  folge:'Sektempfang, Klaus am Herd, der Salat auf dem Weg zum Tisch, Nachschenken am Tisch, die Tafel mit Brot und Kerzen.',
-  text:['Bensberg, Dezember.','Sektempfang.','Gänsemenü, vom Gastgeber selbst gekocht.','Weinbegleitung.'],
-  ton:'Originalton gedämpft (Gläser, Stimmen), darüber ein warmes Jazzstück aus der Instagram-Auswahl.',
-  auf:'Karussell vom 23.12.2025, Bilder 5, 7, 12, 8 und 14. Vorher Klaus und Tanja fragen, ob sie mit dem Reel einverstanden sind.'},
- {t:'Du kochst, ich führe den Raum',b:['k-kueche','k-korken','k-einschenken'],
-  ein:'Geteiltes Bild: oben die Küche, unten der Tisch. Beide Hälften bewegen sich gleichzeitig.',
-  folge:'Oben Klaus beim Kochen, unten Angelina, die eine Flasche öffnet; dann oben der Topf, unten das Nachschenken; zum Schluss nur noch der Tisch.',
-  text:['Du kochst gern?','Dann koch.','Den Raum übernehme ich.'],
-  ton:'Küchengeräusch und ein Korken, der leise kommt. Keine Musik in den ersten drei Sekunden.',
-  auf:'Karussell vom 23.12.2025, Bilder 7, 16 und 8.'},
- {t:'Das zweite Glas',b:['k-sw-glas','k-flasche','k-glas'],
-  ein:'Ganz nah: Wein läuft in ein Glas, Schwarzweiss, kein Text.',
-  folge:'Nachschenken in Schwarzweiss, Angelina mit der Flasche, ein volles Glas vor einer Kerze.',
-  text:['Das erste Glas sieht jeder.','Das zweite ist genauso wichtig.'],
-  ton:'Nur Originalton: der Wein im Glas. Erst beim letzten Bild setzt leise Musik ein.',
-  auf:'Karussell vom 26.12.2025 (Bild 6) und vom 23.12.2025 (Bilder 10 und 17).'},
- {t:'Ein Abend in Schwarzweiss',b:['k-sw-flasche','k-sw-teller','k-stuhl'],
-  ein:'Angelina lacht mit der Flasche im Arm, Schwarzweiss.',
-  folge:'Die Flasche im Arm, der Weg mit zwei Tellern, das Nachschenken, zum Schluss der Stuhl mit dem Schatten aus dem Shooting.',
-  text:['Ein Abend in Schwarzweiss.','Dein Abend. Mein Service.'],
-  ton:'Ein langsames Jazzstück mit Kontrabass aus der Instagram-Auswahl.',
-  auf:'Karussell vom 26.12.2025 (Bilder 2, 4 und 6) und vom 02.07.2025 (Bild 4, Foto @manuela.asmus).'},
- {t:'Woran du mich erkennst',b:['k-studio','k-frack','k-dunkel'],
-  ein:'Die Fliege in Bordeaux, so nah, dass sie das ganze Bild füllt.',
-  folge:'Fliege, weisses Hemd, weisse Handschuhe mit der Flasche, Angelina ganz im Studio, das dunkle Porträt.',
-  text:['Weisses Hemd.','Schwarzer Anzug.','Fliege in Bordeaux.','Weisse Handschuhe.'],
-  ton:'Ein einzelnes Klavier, jedes Wort auf einem Ton.',
-  auf:'Studio Juni 2025 (Karussell vom 25.06.2025), Shooting Juli 2025, Story-Video «Anfrage» vom 14.03.2026 (Frack mit Flasche, ohne den Link-Aufkleber).'},
- {t:'Ein anderer Abend, ein anderes Licht',b:['k-farbe','k-einschenken','k-raum'],
-  ein:'Das bunte Licht vom Abend im April, Angelina geht durchs Bild.',
-  folge:'Szenen aus dem Abend im April 2026, dann ein Schnitt in das warme Licht von Bensberg. Zwei Abende, dieselbe Haltung.',
-  text:['April.','Dezember.','Jeder Abend sieht anders aus.','Der Service bleibt.'],
-  ton:'Ein Stück, das nach dem Schnitt ruhiger wird.',
-  auf:'Rohaufnahmen zum Reel vom 24.04.2026 ohne die Schrift (liegen bei Angelina), Karussell vom 23.12.2025.'},
- {t:'Unterwegs für deinen Wein',b:['k-riesling','k-glas','k-flasche'],
-  ein:'Angelina hebt mit weissen Handschuhen ein grosses Weinglas ins Bild.',
-  folge:'Die Gläser beim Weinhändler, ein Glas im Licht, die Flasche am Abend selbst.',
-  text:['Heute: Riesling probieren.','Für einen Abend, der noch kommt.'],
-  ton:'Originalton aus dem Laden, leise, dazu eine helle Gitarre.',
-  auf:'Story «vor Ort» vom 23.05.2025 (ohne den Namen des Händlers im Bild), Karussell vom 23.12.2025 (Bilder 17 und 10).'},
- {t:'Drei Fragen vor deinem Abend',b:['k-fenster','neu','k-raum'],
-  ein:'Angelina schaut in die Kamera und sagt: «Das frage ich dich, bevor ich komme.»',
-  folge:'Sie spricht selbst, wie in ihrem Reel vom Januar. Drei Schnitte, je eine Frage. Am Ende der Hinweis auf das Kennenlernen bei einem virtuellen Kaffee.',
-  text:['Was feierst du?','Wer kommt?','Wie soll der Abend laufen?','Kennenlernen: Link in der Bio.'],
-  ton:'Ihre Stimme, darunter ganz leise Musik.',
-  auf:'Neu drehen: etwa 20 Sekunden mit dem Handy, im Smoking vor einer ruhigen Wand. Grundlage sind die drei Punkte ihres Vorgesprächs: Anlass, Gäste, Ablauf.'},
- {t:'Dein Satz in Gebärdensprache',b:['k-dgs','neu','k-handschuh'],
-  ein:'Weisse Handschuhe in Bewegung, noch ohne Untertitel.',
-  folge:'Angelina gebärdet einen ihrer Sätze in Deutscher Gebärdensprache, ruhig und in einer Einstellung. Danach derselbe Satz als Schrift.',
-  text:['Du darfst selbst Gast sein.','(in Deutscher Gebärdensprache)'],
-  ton:'Keine Musik oder nur sehr leise, damit der Beitrag auch ohne Ton ganz verständlich ist.',
-  auf:'Neu drehen: eine Einstellung mit dem Handy. Sie lernt DGS seit 2025 (Reel vom 23.02.2025); nur drehen, wenn sie den Satz sicher gebärdet.'}
-];
-document.getElementById('reelliste').innerHTML=R.map(function(r,i){
- return '<article class="reel"><div class="bilder">'+r.b.map(function(b){return b==='neu'?'<div class="neu">neue Aufnahme</div>':'<img src="bilder/'+b+'.jpg" alt="" loading="lazy">'}).join('')+'</div><div class="inh"><div class="nr">Reel '+(i+1)+' von 10</div><h3>'+esc(r.t)+'</h3><dl>'+
- '<dt>Einstieg</dt><dd>'+esc(r.ein)+'</dd><dt>Bildfolge</dt><dd>'+esc(r.folge)+'</dd><dt>Text auf dem Bild</dt><dd>'+r.text.map(function(t){return '<span class="tafel">'+esc(t)+'</span>'}).join('')+'</dd><dt>Ton</dt><dd>'+esc(r.ton)+'</dd><dt>Aufnahmen</dt><dd>'+esc(r.auf)+'</dd></dl></div></article>'}).join('');
 
 var BESCHR='Ich bin Exklusive Gastgeberin in Köln und Umgebung. Ich komme zu dir nach Hause, im Smoking mit Fliege und weissen Handschuhen, und führe deinen Abend: Ich empfange deine Gäste, betreue sie, schenke Wein nach, serviere die Gänge und halte im Hintergrund den Ablauf zusammen. Du lädst ein und bleibst bei deinen Gästen am Tisch.\n\nFür private Dinner, Geburtstage, Jubiläen und Feiern zu Hause im kleinen Kreis. Mein Handwerk habe ich in der gehobenen Gastronomie gelernt. Ich bin Gastronomiebetriebswirtin (IST, mit DEHOGA) und habe eine Weiterbildung zu Wein-Events beim Deutschen Weininstitut abgeschlossen.\n\nDer erste Schritt ist ein Kennenlernen bei einem virtuellen Kaffee.';
 var G=[

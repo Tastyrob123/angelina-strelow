@@ -9,7 +9,20 @@
 <link rel="icon" href="zeichen/icon.svg" type="image/svg+xml">
 <link rel="preload" href="schrift/DellaRespira.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="schrift/Montserrat-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="werkbank.css?v=1793941135">
+<link rel="stylesheet" href="werkbank.css?v=1793946663">
+<script>/* Mit Skript wartet die Seite auf die Bilder des ersten Blicks (werkbank.js), der CSS-Rückfall greift erst spät.
+   Bild noch einmal holen: bleibt ein Bild aus (schwache Leitung), holt die Seite es bis zu viermal neu; bis dahin ist es unsichtbar, kein Fragezeichen, kein Alt-Text. */
+document.documentElement.classList.add('mitjs');
+window.WB_NOCHMAL = function (i) {
+  var n = +(i.getAttribute('data-versuch') || 0); i.classList.add('fehlt');
+  if (n >= 4) return false;
+  i.setAttribute('data-versuch', n + 1);
+  setTimeout(function () { var u = new URL(i.getAttribute('src'), location.href); u.searchParams.set('nochmal', n + 1); i.src = u.href; }, 1000 * (n + 1));
+  return true;
+};
+document.addEventListener('error', function (e) { if (e.target && e.target.tagName === 'IMG') WB_NOCHMAL(e.target); }, true);
+document.addEventListener('load', function (e) { if (e.target && e.target.tagName === 'IMG') e.target.classList.remove('fehlt'); }, true);
+</script>
 </head>
 <body>
 <header class="lt">
@@ -166,6 +179,6 @@
   </footer>
 </section>
 </main>
-<script src="werkbank.js?v=1793941135" defer></script>
+<script src="werkbank.js?v=1793946663" defer></script>
 </body>
 </html>

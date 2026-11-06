@@ -8,9 +8,17 @@
   // Erster Blick: erst zeigen, wenn alle Bilder im ersten Bild und die Schrift da sind (nur load, nie decode)
   var gezeigt = false;
   function los() { if (gezeigt) return; gezeigt = true; d.classList.remove('wartet'); requestAnimationFrame(function () { requestAnimationFrame(function () { d.classList.add('auf'); }); }); }
-  var warten = $$('img[data-erst]').map(function (i) { return i.complete ? Promise.resolve() : new Promise(function (r) { i.addEventListener('load', r); i.addEventListener('error', r); }); });
+  // Ein Bild, das ausbleibt, holt WB_NOCHMAL (Kopf der Seite) neu; gewartet wird, bis es da ist oder alle Versuche vorbei sind
+  var warten = $$('img[data-erst]').map(function (i) {
+    if (i.complete && i.naturalWidth) return Promise.resolve();
+    return new Promise(function (r) {
+      i.addEventListener('load', function () { if (i.naturalWidth) r(); });
+      i.addEventListener('error', function () { if (+(i.getAttribute('data-versuch') || 0) >= 4) r(); });
+      if (i.complete && +(i.getAttribute('data-versuch') || 0) >= 4) r();
+    });
+  });
   if (document.fonts && document.fonts.ready) warten.push(document.fonts.ready);
-  Promise.all(warten).then(los); setTimeout(los, 2400);
+  Promise.all(warten).then(los); setTimeout(los, 20000);   // nur, falls gar nichts mehr kommt
 
   // Hereinkommen von unten
   var ziele = $$('[data-a]');

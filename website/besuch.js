@@ -75,4 +75,14 @@
     if (document.visibilityState === 'hidden') weg(); else sichtbar = Date.now();
   });
   addEventListener('pagehide', weg);
+  // Menschen-Beweis (Robert 13.11.2026, «Es klappt nie»): gemeldet wird erst, wenn sich jemand wirklich bewegt (Maus, Finger, Rad, Taste).
+  // Link-Prüfer und Vorschau-Abrufe öffnen Seiten, bewegen aber nichts; ohne diese Meldung schickt der Melder keine Mail.
+  var mensch = false, ARTEN = ['pointermove', 'pointerdown', 'touchstart', 'wheel', 'keydown'];
+  function bewegt(e) {
+    if (mensch || (e && e.isTrusted === false)) return;
+    mensch = true;
+    ARTEN.forEach(function (n) { removeEventListener(n, bewegt, true); });
+    (function los() { if (!basis) return; if (!fertig) { setTimeout(los, 300); return; } senden(mit({ art: 'mensch' }), false); })();
+  }
+  ARTEN.forEach(function (n) { addEventListener(n, bewegt, { capture: true, passive: true }); });
 })();

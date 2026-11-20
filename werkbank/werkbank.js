@@ -115,6 +115,6 @@
     function kommt() { a.classList.add('kommt'); a.setAttribute('aria-disabled', 'true'); a.setAttribute('tabindex', '-1'); }
     a.addEventListener('click', function (e) { if (a.classList.contains('kommt')) e.preventDefault(); });
     if (location.protocol === 'file:') return;
-    fetch(a.href, { cache: 'no-store' }).then(function (r) { if (!r.ok) kommt(); }).catch(kommt);
+    fetch(a.href, { cache: 'no-store' }).then(function (r) { if (!r.ok) kommt(); if (r.body && r.body.cancel) r.body.cancel(); }).catch(kommt);   // Antwort gleich schliessen, sonst bleibt die Anfrage offen (14.11.2026, Prüfskript: Seite lädt nie fertig)
   });
 })();

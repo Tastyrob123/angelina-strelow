@@ -151,3 +151,4 @@ h1,h2,h3,h4,figcaption{text-wrap:balance}
 .wo-sb__h{line-height:1.14}
 /* Lage-Kacheln: Knopf unten, kein Loch unter der kürzeren Kachel */
 .wo-lg{grid-template-rows:auto auto auto 1fr auto}.wo-lg>p{align-self:start}.wo-lg>.wo-lk{align-self:end}
+@media(max-width:420px){.wo-marke-w b{font-size:15px}}

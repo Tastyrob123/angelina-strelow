@@ -81,7 +81,7 @@ h2{font:400 clamp(38px,4.4vw,60px)/1.02 D;margin-bottom:14px}
  .feld{padding:16px}
 }
 </style>
-<style id="volle-reihen">/* 14 Fotos: 7+7, am Handy 2 je Reihe (Prüfung 20.11.2026) */.fotos{grid-template-columns:repeat(7,minmax(0,1fr))!important}@media(max-width:700px){.fotos{grid-template-columns:repeat(2,minmax(0,1fr))!important}}</style></head>
+<style id="volle-reihen">/* 14 Fotos: 7+7, am Handy 2 je Reihe (Prüfung 20.11.2026) */.fotos{grid-template-columns:repeat(7,minmax(0,1fr))!important}@media(max-width:700px){.fotos{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.fotos figcaption{overflow-wrap:anywhere}</style><style id="auftritte-seite">html.as-an .as-k{opacity:0;transform:translateY(38px)}html.as-an .as-k.as-da{opacity:1;transform:none;transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1);transition-delay:var(--as-v,0s)}@media print{html.as-an .as-k{opacity:1!important;transform:none!important}}</style></head>
 <body>
 <div class="w">
 <header class="kopf">
@@ -174,5 +174,5 @@ warte.forEach(function(im){if(im.complete)fertig();else{im.addEventListener('loa
 setTimeout(function(){document.documentElement.className=''},4000);
 })();
 </script>
-</body>
+<script id="auftritte-seite-js">(function(){if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;var d=document.documentElement;function los(){var H=innerHeight,n=0,io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("as-da");io.unobserve(e.target)}})},{rootMargin:"0px 0px -6% 0px"});[].forEach.call(document.querySelectorAll('section>*:not(.hlbuehne),section .g>*,#gfelder>*'),function(e){var r=e.getBoundingClientRect();if(r.top+scrollY>H*1.02&&r.height>8&&!e.hasAttribute("data-a")&&!e.closest(".as-k")){e.classList.add("as-k");e.style.setProperty("--as-v",(n++%3)*90+"ms");io.observe(e)}});d.classList.add("as-an")}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",los);else los()})();</script></body>
 </html>

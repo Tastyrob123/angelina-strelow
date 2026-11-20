@@ -568,3 +568,4 @@ body.kopf-dunkel .lt:not(.voll){color:var(--salt)}body.kopf-dunkel .lt:not(.voll
 .kn>span{padding-right:3px}
 .z em,.t2 em{hyphens:manual;-webkit-hyphens:manual}
 .ak__t,.skp .ak__t,.sk__t .ak__t{line-height:1.12}
+@media(min-width:901px){#anfrage .in{align-items:center}}

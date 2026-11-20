@@ -409,3 +409,6 @@ html.probe-offen{overflow:visible}
 .re-f .re-f__q:dir(rtl){padding-left:0;padding-right:var(--q-w,.41em)}
 /* Tor 3 (31.10.): die Liste der Bereiche passt zwischen Suchfeld und Leiste, nichts schiebt sie unter das Suchfeld */
 @media (min-width:1001px){#ansicht .sb-idx{align-self:start;max-height:calc(100vh - var(--kopf,90px) - 226px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(176,112,86,.35) transparent}}
+
+/* Übersicht: zwei Listen mit ungleich vielen Einträgen untereinander (Leerraum-Regel, Prüfung 20.11.2026) */
+.re-start{grid-template-columns:minmax(0,1fr)!important}

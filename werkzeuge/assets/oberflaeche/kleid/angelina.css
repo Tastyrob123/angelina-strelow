@@ -149,3 +149,5 @@ h1,h2,h3,h4,figcaption{text-wrap:balance}
 /* Prüfung 20.11.2026: Kopfzeile mit Luft für «Ü», Begrüssung mit Abstand zwischen den Zeilen */
 .wo-kopf__mitte b{padding:.14em 0 .1em;margin:-.14em 0 -.1em}
 .wo-sb__h{line-height:1.14}
+/* Lage-Kacheln: Knopf unten, kein Loch unter der kürzeren Kachel */
+.wo-lg{grid-template-rows:auto auto auto 1fr auto}.wo-lg>p{align-self:start}.wo-lg>.wo-lk{align-self:end}

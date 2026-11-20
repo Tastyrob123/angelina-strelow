@@ -562,3 +562,7 @@ body.kopf-dunkel .lt:not(.voll){color:var(--salt)}body.kopf-dunkel .lt:not(.voll
 }
 /* Lange Wörter in Titeln (Privatveranstaltungen, Gastfreundschaft) dürfen am Handy an der Wortfuge trennen; am Rechner nie */
 @media (min-width:901px){.t2 em{-webkit-hyphens:none;hyphens:none}}
+
+/* Prüfung 20.11.2026: Titelzeilen mit Luft für Ober- und Unterlängen (gleicher Abstand wie vorher), Knopftext ganz im Knopf */
+.z{padding:.12em 0 .16em;margin:-.12em 0 -.08em}
+.kn>span{padding-right:3px}

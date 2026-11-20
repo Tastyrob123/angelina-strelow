@@ -145,3 +145,7 @@ h1,h2,h3,h4,figcaption{text-wrap:balance}
 .rdg-karte h3,.wo-zw,.wo-sb__h{text-wrap:balance}
 /* Messlauf 29.10.2026 (Regel reihe): wo die Kacheltitel neben dem Pfeil umbrechen (schmale Spalten), reserviert jeder Titel zwei Zeilen, damit die Reihe auf einer Linie steht */
 @media (min-width:901px) and (max-width:1365px){.wo-ber .wo-bk__t b{min-height:2.4em}}
+
+/* Prüfung 20.11.2026: Kopfzeile mit Luft für «Ü», Begrüssung mit Abstand zwischen den Zeilen */
+.wo-kopf__mitte b{padding:.14em 0 .1em;margin:-.14em 0 -.1em}
+.wo-sb__h{line-height:1.14}
